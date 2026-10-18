@@ -15,7 +15,7 @@ project:
 
   contributors:
     - id: ai-pipeline
-      name: Claude
+      name: Claude Opus 5
       corresponding: false
       roles:
         - Investigation
@@ -26,7 +26,7 @@ project:
       affiliations:
         - anthropic
       first_name: Claude
-      last_name: Opus 4.6
+      last_name: Opus 5
       career_stage: AI Research Tool
       is_ai_tool: true
       credit_levels:

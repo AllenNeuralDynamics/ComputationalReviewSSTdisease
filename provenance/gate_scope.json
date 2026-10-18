@@ -1,0 +1,1268 @@
+{
+  "title": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "thesis_question": "Is loss or dysfunction of somatostatin-expressing (SST) interneurons a shared, causally important feature across neurodegenerative diseases? If so, which mechanisms (cell-intrinsic vulnerability, peptide/SSTR signaling, circuit dysregulation) drive it, how robust is the human and model evidence, and does it justify SST-targeted biomarkers and therapies?",
+  "audience": "Neuroscientists and translational researchers in neurodegeneration, interneuron biology and circuit neuroscience (graduate level and above).",
+  "review_type": "comprehensive critical literature review",
+  "repository": "https://github.com/AllenNeuralDynamics/ComputationalReviewSSTdisease",
+  "review_request_path": "provenance/review_request.md",
+  "length_target": {
+    "sections": 12,
+    "core_sections": 10,
+    "pages_estimate": "40-60",
+    "words_estimate": "20000-30000",
+    "min_citations_per_core_section": 35,
+    "min_citations_per_paragraph": 3.0
+  },
+  "clusters": [
+    {
+      "id": "cluster_01",
+      "name": "SST interneuron identity, connectivity and somatostatin receptor signaling",
+      "topics": [
+        "Transcriptomic/morpho-electric SST subtypes (Martinotti, non-Martinotti, Sst-Chodl long-range, Patch-seq taxonomies)",
+        "Cortical, hippocampal (O-LM, HIPP, bistratified) and striatal SST/NPY/NOS cell types",
+        "Input/output connectivity: dendritic targeting, disinhibitory VIP->SST motifs, SST->PV",
+        "Somatostatin peptide processing and release; SSTR1-5 distribution, G-protein signaling, co-transmission with GABA"
+      ],
+      "section_targets": [
+        "section_01",
+        "section_02"
+      ]
+    },
+    {
+      "id": "cluster_02",
+      "name": "Selective vulnerability of SST interneurons in aging and neurodegeneration",
+      "topics": [
+        "Age-related SST/peptide decline in cortex and hippocampus across species",
+        "Cell-intrinsic vulnerability: metabolic load, calcium handling, excitotoxicity, ER/oxidative stress, neurotrophin (BDNF) dependence",
+        "Hilar SST cell loss after injury/seizure as vulnerability model; cross-disease vulnerability comparisons"
+      ],
+      "section_targets": [
+        "section_01",
+        "section_03"
+      ]
+    },
+    {
+      "id": "cluster_03",
+      "name": "Alzheimer's disease: SST loss, amyloid-beta/neprilysin, tau and hyperexcitability",
+      "topics": [
+        "Postmortem and model SST depletion in AD; SST-neprilysin regulation of Abeta degradation",
+        "SST-Abeta co-aggregation/binding, SSTR-dependent effects; tau propagation and SST cell vulnerability",
+        "Network hyperexcitability, subclinical seizures, and interneuron dysfunction in APP/tau models"
+      ],
+      "section_targets": [
+        "section_04"
+      ]
+    },
+    {
+      "id": "cluster_04",
+      "name": "Parkinson's disease and Lewy body dementias",
+      "topics": [
+        "Cortical and CSF SST reductions in PD, PDD and DLB; alpha-synuclein pathology in interneurons",
+        "Striatal SST/NPY/NOS interneurons under dopamine depletion; L-DOPA dyskinesia",
+        "Cognitive impairment and SST in Lewy body disease"
+      ],
+      "section_targets": [
+        "section_05"
+      ]
+    },
+    {
+      "id": "cluster_05",
+      "name": "Huntington's disease and striatal SST interneurons",
+      "topics": [
+        "Relative sparing vs dysfunction of striatal SST/NPY/NOS interneurons in HD",
+        "Mutant huntingtin effects on interneuron physiology; cortical SST changes in HD models and patients",
+        "Mechanisms of differential vulnerability (spiny projection neurons vs interneurons)"
+      ],
+      "section_targets": [
+        "section_06"
+      ]
+    },
+    {
+      "id": "cluster_06",
+      "name": "ALS, frontotemporal dementia and other neurodegenerative conditions",
+      "topics": [
+        "Motor cortex SST interneurons and cortical hyperexcitability in ALS (SOD1, TDP-43, C9orf72 models)",
+        "Interneuron pathology in FTD/FTLD (tau, TDP-43, GRN, C9orf72)",
+        "Other conditions: prion disease, Down syndrome, multiple sclerosis cortical lesions, chronic traumatic encephalopathy, epilepsy-associated neurodegeneration"
+      ],
+      "section_targets": [
+        "section_07"
+      ]
+    },
+    {
+      "id": "cluster_07",
+      "name": "Circuit consequences: dendritic inhibition, oscillations, sleep and memory",
+      "topics": [
+        "SST-mediated dendritic inhibition, plasticity gating, and loss-of-function effects on pyramidal integration",
+        "Theta/gamma/beta oscillations and SST contributions; oscillatory deficits in disease models",
+        "Slow-wave sleep, spindles and SST interneurons; sleep disruption in neurodegeneration",
+        "Memory encoding/consolidation dependent on SST cells (O-LM, engram regulation)"
+      ],
+      "section_targets": [
+        "section_08"
+      ]
+    },
+    {
+      "id": "cluster_08",
+      "name": "Human evidence: postmortem pathology, single-nucleus atlases and CSF somatostatin",
+      "topics": [
+        "Postmortem SST immunoreactivity and cell counts across neurodegenerative diseases",
+        "Single-nucleus RNA-seq/spatial atlases (e.g., SEA-AD, ROSMAP) reporting SST subtype depletion",
+        "CSF somatostatin as a biomarker: diagnostic accuracy, longitudinal and cross-disease studies, assay issues"
+      ],
+      "section_targets": [
+        "section_09"
+      ]
+    },
+    {
+      "id": "cluster_09",
+      "name": "Therapeutic strategies targeting SST signaling and SST interneurons",
+      "topics": [
+        "SSTR agonists (incl. SSTR2/SSTR4-selective), neprilysin up-regulation via SST, blood-brain barrier issues",
+        "Interneuron-targeted interventions: chemogenetic/optogenetic rescue, MGE progenitor transplantation, gene therapy",
+        "Neuromodulation: 40 Hz sensory/gamma entrainment, TMS/tDCS/DBS effects on interneuron function; antiseizure approaches (levetiracetam)"
+      ],
+      "section_targets": [
+        "section_10",
+        "section_12"
+      ]
+    },
+    {
+      "id": "cluster_10",
+      "name": "Conflicting evidence, model limitations and methodological caveats",
+      "topics": [
+        "Contradictory findings on SST loss vs dysfunction; cell loss vs marker downregulation",
+        "Mouse model validity (transgenic overexpression artifacts, Sst-Cre line caveats), species differences",
+        "Postmortem confounds (agonal state, PMI), cohort heterogeneity, replication gaps"
+      ],
+      "section_targets": [
+        "section_11",
+        "section_12"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "section_01",
+      "toc_number": 1,
+      "title": "Introduction",
+      "cluster_ids": [
+        "cluster_01",
+        "cluster_02"
+      ],
+      "role": "bookend",
+      "scope_notes": "Written last (Phase 11) and may cite only papers already used in body sections. It frames SST interneurons as a cell class that is vulnerable across diseases, states the central question, and previews the argument arc."
+    },
+    {
+      "id": "section_02",
+      "toc_number": 2,
+      "title": "SST Interneuron Identity: Transcriptomic Subtypes, Connectivity, and Somatostatin Receptor Signaling",
+      "cluster_ids": [
+        "cluster_01"
+      ],
+      "role": "core",
+      "scope_notes": "Foundation section. Covers transcriptomic subtypes, connectivity motifs and SSTR1-5 signaling, which later sections need to interpret disease findings."
+    },
+    {
+      "id": "section_03",
+      "toc_number": 3,
+      "title": "Selective Vulnerability of SST Interneurons in Aging and Neurodegeneration",
+      "cluster_ids": [
+        "cluster_02"
+      ],
+      "role": "core",
+      "scope_notes": "Cross-disease and aging vulnerability mechanisms; separates loss of SST cells from loss of the peptide or marker."
+    },
+    {
+      "id": "section_04",
+      "toc_number": 4,
+      "title": "Alzheimer's Disease: SST Loss, Amyloid-\u03b2 and Neprilysin, Tau, and Network Hyperexcitability",
+      "cluster_ids": [
+        "cluster_03"
+      ],
+      "role": "core",
+      "scope_notes": "AD: SST depletion, SST-neprilysin-Abeta axis, tau, and hyperexcitability; weigh human vs model data."
+    },
+    {
+      "id": "section_05",
+      "toc_number": 5,
+      "title": "Parkinson's Disease and Lewy Body Dementias",
+      "cluster_ids": [
+        "cluster_04"
+      ],
+      "role": "core",
+      "scope_notes": "PD, PDD and DLB: cortical, striatal and CSF SST evidence; alpha-synuclein interactions."
+    },
+    {
+      "id": "section_06",
+      "toc_number": 6,
+      "title": "Huntington's Disease and Striatal SST Interneurons",
+      "cluster_ids": [
+        "cluster_05"
+      ],
+      "role": "core",
+      "scope_notes": "HD: why striatal SST/NPY/NOS interneurons are relatively spared, and evidence that they are nonetheless dysfunctional."
+    },
+    {
+      "id": "section_07",
+      "toc_number": 7,
+      "title": "ALS, Frontotemporal Dementia, and Other Neurodegenerative Conditions",
+      "cluster_ids": [
+        "cluster_06"
+      ],
+      "role": "core",
+      "scope_notes": "ALS, FTD and other conditions; keep scope to SST/interneuron-relevant evidence."
+    },
+    {
+      "id": "section_08",
+      "toc_number": 8,
+      "title": "Circuit Consequences: Dendritic Inhibition, Oscillations, Sleep, and Memory",
+      "cluster_ids": [
+        "cluster_07"
+      ],
+      "role": "core",
+      "scope_notes": "Circuit-level consequences: dendritic inhibition, oscillations, sleep, memory; bridge cellular findings to symptoms."
+    },
+    {
+      "id": "section_09",
+      "toc_number": 9,
+      "title": "Human Evidence: Postmortem Pathology, Single-Nucleus Atlases, and CSF Somatostatin as a Biomarker",
+      "cluster_ids": [
+        "cluster_08"
+      ],
+      "role": "core",
+      "scope_notes": "Human evidence synthesis: postmortem, snRNA-seq atlases, CSF SST biomarker performance."
+    },
+    {
+      "id": "section_10",
+      "toc_number": 10,
+      "title": "Therapeutic Strategies: Somatostatin Receptor Agonists, Interneuron-Targeted Interventions, and Neuromodulation",
+      "cluster_ids": [
+        "cluster_09"
+      ],
+      "role": "core",
+      "scope_notes": "Therapeutics: SSTR agonists, interneuron-targeted interventions and neuromodulation; translational status and failures."
+    },
+    {
+      "id": "section_11",
+      "toc_number": 11,
+      "title": "Conflicting Evidence, Model Limitations, and Open Questions",
+      "cluster_ids": [
+        "cluster_10"
+      ],
+      "role": "core",
+      "scope_notes": "Cross-cutting critical section: conflicting results, model limitations, open questions. Draws on conflicts flagged in every cluster."
+    },
+    {
+      "id": "section_12",
+      "toc_number": 12,
+      "title": "Conclusion",
+      "cluster_ids": [
+        "cluster_09",
+        "cluster_10"
+      ],
+      "role": "bookend",
+      "scope_notes": "Written last (Phase 11) and may cite only existing papers. Synthesizes the thesis answer and sets priorities for future work."
+    }
+  ],
+  "cluster_to_section_assignment": {
+    "cluster_01": [
+      "section_01",
+      "section_02"
+    ],
+    "cluster_02": [
+      "section_01",
+      "section_03"
+    ],
+    "cluster_03": [
+      "section_04"
+    ],
+    "cluster_04": [
+      "section_05"
+    ],
+    "cluster_05": [
+      "section_06"
+    ],
+    "cluster_06": [
+      "section_07"
+    ],
+    "cluster_07": [
+      "section_08"
+    ],
+    "cluster_08": [
+      "section_09"
+    ],
+    "cluster_09": [
+      "section_10",
+      "section_12"
+    ],
+    "cluster_10": [
+      "section_11",
+      "section_12"
+    ]
+  },
+  "evidence_parameters": {
+    "min_papers_per_cluster": 70,
+    "saturation_criterion": null,
+    "snowball_rounds": 0,
+    "total_bibliography_target": null,
+    "bibliography_target_is_hard_floor": true
+  },
+  "evidence_parameters_rationale": "User prompt asks for a 'comprehensive critical literature review' but specifies no per-cluster paper count, saturation language, snowballing, or bibliography floor; all four defaults applied per comprev-scoping parsing rules.",
+  "plan_content": [
+    {
+      "name": "Phase 1: Scope and Thesis",
+      "depends_on": [],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-scoping",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Capture request and define scope",
+              "description": "Write provenance/review_request.txt (byte-identical) and provenance/review_request.md (header, verbatim blockquote, editorial note). Map all 12 TOC headings verbatim to sections[]; define 10 topical clusters and a bidirectional cluster_to_section_assignment; parse evidence_parameters (defaults: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null})."
+            },
+            {
+              "title": "Emit scope.json and plan_content",
+              "description": "Save scope.json with thesis, audience, length target, clusters, sections, evidence_parameters, and this 22-entry plan_content (phases 1-19, 20a, 20, 21). Coordinator verifies: 12 sections with titles matching the TOC verbatim; every section has \u22651 cluster; clusters[].section_targets is the exact inverse of sections[].cluster_ids; no unfilled template-placeholder markers placeholders remain in provenance files; gate_scope.json carries review_request_path; comprev-scoping-validator (Phase 1V) passes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 2: Evidence Gathering",
+      "depends_on": [
+        "Phase 1: Scope and Thesis"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_01: SST interneuron identity, connectivity and somatostatin receptor signaling",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Transcriptomic/morpho-electric SST subtypes (Martinotti, non-Martinotti, Sst-Chodl long-range, Patch-seq taxonomies); Cortical, hippocampal (O-LM, HIPP, bistratified) and striatal SST/NPY/NOS cell types; Input/output connectivity: dendritic targeting, disinhibitory VIP->SST motifs, SST->PV; Somatostatin peptide processing and release; SSTR1-5 distribution, G-protein signaling, co-transmission with GABA. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_02: Selective vulnerability of SST interneurons in aging and neurodegeneration",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Age-related SST/peptide decline in cortex and hippocampus across species; Cell-intrinsic vulnerability: metabolic load, calcium handling, excitotoxicity, ER/oxidative stress, neurotrophin (BDNF) dependence; Hilar SST cell loss after injury/seizure as vulnerability model; cross-disease vulnerability comparisons. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_03: Alzheimer's disease: SST loss, amyloid-beta/neprilysin, tau and hyperexcitability",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Postmortem and model SST depletion in AD; SST-neprilysin regulation of Abeta degradation; SST-Abeta co-aggregation/binding, SSTR-dependent effects; tau propagation and SST cell vulnerability; Network hyperexcitability, subclinical seizures, and interneuron dysfunction in APP/tau models. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_04: Parkinson's disease and Lewy body dementias",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Cortical and CSF SST reductions in PD, PDD and DLB; alpha-synuclein pathology in interneurons; Striatal SST/NPY/NOS interneurons under dopamine depletion; L-DOPA dyskinesia; Cognitive impairment and SST in Lewy body disease. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_05: Huntington's disease and striatal SST interneurons",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Relative sparing vs dysfunction of striatal SST/NPY/NOS interneurons in HD; Mutant huntingtin effects on interneuron physiology; cortical SST changes in HD models and patients; Mechanisms of differential vulnerability (spiny projection neurons vs interneurons). Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_06: ALS, frontotemporal dementia and other neurodegenerative conditions",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Motor cortex SST interneurons and cortical hyperexcitability in ALS (SOD1, TDP-43, C9orf72 models); Interneuron pathology in FTD/FTLD (tau, TDP-43, GRN, C9orf72); Other conditions: prion disease, Down syndrome, multiple sclerosis cortical lesions, chronic traumatic encephalopathy, epilepsy-associated neurodegeneration. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_07: Circuit consequences: dendritic inhibition, oscillations, sleep and memory",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: SST-mediated dendritic inhibition, plasticity gating, and loss-of-function effects on pyramidal integration; Theta/gamma/beta oscillations and SST contributions; oscillatory deficits in disease models; Slow-wave sleep, spindles and SST interneurons; sleep disruption in neurodegeneration; Memory encoding/consolidation dependent on SST cells (O-LM, engram regulation). Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_08: Human evidence: postmortem pathology, single-nucleus atlases and CSF somatostatin",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Postmortem SST immunoreactivity and cell counts across neurodegenerative diseases; Single-nucleus RNA-seq/spatial atlases (e.g., SEA-AD, ROSMAP) reporting SST subtype depletion; CSF somatostatin as a biomarker: diagnostic accuracy, longitudinal and cross-disease studies, assay issues. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_09: Therapeutic strategies targeting SST signaling and SST interneurons",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: SSTR agonists (incl. SSTR2/SSTR4-selective), neprilysin up-regulation via SST, blood-brain barrier issues; Interneuron-targeted interventions: chemogenetic/optogenetic rescue, MGE progenitor transplantation, gene therapy; Neuromodulation: 40 Hz sensory/gamma entrainment, TMS/tDCS/DBS effects on interneuron function; antiseizure approaches (levetiracetam). Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-gathering",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Gather evidence for cluster_10: Conflicting evidence, model limitations and methodological caveats",
+              "description": "Search OpenAlex/PubMed/Europe PMC/CrossRef for topics: Contradictory findings on SST loss vs dysfunction; cell loss vs marker downregulation; Mouse model validity (transgenic overexpression artifacts, Sst-Cre line caveats), species differences; Postmortem confounds (agonal state, PMI), cohort heterogeneity, replication gaps. Collect \u226570 unique papers (min_papers_per_cluster), take DOIs and metadata only from API responses, extract verbatim source sentences, record replication status and conflicts using the exact conflict schema (paper_a_doi/paper_b_doi/...). Retrieve fulltext via the full retrieval order with the >15KB + XML body element size check; evidence_parameters passed verbatim: {\"min_papers_per_cluster\": 70, \"saturation_criterion\": null, \"snowball_rounds\": 0, \"total_bibliography_target\": null}."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-evidence-validator"
+          ],
+          "steps": [
+            {
+              "title": "Validate evidence packages (Phase 2V)",
+              "description": "Validate every cluster package. Coordinator verifies: \u226570 unique papers per cluster; \u226550% fulltext overall and no cluster <20% fulltext (send back if so); all DOIs resolve; every conflict has both DOIs and uses only the mandatory schema fields; no numbers without a source sentence; any short cluster is sent back with the shortfall stated."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 3: Citation Infrastructure",
+      "depends_on": [
+        "Phase 2: Evidence Gathering"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Build citation_key_map and author_name_table",
+              "description": "Query CrossRef for every DOI in the evidence packages; generate deterministic cite keys and an author_name_table from API metadata only (null when missing). Coordinator verifies: one key per unique DOI, no duplicate keys, zero DOIs typed from memory, failed lookups listed explicitly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 4: Scaffold Construction",
+      "depends_on": [
+        "Phase 3: Citation Infrastructure"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-scaffold",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Build argument arc and section plans",
+              "description": "Draft the thesis-driven argument arc across the 12 sections, per-section plans with claims mapped to cite keys, figure specs (at least one cross-study comparison figure per core section, not only schematics), and a style guide. Coordinator verifies: every core section plan names \u226535 candidate citations, \u22651 data figure spec and \u22651 explicit conflict; intro/conclusion plans cite only keys present in body plans; no process language."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 5: Evidence Curation",
+      "depends_on": [
+        "Phase 4: Scaffold Construction"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases",
+            "comprev-curation-validator"
+          ],
+          "steps": [
+            {
+              "title": "Assemble per-section evidence packages",
+              "description": "Apply cluster_to_section_assignment from scope.json to route papers, conflicts and figure_data into per-section packages with scaffold extracts. Coordinator verifies (Phase 5V): every section_02-11 package is non-empty and meets its scaffold citation count; cluster_10 conflicts plus the conflicts flagged in all clusters reach section_11; no paper is orphaned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 6: Figure Comparability Audit",
+      "depends_on": [
+        "Phase 5: Evidence Curation"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_02",
+              "description": "Review the figure_data for section_02 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_03",
+              "description": "Review the figure_data for section_03 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_04",
+              "description": "Review the figure_data for section_04 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_05",
+              "description": "Review the figure_data for section_05 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_06",
+              "description": "Review the figure_data for section_06 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_07",
+              "description": "Review the figure_data for section_07 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_08",
+              "description": "Review the figure_data for section_08 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_09",
+              "description": "Review the figure_data for section_09 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_10",
+              "description": "Review the figure_data for section_10 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-figure-audit",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded figure audit for section_11",
+              "description": "Review the figure_data for section_11 blind to the narrative. Check that measures, species, regions and assays are comparable, and give a verdict of PASS/CAVEAT/SPLIT/REDESIGN with a reason. Coordinator verifies: every figure spec has a verdict; REDESIGN/SPLIT items go back to the scaffold before drafting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 7: Section Drafting",
+      "depends_on": [
+        "Phase 6: Figure Comparability Audit"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_02: SST Interneuron Identity: Transcriptomic Subtypes, Connectivity, and Somatostatin Receptor Signaling",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_03: Selective Vulnerability of SST Interneurons in Aging and Neurodegeneration",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_04: Alzheimer's Disease: SST Loss, Amyloid-\u03b2 and Neprilysin, Tau, and Network Hyperexcitability",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_05: Parkinson's Disease and Lewy Body Dementias",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_06: Huntington's Disease and Striatal SST Interneurons",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_07: ALS, Frontotemporal Dementia, and Other Neurodegenerative Conditions",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_08: Circuit Consequences: Dendritic Inhibition, Oscillations, Sleep, and Memory",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_09: Human Evidence: Postmortem Pathology, Single-Nucleus Atlases, and CSF Somatostatin as a Biomarker",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_10: Therapeutic Strategies: Somatostatin Receptor Agonists, Interneuron-Targeted Interventions, and Neuromodulation",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-figure-construction",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Draft section_11: Conflicting Evidence, Model Limitations, and Open Questions",
+              "description": "Write MyST + LaTeX prose, figures and notebooks for this section from its curated package only. Use tiered treatment of landmark, core and confirmatory papers, weave replication status into the text, and state conflicts explicitly. Allowed directives only (no {contents}/{toctree}/{include}); no internal tooling names; no author placeholders. Coordinator verifies (Phase 7V): \u226535 citations, citations_per_paragraph \u22653.0, balanced braces, \u22651 data figure referenced via \\ref{}, no catalog-style paragraphs; send back if any check fails."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 8: Section Critics",
+      "depends_on": [
+        "Phase 7: Section Drafting"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_02",
+              "description": "Critique the section_02 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_03",
+              "description": "Critique the section_03 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_04",
+              "description": "Critique the section_04 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_05",
+              "description": "Critique the section_05 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_06",
+              "description": "Critique the section_06 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_07",
+              "description": "Critique the section_07 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_08",
+              "description": "Critique the section_08 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_09",
+              "description": "Critique the section_09 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_10",
+              "description": "Critique the section_10 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        },
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded critique of section_11",
+              "description": "Critique the section_11 draft blind, on 6 tracks (evidence fidelity, skepticism and conflicts, structure and argument, figures, citations, hygiene). Label each finding MUST_FIX, SHOULD_CAVEAT or MINOR. Coordinator verifies: all MUST_FIX items are resolved by the writer and re-checked before Phase 9."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 9: Bibliography",
+      "depends_on": [
+        "Phase 8: Section Critics"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Generate BibTeX",
+              "description": "Build the BibTeX from CrossRef for every cite key used. Output must be ASCII-only and deduplicated by DOI, followed by a contamination scan for keys or DOIs not in citation_key_map. Coordinator verifies: zero undefined keys, zero unused-but-claimed DOIs, ASCII check passes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 10: Integration",
+      "depends_on": [
+        "Phase 9: Bibliography"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-integration",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Six-pass integration",
+              "description": "Run 6 passes over sections 02-11: transitions, cross-references, terminology (SST subtype nomenclature, SSTR naming), continuity, figure numbering via \\ref{}, hygiene. Coordinator verifies: no broken refs, consistent terminology table, no new uncited claims introduced."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 11: Introduction and Conclusion",
+      "depends_on": [
+        "Phase 10: Integration"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-section-writing",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Write section_01 Introduction and section_12 Conclusion",
+              "description": "Write both bookends after all body sections are complete. They may cite only papers already cited in the body. Coordinator verifies: every cite key in section_01/section_12 already appears in sections 02-11; titles match TOC verbatim; the thesis answer is consistent with section_11 caveats."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 12: Bookend Critic",
+      "depends_on": [
+        "Phase 11: Introduction and Conclusion"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-critic",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Blinded bookend critique",
+              "description": "Critique the introduction and conclusion blind. Check every new claim-citation pair against the cited paper's source sentence. Coordinator verifies: MUST_FIX items resolved; no overclaiming beyond body evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 13: Methods",
+      "depends_on": [
+        "Phase 12: Bookend Critic"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Write Methods.md and architecture figure",
+              "description": "Render pipeline metadata (search strategy, evidence_parameters, paper counts, fulltext rates, validation outcomes) into Methods.md plus an architecture figure. Coordinator verifies: all counts are read from gate artifacts, not hand-entered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 14: Document Assembly",
+      "depends_on": [
+        "Phase 13: Methods"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases",
+            "comprev-myst-validator"
+          ],
+          "steps": [
+            {
+              "title": "Assemble document",
+              "description": "Collect all section files, figures and notebooks, verify paths, build the LaTeX preamble and myst.yml TOC, and run the assertions. Coordinator verifies (Phase 14V): REVIEW_REQUEST_CAPTURED passes (no placeholders), all 12 sections present in TOC order, FORBIDDEN_LEXICON scan clean, build succeeds."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 15: Citation Triples",
+      "depends_on": [
+        "Phase 14: Document Assembly"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases",
+            "comprev-triples-validator"
+          ],
+          "steps": [
+            {
+              "title": "Extract citation triples exhaustively",
+              "description": "Emit one (claim, cite key, DOI) triple per cite-key occurrence across the document, with no sampling. Coordinator verifies: triple count equals the total cite occurrence count."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 16: Citation Verification",
+      "depends_on": [
+        "Phase 15: Citation Triples"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-verification",
+            "comprev-citation-validator",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Deep-verify every triple (parallel shards)",
+              "description": "For every triple, run the 5-step check: DOI resolves \u2192 title matches \u2192 authors match \u2192 metadata matches \u2192 full-text claim support. No tiering. Coordinator verifies: every triple has a verdict; unverifiable items are flagged, never passed by default."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 17: Fix Preparation",
+      "depends_on": [
+        "Phase 16: Citation Verification"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Build fix requests",
+              "description": "For every triple not marked VERIFIED, build a fix request with \u00b110 lines of context. Coordinator verifies: one fix request per non-VERIFIED triple."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 18: Fix Execution",
+      "depends_on": [
+        "Phase 17: Fix Preparation"
+      ],
+      "delegations": [
+        {
+          "agent": "LITREVIEW",
+          "skills": [
+            "comprev-fix-execution",
+            "comprev-reviewer-agent"
+          ],
+          "steps": [
+            {
+              "title": "Apply bib and text fixes (parallel)",
+              "description": "Apply the bibliography and text fixes for each request, replacing or removing unsupported citations and softening claims to what the sources say. Coordinator verifies: every request returns a diff or a justified no-op."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 19: Fix Application",
+      "depends_on": [
+        "Phase 18: Fix Execution"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Apply diffs",
+              "description": "Apply diffs in reverse line order per file, then rebuild. Coordinator verifies: zero orphan keys, zero undefined refs, citation density thresholds still met."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 20a: Methods Ledger Refresh",
+      "depends_on": [
+        "Phase 19: Fix Application"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Refresh Methods M.5/M.6",
+              "description": "Re-render the M.6 and M.5 phase outcomes from the final host.frames ledger. Coordinator verifies: the Methods ledger matches the recorded phase outcomes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 20: Repository Push",
+      "depends_on": [
+        "Phase 20a: Methods Ledger Refresh"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-dataml-phases"
+          ],
+          "steps": [
+            {
+              "title": "Push to AllenNeuralDynamics/ComputationalReviewSSTdisease",
+              "description": "git clone https://github.com/AllenNeuralDynamics/ComputationalReviewSSTdisease, copy all outputs in, commit, and git push. Never use the Contents API. Coordinator verifies (Phase 20V): remote HEAD contains all files, hygiene scans clean."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 21: Deploy Polish",
+      "depends_on": [
+        "Phase 20: Repository Push"
+      ],
+      "delegations": [
+        {
+          "agent": "DATAML",
+          "skills": [
+            "comprev-deploy-polish"
+          ],
+          "steps": [
+            {
+              "title": "Post-deployment UX gate",
+              "description": "Run the tier-A static checks against the built Pages-artifact tarball. Run the tier-B live-URL checks, or produce a manual checklist if the sandbox cannot reach the deploy URL. Coordinator verifies: all tier-A checks pass; tier-B results or the checklist are recorded."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "phase_1v": {
+    "gate": "pass",
+    "validator_frame_id": "7e340531-e6f0-4945-847d-561ac00f5e5a",
+    "gate_phase1v_vid": "651c3165-554d-4c72-abc0-24fa02339207",
+    "coordinator_adjudication": "PLAN_CONTENT_PHASE_COUNT interpreted as 21 numbered phases + sub-phase 20a (22 entries), matching the comprev-scoping phase table and orchestrator ledger.",
+    "first_attempt_fail_vid": "a3250804-a2c0-45dc-a5fe-107d85cd7003"
+  }
+}

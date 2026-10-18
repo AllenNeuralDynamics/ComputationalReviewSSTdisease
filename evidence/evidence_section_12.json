@@ -1,0 +1,2096 @@
+{
+  "section_id": "section_12",
+  "section_title": "Conclusion",
+  "canonical_label": "sec-conclusion",
+  "role": "bookend",
+  "cluster_source": "cluster_09,cluster_10",
+  "cluster_sources": [
+    "cluster_09",
+    "cluster_10"
+  ],
+  "written_in_phase": "last (may cite only papers already used in body sections)",
+  "word_count_target": 1400,
+  "thesis": "Dysfunction of the somatostatin system is a shared feature of several neurodegenerative diseases and is probably causally involved in Alzheimer's disease; shared selective death of SST interneurons across neurodegenerative disease is not established. The distinction is not semantic - it determines whether the therapeutic target is a lost cell population to be replaced or a degraded signalling system to be restored.",
+  "scope_notes": "Written last (Phase 11) and may cite only existing papers. Synthesizes the thesis answer and sets priorities for future work.",
+  "total_findings": 28,
+  "unique_papers": 28,
+  "unique_cite_keys": 28,
+  "findings": [
+    {
+      "cite_key": "Iaccarino2016",
+      "claim": "One hour of 40 Hz visual flicker lowered soluble Abeta40 and Abeta42 in visual cortex of 5XFAD mice by ~58% relative to dark controls, and optogenetic drive of fast-spiking PV interneurons at 40 Hz produced comparable CA1 reductions.",
+      "claim_source_sentence": "One hour after 1 hr of 40 Hz flicker, we observed that A \u03b2 1-40 levels in VC were reduced by 57.96% and A \u03b2 1-42 levels by 57.97% compared to dark controls (as measured by A \u03b2 ELISA, ).",
+      "evidence": "Results: ELISA quantification of soluble Abeta after 1 h non-invasive 40 Hz light flicker in 5XFAD mice; parallel optogenetic FS-PV stimulation experiment in CA1. Two laboratories with different senior authors independently report reduced brain Abeta after 40 Hz stimulation in mouse models \u2014 one using visual flicker, one using vibrotactile delivery \u2014 so the modality differs in the second case while the measured effect matches.",
+      "effect_size": "Abeta1-40 -57.96%, Abeta1-42 -57.97% vs dark control (visual cortex)",
+      "effect_size_source_sentence": "One hour after 1 hr of 40 Hz flicker, we observed that A \u03b2 1-40 levels in VC were reduced by 57.96% and A \u03b2 1-42 levels by 57.97% compared to dark controls (as measured by A \u03b2 ELISA, ).",
+      "n": null,
+      "study_system": "5XFAD mouse model of amyloidosis, visual cortex and hippocampal CA1",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.isci.2026.115994",
+        "10.1016/j.neurot.2026.e01077"
+      ],
+      "doi": "10.1038/nature20587",
+      "text_access": "fulltext",
+      "argument_role": "landmark",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f000",
+      "prominence_score": 14,
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Martorell2019",
+      "claim": "Combined auditory plus visual 40 Hz stimulation reduced amyloid plaque area and number in medial prefrontal cortex, an effect absent when either modality was delivered alone, indicating that multisensory entrainment extends the anatomical reach of the intervention.",
+      "claim_source_sentence": "Combined GENUS uniquely reduced plaque area (59.64\u00b18.7%) and number (48.2\u00b10.07%) in mPFC (\u2013), whereas neither auditory nor visual GENUS alone affected amyloid in mPFC (\u2013).",
+      "evidence": "Results: immunohistochemical plaque quantification in mPFC after 1 week of combined vs single-modality gamma entrainment in 5XFAD mice. Plaque-burden reduction after 40 Hz stimulation is reported independently by two laboratories with different senior authors; the within-cluster companion reports share this study's senior author and are not counted as replication.",
+      "effect_size": "plaque area -59.64+/-8.7%, plaque number -48.2+/-0.07% in mPFC",
+      "effect_size_source_sentence": "Combined GENUS uniquely reduced plaque area (59.64\u00b18.7%) and number (48.2\u00b10.07%) in mPFC (\u2013), whereas neither auditory nor visual GENUS alone affected amyloid in mPFC (\u2013).",
+      "n": null,
+      "study_system": "5XFAD mouse model, medial prefrontal cortex / auditory cortex / CA1",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.isci.2026.115994",
+        "10.1016/j.neurot.2026.e01077"
+      ],
+      "doi": "10.1016/j.cell.2019.02.014",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f001",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Paulson2025",
+      "claim": "Repeated 40 Hz visual flicker strengthened CA3-CA1 functional coupling during navigation, providing a circuit-level mechanism for gamma entrainment beyond amyloid clearance.",
+      "claim_source_sentence": "We found that, compared to Random flicker, 1 h of 40 Hz flicker per day over 8 d increased coupling between hippocampal subregions CA3 and CA1 during navigation behavior.",
+      "evidence": "Results: in vivo hippocampal recordings during navigation after 8 days of 1 h/day 40 Hz versus random flicker.",
+      "effect_size": "increased CA3-CA1 coupling vs random flicker",
+      "effect_size_source_sentence": "We found that, compared to Random flicker, 1 h of 40 Hz flicker per day over 8 d increased coupling between hippocampal subregions CA3 and CA1 during navigation behavior.",
+      "n": null,
+      "study_system": "Mouse, hippocampal CA3 and CA1 during navigation behaviour",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1073/pnas.2419364122",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f007",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Bakker2012",
+      "claim": "Low-dose levetiracetam normalized hippocampal hyperactivity in amnestic mild cognitive impairment, bringing task-related activation to the level of age-matched controls and reducing DG/CA3-dependent memory errors.",
+      "claim_source_sentence": "Treatment with low dose levetiracetam significantly reduced that excess activity, such that hippocampal activation in patients on drug did not differ from age-matched control subjects.",
+      "evidence": "Results: fMRI during a mnemonic discrimination task, within-subject placebo-controlled crossover in aMCI patients. n refers to the 17 aMCI patients with complete usable data included in the analysis; 23 were enrolled and 6 were excluded for incomplete MRI, non-adherence or inability to complete. Replication is claimed only at the level of the shared measured outcome \u2014 levetiracetam-associated memory improvement in a hyperexcitable system \u2014 demonstrated by two laboratories with different senior authors in different species; the imaging and EEG endpoints themselves are not common to both. One convergent study from a laboratory with a different senior author (10.1073/pnas.1121081109) reports levetiracetam-associated memory improvement in a hyperexcitable system, but only one such study was identified, below the two-independent-source threshold required for an independently_replicated designation.",
+      "effect_size": "hippocampal activation on drug no longer differed from age-matched controls",
+      "effect_size_source_sentence": "Treatment with low dose levetiracetam significantly reduced that excess activity, such that hippocampal activation in patients on drug did not differ from age-matched control subjects.",
+      "n": 17,
+      "study_system": "Human amnestic mild cognitive impairment patients, hippocampal fMRI",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1016/j.neuron.2012.03.023",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f013",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Sanchez2012",
+      "claim": "Among a panel of antiepileptic drugs screened in hAPP transgenic mice, only levetiracetam suppressed epileptiform spike activity, and chronic dosing reversed hippocampal inhibitory remodelling, synaptic dysfunction and learning deficits.",
+      "claim_source_sentence": "Chronic treatment with LEV also reversed hippocampal remodeling, behavioral abnormalities, synaptic dysfunction, and deficits in learning and memory in hAPP mice.",
+      "evidence": "Drug screen with EEG readout followed by chronic treatment with behavioural, synaptic and histological endpoints in hAPP mice. Replication is claimed only at the level of the shared measured outcome \u2014 levetiracetam-associated memory improvement in a hyperexcitable system \u2014 demonstrated by two laboratories with different senior authors in different species; the imaging and EEG endpoints themselves are not common to both. One convergent study from a laboratory with a different senior author (10.1016/j.neuron.2012.03.023) reports levetiracetam-associated memory improvement in a hyperexcitable system, but only one such study was identified, below the two-independent-source threshold required for an independently_replicated designation.",
+      "effect_size": "selective efficacy of LEV among AEDs tested; reversal of remodelling and memory deficits",
+      "effect_size_source_sentence": "Among the drugs tested, only levetiracetam (LEV) effectively reduced abnormal spike activity detected by electroencephalography.",
+      "n": null,
+      "study_system": "hAPP (J20) transgenic mouse model of Alzheimer's disease, hippocampus",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1073/pnas.1121081109",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f015",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Saito2005",
+      "claim": "Somatostatin was the only candidate effector that upregulated neprilysin activity in cortical neurons, and somatostatin-deficient mice showed altered hippocampal neprilysin and selectively elevated Abeta42 \u2014 the mechanistic basis for treating SST-interneuron loss as an upstream driver of amyloid accumulation.",
+      "claim_source_sentence": "Among various effector candidates, only somatostatin upregulated neprilysin activity in primary cortical neurons.",
+      "evidence": "Screen of candidate effectors on neprilysin activity in primary cortical neurons plus somatostatin knockout mouse brain Abeta measurements. The presynaptic neprilysin study shares a senior author with this work, and the SSTR4 transcript study measures a different endpoint, so neither supports an independent-replication designation.",
+      "effect_size": "selective Abeta42 increase in somatostatin-deficient mouse hippocampus",
+      "effect_size_source_sentence": "A genetic deficiency of somatostatin altered hippocampal neprilysin activity and localization, and increased the quantity of a hydrophobic 42-mer form of Abeta, Abeta(42), in a manner similar to presenilin gene mutations that cause familial Alzheimer disease.",
+      "n": null,
+      "study_system": "Primary rat/mouse cortical neurons and somatostatin knockout mouse hippocampus",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1038/nm1206",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f019",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Rofo2021",
+      "claim": "Fusing a transferrin-receptor-binding single-chain antibody to a somatostatin-based construct raised brain uptake by up to 80-fold, demonstrating that receptor-mediated transcytosis can overcome the blood-brain barrier exclusion that limits peptide SST-axis therapeutics.",
+      "claim_source_sentence": "Compared with the parent antibody without the transferrin binding moiety, this bispecific antibody exhibited an 80-fold and 10-fold increase in brain uptake when administered at tracer and therapeutic doses respectively .",
+      "evidence": "Results: comparative brain uptake of bispecific versus parent antibody at tracer and therapeutic doses, radiolabel biodistribution in mice. No sample size is stated in the sentence reporting the brain-uptake fold-change, so n is left null rather than borrowed from a separate biodistribution cohort.",
+      "effect_size": "80-fold (tracer dose) and 10-fold (therapeutic dose) increase in brain uptake",
+      "effect_size_source_sentence": "Compared with the parent antibody without the transferrin binding moiety, this bispecific antibody exhibited an 80-fold and 10-fold increase in brain uptake when administered at tracer and therapeutic doses respectively .",
+      "n": null,
+      "study_system": "Mouse, intravenous radiolabelled bispecific antibody biodistribution",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.7150/thno.50263",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f022",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Sandoval2013",
+      "claim": "Co-administration of the neprilysin inhibitor phosphoramidon abolished the Abeta42 reduction produced by the SSTR4 agonist, placing neprilysin causally downstream of SSTR4 activation and tying the pharmacology directly to the somatostatin-neprilysin axis.",
+      "claim_source_sentence": "NNC 26-9100 + 10 mM phosphoramidon treatment showed identical levels of A\u03b2 x-42 compared to vehicles, and had increased A\u03b2 x-42 levels compared to the NNC 26-9100 alone ( P < 0.01).",
+      "evidence": "Results: Abeta x-42 quantification with SSTR4 agonist alone versus agonist plus phosphoramidon versus vehicle.",
+      "effect_size": "Abeta x-42 identical to vehicle under phosphoramidon; higher than agonist alone (P < 0.01)",
+      "effect_size_source_sentence": "NNC 26-9100 + 10 mM phosphoramidon treatment showed identical levels of A\u03b2 x-42 compared to vehicles, and had increased A\u03b2 x-42 levels compared to the NNC 26-9100 alone ( P < 0.01).",
+      "n": null,
+      "study_system": "Mouse brain (SAMP8 / amyloid model), pharmacological SSTR4 activation with neprilysin blockade",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1016/j.brainres.2013.05.006",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f024",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Sandoval2019",
+      "claim": "SSTR4 agonism produced coordinated but statistically non-significant up-regulation of somatostatin itself and of several amyloid-degrading peptidase transcripts including neprilysin, indicating the transcriptional arm of the effect is modest relative to the enzymatic one.",
+      "claim_source_sentence": "While no statistically significant differences were found between NNC 26\u20139100 and vehicle treatment, the increases in Sstr4 (3.3-fold), Sst (4.4-fold), Nep1 (2.4-fold), Ide (4.4-fold), Ece1 (2.8-fold) , Ace (3.3-fold), and Cat (3.0-fold) parallel the 24h cortical mRNA expression observations.",
+      "evidence": "Results: qPCR of Sstr4, Sst, Nep1, Ide, Ece1 and Ace transcripts after SSTR4 agonist versus vehicle; fold changes reported without reaching significance.",
+      "effect_size": "Sstr4 3.3-fold, Sst 4.4-fold, Nep1 2.4-fold, Ide 4.4-fold, Ece1 2.8-fold (not significant)",
+      "effect_size_source_sentence": "While no statistically significant differences were found between NNC 26\u20139100 and vehicle treatment, the increases in Sstr4 (3.3-fold), Sst (4.4-fold), Nep1 (2.4-fold), Ide (4.4-fold), Ece1 (2.8-fold) , Ace (3.3-fold), and Cat (3.0-fold) parallel the 24h cortical mRNA expression observations.",
+      "n": 5,
+      "study_system": "SAMP8 mouse brain, 10 months of age, transcript quantification",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1007/s11064-019-02890-6",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f025",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Verret2012",
+      "claim": "Restoring Nav1.1 levels in hAPP mice shifted gamma oscillation intensity upward relative to unmodified hAPP mice, linking interneuron sodium-channel deficiency to the network-rhythm failure that downstream interventions attempt to correct.",
+      "claim_source_sentence": "Cumulative frequency analysis of the gamma intensity during all minutes recorded showed a significant shift to higher intensity values in hAPPJ20/Nav1.1 mice compared with hAPPJ20 mice (). hAPPJ20/Nav1.1 mice also spent more time at higher intensity values of gamma activity than hAPPJ20 mice ().",
+      "evidence": "Results: in vivo EEG gamma power cumulative frequency analysis in hAPPJ20 versus hAPPJ20/Nav1.1 mice. The Nav1.1 transplantation follow-up shares a senior author with this study.",
+      "effect_size": "significant shift to higher gamma intensity values in hAPPJ20/Nav1.1 vs hAPPJ20",
+      "effect_size_source_sentence": "Cumulative frequency analysis of the gamma intensity during all minutes recorded showed a significant shift to higher intensity values in hAPPJ20/Nav1.1 mice compared with hAPPJ20 mice (). hAPPJ20/Nav1.1 mice also spent more time at higher intensity values of gamma activity than hAPPJ20 mice ().",
+      "n": null,
+      "study_system": "hAPPJ20 transgenic mouse with Nav1.1 BAC transgene, cortical EEG",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1016/j.cell.2012.02.046",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f033",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Yokomizo2025a",
+      "claim": "MGE progenitor transplantation into APP/PS1 mice increased cortical slow-oscillation power, restoring a network rhythm degraded by amyloid pathology even though the graft did not measurably enlarge the host inhibitory neuron pool.",
+      "claim_source_sentence": "Donor\u2010transplanted APP/PS1 mice exhibited significant increases in slow oscillation power compared to vehicle\u2010treated APP/PS1 hosts (Figure , 0.22 \u00b1 0.10 \u00d7 10 \u22127 control in vehicle versus 1.1 \u00b1 0.47 \u00d7 10 \u22127 control in Venus\u2010donor; p = 0.0033).",
+      "evidence": "Results: in vivo oscillatory power quantification and immunohistochemical graft characterization in transplanted versus vehicle-treated APP/PS1 mice. No independent study measuring slow-oscillation power after interneuron grafting was identified; the other graft studies retrieved measure seizure frequency and cognition.",
+      "effect_size": "slow oscillation power 0.22 +/- 0.10 x 10^-7 (vehicle) versus 1.1 +/- 0.47 x 10^-7 (transplanted)",
+      "effect_size_source_sentence": "Donor\u2010transplanted APP/PS1 mice exhibited significant increases in slow oscillation power compared to vehicle\u2010treated APP/PS1 hosts (Figure , 0.22 \u00b1 0.10 \u00d7 10 \u22127 control in vehicle versus 1.1 \u00b1 0.47 \u00d7 10 \u22127 control in Venus\u2010donor; p = 0.0033).",
+      "n": null,
+      "study_system": "APP/PS1 transgenic mouse, MGE progenitor graft, cortical/hippocampal oscillations",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1002/advs.202511472",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f035",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Sen2024",
+      "claim": "A randomized crossover trial of levetiracetam in Alzheimer's disease patients without seizures was tolerated but too small to determine any cognitive effect, so the cognitive question that the larger crossover trial answered negatively remains underpowered in this replication attempt.",
+      "claim_source_sentence": "Owing to small sample size, effect of levetiracetam on cognition could not be determined.",
+      "evidence": "Body (plain-language summary of results): tolerability and cognition outcomes of the ILiAD crossover trial of levetiracetam in AD patients without prior seizures.",
+      "effect_size": "effect of levetiracetam on cognition could not be determined owing to small sample size",
+      "effect_size_source_sentence": "Owing to small sample size, effect of levetiracetam on cognition could not be determined.",
+      "n": 8,
+      "study_system": "people with Alzheimer's disease and no prior seizure (randomized crossover levetiracetam trial)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1002/epi4.13070",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_09",
+      "finding_id": "cluster_09_f082",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Voelkl2022",
+      "claim": "Reduced SST and VIP marker immunoreactivity in R6/2 Huntington's disease mice reflects decreased marker expression rather than interneuron death; genetic labelling of GABAergic cells with GAD2-Cre;Ai9 showed no loss of cortical interneurons.",
+      "claim_source_sentence": "To differentiate between true cell loss and decreased expression of the respective molecular markers, we genetically labeled GABAergic interneurons by crossing R6/2 mice to the GAD2-Cre line specific to GABAergic cells (Taniguchi et al., 2011) and to the Cre-dependent Ai9 Rosa26-LSL-tdTomato reporter (Madisen et al., 2010).",
+      "evidence": "Immunohistochemical marker counts were cross-validated against a Cre-dependent genetic reporter in the same model; marker-defined reductions did not correspond to reductions in genetically labelled cells. Apparent density increases in R6/2 cortex were attributed to tissue shrinkage rather than cell-number change, so counts were normalised to total NeuroTrace-labelled neurons.",
+      "effect_size": "No cortical interneuron cell loss despite reduced SST/VIP marker density (qualitative, figure-level)",
+      "effect_size_source_sentence": null,
+      "n": 3,
+      "study_system": "R6/2 transgenic and zQ175DN knock-in mouse models of Huntington's disease, cortex",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1006/exnr.1999.7327",
+        "10.3389/fnagi.2025.1542229"
+      ],
+      "doi": "10.3389/fnins.2022.1022251",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f000",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Drake2024",
+      "claim": "Genetic fate-mapping shows a modest but significant reduction in hippocampal SST interneuron density in DGC-Pten knockout mice, while apoptotic and nitrosative stress markers in SST cells are unchanged, so the density loss is not explained by ongoing cell death at the time of sampling.",
+      "claim_source_sentence": "Consistent with prior findings, we observed a reduction in hippocampal eGFP-SST interneuron density in DGC-Pten KO mice (Figure 2C; Control, 2,176 \u00b1 97 cells/mm3; KO, 1,901 \u00b1 68 cell/mm3; p = 0.0402).",
+      "evidence": "eGFP reporter-based fate mapping avoided reliance on SST immunoreactivity; 3-nitrotyrosine and cleaved caspase-3 labelling among SST interneurons was unchanged, and SST axon density to granule cells appeared preserved.",
+      "effect_size": "SST density 2,176 \u00b1 97 vs 1,901 \u00b1 68 cells/mm3 (control vs KO), p = 0.0402, ~12.6% reduction",
+      "effect_size_source_sentence": "Consistent with prior findings, we observed a reduction in hippocampal eGFP-SST interneuron density in DGC-Pten KO mice (Figure 2C; Control, 2,176 \u00b1 97 cells/mm3; KO, 1,901 \u00b1 68 cell/mm3; p = 0.0402).",
+      "n": null,
+      "study_system": "DGC-Pten knockout mouse model of epilepsy, hippocampal SST interneurons (eGFP fate-mapped)",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.3389/fncel.2024.1474613",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f017",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Bauer2022a",
+      "claim": "Cell-type-specific translational profiling in pre-symptomatic prion disease knock-in mice identifies a disease-associated SST co-expression module linked to autophagy and TORC1 signalling, indicating early molecular change in SST neurons before overt loss.",
+      "claim_source_sentence": "Analysis of an SST co-expression network revealed a disease-associated module, functionally associated with autophagy and TORC1 signaling.",
+      "evidence": "RiboTag isolation of translating mRNA from GABAergic, glutamatergic, SST and PV neurons in 9-month-old prion protein knock-in mice at a pre-symptomatic stage.",
+      "effect_size": "Disease-associated module in the SST co-expression network, functionally associated with autophagy and TORC1 signaling (qualitative, no effect size reported in abstract)",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Prion protein gene knock-in mice (FFI and CJD models), RiboTag cell-type-specific profiling",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.21203/rs.3.rs-1458940/v1",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f023",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "FloresCuadrado2016",
+      "claim": "A study of hippocampal interneurons in Parkinson disease used non-overlapping marker panels in mouse (calbindin, calretinin, somatostatin) and human (parvalbumin, somatostatin), so cross-species inference rests on only one shared marker.",
+      "claim_source_sentence": "Expression of interneuron markers (mouse: calbindin, calretinin, and somatostatin; human: parvalbumin and somatostatin) were quantified and compared.",
+      "evidence": "Parallel quantification in an alpha-synucleinopathy mouse model and human Parkinson disease brain, with the marker panel differing between species.",
+      "effect_size": "only somatostatin shared between the mouse and human marker panels",
+      "effect_size_source_sentence": "Expression of interneuron markers (mouse: calbindin, calretinin, and somatostatin; human: parvalbumin and somatostatin) were quantified and compared.",
+      "n": null,
+      "study_system": "Alpha-synucleinopathy mouse model hippocampus and human Parkinson disease postmortem hippocampus",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1002/mds.26586",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f028",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Castanho2025a",
+      "claim": "In cognitively resilient Alzheimer's cases, SST inhibitory interneurons are identified as a vulnerable population enriched for protective rare variants, reframing SST neurons as compensatory rather than simply degenerating.",
+      "claim_source_sentence": "Protective rare variant enrichment highlighted vulnerable populations, including somatostatin (SST) inhibitory interneurons, validated through immunofluorescence showing co-expression of rare variant associated RBFOX1 and KIF26B in SST+ neurons in the dorsolateral prefrontal cortex.",
+      "evidence": "Single-nucleus transcriptomics combined with polygenic risk scores and rare-variant enrichment, validated by immunofluorescence in dorsolateral prefrontal cortex.",
+      "effect_size": "qualitative: SST interneurons enriched for protective rare variants in resilient cases",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Human dorsolateral prefrontal cortex, Alzheimer's disease continuum including cognitively resilient cases",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1101/2025.01.13.632801",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f029",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Raven2025",
+      "claim": "SST interneuron synaptic structure is altered by brief sleep disruption, identifying a non-disease experimental variable that modifies the same SST endpoints used to infer neurodegenerative pathology.",
+      "claim_source_sentence": "Disruption of the somatostatin-expressing (SST+) interneuron population seems to be a critical early sign of neuropathology in Alzheimer's dementia, schizophrenia, and bipolar disorder-and the risk of developing all three is increased by habitual sleep loss.",
+      "evidence": "Synaptic structural analysis of interneurons after short-term sleep deprivation in mice, providing a state-dependent confound for SST-based pathology markers.",
+      "effect_size": "qualitative: brief sleep disruption alters SST+ interneuron synaptic structures",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Mouse cortex, brief sleep deprivation",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1093/sleep/zsaf064",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f038",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Hofling2019",
+      "claim": "In a human APP transgenic mouse line the transgene is not expressed uniformly across hippocampal cell types but is strongly enriched in somatostatin-expressing interneurons, so interneuron phenotypes in these models partly reflect where the transgene is expressed rather than where amyloid acts.",
+      "claim_source_sentence": "In all hippocampal layers the proportion of somatostatin expressing neurons which was positive for the hAPP transgene was at least 25% ( stratum moleculare, stratum lacunosum moleculare ) and reached around 60% in hilus of DG and stratum radiatum , respectively, and 76% in stratum oriens ( Figure 5C ).",
+      "evidence": "Double immunolabelling of hAPP transgene product with interneuron markers was quantified layer by layer; the proportion of SST neurons carrying the transgene far exceeded that of parvalbumin neurons in the same sections.",
+      "effect_size": "At least 25% of SST neurons transgene-positive in all layers, about 60% in dentate hilus; only 25% of transgene-expressing interneurons in stratum oriens were parvalbumin-immunoreactive, 5% in stratum radiatum and hilus, 2% in stratum moleculare",
+      "effect_size_source_sentence": "Quantitative analysis revealed that of all hAPP transgene-expressing interneurons in stratum oriens , 25% were parvalbumin -immunoreactive, whereas in stratum radiatum and in hilus of DG only 5% and in stratum moleculare only 2% of hAPP-positive neurons displayed parvalbumin immunoreactivity.",
+      "n": null,
+      "study_system": "hAPP transgenic mice, hippocampal interneuron subtypes",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.3389/fnins.2019.00137",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f046",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body.",
+      "supplementary_source_sentences": {
+        "figure_legend_range": "Of all somatostatin-expressing neurons, 30 to 76% expressed the hAPP transgene in all hippocampal layers (C) ."
+      },
+      "supplementary_source_note": "COORDINATOR ADDITION (pre-assembly). A re-check reviewer judged the '30 to 76%' range unsourced because THIS package carries only the running-text sentence, which gives a 25% floor. The range is verbatim in the paper's figure legend, recorded as the source sentence for the same key in the section 04 evidence package. Both sentences are from the same paper and disagree with each other on the lower bound (figure legend 30%, running text 'at least 25%'); that discrepancy is the paper's own. No value was changed: the manuscript quotes the legend range, which is attested."
+    },
+    {
+      "cite_key": "Sos2020",
+      "claim": "In an App knock-in model expressing APP at endogenous levels, somatostatin interneuron density in hippocampus was unchanged even at 24 months, directly contradicting the interneuron loss reported in APP-overexpressing transgenic lines.",
+      "claim_source_sentence": "Contrary to findings in APP overexpressing model mice with APP driven by strong non-specific promoters and loss of hippocampal SOM- [ 51 \u2013 53 ] and PV-positive INs [ 54 \u2013 56 ], we found no significant decline in the density of these INs.",
+      "evidence": "Density of SST- and PV-immunoreactive interneurons was counted in CA1 strata of aged knock-in mice versus wild-type littermates; the authors attribute the discrepancy with earlier reports to the strong non-physiological promoters used in overexpression models.",
+      "effect_size": "No significant change in SST interneuron density in CA1 stratum oriens of 24-month-old AppNL-F mice (Mann-Whitney p = 0.6625)",
+      "effect_size_source_sentence": "In addition, no significant change was detected in the density of SOM INs of APP NL-F mice compared to their WT littermates in the CA1 stratum oriens of 24-month-old APP NL-F mice ( Fig 4B , Mann-Whitney test: p = 0.6625, 300 (270\u2013350) cells/mm 3 in 3 WT mice vs.",
+      "n": 19,
+      "study_system": "AppNL-F knock-in mice vs wild-type littermates, hippocampal CA1, 24 months",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1016/j.nbd.2012.03.011",
+        "10.1016/j.neurobiolaging.2026.05.005"
+      ],
+      "doi": "10.1371/journal.pone.0233700",
+      "text_access": "fulltext",
+      "argument_role": "landmark",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f048",
+      "prominence_score": 14,
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Lee2023b",
+      "claim": "Patch-seq comparison of homologous SST and PVALB interneurons in human and mouse neocortex revealed species differences in basic morphological and electrophysiological features despite conserved transcriptomic subclass identity, so conservation of cell-type labels does not imply conservation of function.",
+      "claim_source_sentence": "Despite the apparent conservation of canonical cortical GABAergic subclasses, we uncovered previously unrecognized species differences in fundamental morphological and electrophysiological features of neocortical PVALB and SST homologous types.",
+      "evidence": "Morphoelectric properties were measured in human surgical tissue and mouse cortex and aligned to matched transcriptomic types; the authors tested whether the differences were artifacts of slice culture versus acute preparation and found they persisted in both.",
+      "effect_size": "Species differences in electrophysiological features robust across acute and culture preparations except AP width in one PVALB type",
+      "effect_size_source_sentence": "Only the species difference in AP width for Pvalb 2 was driven primarily by the culture condition, whereas all other species differences in electrophysiological features were robustly detected irrespective of acute versus culture paradigm ( fig.",
+      "n": null,
+      "study_system": "Human neurosurgical and mouse neocortex, Patch-seq of GABAergic interneurons",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1038/s41586-019-1506-7",
+        "10.1038/s42003-026-10063-9"
+      ],
+      "doi": "10.1126/science.adf6484",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f049",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Morgan2024a",
+      "claim": "Mass-spectrometry measurement of the human cortical peptidome found that SST-14 peptide levels were maintained in cognitively resilient Alzheimer brains despite amyloid burden, indicating that SST peptide loss is not an obligatory consequence of pathology.",
+      "claim_source_sentence": "However, as we show that SST-14 levels are maintained despite A\u03b2 burden in the AD-resilient vs AD-dementia brain, SST likely has roles in cognition beyond these putative interactions with A\u03b2.",
+      "evidence": "Peptidomics on human cortical tissue was integrated with single-nucleus transcriptomic annotation to assign peptides to cell classes, allowing peptide level to be compared between resilient and demented cases at matched pathology.",
+      "effect_size": "SST-14 levels maintained in AD-resilient versus AD-dementia brain despite Abeta burden (qualitative, peptidomic)",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Human postmortem cortex, peptidomics plus single-nucleus RNA-seq integration",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1101/2025.01.13.632801"
+      ],
+      "doi": "10.1038/s41598-024-57104-z",
+      "text_access": "fulltext",
+      "argument_role": "counter_evidence",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f050",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "SanchezMejias2019",
+      "claim": "Stereological counts in human perirhinal cortex stratified by Braak stage found SST interneuron loss only at advanced stages, while the published literature on parvalbumin interneurons in the same disease ranges from substantial loss to no change or increase.",
+      "claim_source_sentence": "In APP/PS1 mice, SOM neurons are strikingly sensitive and their number dramatically decrease in 6\u2010month\u2010old mice, however, the number of PV neurons stays well preserved in this model.",
+      "evidence": "Design-based stereology was applied to Braak-stratified human cases and to an APP/PS1 mouse series in the same study, allowing the human staging result to be read against the mouse time course; the authors state the field's disagreement about PV explicitly.",
+      "effect_size": "SOM and PV interneuron loss detected in perirhinal cortex of Braak V-VI cases; nitrergic cells were 11.1 +/- 2.4% and 12.2 +/- 3.9% of SOM neurons in areas 35 and 36",
+      "effect_size_source_sentence": "The numerical density (cells/mm 3 ) of SOM\u2010positive neurons in the perirhinal cortex of Braak II (n = 5), Braak III\u2013IV (n = 3) and Braak V\u2013VI (n = 5) cases was determined by stereology.",
+      "n": 13,
+      "study_system": "Human postmortem perirhinal cortex (Braak II, III-IV, V-VI) and APP/PS1 mice, stereology",
+      "replication_status": "contested",
+      "replication_evidence_dois": [
+        "10.1093/jnen/nlx054",
+        "10.1371/journal.pone.0233700"
+      ],
+      "doi": "10.1111/bpa.12785",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f054",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Morrone2022",
+      "claim": "In a rat amyloid model, GAD67 immunoreactivity declined and then partially recovered with age in some hippocampal layers, showing that inhibitory marker intensity can move non-monotonically and does not track cumulative cell loss.",
+      "claim_source_sentence": "The TgF344-AD hippocampal molecular layers similarly exhibited no overall genotype effect ( P = 0.84), with a significant loss over age ( P < 0.0001) and an age \u00d7 genotype interaction ( P = 0.0002); notably, a recovery of GAD67 immunoreactivity in 12-month-old TgF344-AD rats was observed, compared to NTg ( P = 0.001; Fig.",
+      "evidence": "GAD67, SST and PV immunoreactivity plus NeuN counts were measured across three ages in TgF344-AD and non-transgenic rats, so marker trajectories could be compared with neuronal number in the same layers.",
+      "effect_size": "Molecular layer: no overall genotype effect (P = 0.84) with significant age effect (P < 0.0001) and age x genotype interaction (P = 0.0002), including recovery of GAD67 immunoreactivity; hilar GAD67 loss genotype P < 0.0001",
+      "effect_size_source_sentence": "The TgF344-AD hippocampal molecular layers similarly exhibited no overall genotype effect ( P = 0.84), with a significant loss over age ( P < 0.0001) and an age \u00d7 genotype interaction ( P = 0.0002); notably, a recovery of GAD67 immunoreactivity in 12-month-old TgF344-AD rats was observed, compared to NTg ( P = 0.001; Fig.",
+      "n": null,
+      "study_system": "TgF344-AD rats versus non-transgenic littermates, hippocampus",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.3389/fnagi.2025.1542229"
+      ],
+      "doi": "10.1186/s40035-022-00300-6",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f056",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Chung2020",
+      "claim": "Acute application of amyloid-beta oligomers produced presynaptic dysfunction at SST-to-pyramidal and PV-to-pyramidal synapses with frequency-specific depression of inhibition, demonstrating that inhibitory circuit failure can arise without any interneuron loss.",
+      "claim_source_sentence": "Taken together, these results demonstrate for the first time that A\u03b2O causes presynaptic dysfunction at SST-to-PC and PV-to-PC synapses by increasing the initial synaptic release probabilities, which leads to a frequency-specific and cell type-specific depression in SST-evoked IPSCs and PV-evoked IPSCs.",
+      "evidence": "Paired recordings with optogenetic activation of identified SST and PV inputs onto CA1 pyramidal cells measured release probability and short-term plasticity after oligomer exposure, a timescale that excludes cell death as the mechanism.",
+      "effect_size": "Increased initial GABA release probability depressing SST- and PV-evoked IPSCs selectively at theta and gamma frequencies (qualitative)",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Mouse hippocampal slices, CA1, amyloid-beta oligomer application, optogenetic SST/PV input mapping",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/j.expneurol.2025.115"
+      ],
+      "doi": "10.1007/s00429-020-02044-3",
+      "text_access": "fulltext",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f057",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Castanho2025b",
+      "claim": "Human studies of neuronal resilience to Alzheimer's pathology rest on very small pathology-matched subgroups, with as few as six brains per category after Braak, CERAD and clinical matching, which limits replication of cell-type-specific resilience claims.",
+      "claim_source_sentence": "Brains from age- and sex-matched de-identified individuals were classified into AD (Braak V-VI, CERAD \u201cModerate\u201d or \u201cFrequent\u201d, and a clinical diagnosis of AD dementia; n = 6), Resilient (Braak V-VI, CERAD \u201cModerate\u201d, and clinical records of absence of cognitive impairment; n = 4), and Control (Braak 0-I, CERAD \u201cNone\u201d or \u201cSparse\u201d, and clinical records of absence of cognitive impairment; n = 6).",
+      "evidence": "Cases were stratified by amyloid, tangle burden and cognitive status before cell-type-resolved expression analysis; the stratification that makes the comparison interpretable is also what reduces each group to single-digit n.",
+      "effect_size": "n = 6 per pathology-matched category in the histology cohort; 20.4% of cognition-associated differentially expressed genes in the inhibitory-neuron set",
+      "effect_size_source_sentence": "Of the 54 genes significantly associated with cognitive impairment (54 genes with adj- P < 0.1; 46 genes with adj- P < 0.05, adjusted for pathology burden, Table S5 ), 20.4% (11 out of 43 DEGs with adj- P < 0.1; 4 out of 8 with adj- P < 0.05) were also differentially expressed in AD compared to resilience (Figure S2 A and Table S5 ).",
+      "n": 6,
+      "study_system": "Human postmortem cortex, pathology-matched resilient versus demented cases, cell-type-resolved expression",
+      "replication_status": "replication_unknown",
+      "replication_evidence_dois": [],
+      "doi": "10.1186/s13024-025-00892-3",
+      "text_access": "fulltext",
+      "argument_role": "counter_evidence",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f061",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "Gabriel1993",
+      "claim": "Somatostatin-like immunoreactivity was reduced across cortical regions in Alzheimer's disease while neuropeptide Y immunoreactivity was unchanged in the same regions, a dissociation between two peptides that are co-expressed in a large fraction of the same interneurons.",
+      "claim_source_sentence": "These studies suggest a dissociation between SLI deficits and NPYLI concentrations in the postmortem cerebral cortex of AD patients.",
+      "evidence": "Radioimmunoassay of both peptides was performed on the same postmortem cortical samples across ten regions, so the dissociation cannot be attributed to different case series or dissection.",
+      "effect_size": "No significant differences in NPY-like immunoreactivity in any of 10 regions despite widespread somatostatin deficits",
+      "effect_size_source_sentence": "In contrast, no significant differences in NPYLI concentrations between the two groups were observed in any of 10 regions.",
+      "n": null,
+      "study_system": "Human postmortem cerebral cortex, Alzheimer's disease versus controls, radioimmunoassay",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/0006-3223(95)00066-6"
+      ],
+      "doi": "10.1016/0304-3940(93)90686-f",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f070",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    },
+    {
+      "cite_key": "ChanPalay1987",
+      "claim": "In human hippocampus and temporal cortex somatostatin and neuropeptide Y are frequently co-expressed in the same neurons, so the two peptides index overlapping cell populations and their divergent behaviour in disease must reflect differential peptide regulation rather than differential cell survival.",
+      "claim_source_sentence": "Double labelling experiments with antisera against neuropeptide Y and somatostatin indicate a considerable frequency of coexistence of the two peptides in single neurons, particularly in large multipolar cortical neurons and also in the small bipolar white matter neurons.",
+      "evidence": "Double-labelling immunohistochemistry was performed on both surgical biopsy and postmortem human tissue using an immunogold/silver protocol, allowing the co-expression estimate to be checked against fixation-delay effects.",
+      "effect_size": "Considerable frequency of coexistence of somatostatin and neuropeptide Y in single neurons, particularly large multipolar cortical neurons (qualitative)",
+      "effect_size_source_sentence": null,
+      "n": null,
+      "study_system": "Human hippocampal formation, retrohippocampal region and temporal cortex, surgical and postmortem tissue",
+      "replication_status": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1016/0304-3940(93)90686-f"
+      ],
+      "doi": "10.1002/cne.902600205",
+      "text_access": "abstract_only",
+      "argument_role": "core",
+      "from_cluster": "cluster_10",
+      "finding_id": "cluster_10_f077",
+      "recitation_note": "Bookend re-citation: this paper is also carried in a body section with a different source sentence; the bookend may cite only papers already used in the body."
+    }
+  ],
+  "argument_groups": {
+    "arg_01": {
+      "thesis": "The answer to the question, stated conditionally - Answer each clause of the thesis question with the evidence tier attached: reproducible marker reduction (strong), early proportional depletion of SST neurons in human AD cortex (strong, cohort-based, annotation-dependent), cell-intrinsic vulnerability mechanisms (weak, largely inferred), peptide/SSTR signalling as a causal route to amyloid (contested, directly disputed), circuit consequences (strong in healthy animals, extrapolated to disease), biomarker status (not supported), therapeutic status (not demonstrated for the SST class).",
+      "supporting_findings": [],
+      "counter_findings": [],
+      "anchor_comparisons": [],
+      "synthesis": "Subsection 1 of 4. Anchored on 0 pre-extracted cross-study comparison(s); 0 findings in this package carry the anchored metrics directly. Remaining support for this subsection is drawn from arg_unanchored."
+    },
+    "arg_02": {
+      "thesis": "What the field should stop doing - Three concrete practices: reporting marker counts as cell loss; pooling heterogeneous magnitudes into a consensus effect size; and treating convergence within one research programme as replication.",
+      "supporting_findings": [],
+      "counter_findings": [],
+      "anchor_comparisons": [],
+      "synthesis": "Subsection 2 of 4. Anchored on 0 pre-extracted cross-study comparison(s); 0 findings in this package carry the anchored metrics directly. Remaining support for this subsection is drawn from arg_unanchored."
+    },
+    "arg_03": {
+      "thesis": "The experiments that would change the answer - Rank the decisive experiments and state what each would resolve, carrying the ranking from (sec-conflicts-limitations) and the therapeutic requirements from (sec-therapeutics).",
+      "supporting_findings": [],
+      "counter_findings": [],
+      "anchor_comparisons": [],
+      "synthesis": "Subsection 3 of 4. Anchored on 0 pre-extracted cross-study comparison(s); 0 findings in this package carry the anchored metrics directly. Remaining support for this subsection is drawn from arg_unanchored."
+    },
+    "arg_04": {
+      "thesis": "A realistic near-term agenda - Close on what is achievable with existing resources: marker-independent reanalysis of existing human cohorts, SST-selective manipulation in an established disease model, and a prospective fluid study designed as a diagnostic-accuracy study rather than a group comparison.",
+      "supporting_findings": [],
+      "counter_findings": [],
+      "anchor_comparisons": [],
+      "synthesis": "Subsection 4 of 4. Anchored on 0 pre-extracted cross-study comparison(s); 0 findings in this package carry the anchored metrics directly. Remaining support for this subsection is drawn from arg_unanchored."
+    },
+    "arg_conflict_cluster_10_conf_08": {
+      "thesis": "Whether the somatostatin system is lost in human Alzheimer cortex. Marker-based cell counts report preferential loss of SST-immunoreactive cells, whereas direct peptidomic measurement finds SST-14 peptide preserved in pathology-matched resilient cases. The two measurements differ in modality (immunoreactive cell counts versus peptide quantification) and in cohort stratification (diagnosis versus cognition at matched pathology).",
+      "supporting_findings": [],
+      "counter_findings": [
+        "Morgan2024a"
+      ],
+      "synthesis": "Conflict cluster_10_conf_08 (foreground; resolution_status=unresolved). This section is the home of the cross-cutting methodological conflicts; all nine are argued explicitly. Primary axis (rule-derived, provisional): measurement_modality_and_what_was_counted.",
+      "external_parties_not_in_this_package": [
+        "10.1007/s00429-014-0771-3"
+      ]
+    },
+    "arg_conflict_cluster_03_conf_03": {
+      "thesis": "Whether SST interneurons are the most vulnerable or a selectively preserved population in AD cortex. Deconvolution of bulk and single-nucleus data reports SST interneuron proportions as the cell type most reduced in AD, whereas the resilience-focused single-nucleus study describes SST+ interneurons as selectively preserved and protective. The dimension is cell-type vulnerability versus resilience, with different comparison groups (AD vs control vs cognitively resilient donors).",
+      "supporting_findings": [],
+      "counter_findings": [
+        "Castanho2025b"
+      ],
+      "synthesis": "Conflict cluster_03_conf_03 (foreground; resolution_status=open). SST interneurons reported as the most depleted cell type and as selectively preserved, from similar human data types. Primary axis (rule-derived, provisional): design_rigor_and_statistical_unit.",
+      "external_parties_not_in_this_package": [
+        "10.3389/fnmol.2022.903175"
+      ]
+    },
+    "arg_conflict_cluster_09_conf_03": {
+      "thesis": "Magnitude and translation of 40 Hz entrainment benefit. Mouse studies report ~58% reductions in soluble Abeta after a single hour of flicker, whereas clinical gamma stimulation protocols of up to four weeks show no significant global cognitive improvement. The dimension of disagreement is species and endpoint (molecular amyloid load in mouse cortex versus global cognition in patients), with delivery modality also differing (sensory flicker versus transcranial alternating current).",
+      "supporting_findings": [
+        "Iaccarino2016"
+      ],
+      "counter_findings": [],
+      "synthesis": "Conflict cluster_09_conf_03 (foreground; resolution_status=open). Magnitude and translation of the 40 Hz benefit - mouse molecular endpoints against patient cognition. Primary axis (rule-derived, provisional): species_region_and_circuit_context.",
+      "external_parties_not_in_this_package": [
+        "10.1186/s40035-024-00423-y"
+      ]
+    },
+    "arg_unanchored": {
+      "thesis": "Dysfunction of the somatostatin system is a shared feature of several neurodegenerative diseases and is probably causally involved in Alzheimer's disease; shared selective death of SST interneurons across neurodegenerative disease is not established. The distinction is not semantic - it determines whether the therapeutic target is a lost cell population to be replaced or a degraded signalling system to be restored.",
+      "supporting_findings": [
+        "Bakker2012",
+        "Bauer2022a",
+        "Castanho2025a",
+        "ChanPalay1987",
+        "Chung2020",
+        "Drake2024",
+        "FloresCuadrado2016",
+        "Gabriel1993",
+        "Hofling2019",
+        "Lee2023b",
+        "Martorell2019",
+        "Morrone2022",
+        "Paulson2025",
+        "Raven2025",
+        "Rofo2021",
+        "Saito2005",
+        "Sanchez2012",
+        "SanchezMejias2019",
+        "Sandoval2013",
+        "Sandoval2019",
+        "Sen2024",
+        "Sos2020",
+        "Verret2012",
+        "Voelkl2022",
+        "Yokomizo2025a"
+      ],
+      "counter_findings": [],
+      "synthesis": "25 of 28 papers in this package are not tied to a named figure comparison or a recorded conflict. They are the synthesis density of the section: group them into convergent paragraphs of 5-8 citations each, giving landmark papers (argument_role=landmark) detailed treatment and the rest integrated as converging evidence. Do not cover them sequentially."
+    }
+  },
+  "conflicts": [
+    {
+      "conflict_id": "cluster_10_conf_08",
+      "paper_a_doi": "10.1007/s00429-014-0771-3",
+      "paper_b_doi": "10.1038/s41598-024-57104-z",
+      "paper_a_claim": "Results indicated preferential vulnerability of somatostatin- (p = 0.0001 < \u03b1 = 0.05) and calretinin-positive (p = 0.013 < \u03b1 = 0.05) cells that colocalized with amyloid-\u03b2 peptide, while the prevalence of parvalbumin-positive cells was increased (p = 0.045 < \u03b1 = 0.05) in the Alzheimer's cases.",
+      "paper_b_claim": "However, as we show that SST-14 levels are maintained despite A\u03b2 burden in the AD-resilient vs AD-dementia brain, SST likely has roles in cognition beyond these putative interactions with A\u03b2.",
+      "nature_of_conflict": "Whether the somatostatin system is lost in human Alzheimer cortex. Marker-based cell counts report preferential loss of SST-immunoreactive cells, whereas direct peptidomic measurement finds SST-14 peptide preserved in pathology-matched resilient cases. The two measurements differ in modality (immunoreactive cell counts versus peptide quantification) and in cohort stratification (diagnosis versus cognition at matched pathology).",
+      "resolution_status": "unresolved",
+      "paper_a_cite_key": "SaizSanchez2014",
+      "paper_b_cite_key": "Morgan2024a",
+      "from_cluster": "cluster_10",
+      "primary_section": "section_11",
+      "treatment_mode": "foreground",
+      "assignment_role": "revisited_in_conclusion",
+      "why_here": "Marker-based counts against direct peptidomic measurement in resilient cases - the conflict that most directly gates the thesis answer.",
+      "primary_axis_of_disagreement": "measurement_modality_and_what_was_counted",
+      "axes_present": [
+        "measurement_modality_and_what_was_counted",
+        "cohort_composition_stage_and_comorbidity",
+        "species_region_and_circuit_context"
+      ],
+      "axis_labels_are_provisional": true,
+      "atlas_figure": "fig:sec11-conflict-atlas"
+    },
+    {
+      "conflict_id": "cluster_03_conf_03",
+      "paper_a_doi": "10.3389/fnmol.2022.903175",
+      "paper_b_doi": "10.1186/s13024-025-00892-3",
+      "paper_a_claim": "The strongest AD-associated cell type in mega-analysis was the somatostatin (SST) interneuron (\u03b2 = \u22120.48, p bonf = 8.98 \u00d7 10 \u20139 ); in each individual dataset, SST rCTPs were lower in AD cases relative to controls ( Figure 1B ), though the differences were not significant in all regions.",
+      "paper_b_claim": "At the circuit level, SST+ interneurons (RBFOX1+, KIF26B+) are selectively preserved and promote A\u03b2 degradation via SST release, and, together with resilient MEF2C+/RELN+ and ATP8B1+ excitatory neurons, maintain excitatory-inhibitory balance.",
+      "nature_of_conflict": "Whether SST interneurons are the most vulnerable or a selectively preserved population in AD cortex. Deconvolution of bulk and single-nucleus data reports SST interneuron proportions as the cell type most reduced in AD, whereas the resilience-focused single-nucleus study describes SST+ interneurons as selectively preserved and protective. The dimension is cell-type vulnerability versus resilience, with different comparison groups (AD vs control vs cognitively resilient donors).",
+      "resolution_status": "open",
+      "paper_a_cite_key": "Consens2022b",
+      "paper_b_cite_key": "Castanho2025b",
+      "from_cluster": "cluster_03",
+      "primary_section": "section_04",
+      "treatment_mode": "foreground",
+      "assignment_role": "revisited_in_conclusion",
+      "why_here": "Vulnerability versus resilience of SST interneurons in AD cortex; the comparator group determines the conclusion.",
+      "primary_axis_of_disagreement": "design_rigor_and_statistical_unit",
+      "axes_present": [
+        "design_rigor_and_statistical_unit",
+        "species_region_and_circuit_context"
+      ],
+      "axis_labels_are_provisional": true,
+      "atlas_figure": "fig:sec11-conflict-atlas"
+    },
+    {
+      "conflict_id": "cluster_09_conf_03",
+      "paper_a_doi": "10.1038/nature20587",
+      "paper_b_doi": "10.1186/s40035-024-00423-y",
+      "paper_a_claim": "One hour after 1 hr of 40 Hz flicker, we observed that A \u03b2 1-40 levels in VC were reduced by 57.96% and A \u03b2 1-42 levels by 57.97% compared to dark controls (as measured by A \u03b2 ELISA, ).",
+      "paper_b_claim": "This is also in accordance with the first study mentioned above [] in which a maximum of 4 weeks of gamma tACS did not show significant improvements in global cognition.",
+      "nature_of_conflict": "Magnitude and translation of 40 Hz entrainment benefit. Mouse studies report ~58% reductions in soluble Abeta after a single hour of flicker, whereas clinical gamma stimulation protocols of up to four weeks show no significant global cognitive improvement. The dimension of disagreement is species and endpoint (molecular amyloid load in mouse cortex versus global cognition in patients), with delivery modality also differing (sensory flicker versus transcranial alternating current).",
+      "resolution_status": "open",
+      "paper_a_cite_key": "Iaccarino2016",
+      "paper_b_cite_key": "DePaolis2024",
+      "from_cluster": "cluster_09",
+      "primary_section": "section_10",
+      "treatment_mode": "foreground",
+      "assignment_role": "revisited_in_conclusion",
+      "why_here": "The translation gap between mouse molecular endpoints and patient cognition for the most publicised interneuron-targeted therapy.",
+      "primary_axis_of_disagreement": "species_region_and_circuit_context",
+      "axes_present": [
+        "species_region_and_circuit_context"
+      ],
+      "axis_labels_are_provisional": true,
+      "atlas_figure": "fig:sec11-conflict-atlas"
+    }
+  ],
+  "figure_data": [
+    {
+      "comparison_id": "gamma-stimulation-human-cognitive-outcomes",
+      "comparison_name": "Cognitive outcome magnitudes across human gamma-frequency (40 Hz) stimulation studies",
+      "papers": [
+        {
+          "doi": "10.1038/s41398-025-03788-4",
+          "metric": "standardized mean difference in cognitive function vs control",
+          "value": "0.16",
+          "value_source_sentence": "The results showed no significant difference in cognitive function between patients treated with 40 Hz light stimulation and the control group ( SMD = 0.16, 95% CI [-0.36 to 0.68], P = 0.55).",
+          "ci_or_error": "95% CI -0.36 to 0.68",
+          "n": 415,
+          "n_analyzed": "broad category (clinical diagnosis)",
+          "n_definition": null,
+          "study_system": "participants pooled across randomized trials",
+          "experimental_conditions": "AD and MCI patients",
+          "method": "weeks of 40 Hz light stimulation vs sham/no stimulation",
+          "text_access": "fulltext",
+          "scope_region": "random-effects meta-analysis of randomized trials",
+          "scope_population": "whole brain (systemic sensory stimulation)",
+          "taxonomic_level": "all AD/MCI trial participants"
+        },
+        {
+          "doi": "10.1016/j.eclinm.2025.103730",
+          "metric": "difference in composite cognitive z-score change at Day 56 (active - sham)",
+          "value": "0.059",
+          "value_source_sentence": "In this group, active itPBM improved significantly more than sham (LS mean + 0.082 vs + 0.023; difference 0.059, 95% CI 0.007\u20130.111; p = 0.028), corresponding to a moderate effect size (Cohen's d \u2248 0.44).",
+          "ci_or_error": "95% CI 0.007-0.111; Cohen's d ~0.44",
+          "n": null,
+          "n_analyzed": "broad category (clinical syndrome)",
+          "n_definition": null,
+          "study_system": "participants analyzed in the responder-enriched group",
+          "experimental_conditions": "adults with post-COVID-19 cognitive impairment",
+          "method": "8 weeks of 40 Hz-pulsed transcranial + intranasal photobiomodulation vs sham",
+          "text_access": "fulltext",
+          "scope_region": "randomized double-blind sham-controlled trial, Creyos cognitive battery",
+          "scope_population": "whole brain (transcranial/intranasal light to default-mode network targets)",
+          "taxonomic_level": "trial participants with post-illness cognitive impairment"
+        },
+        {
+          "doi": "10.2147/ndt.s585770",
+          "metric": "MMSE change after 12 weeks",
+          "value": "+2.60 points",
+          "value_source_sentence": "After 12 weeks of pulsed near-infrared treatment, MMSE scores improved by a mean of 2.60 points (17.4 to 20.0; p < 0.003), while ADAS-Cog scores improved by a mean of 6.74 points in a favorable direction (35.47 to 28.73; p < 0.023).",
+          "ci_or_error": "p < 0.003 (pre-post, no control arm)",
+          "n": 20,
+          "n_analyzed": "broad category (clinical diagnosis)",
+          "n_definition": null,
+          "study_system": "participants targeted by power calculation",
+          "experimental_conditions": "patients with dementia",
+          "method": "12 weeks of 40 Hz-pulsed transcranial/intranasal near-infrared stimulation, open-label single arm",
+          "text_access": "fulltext",
+          "scope_region": "open-label single-arm trial, MMSE and ADAS-Cog",
+          "scope_population": "whole brain (transcranial/intranasal near-infrared)",
+          "taxonomic_level": "dementia patients in a single-arm trial"
+        },
+        {
+          "doi": "10.1162/imag.a.1229",
+          "metric": "group difference in psychomotor vigilance accuracy (Kruskal-Wallis statistic)",
+          "value": "chi2(2) = 7.98",
+          "value_source_sentence": "Subjects in the 40 Hz group had a significantly higher accuracy than those in the Light and Random groups during the PVT ( , left; Kruskal-Wallis test: \u03c7\u00b2(2) = 7.98, p = 0.018; post-hoc ranksum test: 40 vs.",
+          "ci_or_error": "p = 0.018; post-hoc 40 Hz vs Random p = 0.00056",
+          "n": null,
+          "n_analyzed": "broad category (healthy volunteers)",
+          "n_definition": null,
+          "study_system": "healthy subjects retained after entrainment screening",
+          "experimental_conditions": "healthy human adults",
+          "method": "single session of 40 Hz audiovisual flicker vs constant light vs random flicker",
+          "text_access": "fulltext",
+          "scope_region": "EEG with concurrent psychomotor vigilance task",
+          "scope_population": "whole brain (audiovisual sensory entrainment)",
+          "taxonomic_level": "healthy adults"
+        }
+      ],
+      "comparison_type": "cross-study conflict",
+      "what_it_reveals": "The cognitive effect attributed to 40 Hz stimulation shrinks to a null when randomized patient trials are pooled, while positive effects are reported in a sham-controlled trial of a different population, an uncontrolled single-arm dementia trial, and an acute healthy-subject experiment \u2014 so apparent efficacy tracks design rigor and population rather than converging on a stable effect.",
+      "suggested_plot_type": "forest plot",
+      "homogeneity_check": {
+        "scope_region_uniform": "true",
+        "scope_population_uniform": "false",
+        "taxonomic_level_uniform": "true",
+        "n_definition_uniform": "false",
+        "caveats": [
+          "Outcome metrics are not commensurable: pooled SMD, composite z-score difference, MMSE point change and a Kruskal-Wallis statistic.",
+          "Populations differ: AD/MCI patients, post-COVID cognitive impairment, dementia patients and healthy adults.",
+          "Exposure differs from a single session (healthy adults) to 8-12 weeks (trials).",
+          "Only two entries are sham-controlled; the MMSE entry has no control arm, inflating apparent benefit.",
+          "Sample sizes are reported for two of four entries only."
+        ]
+      },
+      "_cluster": "cluster_09",
+      "metric": "standardized mean difference in cognitive function vs control",
+      "metrics_present": [
+        "MMSE change after 12 weeks",
+        "difference in composite cognitive z-score change at Day 56 (active - sham)",
+        "group difference in psychomotor vigilance accuracy (Kruskal-Wallis statistic)",
+        "standardized mean difference in cognitive function vs control"
+      ],
+      "audit_verdict": "heterogeneous - display heterogeneity, pooled summary forbidden",
+      "n_papers": 4
+    },
+    {
+      "comparison_id": "antiseizure-strategy-outcomes-in-dementia",
+      "comparison_name": "Outcomes of antiseizure strategies against network hyperexcitability in Alzheimer's disease",
+      "papers": [
+        {
+          "doi": "10.1001/jamaneurol.2021.3310",
+          "metric": "change in NIH-EXAMINER executive composite versus placebo",
+          "value": "0.07 points",
+          "value_source_sentence": "Overall, treatment with levetiracetam did not change NIH-EXAMINER composite scores (mean difference vs placebo, 0.07 points; 95% CI, -0.18 to 0.32 points; P = .55) or secondary measures.",
+          "ci_or_error": "95% CI -0.18 to 0.32; P = .55",
+          "n": null,
+          "n_analyzed": "broad category (clinical diagnosis)",
+          "n_definition": null,
+          "study_system": "participants completing the crossover trial",
+          "experimental_conditions": "adults with Alzheimer's disease",
+          "method": "levetiracetam versus placebo in a double-blind crossover design",
+          "text_access": "abstract_only",
+          "scope_region": "randomized crossover trial, NIH-EXAMINER composite",
+          "scope_population": "whole brain (systemic drug)",
+          "taxonomic_level": "all enrolled AD participants"
+        },
+        {
+          "doi": "10.3389/fnagi.2026.1786247",
+          "metric": "proportion achieving seizure freedom on antiseizure medication",
+          "value": "72.7%",
+          "value_source_sentence": "Treatment was highly effective, achieving seizure freedom in 16 patients (72.7%) and reducing seizure frequency \u2265 50% in 21 patients (95.4%), with no residual focal-to-bilateral tonic\u2013clonic events.",
+          "ci_or_error": "16 of 22 patients",
+          "n": 22,
+          "n_analyzed": "broad category (clinical diagnosis)",
+          "n_definition": null,
+          "study_system": "patients in the epileptic prodromal-AD group",
+          "experimental_conditions": "patients with prodromal Alzheimer's disease and epilepsy",
+          "method": "routine clinical antiseizure medication, longitudinal follow-up",
+          "text_access": "fulltext",
+          "scope_region": "retrospective matched-cohort clinical outcome analysis",
+          "scope_population": "whole brain (systemic drug), focal epilepsy of temporal origin",
+          "taxonomic_level": "prodromal AD patients with epilepsy only"
+        },
+        {
+          "doi": "10.64898/2026.05.20.26353714",
+          "metric": "hazard ratio for incident all-cause dementia with sodium channel blockers",
+          "value": "0.73",
+          "value_source_sentence": "Using data from over 75 million adults aged 55 years or older, we found that sodium channel blockers were associated with a 27% lower hazard of incident all-cause dementia (hazard ratio = 0.73, 95% confidence interval 0.61- 0.88) and 34% lower hazard of Alzheimer's disease (hazard ratio = 0.66, 0.49 -0.88), compared with levetiracetam/brivaracetam.",
+          "ci_or_error": "27% lower hazard; 95% CI reported in source",
+          "n": 75000000,
+          "n_analyzed": "broad category (population cohort)",
+          "n_definition": null,
+          "study_system": "adults aged 55+ in the claims/EHR database",
+          "experimental_conditions": "adults aged 55 years or older",
+          "method": "sodium-channel-blocking antiseizure medications versus comparator agents",
+          "text_access": "abstract_only",
+          "scope_region": "retrospective observational cohort with hazard modelling (preprint)",
+          "scope_population": "whole body/brain (systemic drug exposure)",
+          "taxonomic_level": "all database adults aged 55+"
+        },
+        {
+          "doi": "10.1007/s40263-021-00827-8",
+          "metric": "median seizure-frequency reduction above placebo achieved by antiseizure medications",
+          "value": "20-30%",
+          "value_source_sentence": "Most ASMs achieve 20\u201330% median seizure frequency reduction over and above placebo effect and a 30\u201350% responder rate [ , \u2013 ].",
+          "ci_or_error": "30-50% responder rate",
+          "n": null,
+          "n_analyzed": "broad category (clinical diagnosis)",
+          "n_definition": null,
+          "study_system": "patients pooled across regulatory trials",
+          "experimental_conditions": "patients with epilepsy in regulatory trials",
+          "method": "standard add-on antiseizure medication trials",
+          "text_access": "fulltext",
+          "scope_region": "review of pooled regulatory trial outcomes",
+          "scope_population": "whole brain (systemic drug)",
+          "taxonomic_level": "all trial participants with epilepsy"
+        }
+      ],
+      "comparison_type": "cross-study conflict",
+      "what_it_reveals": "Antiseizure drugs reliably control the seizures and epileptiform activity of Alzheimer's disease but do not translate that control into cognitive gain in randomized testing, while the only large effect on dementia incidence comes from observational data on a different drug class \u2014 the gap between symptom control and disease modification is the open question for excitability-lowering therapy.",
+      "suggested_plot_type": "forest plot",
+      "homogeneity_check": {
+        "scope_region_uniform": "true",
+        "scope_population_uniform": "false",
+        "taxonomic_level_uniform": "true",
+        "n_definition_uniform": "false",
+        "caveats": [
+          "Endpoints are not commensurable: cognitive composite change, seizure freedom proportion, dementia hazard ratio and seizure-frequency reduction.",
+          "Drug classes differ (SV2A ligand, mixed clinical regimens, sodium channel blockers, pooled agents).",
+          "Designs span randomized crossover, retrospective clinical cohort, large observational cohort and regulatory-trial review.",
+          "Sample sizes differ by six orders of magnitude (22 patients to 75 million adults).",
+          "One entry is a preprint and has not completed peer review."
+        ]
+      },
+      "_cluster": "cluster_09",
+      "metric": "change in NIH-EXAMINER executive composite versus placebo",
+      "metrics_present": [
+        "change in NIH-EXAMINER executive composite versus placebo",
+        "hazard ratio for incident all-cause dementia with sodium channel blockers",
+        "median seizure-frequency reduction above placebo achieved by antiseizure medications",
+        "proportion achieving seizure freedom on antiseizure medication"
+      ],
+      "audit_verdict": "heterogeneous - display heterogeneity, pooled summary forbidden",
+      "n_papers": 4
+    },
+    {
+      "comparison_id": "human-40hz-structural-mri-outcomes",
+      "comparison_name": "Structural MRI change under 40 Hz audiovisual stimulation versus sham in Alzheimer's disease",
+      "papers": [
+        {
+          "doi": "10.3233/jad-230506",
+          "metric": "white matter volume change over 6 months (active vs sham)",
+          "value": "active +0.17% vs sham -2.54%",
+          "value_source_sentence": "Compared to baseline MRI values, we observed that the active treatment group demonstrated a 0.17\u00b11.08% (1.06\u00b15.35 cm 3 ) increase and the sham group demonstrated a \u20132.54\u00b11.38% (\u201312.37\u00b16.81 cm 3 ) decrease in total cerebral white matter volume after a 6-month period, representing a statistically significant difference ( p < 0.038) ().",
+          "ci_or_error": "+/-1.08% (active), +/-1.38% (sham), SD/SE as reported",
+          "n": null,
+          "n_analyzed": "not separately reported in the source sentence",
+          "n_definition": "trial participants with paired MRI",
+          "study_system": "human mild-to-moderate Alzheimer's disease",
+          "experimental_conditions": "1 h/day 40 Hz combined audiovisual stimulation vs sham device, 6 months",
+          "method": "longitudinal volumetric MRI",
+          "text_access": "fulltext",
+          "scope_region": "whole-brain white matter",
+          "scope_population": "all enrolled patients completing MRI",
+          "taxonomic_level": "broad category (tissue class)"
+        },
+        {
+          "doi": "10.3389/fneur.2024.1452930",
+          "metric": "corpus callosum area change over 6 months (active vs sham)",
+          "value": "active +0.20% vs sham -2.08%",
+          "value_source_sentence": "After 6 months of treatment, the active group exhibited a corpus callosum area change of 0.20 \u00b1 0.70%, whereas the sham group showed a change of \u22122.08 \u00b1 0.87%.",
+          "ci_or_error": "+/-0.70% (active), +/-0.87% (sham)",
+          "n": null,
+          "n_analyzed": "participants completing baseline and >=1 follow-up MRI",
+          "n_definition": "trial participants with paired MRI",
+          "study_system": "human mild-to-moderate Alzheimer's disease",
+          "experimental_conditions": "1 h/day 40 Hz combined audiovisual stimulation vs sham device, 6 months",
+          "method": "longitudinal structural MRI, mixed model adjusted for baseline MMSE, age, intracranial volume",
+          "text_access": "fulltext",
+          "scope_region": "corpus callosum (subregion)",
+          "scope_population": "all enrolled patients completing MRI",
+          "taxonomic_level": "subcategory (named white-matter commissure)"
+        }
+      ],
+      "comparison_type": "convergent evidence",
+      "what_it_reveals": "Two independent structural endpoints from 40 Hz sensory stimulation trials show the same pattern: essentially no change in the active arm against roughly 2-2.5% atrophy in sham over six months. The convergence is on direction and magnitude, but both reports share a senior author, so this is within-programme rather than independent replication.",
+      "suggested_plot_type": "grouped bar",
+      "homogeneity_check": {
+        "scope_region_uniform": "false",
+        "scope_population_uniform": "true",
+        "taxonomic_level_uniform": "false",
+        "n_definition_uniform": "true",
+        "caveats": [
+          "One entry measures whole-brain white matter volume, the other a single commissural structure (corpus callosum area), so the measurements are nested rather than equivalent.",
+          "Both reports derive from the same trial programme and share a senior author; they are not independent replications.",
+          "Neither source sentence states the per-arm n, so group sizes are not comparable from the extracted text.",
+          "Error terms are reported without specifying SD versus SEM in the extracted sentences."
+        ]
+      },
+      "_cluster": "cluster_09",
+      "metric": "white matter volume change over 6 months (active vs sham)",
+      "metrics_present": [
+        "corpus callosum area change over 6 months (active vs sham)",
+        "white matter volume change over 6 months (active vs sham)"
+      ],
+      "audit_verdict": "heterogeneous - display heterogeneity, pooled summary forbidden",
+      "n_papers": 2
+    }
+  ],
+  "figures": [
+    {
+      "label": "fig:sec12-evidence-confidence-by-claim",
+      "section": "section_12",
+      "section_label": "sec-conclusion",
+      "type": "data summary",
+      "is_cross_study_comparison_type_B": false,
+      "argument_supported": "Closes the review with an explicit confidence audit: which claims are carried by independently replicated evidence, which by single studies, and which are contested.",
+      "data_sources": [],
+      "non_figure_data_source": {
+        "derived_from": "replication_status and text_access fields across all 844 findings, grouped by the claim families defined in this scaffold."
+      },
+      "what_it_reveals_that_text_cannot": "A claim-by-evidence-tier grid states the review's epistemic position in one view, so the conditional answer to the thesis question cannot be read as either an endorsement or a dismissal.",
+      "heterogeneous_dimensions_to_display": [],
+      "plot_plan": "Grid: rows = the seven claim families the review answers (marker reduction; human cell-number depletion; cell-intrinsic vulnerability; peptide/SSTR causal route to amyloid; circuit consequences; biomarker status; therapeutic status); columns = evidence tier (independently replicated, within-lab only, single study, contested) with cell shading by the count of supporting findings in each tier and a side column giving the full-text share of the underlying literature. Direction of the claim encoded by the document direction palette.",
+      "caption_draft": "Confidence audit of the review\u2019s principal claims. Shading gives the number of supporting findings in each replication tier as recorded during evidence gathering, and the side column gives the share of that literature read in full text. The two strongest claims - reproducible marker reduction and early depletion of somatostatin-annotated neurons in Alzheimer cortex - rest on different evidence types, while the biomarker and therapeutic claims rest on literatures with the lowest replication and, for the cerebrospinal fluid studies, the lowest full-text coverage."
+    },
+    {
+      "label": "fig:sec12-intervention-effect-versus-design-rigor",
+      "section": "section_12",
+      "section_label": "sec-conclusion",
+      "type": "cross-study comparison",
+      "is_cross_study_comparison_type_B": true,
+      "argument_supported": "Delivers the review's closing methodological claim: across human interventions aimed at this system, reported effect magnitude is predicted by design rigor rather than by mechanism.",
+      "data_sources": [
+        {
+          "comparison_id": "gamma-stimulation-human-cognitive-outcomes",
+          "from_cluster": "cluster_09",
+          "comparison_type": "cross-study conflict",
+          "n_papers": 4,
+          "suggested_plot_type": "forest plot",
+          "homogeneity_check": {
+            "scope_region_uniform": "true",
+            "scope_population_uniform": "false",
+            "taxonomic_level_uniform": "true",
+            "n_definition_uniform": "false"
+          },
+          "caveats_to_reproduce_in_caption": [
+            "Outcome metrics are not commensurable: pooled SMD, composite z-score difference, MMSE point change and a Kruskal-Wallis statistic.",
+            "Populations differ: AD/MCI patients, post-COVID cognitive impairment, dementia patients and healthy adults.",
+            "Exposure differs from a single session (healthy adults) to 8-12 weeks (trials).",
+            "Only two entries are sham-controlled; the MMSE entry has no control arm, inflating apparent benefit.",
+            "Sample sizes are reported for two of four entries only."
+          ],
+          "what_it_reveals_from_evidence": "The cognitive effect attributed to 40 Hz stimulation shrinks to a null when randomized patient trials are pooled, while positive effects are reported in a sham-controlled trial of a different population, an uncontrolled single-arm dementia trial, and an acute healthy-subject experiment \u2014 so apparent efficacy tracks design rigor and population rather than converging on a stable effect."
+        },
+        {
+          "comparison_id": "antiseizure-strategy-outcomes-in-dementia",
+          "from_cluster": "cluster_09",
+          "comparison_type": "cross-study conflict",
+          "n_papers": 4,
+          "suggested_plot_type": "forest plot",
+          "homogeneity_check": {
+            "scope_region_uniform": "true",
+            "scope_population_uniform": "false",
+            "taxonomic_level_uniform": "true",
+            "n_definition_uniform": "false"
+          },
+          "caveats_to_reproduce_in_caption": [
+            "Endpoints are not commensurable: cognitive composite change, seizure freedom proportion, dementia hazard ratio and seizure-frequency reduction.",
+            "Drug classes differ (SV2A ligand, mixed clinical regimens, sodium channel blockers, pooled agents).",
+            "Designs span randomized crossover, retrospective clinical cohort, large observational cohort and regulatory-trial review.",
+            "Sample sizes differ by six orders of magnitude (22 patients to 75 million adults).",
+            "One entry is a preprint and has not completed peer review."
+          ],
+          "what_it_reveals_from_evidence": "Antiseizure drugs reliably control the seizures and epileptiform activity of Alzheimer's disease but do not translate that control into cognitive gain in randomized testing, while the only large effect on dementia incidence comes from observational data on a different drug class \u2014 the gap between symptom control and disease modification is the open question for excitability-lowering therapy."
+        },
+        {
+          "comparison_id": "human-40hz-structural-mri-outcomes",
+          "from_cluster": "cluster_09",
+          "comparison_type": "convergent evidence",
+          "n_papers": 2,
+          "suggested_plot_type": "grouped bar",
+          "homogeneity_check": {
+            "scope_region_uniform": "false",
+            "scope_population_uniform": "true",
+            "taxonomic_level_uniform": "false",
+            "n_definition_uniform": "true"
+          },
+          "caveats_to_reproduce_in_caption": [
+            "One entry measures whole-brain white matter volume, the other a single commissural structure (corpus callosum area), so the measurements are nested rather than equivalent.",
+            "Both reports derive from the same trial programme and share a senior author; they are not independent replications.",
+            "Neither source sentence states the per-arm n, so group sizes are not comparable from the extracted text.",
+            "Error terms are reported without specifying SD versus SEM in the extracted sentences."
+          ],
+          "what_it_reveals_from_evidence": "Two independent structural endpoints from 40 Hz sensory stimulation trials show the same pattern: essentially no change in the active arm against roughly 2-2.5% atrophy in sham over six months. The convergence is on direction and magnitude, but both reports share a senior author, so this is within-programme rather than independent replication."
+        }
+      ],
+      "non_figure_data_source": {
+        "note": "Deliberate re-encoding of three comparisons also used in section 10. The section 10 panels plot endpoints within intervention class; this figure plots direction of effect against design rigor across classes. Figure construction must not reproduce the section 10 layout."
+      },
+      "what_it_reveals_that_text_cannot": "Re-encoding all human interventional endpoints on a single design-rigor ordinate - a view none of the section-level figures provides - shows the monotone relationship between rigor and reported benefit across intervention classes, not just within one.",
+      "heterogeneous_dimensions_to_display": [
+        "n_definition_uniform",
+        "scope_population_uniform",
+        "scope_region_uniform",
+        "taxonomic_level_uniform"
+      ],
+      "plot_plan": "Single panel, deliberately different in encoding from the section 10 figures: horizontal ordinate = design rigor tier (uncontrolled single-arm; within-programme non-independent; observational cohort; randomized sham-controlled), vertical = reported direction and relative magnitude expressed as a signed categorical effect (benefit, no separation, harm/none) rather than as a pooled number, with intervention class encoded by marker shape and endpoint printed per point. Explicitly no numerical pooling and no regression line.",
+      "caption_draft": "Reported benefit of human interventions directed at network excitability and interneuron function, arranged by design rigor. Points are categorical directions of effect, not pooled magnitudes, because the underlying endpoints (cognitive composites, seizure control, dementia hazard, structural MRI) are not commensurable; intervention classes and exposure durations differ, two reports share a senior author and one is a preprint. The arrangement shows that reported benefit declines as design rigor increases."
+    }
+  ],
+  "subsections": [
+    {
+      "title": "The answer to the question, stated conditionally",
+      "job": "Answer each clause of the thesis question with the evidence tier attached: reproducible marker reduction (strong), early proportional depletion of SST neurons in human AD cortex (strong, cohort-based, annotation-dependent), cell-intrinsic vulnerability mechanisms (weak, largely inferred), peptide/SSTR signalling as a causal route to amyloid (contested, directly disputed), circuit consequences (strong in healthy animals, extrapolated to disease), biomarker status (not supported), therapeutic status (not demonstrated for the SST class)."
+    },
+    {
+      "title": "What the field should stop doing",
+      "job": "Three concrete practices: reporting marker counts as cell loss; pooling heterogeneous magnitudes into a consensus effect size; and treating convergence within one research programme as replication."
+    },
+    {
+      "title": "The experiments that would change the answer",
+      "job": "Rank the decisive experiments and state what each would resolve, carrying the ranking from (sec-conflicts-limitations) and the therapeutic requirements from (sec-therapeutics)."
+    },
+    {
+      "title": "A realistic near-term agenda",
+      "job": "Close on what is achievable with existing resources: marker-independent reanalysis of existing human cohorts, SST-selective manipulation in an established disease model, and a prospective fluid study designed as a diagnostic-accuracy study rather than a group comparison."
+    }
+  ],
+  "cross_references": [
+    {
+      "target": "section_03",
+      "label": "sec-selective-vulnerability",
+      "what": "the class-level vulnerability claim and the conditions under which it would hold"
+    },
+    {
+      "target": "section_04",
+      "label": "sec-alzheimers",
+      "what": "the reproducible deficit and the contested neprilysin mechanism"
+    },
+    {
+      "target": "section_08",
+      "label": "sec-circuit-consequences",
+      "what": "the dendritic-inhibition account that makes peptide loss consequential without cell death"
+    },
+    {
+      "target": "section_09",
+      "label": "sec-human-evidence",
+      "what": "the strongest human claim and the failed biomarker"
+    },
+    {
+      "target": "section_10",
+      "label": "sec-therapeutics",
+      "what": "the three requirements for a testable SST-targeted therapy"
+    },
+    {
+      "target": "section_11",
+      "label": "sec-conflicts-limitations",
+      "what": "the ranked open questions carried into the agenda"
+    }
+  ],
+  "opening_constraint": "(sec-conflicts-limitations) classified the disagreements and ranked the open questions; the conclusion converts that ranking into an answer and an agenda.",
+  "closing_constraint": "Document close (no following section). End on the conditional answer recorded in the scaffold's act_3 resolution: The thesis question is answered conditionally: SST interneuron dysfunction is a shared and probably causally contributing feature of AD and of circuit-level dysfunction in several other conditions, but \"shared selective loss of the SST cell class across neurodegenerative disease\" is not established, and the decisive experiments - marker-independent human counting, SST-selective manipulation inside a disease model, a prospective CSF somatostatin study with discrimination statistics - have not been done. Set priorities for future work; introduce no citation that is not already used in a body section.",
+  "evidence_gaps_to_state": [],
+  "unreplicated_claims_to_flag": [],
+  "framing_limits": [
+    "May cite only papers already cited in body sections.",
+    "Must not introduce a claim stronger than the body sections support, and must restate the coverage limits once in plain terms."
+  ],
+  "certified_evidence_limits": {
+    "source_gate": "gate_evidence_compliance.json (Phase 2V certified)",
+    "search_coverage": "Europe PMC-dominant retrieval. Endpoints actually used: Europe PMC REST search (resultType=core) and fullTextXML, NCBI E-utilities efetch (db=pmc), CrossRef. No other database contributed a comparable share, so coverage claims must be scoped to these sources.",
+    "snowball_rounds": 0,
+    "citation_chasing": "None. No backward or forward citation chasing was performed. No section may claim completeness of coverage; write 'no study examining X was retrieved by these searches', never 'no study has examined X'.",
+    "per_cluster_fulltext_share": {
+      "cluster_01": "54/79",
+      "cluster_02": "26/80",
+      "cluster_03": "61/112",
+      "cluster_04": "25/80",
+      "cluster_05": "40/80",
+      "cluster_06": "53/84",
+      "cluster_07": "77/77",
+      "cluster_08": "22/87",
+      "cluster_09": "58/86",
+      "cluster_10": "45/79"
+    },
+    "per_cluster_fulltext_rate": {
+      "cluster_01": 0.6835,
+      "cluster_02": 0.325,
+      "cluster_03": 0.5446,
+      "cluster_04": 0.3125,
+      "cluster_05": 0.5,
+      "cluster_06": 0.631,
+      "cluster_07": 1.0,
+      "cluster_08": 0.2529,
+      "cluster_09": 0.6744,
+      "cluster_10": 0.5696
+    },
+    "fulltext_share_range": "77/77 (cluster_07, circuits) down to 22/87 (cluster_08, human evidence)",
+    "fulltext_shortfall_concentration": "The shortfall is concentrated in pre-2000 closed-access postmortem and CSF literature (radioimmunoassay series), which is recorded at abstract level only. Sections whose argument rests on that literature must state the asymmetry in the section body, not only in Methods.",
+    "disconfirming_sweeps": "Disconfirming-evidence sweeps were capped per query. Negative-result and conflict coverage is a top-relevance sample, not a census. Report null results as 'reported null results include ...'; never as 'no contradicting evidence exists'. No rate of contradiction may be reported as complete.",
+    "conflict_axis_labels_provisional": "Axes were assigned by a documented rule applied to the recorded nature_of_conflict text. Five candidate axes (measurement modality and what was counted; species, region and circuit context; model construct and species transfer; cohort composition, stage and comorbidity; design rigor and statistical unit) were keyword-scored, with the region/species axis down-weighted (0.55) because regional context is named in almost every conflict record, and design rigor up-weighted (1.3) because it is named rarely and only when it is the point. Each conflict carries a primary axis and the full set of axes present, since most of these disagreements are genuinely multi-axis. These tags are a planning classification derived from the conflict text, not a measurement; the writing phase should correct any tag that misreads a conflict, and the atlas figure must state that conflicts can appear in more than one axis row.",
+    "conflict_inventory_caveat": "This inventory is the set of disagreements recorded during a search whose disconfirming-evidence sweeps were capped per query. It is a top-relevance sample of the disagreement in this literature, not a census, and no rate of contradiction may be reported as complete.",
+    "scaffold_evidence_limits": [
+      {
+        "limit": "Europe PMC-dominant retrieval with no citation chasing (snowball_rounds = 0)",
+        "consequence_for_scaffold": "No section may claim completeness of coverage. The Methods section states the database scope and the absence of backward/forward citation chasing explicitly. Claims of the form \"no study has examined X\" are written as \"no study examining X was retrieved by these searches\", and every such statement in a body section is sourced to a recorded evidence gap rather than asserted."
+      },
+      {
+        "limit": "Full-text share varies from 77/77 (circuits, cluster_07) to 22/87 (human evidence, cluster_08) because the older postmortem and CSF literature is closed-access",
+        "consequence_for_scaffold": "Section 9 is the section whose underlying literature is least directly verified. Its thesis is written so that the central synthesis rests on the modern open-access single-nucleus cohorts, with the 1980s radioimmunoassay series treated as a historically important but abstract-level record; the asymmetry is stated in the section itself, not buried in Methods. Section 5 (25/80 full text) carries the same caveat for its historical CSF series."
+      },
+      {
+        "limit": "Disconfirming-evidence sweeps were capped per query, so negative-result coverage is a top-relevance sample rather than an exhaustive search",
+        "consequence_for_scaffold": "Null results are reported as \"reported null results include ...\" and never as \"no contradicting evidence exists\". Section 11 states that the conflict inventory is a sample of the disagreement in this literature, not a census, and that the true rate of unreplicated or contradicted claims is bounded below by what is recorded here."
+      },
+      {
+        "limit": "cluster_09's replication ceiling (therapeutics) is met by a single enabling label; 60 of 86 findings are replication_unknown",
+        "consequence_for_scaffold": "Section 10 is framed as an assessment of translational status, not of efficacy. No therapeutic claim in that section may be described as replicated unless the specific replicating DOI is named, and the section foregrounds that much of the SSTR4 evidence base comes from one closely related research programme."
+      },
+      {
+        "limit": "Figure comparisons are heterogeneous: no figure_data entry is uniform on all four homogeneity_check fields",
+        "consequence_for_scaffold": "Every figure specification states the heterogeneity it must display rather than smooth, and the document-level figure rules forbid pooled summaries outright."
+      },
+      {
+        "limit": "Several prominent mechanistic claims are flagged as false-consensus risks in the evidence record (metabolic load as the cause of SST vulnerability; SST/GABA co-transmission; absolute sparing of striatal interneurons in HD)",
+        "consequence_for_scaffold": "Each is introduced in prose as a widely repeated claim whose primary demonstration was not retrieved, in sections 3, 2 and 6 respectively, and each is listed in the section 11 open-questions inventory."
+      }
+    ],
+    "this_sections_fulltext_share": {
+      "cluster_09": "58/86",
+      "cluster_10": "45/79"
+    }
+  },
+  "citation_key_map": {
+    "10.1002/advs.202511472": "Yokomizo2025a",
+    "10.1002/cne.902600205": "ChanPalay1987",
+    "10.1002/epi4.13070": "Sen2024",
+    "10.1002/mds.26586": "FloresCuadrado2016",
+    "10.1007/s00429-020-02044-3": "Chung2020",
+    "10.1007/s11064-019-02890-6": "Sandoval2019",
+    "10.1016/0304-3940(93)90686-f": "Gabriel1993",
+    "10.1016/j.brainres.2013.05.006": "Sandoval2013",
+    "10.1016/j.cell.2012.02.046": "Verret2012",
+    "10.1016/j.cell.2019.02.014": "Martorell2019",
+    "10.1016/j.neuron.2012.03.023": "Bakker2012",
+    "10.1038/nature20587": "Iaccarino2016",
+    "10.1038/nm1206": "Saito2005",
+    "10.1038/s41598-024-57104-z": "Morgan2024a",
+    "10.1073/pnas.1121081109": "Sanchez2012",
+    "10.1073/pnas.2419364122": "Paulson2025",
+    "10.1093/sleep/zsaf064": "Raven2025",
+    "10.1101/2025.01.13.632801": "Castanho2025a",
+    "10.1111/bpa.12785": "SanchezMejias2019",
+    "10.1126/science.adf6484": "Lee2023b",
+    "10.1186/s13024-025-00892-3": "Castanho2025b",
+    "10.1186/s40035-022-00300-6": "Morrone2022",
+    "10.1371/journal.pone.0233700": "Sos2020",
+    "10.21203/rs.3.rs-1458940/v1": "Bauer2022a",
+    "10.3389/fncel.2024.1474613": "Drake2024",
+    "10.3389/fnins.2019.00137": "Hofling2019",
+    "10.3389/fnins.2022.1022251": "Voelkl2022",
+    "10.7150/thno.50263": "Rofo2021"
+  },
+  "author_name_table": {
+    "Bakker2012": {
+      "cite_key": "Bakker2012",
+      "doi": "10.1016/j.neuron.2012.03.023",
+      "first_author": "Bakker",
+      "display": "Bakker et al.",
+      "et_al": true,
+      "n_authors": 10,
+      "year": 2012,
+      "all_authors": [
+        "Bakker, Arnold",
+        "Krauss, Gregory L.",
+        "Albert, Marilyn S.",
+        "Speck, Caroline L.",
+        "Jones, Lauren R.",
+        "Stark, Craig E.",
+        "Yassa, Michael A.",
+        "Bassett, Susan S.",
+        "Shelton, Amy L.",
+        "Gallagher, Michela"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Bauer2022a": {
+      "cite_key": "Bauer2022a",
+      "doi": "10.21203/rs.3.rs-1458940/v1",
+      "first_author": "Bauer",
+      "display": "Bauer et al.",
+      "et_al": true,
+      "n_authors": 6,
+      "year": 2022,
+      "all_authors": [
+        "Bauer, Susanne",
+        "Dittrich, Lars",
+        "Kaczmarczyk, Lech",
+        "Schleif, Melvin",
+        "Benfeitas, Rui",
+        "Jackson, Walker S."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Castanho2025a": {
+      "cite_key": "Castanho2025a",
+      "doi": "10.1101/2025.01.13.632801",
+      "first_author": "Castanho",
+      "display": "Castanho et al.",
+      "et_al": true,
+      "n_authors": 20,
+      "year": 2025,
+      "all_authors": [
+        "Castanho, Isabel",
+        "Yeganeh, Pourya Naderi",
+        "Boix, Carles A.",
+        "Morgan, Sarah L.",
+        "Mathys, Hansruedi",
+        "Prokopenko, Dmitry",
+        "White, Bartholomew",
+        "Soto, Larisa M.",
+        "Pegoraro, Giulia",
+        "Shah, Saloni",
+        "Ploumakis, Athanasios",
+        "Kalavros, Nikolas",
+        "Bennett, David A.",
+        "Lange, Christoph",
+        "Kim, Doo Yeon",
+        "Bertram, Lars",
+        "Tsai, Li-Huei",
+        "Kellis, Manolis",
+        "Tanzi, Rudolph E.",
+        "Hide, Winston"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Castanho2025b": {
+      "cite_key": "Castanho2025b",
+      "doi": "10.1186/s13024-025-00892-3",
+      "first_author": "Castanho",
+      "display": "Castanho et al.",
+      "et_al": true,
+      "n_authors": 20,
+      "year": 2025,
+      "all_authors": [
+        "Castanho, Isabel",
+        "Naderi Yeganeh, Pourya",
+        "Boix, Carles A.",
+        "Morgan, Sarah L.",
+        "Mathys, Hansruedi",
+        "Prokopenko, Dmitry",
+        "White, Bartholomew",
+        "Soto, Larisa M.",
+        "Pegoraro, Giulia",
+        "Shah, Saloni",
+        "Ploumakis, Athanasios",
+        "Kalavros, Nikolas",
+        "Bennett, David A.",
+        "Lange, Christoph",
+        "Kim, Doo Yeon",
+        "Bertram, Lars",
+        "Tsai, Li-Huei",
+        "Kellis, Manolis",
+        "Tanzi, Rudolph E.",
+        "Hide, Winston"
+      ],
+      "metadata_source": "crossref"
+    },
+    "ChanPalay1987": {
+      "cite_key": "ChanPalay1987",
+      "doi": "10.1002/cne.902600205",
+      "first_author": "ChanPalay",
+      "display": "ChanPalay",
+      "et_al": false,
+      "n_authors": 1,
+      "year": 1987,
+      "all_authors": [
+        "ChanPalay, V."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Chung2020": {
+      "cite_key": "Chung2020",
+      "doi": "10.1007/s00429-020-02044-3",
+      "first_author": "Chung",
+      "display": "Chung et al.",
+      "et_al": true,
+      "n_authors": 5,
+      "year": 2020,
+      "all_authors": [
+        "Chung, Hyowon",
+        "Park, Kyerl",
+        "Jang, Hyun Jae",
+        "Kohl, Michael M.",
+        "Kwag, Jeehyun"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Drake2024": {
+      "cite_key": "Drake2024",
+      "doi": "10.3389/fncel.2024.1474613",
+      "first_author": "Drake",
+      "display": "Drake et al.",
+      "et_al": true,
+      "n_authors": 5,
+      "year": 2024,
+      "all_authors": [
+        "Drake, Austin W.",
+        "Jerow, Lilian G.",
+        "Ruksenas, Justin V.",
+        "McCoy, Carlie",
+        "Danzer, Steve C."
+      ],
+      "metadata_source": "crossref"
+    },
+    "FloresCuadrado2016": {
+      "cite_key": "FloresCuadrado2016",
+      "doi": "10.1002/mds.26586",
+      "first_author": "FloresCuadrado",
+      "display": "FloresCuadrado et al.",
+      "et_al": true,
+      "n_authors": 5,
+      "year": 2016,
+      "all_authors": [
+        "FloresCuadrado, Alicia",
+        "UbedaBanon, Isabel",
+        "SaizSanchez, Daniel",
+        "de la RosaPrieto, Carlos",
+        "MartinezMarcos, Alino"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Gabriel1993": {
+      "cite_key": "Gabriel1993",
+      "doi": "10.1016/0304-3940(93)90686-f",
+      "first_author": "Gabriel",
+      "display": "Gabriel et al.",
+      "et_al": true,
+      "n_authors": 6,
+      "year": 1993,
+      "all_authors": [
+        "Gabriel, Steven M.",
+        "Bierer, Linda M.",
+        "Harotunian, Vahram",
+        "Purohit, Dushyant P.",
+        "Perl, Daniel P.",
+        "Davis, Kenneth L."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Hofling2019": {
+      "cite_key": "Hofling2019",
+      "doi": "10.3389/fnins.2019.00137",
+      "first_author": "Hofling",
+      "display": "Hofling et al.",
+      "et_al": true,
+      "n_authors": 6,
+      "year": 2019,
+      "all_authors": [
+        "Hofling, Corinna",
+        "Shehabi, Emira",
+        "Kuhn, Peer-Hendrik",
+        "Lichtenthaler, Stefan F.",
+        "Hartlage-Rubsamen, Maike",
+        "Roner, Steffen"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Iaccarino2016": {
+      "cite_key": "Iaccarino2016",
+      "doi": "10.1038/nature20587",
+      "first_author": "Iaccarino",
+      "display": "Iaccarino et al.",
+      "et_al": true,
+      "n_authors": 16,
+      "year": 2016,
+      "all_authors": [
+        "Iaccarino, Hunter F.",
+        "Singer, Annabelle C.",
+        "Martorell, Anthony J.",
+        "Rudenko, Andrii",
+        "Gao, Fan",
+        "Gillingham, Tyler Z.",
+        "Mathys, Hansruedi",
+        "Seo, Jinsoo",
+        "Kritskiy, Oleg",
+        "Abdurrob, Fatema",
+        "Adaikkan, Chinnakkaruppan",
+        "Canter, Rebecca G.",
+        "Rueda, Richard",
+        "Brown, Emery N.",
+        "Boyden, Edward S.",
+        "Tsai, Li-Huei"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Lee2023b": {
+      "cite_key": "Lee2023b",
+      "doi": "10.1126/science.adf6484",
+      "first_author": "Lee",
+      "display": "Lee et al.",
+      "et_al": true,
+      "n_authors": 101,
+      "year": 2023,
+      "all_authors": [
+        "Lee, Brian R.",
+        "Dalley, Rachel",
+        "Miller, Jeremy A.",
+        "Chartrand, Thomas",
+        "Close, Jennie",
+        "Mann, Rusty",
+        "Mukora, Alice",
+        "Ng, Lindsay",
+        "Alfiler, Lauren",
+        "Baker, Katherine",
+        "Bertagnolli, Darren",
+        "Brouner, Krissy",
+        "Casper, Tamara",
+        "Csajbok, Eva",
+        "Donadio, Nicholas",
+        "Driessens, Stan L.W.",
+        "Egdorf, Tom",
+        "Enstrom, Rachel",
+        "Galakhova, Anna A.",
+        "Gary, Amanda",
+        "Gelfand, Emily",
+        "Goldy, Jeff",
+        "Hadley, Kristen",
+        "Heistek, Tim S.",
+        "Hill, Dijon",
+        "Hou, Wen-Hsien",
+        "Johansen, Nelson",
+        "Jorstad, Nik",
+        "Kim, Lisa",
+        "Kocsis, Agnes Katalin",
+        "Kruse, Lauren",
+        "Kunst, Michael",
+        "Leon, Gabriela",
+        "Long, Brian",
+        "Mallory, Matthew",
+        "Maxwell, Michelle",
+        "McGraw, Medea",
+        "McMillen, Delissa",
+        "Melief, Erica J.",
+        "Molnar, Gabor",
+        "Mortrud, Marty T.",
+        "Newman, Dakota",
+        "Nyhus, Julie",
+        "Opitz-Araya, Ximena",
+        "Ozsvar, Attila",
+        "Pham, Trangthanh",
+        "Pom, Alice",
+        "Potekhina, Lydia",
+        "Rajanbabu, Ram",
+        "Ruiz, Augustin",
+        "Sunkin, Susan M.",
+        "Szots, Ildiko",
+        "Taskin, Naz",
+        "Thyagarajan, Bargavi",
+        "Tieu, Michael",
+        "Trinh, Jessica",
+        "Vargas, Sara",
+        "Vumbaco, David",
+        "Waleboer, Femke",
+        "Walling-Bell, Sarah",
+        "Weed, Natalie",
+        "Williams, Grace",
+        "Wilson, Julia",
+        "Yao, Shenqin",
+        "Zhou, Thomas",
+        "Barzo, Pal",
+        "Bakken, Trygve",
+        "Cobbs, Charles",
+        "Dee, Nick",
+        "Ellenbogen, Richard G.",
+        "Esposito, Luke",
+        "Ferreira, Manuel",
+        "Gouwens, Nathan W.",
+        "Grannan, Benjamin",
+        "Gwinn, Ryder P.",
+        "Hauptman, Jason S.",
+        "Hodge, Rebecca",
+        "Jarsky, Tim",
+        "Keene, C. Dirk",
+        "Ko, Andrew L.",
+        "Korshoej, Anders Rosendal",
+        "Levi, Boaz P.",
+        "Meier, Kaare",
+        "Ojemann, Jeffrey G.",
+        "Patel, Anoop",
+        "Ruzevick, Jacob",
+        "Silbergeld, Daniel L.",
+        "Smith, Kimberly",
+        "Srensen, Jens Christian",
+        "Waters, Jack",
+        "Zeng, Hongkui",
+        "Berg, Jim",
+        "Capogna, Marco",
+        "Goriounova, Natalia A.",
+        "Kalmbach, Brian",
+        "de Kock, Christiaan P.J.",
+        "Mansvelder, Huib D.",
+        "Sorensen, Staci A.",
+        "Tamas, Gabor",
+        "Lein, Ed S.",
+        "Ting, Jonathan T."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Martorell2019": {
+      "cite_key": "Martorell2019",
+      "doi": "10.1016/j.cell.2019.02.014",
+      "first_author": "Martorell",
+      "display": "Martorell et al.",
+      "et_al": true,
+      "n_authors": 17,
+      "year": 2019,
+      "all_authors": [
+        "Martorell, Anthony J.",
+        "Paulson, Abigail L.",
+        "Suk, Ho-Jun",
+        "Abdurrob, Fatema",
+        "Drummond, Gabrielle T.",
+        "Guan, Webster",
+        "Young, Jennie Z.",
+        "Kim, David Nam-Woo",
+        "Kritskiy, Oleg",
+        "Barker, Scarlett J.",
+        "Mangena, Vamsi",
+        "Prince, Stephanie M.",
+        "Brown, Emery N.",
+        "Chung, Kwanghun",
+        "Boyden, Edward S.",
+        "Singer, Annabelle C.",
+        "Tsai, Li-Huei"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Morgan2024a": {
+      "cite_key": "Morgan2024a",
+      "doi": "10.1038/s41598-024-57104-z",
+      "first_author": "Morgan",
+      "display": "Morgan and Carlyle",
+      "et_al": false,
+      "n_authors": 2,
+      "year": 2024,
+      "all_authors": [
+        "Morgan, G. R.",
+        "Carlyle, B. C."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Morrone2022": {
+      "cite_key": "Morrone2022",
+      "doi": "10.1186/s40035-022-00300-6",
+      "first_author": "Morrone",
+      "display": "Morrone et al.",
+      "et_al": true,
+      "n_authors": 5,
+      "year": 2022,
+      "all_authors": [
+        "Morrone, Christopher Daniel",
+        "Lai, Aaron Yenhsin",
+        "Bishay, Jossana",
+        "Hill, Mary Elizabeth",
+        "McLaurin, JoAnne"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Paulson2025": {
+      "cite_key": "Paulson2025",
+      "doi": "10.1073/pnas.2419364122",
+      "first_author": "Paulson",
+      "display": "Paulson et al.",
+      "et_al": true,
+      "n_authors": 4,
+      "year": 2025,
+      "all_authors": [
+        "Paulson, Abigail L.",
+        "Zhang, Lu",
+        "Prichard, Ashley M.",
+        "Singer, Annabelle C."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Raven2025": {
+      "cite_key": "Raven2025",
+      "doi": "10.1093/sleep/zsaf064",
+      "first_author": "Raven",
+      "display": "Raven et al.",
+      "et_al": true,
+      "n_authors": 7,
+      "year": 2025,
+      "all_authors": [
+        "Raven, Frank",
+        "Vega Medina, Alexis",
+        "Schmidt, Kailynn",
+        "He, Annie",
+        "Vankampen, Anna A",
+        "Balendran, Vinodh",
+        "Aton, Sara J"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Rofo2021": {
+      "cite_key": "Rofo2021",
+      "doi": "10.7150/thno.50263",
+      "first_author": "Rofo",
+      "display": "Rofo et al.",
+      "et_al": true,
+      "n_authors": 10,
+      "year": 2021,
+      "all_authors": [
+        "Rofo, Fadi",
+        "Ugur Yilmaz, Canan",
+        "Metzendorf, Nicole",
+        "Gustavsson, Tobias",
+        "Beretta, Chiara",
+        "Erlandsson, Anna",
+        "Sehlin, Dag",
+        "Syvanen, Stina",
+        "Nilsson, Per",
+        "Hultqvist, Greta"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Saito2005": {
+      "cite_key": "Saito2005",
+      "doi": "10.1038/nm1206",
+      "first_author": "Saito",
+      "display": "Saito et al.",
+      "et_al": true,
+      "n_authors": 9,
+      "year": 2005,
+      "all_authors": [
+        "Saito, Takashi",
+        "Iwata, Nobuhisa",
+        "Tsubuki, Satoshi",
+        "Takaki, Yoshie",
+        "Takano, Jiro",
+        "Huang, Shu-Ming",
+        "Suemoto, Takahiro",
+        "Higuchi, Makoto",
+        "Saido, Takaomi C"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Sanchez2012": {
+      "cite_key": "Sanchez2012",
+      "doi": "10.1073/pnas.1121081109",
+      "first_author": "Sanchez",
+      "display": "Sanchez et al.",
+      "et_al": true,
+      "n_authors": 11,
+      "year": 2012,
+      "all_authors": [
+        "Sanchez, Pascal E.",
+        "Zhu, Lei",
+        "Verret, Laure",
+        "Vossel, Keith A.",
+        "Orr, Anna G.",
+        "Cirrito, John R.",
+        "Devidze, Nino",
+        "Ho, Kaitlyn",
+        "Yu, Gui-Qiu",
+        "Palop, Jorge J.",
+        "Mucke, Lennart"
+      ],
+      "metadata_source": "crossref"
+    },
+    "SanchezMejias2019": {
+      "cite_key": "SanchezMejias2019",
+      "doi": "10.1111/bpa.12785",
+      "first_author": "SanchezMejias",
+      "display": "SanchezMejias et al.",
+      "et_al": true,
+      "n_authors": 13,
+      "year": 2020,
+      "all_authors": [
+        "SanchezMejias, Elisabeth",
+        "NunezDiaz, Cristina",
+        "SanchezVaro, Raquel",
+        "GomezArboledas, Angela",
+        "GarciaLeon, Juan Antonio",
+        "FernandezValenzuela, Juan Jose",
+        "MejiasOrtega, Marina",
+        "TrujilloEstrada, Laura",
+        "BagliettoVargas, David",
+        "MorenoGonzalez, Ines",
+        "Davila, Jose Carlos",
+        "Vitorica, Javier",
+        "Gutierrez, Antonia"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Sandoval2013": {
+      "cite_key": "Sandoval2013",
+      "doi": "10.1016/j.brainres.2013.05.006",
+      "first_author": "Sandoval",
+      "display": "Sandoval et al.",
+      "et_al": true,
+      "n_authors": 6,
+      "year": 2013,
+      "all_authors": [
+        "Sandoval, Karin E.",
+        "Farr, Susan A.",
+        "Banks, William A.",
+        "Crider, Albert M.",
+        "Morley, John E.",
+        "Witt, Ken A."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Sandoval2019": {
+      "cite_key": "Sandoval2019",
+      "doi": "10.1007/s11064-019-02890-6",
+      "first_author": "Sandoval",
+      "display": "Sandoval et al.",
+      "et_al": true,
+      "n_authors": 5,
+      "year": 2019,
+      "all_authors": [
+        "Sandoval, Karin",
+        "Umbaugh, David",
+        "House, Austin",
+        "Crider, Albert",
+        "Witt, Ken"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Sen2024": {
+      "cite_key": "Sen2024",
+      "doi": "10.1002/epi4.13070",
+      "first_author": "Sen",
+      "display": "Sen et al.",
+      "et_al": true,
+      "n_authors": 22,
+      "year": 2024,
+      "all_authors": [
+        "Sen, Arjune",
+        "Toniolo, Sofia",
+        "Tai, Xin You",
+        "Akinola, Mary",
+        "Symmonds, Mkael",
+        "Mura, Sergio",
+        "Galloway, Joanne",
+        "Hallam, Angela",
+        "Chan, Jane Y. C.",
+        "Koychev, Ivan",
+        "Butler, Chris",
+        "Geddes, John",
+        "Jones, Gabriel Davis",
+        "Tabi, Younes",
+        "Maio, Raquel",
+        "Frangou, Eleni",
+        "Love, Sharon",
+        "Thompson, Sian",
+        "Van Der Putt, Rohan",
+        "Manohar, Sanjay G.",
+        "McShane, Rupert",
+        "Husain, Masud"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Sos2020": {
+      "cite_key": "Sos2020",
+      "doi": "10.1371/journal.pone.0233700",
+      "first_author": "Sos",
+      "display": "Sos et al.",
+      "et_al": true,
+      "n_authors": 12,
+      "year": 2020,
+      "all_authors": [
+        "Sos, Katalin E.",
+        "Mayer, Marton I.",
+        "Takacs, Virag T.",
+        "Major, Abel",
+        "Bardoczi, Zsuzsanna",
+        "Beres, Barnabas M.",
+        "Szeles, Tamas",
+        "Saito, Takashi",
+        "Saido, Takaomi C.",
+        "Mody, Istvan",
+        "Freund, Tamas F.",
+        "Nyiri, Gabor"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Verret2012": {
+      "cite_key": "Verret2012",
+      "doi": "10.1016/j.cell.2012.02.046",
+      "first_author": "Verret",
+      "display": "Verret et al.",
+      "et_al": true,
+      "n_authors": 12,
+      "year": 2012,
+      "all_authors": [
+        "Verret, Laure",
+        "Mann, Edward O.",
+        "Hang, Giao B.",
+        "Barth, Albert M.I.",
+        "Cobos, Inma",
+        "Ho, Kaitlyn",
+        "Devidze, Nino",
+        "Masliah, Eliezer",
+        "Kreitzer, Anatol C.",
+        "Mody, Istvan",
+        "Mucke, Lennart",
+        "Palop, Jorge J."
+      ],
+      "metadata_source": "crossref"
+    },
+    "Voelkl2022": {
+      "cite_key": "Voelkl2022",
+      "doi": "10.3389/fnins.2022.1022251",
+      "first_author": "Voelkl",
+      "display": "Voelkl et al.",
+      "et_al": true,
+      "n_authors": 4,
+      "year": 2022,
+      "all_authors": [
+        "Voelkl, Kerstin",
+        "Schulz-Trieglaff, Elena Katharina",
+        "Klein, Rudiger",
+        "Dudanova, Irina"
+      ],
+      "metadata_source": "crossref"
+    },
+    "Yokomizo2025a": {
+      "cite_key": "Yokomizo2025a",
+      "doi": "10.1002/advs.202511472",
+      "first_author": "Yokomizo",
+      "display": "Yokomizo et al.",
+      "et_al": true,
+      "n_authors": 17,
+      "year": 2026,
+      "all_authors": [
+        "Yokomizo, Shinya",
+        "Maci, Megi",
+        "Stafford, April M.",
+        "Miller, Morgan R.",
+        "Perle, Stephen J.",
+        "Inagaki, Shuzo",
+        "Takahashi, Shusaku",
+        "BrownHarding, Heather",
+        "Liang, Linda",
+        "Lovely, Alex",
+        "Algamal, Moustafa",
+        "Gillani, Rebecca L.",
+        "Zwang, Theodore J.",
+        "Richardson, Douglas",
+        "Naegele, Janice R.",
+        "Vogt, Daniel",
+        "Kastanenka, Ksenia V."
+      ],
+      "metadata_source": "crossref"
+    }
+  },
+  "suggested_paragraph_groupings": [
+    {
+      "paragraph": "P1",
+      "topic": "The answer to the question, stated conditionally",
+      "argument_group": "arg_01",
+      "anchored_papers": [],
+      "what_binds_them": "Answer each clause of the thesis question with the evidence tier attached: reproducible marker reduction (strong), early proportional depletion of SST neurons in human AD cortex (strong, cohort-based, annotation-dependent), cell-intrinsic vulnerability mechanisms (weak, largely inferred), peptide/SSTR signalling as a causal route to amyloid (contested, directly disputed), circuit consequences (strong in healthy animals, extrapolated to disease), biomarker status (not supported), therapeutic status (not demonstrated for the SST class).",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": []
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P2",
+      "topic": "What the field should stop doing",
+      "argument_group": "arg_02",
+      "anchored_papers": [],
+      "what_binds_them": "Three concrete practices: reporting marker counts as cell loss; pooling heterogeneous magnitudes into a consensus effect size; and treating convergence within one research programme as replication.",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": []
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P3",
+      "topic": "The experiments that would change the answer",
+      "argument_group": "arg_03",
+      "anchored_papers": [],
+      "what_binds_them": "Rank the decisive experiments and state what each would resolve, carrying the ranking from (sec-conflicts-limitations) and the therapeutic requirements from (sec-therapeutics).",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": []
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P4",
+      "topic": "A realistic near-term agenda",
+      "argument_group": "arg_04",
+      "anchored_papers": [],
+      "what_binds_them": "Close on what is achievable with existing resources: marker-independent reanalysis of existing human cohorts, SST-selective manipulation in an established disease model, and a prospective fluid study designed as a diagnostic-accuracy study rather than a group comparison.",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": []
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P5",
+      "topic": "Conflict: cluster_10_conf_08",
+      "argument_group": "arg_conflict_cluster_10_conf_08",
+      "anchored_papers": [
+        "SaizSanchez2014",
+        "Morgan2024a"
+      ],
+      "what_explains_the_discrepancy": "Whether the somatostatin system is lost in human Alzheimer cortex. Marker-based cell counts report preferential loss of SST-immunoreactive cells, whereas direct peptidomic measurement finds SST-14 peptide preserved in pathology-matched resilient cases. The two measurements differ in modality (immunoreactive cell counts versus peptide quantification) and in cohort stratification (diagnosis versus cognition at matched pathology).",
+      "axis_rule_derived_provisional": "measurement_modality_and_what_was_counted",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": [
+          "SaizSanchez2014",
+          "Morgan2024a"
+        ]
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P6",
+      "topic": "Conflict: cluster_03_conf_03",
+      "argument_group": "arg_conflict_cluster_03_conf_03",
+      "anchored_papers": [
+        "Consens2022b",
+        "Castanho2025b"
+      ],
+      "what_explains_the_discrepancy": "Whether SST interneurons are the most vulnerable or a selectively preserved population in AD cortex. Deconvolution of bulk and single-nucleus data reports SST interneuron proportions as the cell type most reduced in AD, whereas the resilience-focused single-nucleus study describes SST+ interneurons as selectively preserved and protective. The dimension is cell-type vulnerability versus resilience, with different comparison groups (AD vs control vs cognitively resilient donors).",
+      "axis_rule_derived_provisional": "design_rigor_and_statistical_unit",
+      "treatment_tier": {
+        "landmark": [],
+        "core_or_confirmatory": [
+          "Consens2022b",
+          "Castanho2025b"
+        ]
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P7",
+      "topic": "Conflict: cluster_09_conf_03",
+      "argument_group": "arg_conflict_cluster_09_conf_03",
+      "anchored_papers": [
+        "Iaccarino2016",
+        "DePaolis2024"
+      ],
+      "what_explains_the_discrepancy": "Magnitude and translation of 40 Hz entrainment benefit. Mouse studies report ~58% reductions in soluble Abeta after a single hour of flicker, whereas clinical gamma stimulation protocols of up to four weeks show no significant global cognitive improvement. The dimension of disagreement is species and endpoint (molecular amyloid load in mouse cortex versus global cognition in patients), with delivery modality also differing (sensory flicker versus transcranial alternating current).",
+      "axis_rule_derived_provisional": "species_region_and_circuit_context",
+      "treatment_tier": {
+        "landmark": [
+          "Iaccarino2016"
+        ],
+        "core_or_confirmatory": [
+          "DePaolis2024"
+        ]
+      },
+      "target_citations_per_paragraph": "5-8"
+    },
+    {
+      "paragraph": "P8+",
+      "topic": "Synthesis density (unanchored evidence)",
+      "argument_group": "arg_unanchored",
+      "n_papers": 25,
+      "what_binds_them": "Not tied to a named figure comparison or a recorded conflict; group into convergent paragraphs of 5-8 citations each rather than covering sequentially.",
+      "target_citations_per_paragraph": "5-8"
+    }
+  ],
+  "curation_notes": {
+    "phase": 5,
+    "actor": "DATAML",
+    "assignment_rule": "Deterministic cluster->section mapping from gate_scope.json cluster_to_section_assignment, applied to unique (doi, claim_source_sentence) evidence units.",
+    "bookend_rule": "Sections 01 and 12 are bookends written at Phase 11 and may cite only papers already used in body sections. Each bookend finding is a Phase 2 finding whose DOI also carries a different finding, with a different claim_source_sentence, in a body section - so the paper is already in the body and the two sections quote different sentences.",
+    "duplicate_policy": "35 of 844 Phase 2 findings were byte-identical (same DOI and same claim_source_sentence) records of the same observation in two or more clusters. They were merged into the surviving finding object (also_recorded_in_clusters / duplicate_finding_ids_merged) and logged in unassigned_findings.json; none were deleted.",
+    "assigned_findings_total_all_sections": 809,
+    "phase2_findings_total": 844,
+    "unique_papers_assigned": 726,
+    "unique_papers_phase2": 726,
+    "conflict_axis_caveat": "AXIS labels on conflicts are rule-derived and provisional (scaffold conflict_coverage.axis_assignment_method). Correct any tag that misreads a conflict.",
+    "citation_discipline": "Papers in this package come only from Phase 2 outputs. Do not introduce new citations; cite_keys are from the certified citation_key_map and author names only from author_name_table."
+  },
+  "corrections": [
+    {
+      "cite_key": "Hofling2019",
+      "field": "supplementary_source_sentences",
+      "reason": "re-check provenance query; range traced to the section 04 package's source sentence for the same DOI"
+    },
+    {
+      "phase": "18 (fix execution)",
+      "field": "author_name_table.year",
+      "cite_keys": [
+        "SanchezMejias2019",
+        "Yokomizo2025a"
+      ],
+      "changes": [
+        {
+          "cite_key": "SanchezMejias2019",
+          "before": 2019,
+          "after": 2020
+        },
+        {
+          "cite_key": "Yokomizo2025a",
+          "before": 2025,
+          "after": 2026
+        }
+      ],
+      "reason": "Phase 18 metadata sync: author_name_table `year` updated to the version-of-record year now carried in content/references.bib after the Phase 17 bibliography corrections (CrossRef published-print / Europe PMC yearOfPublication). Cite keys are unchanged, so references.bib <-> author_name_table row parity is unaffected. No claim, source-sentence, effect-size, n or study_system field was touched."
+    }
+  ]
+}

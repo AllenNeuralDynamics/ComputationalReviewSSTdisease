@@ -1,0 +1,57 @@
+{
+  "phase": "20a",
+  "role": "DATAML",
+  "generated_at": "2026-10-18T00:41:57.437031+00:00",
+  "frame_count": 172,
+  "agent_counts": {
+    "OPERON": 172
+  },
+  "status_counts": {
+    "completed": 155,
+    "processing": 2,
+    "cancelled": 8,
+    "failed": 7
+  },
+  "elapsed_hours": 43.44,
+  "forbidden_hits": 0,
+  "figure_regenerated": true,
+  "figure_md5_changed": true,
+  "figure_md5": {
+    "before": "546fea23b8c680ca83c59028bd797e20",
+    "after": "6bc04ce732bb7ef3ef3d98768c8b1de8"
+  },
+  "m6_table_rows": 22,
+  "m6_rows_with_pending": 0,
+  "m6_range_rows": 0,
+  "m5_placeholder_replaced": true,
+  "site_build": {
+    "tool": "mystmd 1.11.0",
+    "pages": 16,
+    "could_not_link_citation": 0,
+    "missing_images": 0,
+    "unknown_directives": 0,
+    "cross_reference_not_found": 0,
+    "authorship_widget_authors_bound": 2
+  },
+  "forbidden_lexicon": {
+    "methods_prose_hits": 2,
+    "scoped_exclusions": [
+      {
+        "term": "scaffold",
+        "location": "content/Methods.md Pipeline Skills table",
+        "justification": "literal title of the shipped file skills/comprev-scaffold.md (\"Scaffold Construction Protocol\"); the table is auto-generated from skills/*.md and renaming the title would misreport the repository contents"
+      },
+      {
+        "term": "orchestrator",
+        "location": "content/Methods.md Pipeline Skills table",
+        "justification": "literal title of the shipped file skills/comprev-orchestrator-v29.md (\"Expert Review Orchestrator v29\"); same auto-generation argument"
+      },
+      {
+        "term": "orchestrator",
+        "location": "content/Methods.md Review Request fenced block",
+        "justification": "inside the byte-for-byte reproduction of the captured user prompt (SHA256 recorded in the same paragraph); altering it would break the hash and the verbatim-capture guarantee"
+      }
+    ]
+  },
+  "notes": "Phase 21 (deploy polish) is recorded as a post-deployment gate, not as complete: it runs against the served site after this commit. All other 21 ledger entries are complete."
+}

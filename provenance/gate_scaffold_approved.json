@@ -1,0 +1,60 @@
+{
+  "phase": 4,
+  "gate": "pass",
+  "approved_by": "coordinator inspection (per orchestrator: scaffold quality is subjective)",
+  "scaffold_vid": "37bd8405-4d7f-4068-93eb-802b6a612d4d",
+  "actor_frame_id": "0efec469-21d2-4019-a28b-5715fc83aedf",
+  "checks": {
+    "figures_per_section_min2": {
+      "pass": true,
+      "min": 2,
+      "total": 37,
+      "per_section": {
+        "section_01": 2,
+        "section_02": 3,
+        "section_03": 3,
+        "section_04": 4,
+        "section_05": 3,
+        "section_06": 3,
+        "section_07": 3,
+        "section_08": 3,
+        "section_09": 3,
+        "section_10": 4,
+        "section_11": 4,
+        "section_12": 2
+      }
+    },
+    "cross_references_present": {
+      "pass": true,
+      "total": 75,
+      "bidirectional_pairs": 29
+    },
+    "conflicts_represented": {
+      "pass": true,
+      "represented": 90,
+      "recorded": 90,
+      "coordinator_recount": "independently recounted 90 from the 10 certified evidence artifacts; the coordinator's earlier figure of 92 was wrong and is corrected here",
+      "foreground": 52,
+      "integrated": 38
+    },
+    "figure_data_assigned": {
+      "pass": true,
+      "note": "all 52 figure_data comparisons assigned; 30 of 37 figures are cross-study"
+    },
+    "section_order_locked": {
+      "pass": true,
+      "note": "12 user TOC sections, unrenamed and unreordered"
+    }
+  },
+  "actor_declared_deviations": [
+    "Conflict count is 90, not the 92 stated in the coordinator's task; all 90 are represented.",
+    "Each conflict's primary_axis_of_disagreement is derived by a weighted keyword rule over nature_of_conflict text, not measured; the axis DISTRIBUTION is provisional and is to be corrected during section writing. Primary-section assignment, treatment mode and DOIs come from the records directly."
+  ],
+  "carried_evidence_limits": [
+    "Search coverage is Europe PMC-dominant; PubMed E-utilities/CrossRef/bioRxiv/OpenAlex passes largely not run.",
+    "snowball_rounds=0 and saturation_criterion=null per scope, so no citation chasing or saturation stopping was performed.",
+    "Fulltext share varies by cluster (cluster_07 77/77 to cluster_08 22/87); low-share clusters are pre-2000 closed-access literature and no publisher API keys exist in this environment.",
+    "Contradiction sweeps were capped per query (typically first 50 records), so disconfirming coverage is top-relevance sample, not exhaustive.",
+    "cluster_09 replication ceiling is met by a single enabling label whose two corroborating sources are one peer-reviewed paper and one bioRxiv preprint, endpoint-matched but not model-identical."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repo": "AllenNeuralDynamics/ComputationalReviewSSTdisease",
+  "branch": "main",
+  "files_pushed": 214,
+  "sections_pushed": 12,
+  "content_md_files": 16,
+  "figures_pushed": 43,
+  "notebooks_pushed": 43,
+  "evidence_packages": 12,
+  "signature_checks": {
+    "png_magic": "pass",
+    "tex_first_line": "pass",
+    "bib_has_entries": "pass",
+    "md_first_line": "15 files begin with a MyST anchor line '(sec-...)=' immediately followed by the H1/H2 heading, which is this pipeline's section-anchor convention and the target of every {ref}; recorded as a documented exception rather than a failure"
+  },
+  "site_build": {
+    "tool": "mystmd 1.11.0",
+    "pages": 16,
+    "could_not_link_citation": 0,
+    "missing_images": 0,
+    "unknown_directives": 0,
+    "cross_reference_not_found": 0
+  },
+  "bibliography": {
+    "entries": 726,
+    "distinct_cite_keys": 726,
+    "unresolved": 0,
+    "orphans": 0,
+    "ascii_clean": true
+  }
+}

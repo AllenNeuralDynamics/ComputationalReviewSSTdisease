@@ -1,13 +1,400 @@
 {
-  "pipeline_version": "comprev-orchestrator-v29",
-  "title": "Computational Review (template scaffold)",
-  "scope": {
-    "section_count": null,
-    "n_body_sections": null,
-    "n_bookend_sections": 3,
-    "clusters": null,
-    "github_repo": "AllenNeuralDynamics/ComputationalReviewTemplate"
+  "schema": "pipeline_metrics/1",
+  "review_title": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "project_id": "proj_9238b857f2b8",
+  "model_id": "claude-opus-5",
+  "pipeline_version": "Expert Review Pipeline v29",
+  "snapshot_phase": "20a",
+  "snapshot_at": "2026-10-18T00:41:57.437031+00:00",
+  "phases": [
+    {
+      "id": "1",
+      "name": "Scope and thesis",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "2",
+      "name": "Evidence gathering",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "3",
+      "name": "Citation infrastructure",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "4",
+      "name": "Scaffold",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "5",
+      "name": "Evidence curation",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "6",
+      "name": "Figure audit",
+      "owner": "critic",
+      "status": "complete"
+    },
+    {
+      "id": "7",
+      "name": "Section drafting",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "8",
+      "name": "Section critics",
+      "owner": "critic",
+      "status": "complete"
+    },
+    {
+      "id": "9",
+      "name": "Bibliography",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "10",
+      "name": "Integration",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "11",
+      "name": "Introduction and Conclusion",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "12",
+      "name": "Bookend critics",
+      "owner": "critic",
+      "status": "complete"
+    },
+    {
+      "id": "13",
+      "name": "Methods",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "14",
+      "name": "Document assembly",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "15",
+      "name": "Citation triples",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "16",
+      "name": "Citation verification",
+      "owner": "critic",
+      "status": "complete"
+    },
+    {
+      "id": "17",
+      "name": "Fix preparation",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "18",
+      "name": "Fix execution",
+      "owner": "litreview",
+      "status": "complete"
+    },
+    {
+      "id": "19",
+      "name": "Fix application",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "20",
+      "name": "Repository push",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "20a",
+      "name": "Methods ledger refresh",
+      "owner": "dataml",
+      "status": "complete"
+    },
+    {
+      "id": "21",
+      "name": "Deploy polish",
+      "owner": "dataml",
+      "status": "post_deployment"
+    }
+  ],
+  "phase_counts": {
+    "numbered_phases": 21,
+    "ledger_entries": 22,
+    "complete": 21,
+    "post_deployment": 1
   },
-  "phases": [],
-  "_note": "Template scaffold. The pipeline rewrites this file at Phase 13 (initial methods rendering) and again at Phase 20a (final ledger refresh) with one entry per phase under the 'phases' key."
+  "frames": {
+    "total": 172,
+    "by_status": {
+      "completed": 155,
+      "processing": 2,
+      "cancelled": 8,
+      "failed": 7
+    },
+    "agent_name_values": {
+      "OPERON": 172
+    },
+    "first_created_at": "2026-10-16T04:19:11.625Z",
+    "last_created_at": "2026-10-17T23:45:45.218Z",
+    "elapsed_hours": 43.44
+  },
+  "corpus": {
+    "clusters": 10,
+    "papers_reviewed_total": 836,
+    "unique_dois": 726,
+    "findings": 844,
+    "conflicts": 90,
+    "figure_data_comparisons": 52,
+    "figure_data_papers": 190,
+    "fulltext_findings": 461,
+    "abstract_only_findings": 383,
+    "overall_fulltext_rate": 0.5462,
+    "unique_doi_sentence_records_curated": 809
+  },
+  "per_cluster": [
+    {
+      "cluster": "cluster_01",
+      "short_name": "SST identity & SSTR signaling",
+      "papers_reviewed": 79,
+      "findings": 79,
+      "fulltext": 54,
+      "abstract_only": 25,
+      "fulltext_pct": 68.4,
+      "queries_logged": 6,
+      "search_failure_records": 2
+    },
+    {
+      "cluster": "cluster_02",
+      "short_name": "Selective vulnerability & aging",
+      "papers_reviewed": 80,
+      "findings": 80,
+      "fulltext": 26,
+      "abstract_only": 54,
+      "fulltext_pct": 32.5,
+      "queries_logged": 0,
+      "search_failure_records": 0
+    },
+    {
+      "cluster": "cluster_03",
+      "short_name": "Alzheimer's disease",
+      "papers_reviewed": 108,
+      "findings": 112,
+      "fulltext": 61,
+      "abstract_only": 51,
+      "fulltext_pct": 54.5,
+      "queries_logged": 0,
+      "search_failure_records": 2
+    },
+    {
+      "cluster": "cluster_04",
+      "short_name": "Parkinson's / Lewy body",
+      "papers_reviewed": 79,
+      "findings": 80,
+      "fulltext": 25,
+      "abstract_only": 55,
+      "fulltext_pct": 31.2,
+      "queries_logged": 0,
+      "search_failure_records": 3
+    },
+    {
+      "cluster": "cluster_05",
+      "short_name": "Huntington's disease",
+      "papers_reviewed": 80,
+      "findings": 80,
+      "fulltext": 40,
+      "abstract_only": 40,
+      "fulltext_pct": 50.0,
+      "queries_logged": 0,
+      "search_failure_records": 0
+    },
+    {
+      "cluster": "cluster_06",
+      "short_name": "ALS / FTD / other",
+      "papers_reviewed": 84,
+      "findings": 84,
+      "fulltext": 53,
+      "abstract_only": 31,
+      "fulltext_pct": 63.1,
+      "queries_logged": 7,
+      "search_failure_records": 3
+    },
+    {
+      "cluster": "cluster_07",
+      "short_name": "Circuit consequences",
+      "papers_reviewed": 77,
+      "findings": 77,
+      "fulltext": 77,
+      "abstract_only": 0,
+      "fulltext_pct": 100.0,
+      "queries_logged": 49,
+      "search_failure_records": 1
+    },
+    {
+      "cluster": "cluster_08",
+      "short_name": "Human postmortem, snRNA, CSF",
+      "papers_reviewed": 85,
+      "findings": 87,
+      "fulltext": 22,
+      "abstract_only": 65,
+      "fulltext_pct": 25.3,
+      "queries_logged": 21,
+      "search_failure_records": 2
+    },
+    {
+      "cluster": "cluster_09",
+      "short_name": "Therapeutic strategies",
+      "papers_reviewed": 85,
+      "findings": 86,
+      "fulltext": 58,
+      "abstract_only": 28,
+      "fulltext_pct": 67.4,
+      "queries_logged": 27,
+      "search_failure_records": 3
+    },
+    {
+      "cluster": "cluster_10",
+      "short_name": "Conflicts & methodological caveats",
+      "papers_reviewed": 79,
+      "findings": 79,
+      "fulltext": 45,
+      "abstract_only": 34,
+      "fulltext_pct": 57.0,
+      "queries_logged": 0,
+      "search_failure_records": 3
+    }
+  ],
+  "search": {
+    "query_strings_logged_total": 110,
+    "clusters_logging_queries": 5,
+    "original_sweep_queries_logged": 41,
+    "disconfirming_queries_logged": 69,
+    "queries_with_database_hit_count": 60,
+    "snowball_rounds": 0,
+    "candidates_screened_recorded": {
+      "cluster_01": 2218,
+      "cluster_02": 624
+    },
+    "per_query_examination_caps": {
+      "cluster_01": [
+        50,
+        50
+      ],
+      "cluster_06": [
+        13,
+        50
+      ],
+      "cluster_09": [
+        8,
+        25
+      ],
+      "cluster_08_records_retrieved": [
+        1,
+        198
+      ]
+    },
+    "databases_used": [
+      "Europe PMC REST search (resultType=core)",
+      "Europe PMC fullTextXML",
+      "NCBI E-utilities efetch (db=pmc)",
+      "CrossRef api.crossref.org/works/{doi}",
+      "fetch_article_fulltext (Unpaywall / PMC)"
+    ],
+    "sources_unavailable": [
+      "Elsevier API",
+      "Springer Nature API",
+      "OpenAlex API",
+      "NCBI API key",
+      "requests / certifi (TLS verification)"
+    ]
+  },
+  "extraction": {
+    "findings": 844,
+    "with_effect_size": 805,
+    "with_effect_size_pct": 95.4,
+    "with_sample_size": 220,
+    "with_sample_size_pct": 26.1,
+    "replication": {
+      "independently_replicated": 261,
+      "replication_unknown": 451,
+      "contested": 132
+    },
+    "search_failure_records": 19,
+    "search_failure_dispositions": {
+      "retained_as_abstract_only": 6,
+      "excluded_evidence_gap_logged": 7,
+      "evidence_gap_logged_no_paper_added": 4,
+      "preprint_superseded_by_published_version": 1,
+      "finding_removed": 1
+    },
+    "compliance_rate_strict": 0.99526
+  },
+  "citations": {
+    "dois_mapped": 726,
+    "crossref_resolved": 726,
+    "bib_entries": 726,
+    "cite_occurrences_body_sections": 1441,
+    "distinct_keys_used": 726,
+    "unresolved_keys": 0,
+    "orphan_bib_entries": 0,
+    "phase16_verification": {
+      "VERIFIED": 1351,
+      "MINOR": 122,
+      "MISATTRIBUTED": 25,
+      "CHIMERIC": 0,
+      "HALLUCINATED": 0,
+      "unverifiable_text_not_retrieved": 36
+    },
+    "phase15_triples": 1534,
+    "phase17_fix_requests": 118,
+    "phase18_applied": 113,
+    "phase18_not_applied": 5,
+    "phase18_failed": 0,
+    "final_unresolved_keys": 0,
+    "final_orphan_bib_entries": 0,
+    "bib_ascii_clean": true
+  },
+  "figures": {
+    "section_figures": 42,
+    "notebooks": 42,
+    "notebook_coverage": 1.0,
+    "figure_audit_comparisons": 65,
+    "audit_PASS": 4,
+    "audit_CAVEAT": 61,
+    "audit_REDESIGN": 0,
+    "audit_SPLIT": 0
+  },
+  "skills": {
+    "skill_files": 20
+  },
+  "corrections_logged": 4,
+  "build": {
+    "tool": "mystmd 1.11.0",
+    "pages_built": 16,
+    "could_not_link_citation": 0,
+    "missing_images": 0,
+    "unknown_directives": 0
+  }
 }

@@ -1,0 +1,590 @@
+{
+  "phase": 7,
+  "iteration": 3,
+  "role": "DATAML MyST validator (new agent; ran neither earlier iteration)",
+  "gate": "pass",
+  "verdict": "PASS",
+  "gate_passed": true,
+  "scope": {
+    "files_checked": [
+      "content/02_section.md",
+      "content/03_section.md",
+      "content/04_section.md",
+      "content/05_section.md",
+      "content/06_section.md",
+      "content/07_section.md",
+      "content/08_section.md",
+      "content/09_section.md",
+      "content/10_section.md",
+      "content/11_section.md"
+    ],
+    "n_files": 10,
+    "note": "All 10 body sections were re-checked independently from source this iteration; no result was accepted on carry-forward alone. Checks whose scope extends beyond the 10 body .md files (FORBIDDEN_LEXICON coverage of content/00_frontmatter.md, content/Methods.md, content/authors.yml, provenance/*.md, latex/manuscript.tex) could not be evaluated because those files were not supplied in the 7V input set.",
+    "certified_citation_key_map": {
+      "version_id": "942bb88d (v942bb88d_citation_key_map.json)",
+      "n_certified_keys": 726
+    }
+  },
+  "per_file_results": {
+    "content/02_section.md": {
+      "section_id": "section_02",
+      "md_version_id": "6a2fccd4-099d-4cb3-838e-71939461661c",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec2-sst-taxonomy-and-subtype-fractions",
+          "fig-sec2-sst-connectivity-motif-disagreements",
+          "fig-sec2-sst-peptide-and-sstr-signalling"
+        ],
+        "n_h1": 1,
+        "n_h2": 5,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 72,
+        "permitted_subset_size": 72,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/03_section.md": {
+      "section_id": "section_03",
+      "md_version_id": "d2cb8db4-fbf2-4674-a650-9ff4bbd4bab9",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec3-marker-level-readouts-transcript-peptide-csf",
+          "fig-sec3-sst-depletion-across-insults",
+          "fig-sec3-vulnerability-mechanisms-and-their-evidence"
+        ],
+        "n_h1": 1,
+        "n_h2": 5,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 65,
+        "permitted_subset_size": 65,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/04_section.md": {
+      "section_id": "section_04",
+      "md_version_id": "f031cd35-9144-43f4-868e-f3c63bb0a0da",
+      "changed_since_iteration_2": true,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 7,
+        "figure_names": [
+          "fig-sec4-deficit-magnitude-scales",
+          "fig-sec4-classic-postmortem-csf",
+          "fig-sec4-sst-cell-change-regions",
+          "fig-sec4-neprilysin-axis",
+          "fig-sec4-epileptiform-rates",
+          "fig-sec4-human-hyperexcitability-markers",
+          "fig-sec4-sst-activity-direction"
+        ],
+        "n_h1": 1,
+        "n_h2": 7,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 104,
+        "permitted_subset_size": 104,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3"
+    },
+    "content/05_section.md": {
+      "section_id": "section_05",
+      "md_version_id": "3daecf7c-7faa-4dec-b355-cca6dc89aac0",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 5,
+        "figure_names": [
+          "fig-sec5-cortical-somatostatin-conditional-on-copathology",
+          "fig-sec5-csf-somatostatin-parkinson-cohorts",
+          "fig-sec5-striatal-sst-system-under-dopamine-loss",
+          "fig-sec5-striatal-somatostatin-by-manipulation-class",
+          "fig-sec5-alpha-synuclein-interneuron-denominators"
+        ],
+        "n_h1": 1,
+        "n_h2": 5,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 75,
+        "permitted_subset_size": 75,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/06_section.md": {
+      "section_id": "section_06",
+      "md_version_id": "dbe14309-5149-46d4-9ef3-957194df776a",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec6-sst-sparing-versus-pv-loss-hd",
+          "fig-sec6-inhibition-onto-projection-neurons-hd",
+          "fig-sec6-aggregate-burden-versus-cell-death"
+        ],
+        "n_h1": 1,
+        "n_h2": 6,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 80,
+        "permitted_subset_size": 80,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/07_section.md": {
+      "section_id": "section_07",
+      "md_version_id": "42802fa8-84d3-4d6f-9297-409a818e319a",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec7-pv-versus-sst-depletion-across-conditions",
+          "fig-sec7-cortical-inhibition-across-als-cohorts",
+          "fig-sec7-gabaergic-measures-in-ms-by-modality"
+        ],
+        "n_h1": 1,
+        "n_h2": 6,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 83,
+        "permitted_subset_size": 83,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/08_section.md": {
+      "section_id": "section_08",
+      "md_version_id": "8a01c63b-8b60-42bb-90eb-8a6e5cb6e83b",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec8-dendritic-versus-perisomatic-signature",
+          "fig-sec8-oscillatory-phenotypes-and-manipulations",
+          "fig-sec8-sleep-oscillations-tau-and-memory"
+        ],
+        "n_h1": 1,
+        "n_h2": 5,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 77,
+        "permitted_subset_size": 77,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/09_section.md": {
+      "section_id": "section_09",
+      "md_version_id": "2bcb70b0-e8c2-4747-850d-014c6e0b13c5",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 3,
+        "figure_names": [
+          "fig-sec9-postmortem-somatostatin-deficit-heterogeneity",
+          "fig-sec9-csf-somatostatin-is-not-specific",
+          "fig-sec9-single-nucleus-cohort-convergence"
+        ],
+        "n_h1": 1,
+        "n_h2": 6,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 81,
+        "permitted_subset_size": 81,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/10_section.md": {
+      "section_id": "section_10",
+      "md_version_id": "f44952cb-05c1-4df3-9871-361ba12c433b",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 4,
+        "figure_names": [
+          "fig-sec10-sstr4-agonist-dose-route-mechanism",
+          "fig-sec10-gamma-stimulation-evidence-ladder",
+          "fig-sec10-cell-and-circuit-interventions",
+          "fig-sec10-excitability-lowering-outcomes"
+        ],
+        "n_h1": 1,
+        "n_h2": 7,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 78,
+        "permitted_subset_size": 78,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    },
+    "content/11_section.md": {
+      "section_id": "section_11",
+      "md_version_id": "576faec7-eddf-4253-b7a4-b311c3ce0ea3",
+      "changed_since_iteration_2": false,
+      "checks": {
+        "NO_LABEL_DIRECTIVE": "pass",
+        "NO_DUPLICATE_NAME": "pass",
+        "FIGURE_HAS_IMAGE_PATH": "pass",
+        "FIGURE_WIDTH_DECLARED": "pass",
+        "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+        "NO_PROCESS_LANGUAGE": "pass",
+        "NO_WRITER_SCRATCHPAD": "pass",
+        "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+        "CITE_KEYS_EXIST": "pass",
+        "FORBIDDEN_LEXICON": "pass",
+        "NO_BARE_AUTHOR_NAMES": "pass",
+        "HEADING_STYLE_CONSISTENT": "pass"
+      },
+      "metrics": {
+        "n_figures": 4,
+        "figure_names": [
+          "fig-sec11-measurement-determines-the-answer",
+          "fig-sec11-genetic-label-fidelity",
+          "fig-sec11-model-construct-and-transgene-dosage",
+          "fig-sec11-conflict-atlas"
+        ],
+        "n_h1": 1,
+        "n_h2": 6,
+        "unanchored_headings": [],
+        "heading_problems": [],
+        "cite_keys_used": 67,
+        "permitted_subset_size": 67,
+        "subset_utilization_pct": 100.0,
+        "keys_out_of_subset": [],
+        "keys_not_in_certified_map": [],
+        "bare_author_fragments": [],
+        "labels_found": 0,
+        "forbidden_directives_found": []
+      },
+      "provenance": "re-verified independently in iteration 3 (file unchanged since iteration 2; all checks re-run, not merely carried forward)"
+    }
+  },
+  "build_result": {
+    "myst_errors": null,
+    "myst_warnings": null,
+    "note": "Not run: build checks (10-13) apply at Phases 14/19/20; environment is stdlib-only with no npm/mystmd."
+  },
+  "structural_results": {
+    "NO_LABEL_DIRECTIVE": "pass",
+    "NO_DUPLICATE_NAME": "pass",
+    "FIGURE_HAS_IMAGE_PATH": "pass",
+    "NO_PROCESS_LANGUAGE": "pass",
+    "NO_WRITER_SCRATCHPAD": "pass",
+    "CITE_DIRECTIVE_SYNTAX_CLEAN": "pass",
+    "DIRECTIVE_WHITELIST_VIOLATION": "pass",
+    "CITE_KEYS_EXIST": "pass",
+    "NO_BARE_AUTHOR_NAMES": "pass",
+    "FORBIDDEN_LEXICON": "pass",
+    "HEADING_STYLE_CONSISTENT": "pass",
+    "FIGURE_WIDTH_DECLARED": "pass",
+    "UNRESOLVED_CITE_KEYS": 0,
+    "BROKEN_FIGURE_REFS": 0,
+    "NO_ICON_COLOR": "n/a",
+    "NO_ICON_COLOR_reason": "Phase 14V/19V/20V only; dropdowns are injected at Phase 14 and are absent at 7V.",
+    "FIGURE_DROPDOWN_MATCH": "n/a",
+    "FIGURE_DROPDOWN_MATCH_reason": "Phase 14V/19V/20V only; figure-code dropdowns not expected until Phase 14.",
+    "MYSTMD_INSTALLED": "n/a",
+    "MYSTMD_INSTALLED_reason": "Build checks apply at Phases 14/19/20; stdlib-only environment with no npm at 7V.",
+    "BUILD_PASSES": "n/a",
+    "BUILD_PASSES_reason": "Build checks apply at Phases 14/19/20.",
+    "ZERO_CITATION_ERRORS": "n/a",
+    "ZERO_CITATION_ERRORS_reason": "Build checks apply at Phases 14/19/20.",
+    "ZERO_IMAGE_ERRORS": "n/a",
+    "ZERO_IMAGE_ERRORS_reason": "Build checks apply at Phases 14/19/20.",
+    "BIB_CITE_KEYS_RESOLVE": "n/a",
+    "BIB_CITE_KEYS_RESOLVE_reason": "references.bib does not exist yet at Phase 7; CITE_KEYS_EXIST resolved against the certified citation_key_map.json instead (726 certified keys).",
+    "TOC_MATCHES_FILES": "n/a",
+    "TOC_MATCHES_FILES_reason": "Structural check for Phases 14V/20V; myst.yml toc not assembled at 7V.",
+    "BIBLIOGRAPHY_PATH_MATCHES_MYSTYML": "n/a",
+    "BIBLIOGRAPHY_PATH_MATCHES_MYSTYML_reason": "Phase 14V/20V; no bibliography declared yet.",
+    "EVIDENCE_JSONS_EXIST": "n/a",
+    "EVIDENCE_JSONS_EXIST_reason": "Phase 14V/20V structural check; not in the 7V input set.",
+    "EVIDENCE_FINDINGS_ARE_OBJECTS": "n/a",
+    "EVIDENCE_FINDINGS_ARE_OBJECTS_reason": "Phase 14V/20V only.",
+    "EVIDENCE_PACKAGES_POPULATED": "n/a",
+    "EVIDENCE_PACKAGES_POPULATED_reason": "Phase 14V/20V only.",
+    "FIGURE_NOTEBOOK_MATCH": "n/a",
+    "FIGURE_NOTEBOOK_MATCH_reason": "Phase 14V/20V only; the one re-rendered figure was spot-verified (see figure_integrity).",
+    "FIGURE_NOTEBOOK_SELF_CONTAINED": "n/a",
+    "FIGURE_NOTEBOOK_SELF_CONTAINED_reason": "Phase 14V/20V only; the one re-rendered figure was spot-verified (see figure_integrity).",
+    "AUTHORS_YML_EXISTS": "n/a",
+    "AUTHORS_YML_EXISTS_reason": "Phase 14V/20V only.",
+    "AUTHOR_IDENTITY_NOT_PLACEHOLDER": "n/a",
+    "AUTHOR_IDENTITY_NOT_PLACEHOLDER_reason": "Phase 14V/20V only.",
+    "ALL_PLUGINS_LISTED": "n/a",
+    "ALL_PLUGINS_LISTED_reason": "Phase 14V/20V only; myst.yml not in the 7V input set.",
+    "PLUGIN_DIRECTIVES_INVOKED": "n/a",
+    "PLUGIN_DIRECTIVES_INVOKED_reason": "Phase 14V/20V only.",
+    "METHODS_LEDGER_FRESH": "n/a",
+    "METHODS_LEDGER_FRESH_reason": "Phase 20V only.",
+    "EVIDENCE_PARAMETERS_HONORED": "n/a",
+    "EVIDENCE_PARAMETERS_HONORED_reason": "Phase 14V/20V only; gate_scope.json not in the 7V input set."
+  },
+  "forbidden_lexicon": {
+    "scan_method": "canonical scan_prose() helper from comprev-myst-validator, whole-token \\b boundaries, code fences and directive option lines excluded",
+    "hits": 0,
+    "scoped_exclusions": [
+      {
+        "file": "content/10_section.md",
+        "line": 10,
+        "token": "scaffolds",
+        "justification": "Allowed scientific sense: 'SSTR4-selective scaffolds' is medicinal-chemistry scaffold, not the pipeline sense. Does not match the whole-token forbidden term 'scaffold' in any case."
+      },
+      {
+        "file": "content/*.md",
+        "token": "phase / convergence",
+        "justification": "Allowed scientific senses (phase-amplitude coupling, convergent evidence) per skill \u00a79; not flagged."
+      }
+    ]
+  },
+  "iteration_2_violation_recheck": {
+    "check": "NO_BARE_AUTHOR_NAMES",
+    "reported_location": "content/04_section.md:30",
+    "reported_fragment": "Beal et al.",
+    "status": "RESOLVED",
+    "evidence": {
+      "et_al_or_and_colleagues_occurrences_in_04": 0,
+      "bare_surname_mentions_outside_cite_directives_in_04": 0,
+      "surnames_tested": 104,
+      "remaining_Beal_occurrences_in_04": 1,
+      "remaining_Beal_context": "line 13, inside the {cite:t}`Beal1986a` directive in the 'Anatomical extent of the deficit beyond neocortex' Evidence Conflict admonition - a cite key, not a bare author mention",
+      "provenance_pointer_retained": "caption of fig-sec4-deficit-magnitude-scales now reads 'review syntheses reporting values attributed to primary sources - a 1985 report in the first case, refs 20-21 in the second'",
+      "regression_scan_all_10_files": {
+        "total_et_al_or_and_colleagues_hits": 0,
+        "files_with_hits": []
+      },
+      "no_new_out_of_subset_keys_in_04": true
+    }
+  },
+  "figure_integrity": {
+    "figure": "fig_sec4_deficit_magnitude_scales",
+    "authorisation": "coordinator-authorised re-render to delete the 'Beal et al., 1985' panel-A annotation",
+    "comparability_not_re_audited": true,
+    "new_versions": {
+      "png": "6065cfe8-3ccd-43d3-a507-d2309d33561c",
+      "py": "d8f033cd-9273-4c81-a650-37884d3fec8c",
+      "ipynb": "df6d83b7-5f76-4769-8bdc-3760f782aff3"
+    },
+    "md_reference_correct": true,
+    "md_reference_detail": ":::{figure} ../figures/fig_sec4_deficit_magnitude_scales.png with :name: fig-sec4-deficit-magnitude-scales and :width: 100%; referenced once by {numref}`fig-sec4-deficit-magnitude-scales` in prose",
+    "png_size_bytes": 608805,
+    "notebook_non_stub": true,
+    "notebook_code_cells_non_empty": 4,
+    "notebook_source_chars": 8370,
+    "notebook_imports": [
+      "matplotlib",
+      "shared_style",
+      "textwrap"
+    ],
+    "notebook_self_contained": true,
+    "notebook_self_contained_detail": "imports are matplotlib (canonical stack), textwrap (stdlib) and shared_style (the single permitted project-local module); shared_style.py exists (artifact 68250080, v4e152ab9) and defines all three referenced symbols COLORS, apply_style, save_figure",
+    "author_attribution_removed_from_code": "no occurrence of 'Beal' in the .py or .ipynb; panel-A annotation now reads '1985 primary report - not plotted as a data point'",
+    "advisory": "the re-rendered panel still carries in-image source labels of the form 'Sandoval 2024' (surname + year, no 'et al.'). NO_BARE_AUTHOR_NAMES is defined over content/*.md prose and captions, so this is out of scope and not a violation; recorded for the Phase 14 figure review."
+  },
+  "corpus_metrics": {
+    "total_figures": 38,
+    "unique_figure_names": 38,
+    "cross_file_duplicate_names": [],
+    "figures_with_colon_fence": 38,
+    "figures_missing_width": [],
+    "label_directives": 0,
+    "forbidden_directives": [],
+    "directives_used": [
+      "admonition",
+      "figure"
+    ],
+    "total_cite_keys_used": 782,
+    "sections_at_100pct_subset_utilization": 10,
+    "total_keys_out_of_subset": 0,
+    "total_keys_not_in_certified_map": 0
+  },
+  "remaining_violations": [],
+  "section_md_vids_certified": {
+    "content/02_section.md": "6a2fccd4-099d-4cb3-838e-71939461661c",
+    "content/03_section.md": "d2cb8db4-fbf2-4674-a650-9ff4bbd4bab9",
+    "content/04_section.md": "f031cd35-9144-43f4-868e-f3c63bb0a0da",
+    "content/05_section.md": "3daecf7c-7faa-4dec-b355-cca6dc89aac0",
+    "content/06_section.md": "dbe14309-5149-46d4-9ef3-957194df776a",
+    "content/07_section.md": "42802fa8-84d3-4d6f-9297-409a818e319a",
+    "content/08_section.md": "8a01c63b-8b60-42bb-90eb-8a6e5cb6e83b",
+    "content/09_section.md": "2bcb70b0-e8c2-4747-850d-014c6e0b13c5",
+    "content/10_section.md": "f44952cb-05c1-4df3-9871-361ba12c433b",
+    "content/11_section.md": "576faec7-eddf-4253-b7a4-b311c3ce0ea3"
+  }
+}

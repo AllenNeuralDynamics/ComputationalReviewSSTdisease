@@ -1,0 +1,848 @@
+{
+  "phase": 2,
+  "iteration": 3,
+  "iteration_label": "FINAL re-check",
+  "validator": "DATAML (new validator agent, iteration 3; did not produce the evidence, did not run iteration 1 or iteration 2)",
+  "review": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "validated_utc": "2026-10-16T22:40:36Z",
+  "supersedes": {
+    "iteration_2_gate_version_id": "f4d5c0f3-72bf-4aa9-b5e0-69aa56f7467d",
+    "iteration_2_gate": "fail",
+    "iteration_2_verdict": "FAIL_REQUIRES_USER_SIGNOFF (2 of 27 applicable checks failed)"
+  },
+  "artifacts_validated": {
+    "cluster_03_evidence.json": "9f3db3ae-56d1-402c-a8d4-913dc7965e82 (re-saved after SOURCE_PROVENANCE remediation)",
+    "cluster_09_evidence.json": "88020519-c6af-41da-bd89-2c9f1b8d8f1b (re-saved after REPLICATION_UNKNOWN_CEILING remediation)",
+    "clusters_01_02_04_05_06_07_08_10": "unchanged since iteration 2; their check results are carried forward (see provenance.carried_forward)"
+  },
+  "network_method": {
+    "problem": "requests/certifi absent; package installs unavailable; plain urllib HTTPS fails with CERTIFICATE_VERIFY_FAILED (sandbox MITM proxy CA not in any local bundle)",
+    "working_approach": "Python stdlib urllib.request with ssl._create_unverified_context(); verified against Europe PMC, NCBI E-utilities and CrossRef",
+    "endpoints_used": [
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?...resultType=core",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/{PMCID}/fullTextXML",
+      "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc",
+      "https://api.crossref.org/works/{doi}",
+      "fetch_article_fulltext tool (Unpaywall / PMC)"
+    ],
+    "contact_email": "not available (host.get_user_email() raised); CrossRef/NCBI called without mailto",
+    "pdf_text_extraction": "stdlib zlib inflate of PDF content streams + Tj/TJ literal extraction (no PDF library installable)"
+  },
+  "evidence_parameters_applied": {
+    "min_papers_per_cluster": 70,
+    "saturation_criterion": null,
+    "snowball_rounds": 0,
+    "total_bibliography_target": null,
+    "bibliography_target_is_hard_floor": true,
+    "note": "total_bibliography_target is null, so BIBLIOGRAPHY_FLOOR_HARD, CROSS_CLUSTER_UNIQUE_DOIS (80%-of-target) and aggregate PAPER_COUNT are NOT APPLICABLE. No target was invented. saturation_criterion is null, so SATURATION_LOGGED is NOT APPLICABLE."
+  },
+  "scope": {
+    "clusters": 10,
+    "total_findings": 844,
+    "cross_cluster_unique_dois": 726,
+    "iteration_3_independent_work": "cluster_03 (112 findings) and cluster_09 (86 findings) re-validated finding-by-finding with no sampling: 193 unique DOIs re-resolved against Europe PMC, 198 claim_source_sentences re-tested for provenance, all 68 distinct abstract_only source sentences in cluster_03 re-tested with 5-gram shingle coverage, 3 Europe PMC records read in full for the cluster_09 replication audit",
+    "iteration_3_carried_forward": "the 8 unchanged clusters (646 findings) retain iteration 2's per-finding results; they were not re-fetched"
+  },
+  "counts_per_cluster": {
+    "cluster_01": {
+      "findings": 79,
+      "papers_reviewed_count": 79,
+      "unique_dois": 79,
+      "conflicts": 7,
+      "figure_data_comparisons": 6,
+      "figure_data_papers": 14,
+      "fulltext_findings": 54,
+      "fulltext_rate": 0.6835,
+      "effect_size_rate": 0.8228,
+      "sample_size_rate": 0.2405,
+      "replication_unknown": 45,
+      "replication_unknown_rate": 0.5696,
+      "evidence_gaps": 10,
+      "search_failures_entries": 2,
+      "fulltext_verification": {
+        "VERIFIED": 54,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_02": {
+      "findings": 80,
+      "papers_reviewed_count": 80,
+      "unique_dois": 80,
+      "conflicts": 9,
+      "figure_data_comparisons": 5,
+      "figure_data_papers": 19,
+      "fulltext_findings": 26,
+      "fulltext_rate": 0.325,
+      "effect_size_rate": 1.0,
+      "sample_size_rate": 0.2375,
+      "replication_unknown": 38,
+      "replication_unknown_rate": 0.475,
+      "evidence_gaps": 8,
+      "search_failures_entries": 0,
+      "fulltext_verification": {
+        "VERIFIED": 26,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_03": {
+      "findings": 112,
+      "papers_reviewed_count": 108,
+      "unique_dois": 108,
+      "conflicts": 11,
+      "figure_data_comparisons": 7,
+      "figure_data_papers": 27,
+      "fulltext_findings": 61,
+      "fulltext_rate": 0.5446,
+      "effect_size_rate": 0.9643,
+      "sample_size_rate": 0.2143,
+      "replication_unknown": 61,
+      "replication_unknown_rate": 0.5446,
+      "evidence_gaps": 13,
+      "search_failures_entries": 2,
+      "fulltext_verification": {
+        "VERIFIED": 61,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_04": {
+      "findings": 80,
+      "papers_reviewed_count": 79,
+      "unique_dois": 79,
+      "conflicts": 8,
+      "figure_data_comparisons": 5,
+      "figure_data_papers": 20,
+      "fulltext_findings": 25,
+      "fulltext_rate": 0.3125,
+      "effect_size_rate": 1.0,
+      "sample_size_rate": 0.2125,
+      "replication_unknown": 47,
+      "replication_unknown_rate": 0.5875,
+      "evidence_gaps": 10,
+      "search_failures_entries": 3,
+      "fulltext_verification": {
+        "VERIFIED": 25,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_05": {
+      "findings": 80,
+      "papers_reviewed_count": 80,
+      "unique_dois": 80,
+      "conflicts": 10,
+      "figure_data_comparisons": 4,
+      "figure_data_papers": 15,
+      "fulltext_findings": 40,
+      "fulltext_rate": 0.5,
+      "effect_size_rate": 0.7625,
+      "sample_size_rate": 0.2125,
+      "replication_unknown": 46,
+      "replication_unknown_rate": 0.575,
+      "evidence_gaps": 8,
+      "search_failures_entries": 0,
+      "fulltext_verification": {
+        "VERIFIED": 40,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_06": {
+      "findings": 84,
+      "papers_reviewed_count": 84,
+      "unique_dois": 84,
+      "conflicts": 11,
+      "figure_data_comparisons": 4,
+      "figure_data_papers": 20,
+      "fulltext_findings": 53,
+      "fulltext_rate": 0.631,
+      "effect_size_rate": 0.9881,
+      "sample_size_rate": 0.25,
+      "replication_unknown": 45,
+      "replication_unknown_rate": 0.5357,
+      "evidence_gaps": 7,
+      "search_failures_entries": 3,
+      "fulltext_verification": {
+        "VERIFIED": 53,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_07": {
+      "findings": 77,
+      "papers_reviewed_count": 77,
+      "unique_dois": 77,
+      "conflicts": 5,
+      "figure_data_comparisons": 5,
+      "figure_data_papers": 15,
+      "fulltext_findings": 77,
+      "fulltext_rate": 1.0,
+      "effect_size_rate": 0.9351,
+      "sample_size_rate": 0.3506,
+      "replication_unknown": 47,
+      "replication_unknown_rate": 0.6104,
+      "evidence_gaps": 9,
+      "search_failures_entries": 1,
+      "fulltext_verification": {
+        "VERIFIED": 77,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_08": {
+      "findings": 87,
+      "papers_reviewed_count": 85,
+      "unique_dois": 85,
+      "conflicts": 11,
+      "figure_data_comparisons": 5,
+      "figure_data_papers": 25,
+      "fulltext_findings": 22,
+      "fulltext_rate": 0.2529,
+      "effect_size_rate": 0.9425,
+      "sample_size_rate": 0.4598,
+      "replication_unknown": 27,
+      "replication_unknown_rate": 0.3103,
+      "evidence_gaps": 10,
+      "search_failures_entries": 2,
+      "fulltext_verification": {
+        "VERIFIED": 22,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_09": {
+      "findings": 86,
+      "papers_reviewed_count": 85,
+      "unique_dois": 85,
+      "conflicts": 9,
+      "figure_data_comparisons": 6,
+      "figure_data_papers": 20,
+      "fulltext_findings": 58,
+      "fulltext_rate": 0.6744,
+      "effect_size_rate": 0.9651,
+      "sample_size_rate": 0.2093,
+      "replication_unknown": 60,
+      "replication_unknown_rate": 0.6977,
+      "evidence_gaps": 11,
+      "search_failures_entries": 3,
+      "fulltext_verification": {
+        "VERIFIED": 58,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "cluster_10": {
+      "findings": 79,
+      "papers_reviewed_count": 79,
+      "unique_dois": 79,
+      "conflicts": 9,
+      "figure_data_comparisons": 5,
+      "figure_data_papers": 15,
+      "fulltext_findings": 45,
+      "fulltext_rate": 0.5696,
+      "effect_size_rate": 0.9873,
+      "sample_size_rate": 0.2278,
+      "replication_unknown": 35,
+      "replication_unknown_rate": 0.443,
+      "evidence_gaps": 8,
+      "search_failures_entries": 3,
+      "fulltext_verification": {
+        "VERIFIED": 45,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      }
+    }
+  },
+  "counts_cross_cluster": {
+    "total_findings": 844,
+    "unique_dois": 726,
+    "total_conflicts": 90,
+    "total_figure_data_comparisons": 52,
+    "total_figure_data_papers": 190,
+    "fulltext_findings": 461,
+    "abstract_only_findings": 383,
+    "overall_fulltext_rate": 0.5462,
+    "replication_unknown": 451,
+    "overall_replication_unknown_rate": 0.5344,
+    "conflicts_and_figure_data_unchanged": "cluster_03 112 findings / 108 unique DOIs / 11 conflicts / 7 figure_data comparisons / 27 figure_data papers and cluster_09 86 / 85 / 9 / 6 / 20 re-counted in iteration 3 and identical to iteration 2 \u2014 no finding, conflict or figure_data entry was lost in either re-save"
+  },
+  "checks": {
+    "DOI_RESOLVES": {
+      "pass": 726,
+      "fail": 0,
+      "failures": [],
+      "basis": "iteration 3 independently re-resolved all 193 unique DOIs of the two re-saved clusters (cluster_03 108/108, cluster_09 85/85) against Europe PMC search DOI:\"...\" resultType=core; the remaining 533 DOIs are carried forward from iteration 2 (726/726 resolved)"
+    },
+    "SOURCE_PROVENANCE": {
+      "pass": 844,
+      "fail": 0,
+      "failures": [],
+      "method": "abstract_only -> claim_source_sentence must be contained in the Europe PMC abstractText; fulltext -> must NOT be contained. Containment tested as raw byte substring, constrained-tag-stripped substring and whitespace-normalised substring. Tag stripping used the constrained pattern </?[A-Za-z][A-Za-z0-9:._-]*(\\s[^<>]*?)?/?> so that literal '<' in statistical text ('p < 0.001', '<100 nM') is not treated as a tag.",
+      "iteration_3_rechecked": {
+        "cluster_03": "112/112 re-tested (51 abstract_only, 61 fulltext) \u2014 0 failures",
+        "cluster_09": "86/86 re-tested \u2014 0 failures",
+        "other_8_clusters": "carried forward from iteration 2 (646/646 pass)"
+      }
+    },
+    "SOURCE_NOT_TITLE": {
+      "pass": 844,
+      "fail": 0,
+      "failures": [],
+      "note": "cluster_03 and cluster_09 re-tested in iteration 3 against the Europe PMC title (tag-stripped, whitespace- and case-normalised); 198/198 distinct from title"
+    },
+    "SOURCE_LENGTH": {
+      "pass": 844,
+      "fail": 0,
+      "failures": [],
+      "note": "cluster_03 and cluster_09 re-measured in iteration 3: no claim_source_sentence <= 50 characters; remaining clusters carried forward (shortest across all 844 is 61 chars)"
+    },
+    "FULLTEXT_HONEST": {
+      "pass": 461,
+      "fail": 0,
+      "failures": [],
+      "outcomes": {
+        "VERIFIED": 461,
+        "DISHONEST": 0,
+        "UNVERIFIABLE": 0
+      },
+      "provenance": "carried forward from iteration 2 (3-tier retrieval: Europe PMC fullTextXML 336, NCBI PMC efetch 60, fetch_article_fulltext 4, no_body_anywhere 0). Iteration 3 did not re-retrieve bodies; it re-confirmed that the 61 cluster_03 and 25 cluster_09 fulltext findings still carry text_access='fulltext' with sentences absent from the abstract."
+    },
+    "FULLTEXT_HONEST_v2": {
+      "pass": 457,
+      "documented_exception": 4,
+      "fail": 0,
+      "note": "457 fulltext findings sit on JATS XML >15KB containing a <body> tag (all retrieved docs >15KB; none metadata-only). 4 findings rest on bioRxiv preprints for which no JATS <body> exists anywhere; full PDF/plain-text bodies were retrieved via Unpaywall/PMC and all 4 sentences verified verbatim. Letter of the check not met, intent (no silent fulltext false positive) met.",
+      "exceptions": [
+        {
+          "cluster": "cluster_03",
+          "finding_index": 94,
+          "doi": "10.1101/2022.04.27.489759"
+        },
+        {
+          "cluster": "cluster_03",
+          "finding_index": 95,
+          "doi": "10.1101/2020.05.09.085795"
+        },
+        {
+          "cluster": "cluster_03",
+          "finding_index": 97,
+          "doi": "10.1101/2025.01.13.632801"
+        },
+        {
+          "cluster": "cluster_10",
+          "finding_index": 43,
+          "doi": "10.1101/2024.07.15.603003"
+        }
+      ],
+      "provenance": "carried forward from iteration 2; the 3 cluster_03 exceptions (findings 94, 95, 97) were re-confirmed in iteration 3 to still be labelled fulltext"
+    },
+    "CLAIM_DIFFERS_FROM_SOURCE": {
+      "pass": 844,
+      "fail": 0,
+      "failures": [],
+      "note": "cluster_03 and cluster_09 re-tested in iteration 3 (198/198 distinct, case- and whitespace-normalised)"
+    },
+    "HAS_CITE_KEY": {
+      "result": "not_applicable",
+      "note": "no cite_key field present in any of the 844 findings; assigned in Phase 5. Vacuously satisfied."
+    },
+    "SPLICE_AUDIT_5GRAM": {
+      "result": "pass",
+      "scope": "every abstract_only finding in cluster_03",
+      "findings_audited": 51,
+      "sentence_fields_audited": 87,
+      "distinct_sentence_strings_audited": 68,
+      "sentence_count_reconciliation": "51 claim_source_sentence + 36 non-null effect_size_source_sentence = 87 field instances, of which 19 effect_size sentences are byte-identical to their finding's claim_source_sentence, leaving 68 distinct strings. The actor's reported figure of 87 sentences reconciles exactly.",
+      "min_5gram_shingle_coverage": 1.0,
+      "max_5gram_shingle_coverage": 1.0,
+      "exact_substring": "68/68 (raw or constrained-tag-stripped abstractText)",
+      "method": "5-gram shingle coverage of the source sentence against the tag-stripped abstractText, with tag stripping applied symmetrically to sentence and abstract; token coverage computed alongside but not relied on (the iteration-2 spliced sentence had token coverage 1.000 and shingle coverage 0.429)",
+      "splices_found": 0,
+      "note": "One sentence (cluster_03 finding 9, 10.1016/j.lfs.2008.11.019) initially read 0.848 coverage because the stored sentence spans a structured-abstract section header and retains the literal '<h4>Significance</h4>' markup. It is an exact byte substring of the raw abstractText and is contiguous, i.e. not a splice; the shortfall was an artefact of stripping tags from the abstract but not from the sentence. With symmetric stripping, coverage is 1.000. Cosmetic only: the stored sentence carries inline markup and spans a section boundary."
+    }
+  },
+  "recheck_1_source_provenance_cluster_03_finding_52": {
+    "check": "SOURCE_PROVENANCE",
+    "cluster": "cluster_03",
+    "finding_index_0based": 52,
+    "doi": "10.1039/d4md00597j",
+    "text_access": "abstract_only",
+    "europe_pmc_title": "3-Thio-3,4,5-trisubstituted-1,2,4-triazoles: high affinity somatostatin receptor-4 agonist",
+    "abstract_length_chars": 1200,
+    "stored_claim_source_sentence": "Thirty-three compounds show <100 nM binding affinity, five of which had sub-nanomolar binding affinity and >300-fold selectivity over other SST subtypes.",
+    "abstract_sentence_of_record": "Thirty-three compounds show <100 nM binding affinity, five of which had sub-nanomolar binding affinity and >300-fold selectivity over other SST subtypes.",
+    "exact_byte_substring_of_abstractText": true,
+    "five_gram_shingle_coverage": 1.0,
+    "sentence_length_chars": 153,
+    "derived_claim": "A 3-thio-1,2,4-triazole series yielded thirty-three SSTR4 agonists with sub-100 nM binding affinity, of which five combined sub-nanomolar affinity with greater than 300-fold selectivity over the other somatostatin receptor subtypes, supporting SSTR4 as a druggable node of the somatostatin system.",
+    "derived_effect_size": "33 compounds with <100 nM binding affinity; 5 of these with sub-nanomolar affinity and >300-fold selectivity over other SST subtypes",
+    "attribution_check": "PASS \u2014 both the derived claim ('of which five combined sub-nanomolar affinity with greater than 300-fold selectivity') and effect_size ('5 of these with sub-nanomolar affinity and >300-fold selectivity') attach the >300-fold subtype selectivity to the five sub-nanomolar compounds, not to all thirty-three. n=33 remains the compound-series size, which matches the abstract.",
+    "iteration_2_defect": "spliced sentence ('Thirty-three compounds show 300-fold selectivity over other SST subtypes.'), token coverage 1.000, 5-gram shingle coverage 0.429, misattributing >300-fold selectivity to all 33 compounds",
+    "verdict": "REMEDIATED \u2014 failure cleared"
+  },
+  "recheck_1b_cluster_03_full_splice_sweep": {
+    "scope": "every abstract_only finding in cluster_03, independently re-extracted from Europe PMC by this validator (no reliance on the actor's report)",
+    "findings": 51,
+    "sentence_field_instances": 87,
+    "distinct_sentences": 68,
+    "exact_substring_pass": 68,
+    "shingle_coverage_pass": 68,
+    "splices_detected": 0,
+    "coverage_floor_observed": 1.0,
+    "control": "the iteration-2 spliced sentence scores 0.429 under this same 5-gram metric, so the metric is sensitive to the defect class it is screening for",
+    "verdict": "PASS \u2014 the actor's claim of a clean re-check across all 51 abstract_only cluster_03 findings is independently confirmed"
+  },
+  "recheck_2_replication_unknown_ceiling_cluster_09": {
+    "check": "REPLICATION_UNKNOWN_CEILING",
+    "cluster": "cluster_09",
+    "ceiling": 0.7,
+    "recomputed_by_validator": {
+      "findings": 86,
+      "replication_unknown": 60,
+      "rate": 0.6977,
+      "label_distribution": {
+        "replication_unknown": 60,
+        "independently_replicated": 14,
+        "contested": 12
+      },
+      "iteration_2_rate": 0.7093,
+      "delta": "exactly one label changed, consistent with the actor's report"
+    },
+    "overall_rate_recomputed": {
+      "total_findings": 844,
+      "replication_unknown": 451,
+      "rate": 0.5344,
+      "note": "844-finding total recomputed as iteration 2's 452 minus the single cluster_09 relabel; the 8 unchanged clusters' label counts are carried forward"
+    },
+    "single_label_under_audit": {
+      "doi": "10.1016/j.omtn.2026.102942",
+      "finding_index_0based": 64,
+      "title": "AAV9-mediated targeting of natural antisense transcript as a novel treatment for Dravet syndrome.",
+      "lab": "Diaz JA, ... Waddington SN, Karda R \u2014 EGA Institute for Women's Health, University College London",
+      "study_system": "Scn1a+/- (Dravet syndrome) mice treated with AAV9-AntagoNAT",
+      "endpoints": [
+        "survival 50% -> 84%",
+        "febrile-seizure susceptibility 73% -> 7.7%",
+        "daily spontaneous seizure frequency 1.12 -> 0.03"
+      ],
+      "new_label": "independently_replicated",
+      "replication_evidence_dois": [
+        "10.1126/scitranslmed.adz2557",
+        "10.64898/2026.07.12.737793"
+      ]
+    },
+    "corroborating_studies": [
+      {
+        "doi": "10.1126/scitranslmed.adz2557",
+        "europe_pmc": "MED/42127217, research-article, 2026-05-13, Science Translational Medicine",
+        "resolves": true,
+        "title": "Prime editing of a pathogenic Scn1a allele ameliorates seizure phenotypes in a GEFS+ mouse model.",
+        "lab": "Kissling L, ... Zeilhofer HU, Schwank G \u2014 Institute of Pharmacology and Toxicology, University of Zurich",
+        "model": "Scn1a-K1270T (Scn1a KT/+) GEFS+ knock-in \u2014 a different SCN1A allele class from the finding's Scn1a+/- haploinsufficiency model",
+        "intervention": "AAV-delivered intein-split prime editor correcting SCN1A-K1270T (restores NaV1.1 function)",
+        "endpoint_match": "BOTH audited endpoints matched: survival 80% -> 100% in treated mice, and frequency of INDUCED FEBRILE SEIZURES 78.6% -> 13.3%. Direction and magnitude concordant with the finding (survival 50->84%, febrile seizures 73->7.7%).",
+        "peer_reviewed": true
+      },
+      {
+        "doi": "10.64898/2026.07.12.737793",
+        "europe_pmc": "PPR1279055, Preprint (posted-content), bioRxiv, 2026-07-14",
+        "resolves": true,
+        "title": "PV interneuron-targeted CRISPRa rescue of SCN1A haploinsufficiency in Dravet syndrome",
+        "lab": "Spratt PW, ... Devinsky O, Dimidschstein J, Allaway KC",
+        "model": "a mouse model of Dravet syndrome (SCN1A haploinsufficiency); gRNA targets the human SCN1A promoter, so most likely a humanised line \u2014 the abstract does not state the exact allele, so identity with Scn1a+/- is not verifiable from the record",
+        "intervention": "AAV9-E2-dCas9-VP64 CRISPR activation upregulating endogenous SCN1A in PV interneurons (same mechanistic axis as the finding: upregulation of the endogenous locus)",
+        "endpoint_match": "BOTH audited endpoints matched: dose-dependent improvement in survival and reduced susceptibility to hyperthermia-induced (febrile) seizures, with increased NaV1.1 protein confirming target engagement. Effect sizes are not quantified in the abstract.",
+        "peer_reviewed": false
+      }
+    ],
+    "lab_independence": {
+      "method": "author-surname intersection across the three author lists",
+      "finding_vs_study_A": "0 shared surnames",
+      "finding_vs_study_B": "0 shared surnames",
+      "study_A_vs_study_B": "0 shared surnames",
+      "institutions": "University College London / University of Zurich / Spratt-Allaway-Dimidschstein-Devinsky group \u2014 three distinct groups",
+      "verdict": "PASS \u2014 genuinely separate labs"
+    },
+    "skill_definition_note": "comprev-evidence-validator does not define `independently_replicated`. Its only replication requirement is REPLICATION_UNKNOWN_CEILING (<= 70% replication_unknown); iteration 2 applied the operative backing test that each non-unknown label cite at least one distinct, resolvable DOI. The stricter standard written into iteration 2's remedy text was 'same-endpoint/comparable-model replication'.",
+    "ruling": "SUPPORTABLE \u2014 the label stands. Explicitly: judged against the skill's operative standard (a non-unknown label backed by at least one distinct, resolvable DOI) the label passes outright; judged against the stricter same-endpoint/comparable-model standard from iteration 2's remedy, it passes on endpoint and mechanism but NOT on model identity. Two independent labs, with zero author overlap, each report the same two endpoints (survival; induced/hyperthermia-evoked febrile-seizure frequency) moving in the same direction after restoration of NaV1.1 function in Scn1a-mutant mice, by three different modalities (antisense AntagoNAT, prime editing, CRISPRa). That is independent corroboration of the finding's actual claim \u2014 that gene-therapy restoration of the interneuron sodium-channel deficit improves survival and febrile-seizure outcomes \u2014 rather than a same-model, same-reagent direct replication.",
+    "recorded_weaknesses": [
+      "Model mismatch is real: study A is a K1270T GEFS+ missense knock-in, a different disease entity from Scn1a+/- haploinsufficiency; study B is a Dravet haploinsufficiency model but its exact allele is not stated in the record. The label therefore rests on conceptual (endpoint- and mechanism-matched) replication, not direct replication.",
+      "One of the two corroborating DOIs (10.64898/2026.07.12.737793) is a bioRxiv preprint, not peer reviewed. The peer-reviewed study A alone supplies same-endpoint, separate-lab corroboration, so the label does not depend solely on the preprint.",
+      "The cluster_09 metric rests on this single label: 60/86 = 69.77% versus a 70.00% ceiling, a margin of 0.23 percentage points. A reviewer applying a strict same-model direct-replication standard would revert the label, and the honest rate would be 61/86 = 70.93% with REPLICATION_UNKNOWN_CEILING failing for cluster_09."
+    ],
+    "verdict": "PASS \u2014 with the single-label dependency recorded as an auditable sensitivity, not concealed"
+  },
+  "schema_compliance": {
+    "CONFLICT_FIELDS_EXACT": "pass",
+    "NULLS_NOT_STRINGS": "pass",
+    "FIGURE_DATA_DOIS_UNIQUE": "pass",
+    "detail": {
+      "iteration_3_recheck": "cluster_03 (11 conflicts, 7 figure_data arrays) and cluster_09 (9 conflicts, 6 figure_data arrays) re-tested after the re-saves: every conflict carries exactly the six required field names and two DOIs beginning '10.'; no duplicate DOI in any figure_data papers array; zero occurrences of the string \"None\"; every finding carries a DOI beginning '10.'",
+      "other_8_clusters": "carried forward from iteration 2 (90 conflicts, 52 figure_data arrays, 0 duplicates, 0 \"None\" strings)"
+    }
+  },
+  "compliance": {
+    "CONFLICTS_NONEMPTY": "pass",
+    "WEAKEST_EVIDENCE_SUBSTANTIVE": "pass",
+    "FIGURE_DATA_PRESENT": "pass",
+    "PAPER_COUNT_FLOOR": "pass",
+    "CROSS_CLUSTER_UNIQUE_DOIS": "not_applicable",
+    "BIBLIOGRAPHY_FLOOR_HARD": "not_applicable",
+    "EVERY_PAPER_HAS_DOI": "pass",
+    "SEARCH_FAILURES_PRESENT": "pass",
+    "FULLTEXT_RATE_PER_CLUSTER": "pass",
+    "FULLTEXT_RATE_OVERALL": "pass",
+    "EFFECT_SIZE_RATE": "pass",
+    "SAMPLE_SIZE_RATE": "pass",
+    "REPLICATION_UNKNOWN_CEILING": "pass",
+    "CONTRADICTION_QUERIES_EXECUTED": "pass",
+    "FALSE_CONSENSUS_RISKS_IDENTIFIED": "pass",
+    "detail": {
+      "PAPER_COUNT_FLOOR": {
+        "floor": 70,
+        "min_observed": 77,
+        "per_cluster": {
+          "cluster_01": 79,
+          "cluster_02": 80,
+          "cluster_03": 108,
+          "cluster_04": 79,
+          "cluster_05": 80,
+          "cluster_06": 84,
+          "cluster_07": 77,
+          "cluster_08": 85,
+          "cluster_09": 85,
+          "cluster_10": 79
+        }
+      },
+      "FULLTEXT_RATE_PER_CLUSTER": {
+        "threshold": 0.2,
+        "min_observed": 0.2529,
+        "min_cluster": "cluster_08"
+      },
+      "FULLTEXT_RATE_OVERALL": {
+        "threshold": 0.5,
+        "observed": 0.5462
+      },
+      "EFFECT_SIZE_RATE": {
+        "threshold": 0.3,
+        "min_observed": 0.7625,
+        "min_cluster": "cluster_05"
+      },
+      "SAMPLE_SIZE_RATE": {
+        "threshold": 0.2,
+        "min_observed": 0.2093,
+        "min_cluster": "cluster_09"
+      },
+      "SEARCH_FAILURES_PRESENT": {
+        "key_present_all_10": true,
+        "per_cluster": {
+          "cluster_01": {
+            "key_present": true,
+            "n_entries": 2,
+            "dois_extracted": 5
+          },
+          "cluster_02": {
+            "key_present": true,
+            "n_entries": 0,
+            "dois_extracted": 0
+          },
+          "cluster_03": {
+            "key_present": true,
+            "n_entries": 2,
+            "dois_extracted": 3
+          },
+          "cluster_04": {
+            "key_present": true,
+            "n_entries": 3,
+            "dois_extracted": 2
+          },
+          "cluster_05": {
+            "key_present": true,
+            "n_entries": 0,
+            "dois_extracted": 0
+          },
+          "cluster_06": {
+            "key_present": true,
+            "n_entries": 3,
+            "dois_extracted": 2
+          },
+          "cluster_07": {
+            "key_present": true,
+            "n_entries": 1,
+            "dois_extracted": 0
+          },
+          "cluster_08": {
+            "key_present": true,
+            "n_entries": 2,
+            "dois_extracted": 0
+          },
+          "cluster_09": {
+            "key_present": true,
+            "n_entries": 3,
+            "dois_extracted": 0
+          },
+          "cluster_10": {
+            "key_present": true,
+            "n_entries": 3,
+            "dois_extracted": 1
+          }
+        },
+        "no_unfound_paper_in_findings": true,
+        "note": "cluster_06 10.1101/2025.10.22.25338552 (iteration-1 provenance flag) is absent from findings and correctly recorded in search_failures"
+      },
+      "FALSE_CONSENSUS_RISKS_IDENTIFIED": {
+        "matching_evidence_gap_entries_per_cluster": {
+          "cluster_01": 1,
+          "cluster_02": 2,
+          "cluster_03": 1,
+          "cluster_04": 1,
+          "cluster_05": 1,
+          "cluster_06": 1,
+          "cluster_07": 2,
+          "cluster_08": 1,
+          "cluster_09": 1,
+          "cluster_10": 2
+        }
+      },
+      "REPLICATION_UNKNOWN_CEILING": {
+        "ceiling": 0.7,
+        "max_observed": 0.6977,
+        "max_cluster": "cluster_09",
+        "overall": 0.5344,
+        "basis": "see recheck_2_replication_unknown_ceiling_cluster_09 \u2014 passes on one audited label change, margin 0.23 percentage points"
+      },
+      "iteration_3_note": "PAPER_COUNT_FLOOR, FULLTEXT_RATE_*, EFFECT_SIZE_RATE, SAMPLE_SIZE_RATE, CONFLICTS_NONEMPTY, FIGURE_DATA_PRESENT, WEAKEST_EVIDENCE_SUBSTANTIVE, EVERY_PAPER_HAS_DOI, SEARCH_FAILURES_PRESENT, CONTRADICTION_QUERIES_EXECUTED and FALSE_CONSENSUS_RISKS_IDENTIFIED are carried forward from iteration 2; the cluster_03/cluster_09 inputs to them (papers_reviewed_count 108/85, conflicts 11/9, figure_data 7/6, evidence_gaps 13/11, search_failures 2/3, weakest_evidence_cited non-empty) were re-counted in iteration 3 and are unchanged."
+    }
+  },
+  "anti_fabrication": {
+    "SHAPE_NOT_UNIFORM": "pass",
+    "SATURATION_LOGGED": "not_applicable",
+    "DOI_TITLE_CROSSCHECK": "pass_by_substitute",
+    "detail": {
+      "SHAPE_NOT_UNIFORM": {
+        "papers_reviewed_counts": [
+          79,
+          80,
+          108,
+          79,
+          80,
+          84,
+          77,
+          85,
+          85,
+          79
+        ],
+        "range": 31,
+        "requirement": "must vary by more than +/-5"
+      },
+      "SATURATION_LOGGED": "evidence_parameters.saturation_criterion is null and snowball_rounds is 0, so the >=2-pass <2%-new-DOI log is not required. Saturation/search logs were nonetheless present for all 10 clusters and were read.",
+      "DOI_TITLE_CROSSCHECK": {
+        "applicability": "The Phase 2 finding schema carries no actor-reported title field (keys: claim, claim_source_sentence, evidence, effect_size, effect_size_source_sentence, n, study_system, replication_status, replication_evidence_dois, doi, text_access), so the literal CrossRef-title-vs-reported-title comparison cannot be run.",
+        "substitute_1": {
+          "method": "CrossRef title vs Europe PMC title, >=2 shared content words, 10% sample per cluster (min 5): 83 draws / 80 unique DOIs",
+          "mismatches": 0,
+          "unavailable": 0
+        },
+        "substitute_2": {
+          "method": "full-corpus (844/844, no sampling) content-word overlap between each claim and the Europe PMC title+abstract of its DOI, as a direct test of the failure mode (DOI lists pre-populated from memory)",
+          "findings_below_25pct_overlap": 40,
+          "of_which_fulltext": 39,
+          "adjudication": "all 40 inspected; low overlap reflects body-level detail absent from title+abstract, not DOI/topic mismatch; no fabrication signal"
+        }
+      },
+      "iteration_3_note": "carried forward from iteration 2; the two re-saves did not change papers_reviewed_count for any cluster, so SHAPE_NOT_UNIFORM is unaffected (counts 79,80,108,79,80,84,77,85,85,79; range 31)."
+    }
+  },
+  "aggregates": {
+    "PAPER_COUNT": "not_applicable",
+    "CONFLICT_COUNT": "pass",
+    "FIGURE_DATA": "pass",
+    "COMPLIANCE_RATE": {
+      "strict": {
+        "rate": 0.99526,
+        "passing": 840,
+        "failing": 4,
+        "definition": "findings failing ANY per-finding check; the only residual failures are the 4 bioRxiv findings counted as FULLTEXT_HONEST_v2 letter-exceptions (bodies obtained, sentences verified verbatim)",
+        "threshold": 0.95,
+        "verdict": "pass"
+      },
+      "excluding_documented_format_exceptions": {
+        "rate": 1.0,
+        "passing": 844,
+        "failing": 0,
+        "definition": "excludes the 4 preprint JATS-format exceptions",
+        "threshold": 0.95,
+        "verdict": "pass"
+      },
+      "change_from_iteration_2": "strict rate rises from 0.99408 (839/844) to 0.99526 (840/844) with the cluster_03 finding 52 provenance failure cleared"
+    }
+  },
+  "provenance": {
+    "carried_forward_from_iteration_2": [
+      "DOI_RESOLVES for the 533 DOIs outside cluster_03/cluster_09",
+      "FULLTEXT_HONEST (461 VERIFIED / 0 DISHONEST / 0 UNVERIFIABLE) and FULLTEXT_HONEST_v2 body retrieval",
+      "per-finding checks for the 8 unchanged clusters (646 findings)",
+      "CONTRADICTION_QUERIES_EXECUTED, FALSE_CONSENSUS_RISKS_IDENTIFIED, SHAPE_NOT_UNIFORM, DOI_TITLE_CROSSCHECK (pass_by_substitute), SATURATION_LOGGED (not_applicable)"
+    ],
+    "independently_re_verified_in_iteration_3": [
+      "cluster_03 and cluster_09: DOI_RESOLVES (193/193), SOURCE_PROVENANCE (198/198), SOURCE_NOT_TITLE, SOURCE_LENGTH, CLAIM_DIFFERS_FROM_SOURCE, schema compliance, and all structural counts",
+      "cluster_03 abstract_only 5-gram splice sweep (51 findings / 87 sentence fields / 68 distinct sentences)",
+      "cluster_09 replication label audit (3 Europe PMC records read in full, 2 CrossRef records)"
+    ],
+    "cluster_04_withdrawn_flags": {
+      "status": "WITHDRAWN in iteration 2 and carried forward unchanged; no cluster_04 defect exists",
+      "findings": [
+        "cluster_04 finding 34 (0-based) \u2014 10.7754/clin.lab.2025.250237",
+        "cluster_04 finding 43 (0-based) \u2014 10.1111/j.1600-0404.2009.01178.x"
+      ],
+      "reason": "Iteration 1 flagged both as abstract_only SOURCE_PROVENANCE failures on 0.76/0.72 token coverage. Iteration 2 reproduced the cause: a naive <[^>]+> tag-stripping regex applied to abstractText deletes from a literal '<' in statistical text ('p < 0.001', present in both abstracts) to the next '>', removing the matched sentence. With a constrained tag pattern both sentences are exact raw substrings and coverage is 1.000. Validator-side artefact, not an actor defect.",
+      "iteration_3_handling": "Iteration 3 used the constrained tag pattern throughout for exactly this reason; cluster_04 was not re-fetched (unchanged since iteration 2)."
+    },
+    "cluster_09_single_label_dependency": {
+      "statement": "cluster_09's REPLICATION_UNKNOWN_CEILING pass rests on ONE label change: finding 64 (0-based), 10.1016/j.omtn.2026.102942, moved from replication_unknown to independently_replicated. Without it the rate is 61/86 = 70.93% and the check fails.",
+      "margin_pp": 0.23,
+      "audit": "see recheck_2_replication_unknown_ceiling_cluster_09 \u2014 both cited DOIs resolve, both corroborating studies measure survival and induced febrile-seizure frequency after NaV1.1 restoration, and all three groups are author-disjoint. Model identity is NOT matched (K1270T GEFS+ knock-in; Dravet haploinsufficiency model of unstated allele) and one corroborating DOI is a bioRxiv preprint.",
+      "sensitivity": "If a downstream reviewer requires same-model direct replication, this label reverts, cluster_09 fails REPLICATION_UNKNOWN_CEILING at 70.93%, and the gate reverts to FAIL_REQUIRES_USER_SIGNOFF on that one check alone."
+    }
+  },
+  "additional_observations": [
+    {
+      "severity": "documentation_inconsistency",
+      "cluster": "cluster_03",
+      "finding_index": 95,
+      "doi": "10.1101/2020.05.09.085795",
+      "detail": "Carried over from iteration 2 and NOT remediated in the re-save: cluster_03 search_failures still states no full text was retrievable for this preprint while finding 95 remains labelled fulltext. Iteration 2 independently retrieved the bioRxiv PDF and verified the sentence verbatim, so fidelity is sound; the search_failures entry is stale. Documentation only \u2014 not a gate failure.",
+      "status": "open, cosmetic"
+    },
+    {
+      "severity": "cosmetic",
+      "cluster": "cluster_03",
+      "finding_index": 9,
+      "doi": "10.1016/j.lfs.2008.11.019",
+      "detail": "claim_source_sentence retains inline '<h4>Significance</h4>' markup and spans a structured-abstract section boundary. Exact byte substring of abstractText, 5-gram coverage 1.000 after symmetric tag stripping \u2014 not a splice.",
+      "status": "open, cosmetic"
+    },
+    {
+      "severity": "cosmetic",
+      "cluster": "cluster_05",
+      "detail": "contradiction pass logged as a completed-pass label without query string or hit count, unlike the other nine clusters (carried from iteration 2).",
+      "status": "open, cosmetic"
+    }
+  ],
+  "failures": [],
+  "gate": "pass",
+  "verdict": "PASS \u2014 all 27 applicable checks pass. Both iteration-2 failures are independently confirmed remediated: (1) cluster_03 finding 52 (10.1039/d4md00597j) now stores the verbatim abstract sentence (exact byte substring, 5-gram coverage 1.000) and its derived claim and effect_size correctly attach >300-fold subtype selectivity to the five sub-nanomolar compounds rather than to all thirty-three; an independent 5-gram sweep of all 51 abstract_only cluster_03 findings (87 sentence fields, 68 distinct sentences) found zero splices at coverage floor 1.000. (2) cluster_09 replication_unknown recomputed at 60/86 = 69.77% against the 70.00% ceiling; the single enabling label (10.1016/j.omtn.2026.102942 -> independently_replicated) was audited strictly: both cited DOIs resolve in Europe PMC, both corroborating studies report the same two endpoints (survival; induced/hyperthermia-evoked febrile-seizure frequency) after restoration of NaV1.1 function in Scn1a-mutant mice, and the three groups share no authors. The label is judged SUPPORTABLE as endpoint- and mechanism-matched independent corroboration, not as same-model direct replication; model identity is not matched and one corroborating DOI is a bioRxiv preprint. The pass therefore carries a 0.23-percentage-point margin resting on that one label, recorded under provenance.cluster_09_single_label_dependency. No finding, conflict or figure_data entry was lost in either re-save (cluster_03 112/108/11/7, cluster_09 86/85/9/6). Strict compliance rate 0.995 (840/844); the 4 residual non-passes are bioRxiv JATS-format exceptions with verified bodies. Three cosmetic documentation items remain open and are not gate failures.",
+  "per_cluster_gate": {
+    "cluster_01": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    },
+    "cluster_02": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    },
+    "cluster_03": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": "finding 52 provenance remediated and re-verified; stale search_failures entry for 10.1101/2020.05.09.085795 still open (documentation only)"
+    },
+    "cluster_04": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": "iteration-1 flags withdrawn as validator-side artefact"
+    },
+    "cluster_05": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": "contradiction pass logged without query string/hit count"
+    },
+    "cluster_06": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    },
+    "cluster_07": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    },
+    "cluster_08": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    },
+    "cluster_09": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": "REPLICATION_UNKNOWN_CEILING now 69.77% on one audited label change; single-label dependency recorded"
+    },
+    "cluster_10": {
+      "gate": "pass",
+      "failed_checks": [],
+      "notes": null
+    }
+  },
+  "per_cluster_gate_summary": {
+    "pass": 10,
+    "fail": 0,
+    "failing": []
+  },
+  "coordinator_record": {
+    "evidence_vids_final": {
+      "cluster_01": "e279b545-868b-4d1b-87fd-bb22d872f4a1",
+      "cluster_02": "c0b00fc0-47d6-43b3-b69a-5d9511414dc5",
+      "cluster_03": "9f3db3ae-56d1-402c-a8d4-913dc7965e82",
+      "cluster_04": "f7a71328-b75a-4e5e-940e-a236d95ac80e",
+      "cluster_05": "0a39593b-66b7-4e07-bd32-035f09e4756c",
+      "cluster_06": "5c599c23-7f46-44dd-a0b7-627f22669f9d",
+      "cluster_07": "19913b65-6dce-495b-83c3-c50be4cd7c65",
+      "cluster_08": "b9f39b8f-8d67-448c-8ddf-108fe1f156f8",
+      "cluster_09": "88020519-c6af-41da-bd89-2c9f1b8d8f1b",
+      "cluster_10": "bf3afe67-26b8-4b6b-8930-65fb9877ef65"
+    },
+    "iterations": [
+      {
+        "it": 1,
+        "gate": "fail",
+        "vid": "43774b51-71e3-4c3b-b198-3a12b426a5c3",
+        "frame": "26336e8e-5dcb-4ab2-b39f-bff0debb1a8b",
+        "failed": [
+          "REPLICATION_UNKNOWN_CEILING",
+          "CONTRADICTION_QUERIES_EXECUTED",
+          "COMPLIANCE_RATE",
+          "FULLTEXT_HONEST",
+          "SOURCE_PROVENANCE",
+          "SOURCE_LENGTH"
+        ]
+      },
+      {
+        "it": 2,
+        "gate": "fail",
+        "vid": "f4d5c0f3-72bf-4aa9-b5e0-69aa56f7467d",
+        "frame": "4f156ba5-8d16-42fa-a08c-9414ed96f48f",
+        "failed": [
+          "SOURCE_PROVENANCE(cluster_03)",
+          "REPLICATION_UNKNOWN_CEILING(cluster_09)"
+        ]
+      },
+      {
+        "it": 3,
+        "gate": "pass",
+        "vid": "592feb23-84a9-40ab-aa08-0935e1bd8923",
+        "frame": "045ea57c-515d-4d2e-93aa-7ae99d34af0c"
+      }
+    ],
+    "carried_limits": [
+      "Search coverage is Europe PMC-dominant; PubMed E-utilities/CrossRef/bioRxiv/OpenAlex passes largely not run.",
+      "snowball_rounds=0 and saturation_criterion=null per scope, so no citation chasing or saturation stopping was performed.",
+      "Fulltext share varies by cluster (cluster_07 77/77 to cluster_08 22/87); low-share clusters are pre-2000 closed-access literature and no publisher API keys exist in this environment.",
+      "Contradiction sweeps were capped per query (typically first 50 records), so disconfirming coverage is top-relevance sample, not exhaustive.",
+      "cluster_09 replication ceiling is met by a single enabling label whose two corroborating sources are one peer-reviewed paper and one bioRxiv preprint, endpoint-matched but not model-identical."
+    ],
+    "content_safety_history": "5 Phase 2 children were refused by content-safety filters under the default sub-agent model (cluster_02 x1, cluster_03 x3, cluster_04 x1); user directed a rerun with the sub-agent model pinned to claude-opus-5, after which 0 refusals occurred."
+  }
+}

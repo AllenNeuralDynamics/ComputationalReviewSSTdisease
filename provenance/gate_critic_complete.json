@@ -1,0 +1,243 @@
+{
+  "phase": 8,
+  "gate": "pass",
+  "criterion": "orchestrator Phase 8 gate: MUST_FIX = 0 after send-back; coverage gate \u2014 every uncited paper classified",
+  "must_fix_final": 0,
+  "coverage_review": {
+    "uncited_papers_total": 0,
+    "result": "gate satisfied with nothing to classify",
+    "basis": "Every section cites 100% of its permitted cite subset, so no paper in any section package is uncited. Confirmed independently by the Phase 7V validator (100% subset utilisation, 0 out-of-subset keys) and by all 10 first-round critics.",
+    "coverage_disputes": []
+  },
+  "conflict_representation": {
+    "assigned": 90,
+    "properly_represented": 90,
+    "note": "All 10 re-check critics confirmed every assigned conflict is presented as a live disagreement with both parties cited. Six sections initially presented conflicts one-sided because of a coordinator filtering error (conflict counterparties were excluded from the permitted cite subsets); the subsets were rebuilt with both parties and the sections revised."
+  },
+  "rounds": [
+    {
+      "round": "8 first critics",
+      "must_fix": 87,
+      "should_caveat": 99,
+      "minor": 83,
+      "per_section": {
+        "02": {
+          "must_fix_count": 5,
+          "should_caveat_count": 7,
+          "minor_count": 9,
+          "conflicts_properly_represented": 7,
+          "conflicts_assigned": 7
+        },
+        "03": {
+          "must_fix_count": 10,
+          "should_caveat_count": 10,
+          "minor_count": 8,
+          "conflicts_properly_represented": 8,
+          "conflicts_assigned": 9
+        },
+        "04": {
+          "must_fix_count": 8,
+          "should_caveat_count": 10,
+          "minor_count": 7,
+          "conflicts_properly_represented": 11,
+          "conflicts_assigned": 11
+        },
+        "05": {
+          "must_fix_count": 9,
+          "should_caveat_count": 10,
+          "minor_count": 11,
+          "conflicts_properly_represented": 8,
+          "conflicts_assigned": 8
+        },
+        "06": {
+          "must_fix_count": 8,
+          "should_caveat_count": 10,
+          "minor_count": 10,
+          "conflicts_properly_represented": 9,
+          "conflicts_assigned": 10
+        },
+        "07": {
+          "must_fix_count": 10,
+          "should_caveat_count": 11,
+          "minor_count": 6,
+          "conflicts_properly_represented": 11,
+          "conflicts_assigned": 11
+        },
+        "08": {
+          "must_fix_count": 5,
+          "should_caveat_count": 9,
+          "minor_count": 6,
+          "conflicts_properly_represented": 5,
+          "conflicts_assigned": 5
+        },
+        "09": {
+          "must_fix_count": 11,
+          "should_caveat_count": 10,
+          "minor_count": 8,
+          "conflicts_properly_represented": 10,
+          "conflicts_assigned": 11
+        },
+        "10": {
+          "must_fix_count": 8,
+          "should_caveat_count": 14,
+          "minor_count": 10,
+          "conflicts_properly_represented": 8,
+          "conflicts_assigned": 9
+        },
+        "11": {
+          "must_fix_count": 13,
+          "should_caveat_count": 8,
+          "minor_count": 8,
+          "conflicts_properly_represented": 7,
+          "conflicts_assigned": 9
+        }
+      },
+      "critic_vids": {
+        "02": "cc96c837-ed30-4153-a6fa-7be8a72c2af6",
+        "03": "fc82c41a-716e-4a05-98c5-82ebb927d1c1",
+        "04": "0cfc4787-55e6-4039-bfb7-9e90be74dc10",
+        "05": "569a6126-403c-4444-a1df-880f11a06755",
+        "06": "57e2bed2-aa4b-42c6-93bf-3a79f3a0a5b8",
+        "07": "f58cc8f3-3d29-4a1e-8b2d-f35862fa8439",
+        "08": "3b967e5d-e6c8-4f0e-a84e-034de9aceb9d",
+        "09": "884ca924-1c11-47bf-b6ce-150dd51146bd",
+        "10": "648202f1-1222-4c96-85c5-e11ed2753597",
+        "11": "d99d5425-121c-4a71-8f59-35ae9d44b280"
+      },
+      "coordinator_error": "Critics were given the evidence package and cite subset but NOT the final figure plan, which by Phase 6 carried most of the verbatim sourcing gathered across two figure-remediation passes. They therefore judged as unsupported many claims that were in fact sourced."
+    },
+    {
+      "round": "8 re-check (figure plan supplied)",
+      "must_fix": 14,
+      "rebuttals_upheld": 81,
+      "rebuttals_rejected": 7,
+      "caption_items_raised": 77,
+      "per_section": {
+        "02": {
+          "must_fix_count": 1,
+          "rebuttals_upheld": 5,
+          "rebuttals_rejected": 1,
+          "caption_items_requiring_authorisation": 5,
+          "conflicts_properly_represented": 7,
+          "conflicts_assigned": 7
+        },
+        "03": {
+          "must_fix_count": 3,
+          "rebuttals_upheld": 8,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 4,
+          "conflicts_properly_represented": 9,
+          "conflicts_assigned": 9
+        },
+        "04": {
+          "must_fix_count": 1,
+          "rebuttals_upheld": 8,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 5,
+          "conflicts_properly_represented": 11,
+          "conflicts_assigned": 11
+        },
+        "05": {
+          "must_fix_count": 0,
+          "rebuttals_upheld": 9,
+          "rebuttals_rejected": 4,
+          "caption_items_requiring_authorisation": 8,
+          "conflicts_properly_represented": 8,
+          "conflicts_assigned": 8
+        },
+        "06": {
+          "must_fix_count": 2,
+          "rebuttals_upheld": 11,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 8,
+          "conflicts_properly_represented": 10,
+          "conflicts_assigned": 10
+        },
+        "07": {
+          "must_fix_count": 1,
+          "rebuttals_upheld": 10,
+          "rebuttals_rejected": 2,
+          "caption_items_requiring_authorisation": 9,
+          "conflicts_properly_represented": 11,
+          "conflicts_assigned": 11
+        },
+        "08": {
+          "must_fix_count": 1,
+          "rebuttals_upheld": 7,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 9,
+          "conflicts_properly_represented": 5,
+          "conflicts_assigned": 5
+        },
+        "09": {
+          "must_fix_count": 1,
+          "rebuttals_upheld": 9,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 15,
+          "conflicts_properly_represented": 11,
+          "conflicts_assigned": 11
+        },
+        "10": {
+          "must_fix_count": 2,
+          "rebuttals_upheld": 5,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 9,
+          "conflicts_properly_represented": 9,
+          "conflicts_assigned": 9
+        },
+        "11": {
+          "must_fix_count": 2,
+          "rebuttals_upheld": 5,
+          "rebuttals_rejected": 0,
+          "caption_items_requiring_authorisation": 5,
+          "conflicts_properly_represented": 9,
+          "conflicts_assigned": 9
+        }
+      },
+      "critic_vids": {
+        "02": "03f65307-28d0-4aca-88cb-5d0800db15d2",
+        "03": "4bc8440d-6937-4c0b-bcea-e9b8a165dd21",
+        "04": "b136aef1-e347-460a-999e-cf08913361e5",
+        "05": "41b09746-e7e4-4240-8f50-dfe6a8c7558c",
+        "06": "3edcbccb-1103-4a56-a065-8a1f0a71cc05",
+        "07": "36299b80-1f9f-4456-afc7-f4839ef64577",
+        "08": "78472f5b-4541-4d89-8806-a1e577e67b6d",
+        "09": "d523d06c-6f06-4e43-a348-0606c37b669c",
+        "10": "6d78c10a-772f-44ff-bc8a-aae6e6765b21",
+        "11": "33ff30a8-7ffc-4673-9a2d-2917921db888"
+      },
+      "finding": "81 of 88 writer rebuttals upheld. Several first-round MUST_FIX items would, if complied with, have reinstated values the figure audit deleted as untraceable; the writers' refusal to comply was correct.",
+      "coordinator_error_2": "The re-check task described the first critic's report as carrying the writers' responses; it does not. Most re-critics recovered the rebuttal text from the writer frames and declared the substitution; a few adjudications are provisional as to which items the writer actually argued."
+    },
+    {
+      "round": "8 final remediation",
+      "must_fix": 0,
+      "caption_items_applied": 77,
+      "note": "Coordinator authorised editing of the audited figure captions for the 77 filed items only, under hard limits: no audit-deleted numeral reinstated, no unsourced number introduced, no caveat substance weakened, no plotted value or panel altered."
+    },
+    {
+      "round": "8 figure-text synchronisation",
+      "note": "Authorising caption edits without figure edits left ~18 rendered figures printing wording their captions no longer used, one of them a substantive contradiction (section 09 figure 3 parent-cohort note). Coordinator authorised text-only figure edits; every writer re-rendered and verified plotted geometry identical (section 03 compared 69 geometry elements; others compared data arrays, bar geometry, axis limits and ticks). Section 09 figure 3 now agrees with its caption and the source records."
+    }
+  ],
+  "section_md_vids_final": {
+    "02": "71525abd-31ae-4300-94e3-dddaad1fa5f3",
+    "03": "c7ede307-8f52-4158-b02d-3266ddc671cd",
+    "04": "1d470200-283e-42e7-add7-823bd34a6f03",
+    "05": "05abe791-134a-49eb-96e6-13645a7afe68",
+    "06": "670427bc-3b96-42cc-b906-ef1d8124da69",
+    "07": "0925fb62-6674-4c74-a478-aabf282babd2",
+    "08": "815a4498-0705-45ac-8ced-921cec8a391d",
+    "09": "87c49f9e-573d-4a05-b2b1-fd92c17aaaad",
+    "10": "d7cd4baa-ed6c-485b-9db2-5212568bab38",
+    "11": "5c233d37-1b19-4e49-8a8d-4637724a300d"
+  },
+  "residual_declared_items": [
+    "A handful of non-rendered process-language phrases remain inside audited captions in sections 06 and 09 because the re-critics did not file them among the authorised items and writer authorisation was item-scoped. None is rendered in a PNG and none contradicts a figure.",
+    "Section 02 CAP-05 is caption-internal and not closable by figure text: the Dao2019 assay sits under a 'primary measurement' key with no arrow representing it.",
+    "Every section exceeds its scaffold word target (prose 103-148% of target; totals higher because the audit's mandatory caption caveats are reproduced verbatim). All 10 critics recorded this as MINOR with no evidence problem and referred it to the Phase 10 integration pass.",
+    "Three of section 03's six scaffold-listed unreplicated claims, and one of section 02's six, have no cite_key in any permitted subset and remain unflagged by name; both critics recorded this as a curation gap, not a writer fault.",
+    "Section 08 re-rendered its three figures to delete provenance footers (required by an authorised caption item) and verified byte-identical reproduction from both the repo root and the notebook directory."
+  ],
+  "known_defect_for_phase_14": "evidence_section_09.json's Davies1990 claim field inverts the paper's perikaryal result; see handoff_context.known_defects."
+}

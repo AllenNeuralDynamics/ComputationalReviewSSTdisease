@@ -33,7 +33,30 @@ project:
     - content/references.bib
   toc:
     - file: content/00_frontmatter.md
-    - file: content/01_introduction.md
+    - file: content/01_section.md
+      title: "Introduction"
+    - file: content/02_section.md
+      title: "SST Interneuron Identity: Transcriptomic Subtypes, Connectivity, and Somatostatin Receptor Signaling"
+    - file: content/03_section.md
+      title: "Selective Vulnerability of SST Interneurons in Aging and Neurodegeneration"
+    - file: content/04_section.md
+      title: "Alzheimer's Disease: SST Loss, Amyloid-β and Neprilysin, Tau, and Network Hyperexcitability"
+    - file: content/05_section.md
+      title: "Parkinson's Disease and Lewy Body Dementias"
+    - file: content/06_section.md
+      title: "Huntington's Disease and Striatal SST Interneurons"
+    - file: content/07_section.md
+      title: "ALS, Frontotemporal Dementia, and Other Neurodegenerative Conditions"
+    - file: content/08_section.md
+      title: "Circuit Consequences: Dendritic Inhibition, Oscillations, Sleep, and Memory"
+    - file: content/09_section.md
+      title: "Human Evidence: Postmortem Pathology, Single-Nucleus Atlases, and CSF Somatostatin as a Biomarker"
+    - file: content/10_section.md
+      title: "Therapeutic Strategies: Somatostatin Receptor Agonists, Interneuron-Targeted Interventions, and Neuromodulation"
+    - file: content/11_section.md
+      title: "Conflicting Evidence, Model Limitations, and Open Questions"
+    - file: content/12_section.md
+      title: "Conclusion"
     - file: content/Methods.md
       title: Methods
     - file: content/evidence_database.md

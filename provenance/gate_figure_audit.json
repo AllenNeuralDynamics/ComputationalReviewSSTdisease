@@ -1,0 +1,247 @@
+{
+  "phase": 6,
+  "gate": "pass",
+  "criterion": "orchestrator Phase 6 gate: zero REDESIGN remaining",
+  "result": {
+    "comparisons": 65,
+    "REDESIGN": 0,
+    "SPLIT": 0,
+    "CAVEAT": 61,
+    "PASS": 4
+  },
+  "per_section": {
+    "02": {
+      "n_comparisons": 6,
+      "pass_count": 0,
+      "caveat_count": 6,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 1,
+      "changelog_failures": 0
+    },
+    "03": {
+      "n_comparisons": 6,
+      "pass_count": 0,
+      "caveat_count": 6,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 0,
+      "changelog_failures": 1
+    },
+    "04": {
+      "n_comparisons": 7,
+      "pass_count": 0,
+      "caveat_count": 7,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 18,
+      "changelog_failures": 3
+    },
+    "05": {
+      "n_comparisons": 7,
+      "pass_count": 0,
+      "caveat_count": 7,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 9,
+      "changelog_failures": 3
+    },
+    "06": {
+      "n_comparisons": 5,
+      "pass_count": 0,
+      "caveat_count": 5,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 8,
+      "changelog_failures": 2
+    },
+    "07": {
+      "n_comparisons": 4,
+      "pass_count": 0,
+      "caveat_count": 4,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 7,
+      "changelog_failures": 1
+    },
+    "08": {
+      "n_comparisons": 7,
+      "pass_count": 0,
+      "caveat_count": 7,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 2,
+      "changelog_failures": 0
+    },
+    "09": {
+      "n_comparisons": 12,
+      "pass_count": 4,
+      "caveat_count": 8,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 6,
+      "changelog_failures": 3
+    },
+    "10": {
+      "n_comparisons": 6,
+      "pass_count": 0,
+      "caveat_count": 6,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 2,
+      "changelog_failures": 2
+    },
+    "11": {
+      "n_comparisons": 5,
+      "pass_count": 0,
+      "caveat_count": 5,
+      "split_count": 0,
+      "redesign_count": 0,
+      "untraceable_or_derived_numbers": 10,
+      "changelog_failures": 2
+    }
+  },
+  "history": [
+    {
+      "round": 1,
+      "packs": "narrative framing NOT stripped (coordinator error), no cite keys so the skill's study-label fabrication check could not run",
+      "verdicts": "0 PASS / 6 CAVEAT / 17 SPLIT / 28 REDESIGN over 51 comparisons",
+      "audit_vids": {
+        "02": "fb9c167c-65ce-4fe2-9639-e1884daa7064",
+        "03": "074e12b4-5810-4463-89a8-2d6d03d0d385",
+        "04": "3ec9492a-c883-4a3a-972d-e1283880e9c7",
+        "05": "6696d275-acbf-4b03-b91f-ac9695bd033d",
+        "06": "68f38dc3-27d4-4944-a62e-c1210e8372b6",
+        "07": "abba2404-6211-4210-bc80-518ec6e5d52f",
+        "08": "029f04bd-f08b-42d8-b4e2-89c2bb84dd8a",
+        "09": "baaccbde-ab25-4314-aa0d-960ab4b9cf31",
+        "10": "1bae739e-3ba1-47d8-a2d9-182f253dc3a3",
+        "11": "166839ce-1613-4d3a-8519-c2436e90e1dc"
+      }
+    },
+    {
+      "round": 2,
+      "packs": "rebuilt with framing stripped (10/10 assertions clean) and cite_key + study_label added",
+      "verdicts": "0 PASS / 5 CAVEAT / 17 SPLIT / 29 REDESIGN over 51 comparisons; 15 untraceable plotted values; reproduced round 1, so verdicts were robust to the blinding defect",
+      "audit_vids": {
+        "02": "f684aad9-afdc-4a2d-8677-602df7726fe1",
+        "03": "b1b7199e-5da1-471b-8c4a-73db9fac2b70",
+        "04": "4d7a6628-d82c-4ef9-8d85-a9bca09842ea",
+        "05": "1e039a64-ecb0-41c4-ba34-aa76af12a6f0",
+        "06": "0af455d2-1a54-401b-8eca-77dc07770457",
+        "07": "9276a187-bb2c-462b-a81f-db324cacb02a",
+        "08": "4d8ed38a-42cb-4bb5-acbc-e39b3bc3a483",
+        "09": "05bb8532-a460-4e17-bfbe-2668632935ff",
+        "10": "8cde5bc9-8928-463f-9e92-26d7e93b3ed8",
+        "11": "84421f37-42a3-4ee8-9c95-615c0dc97725"
+      }
+    },
+    {
+      "round": 3,
+      "packs": "built from remediation pass 1 (51 -> 64 comparisons)",
+      "verdicts": "0 PASS / 55 CAVEAT / 7 SPLIT / 2 REDESIGN; 19 untraceable-or-derived values; 23 change_log entries judged to relabel rather than resolve",
+      "audit_vids": {
+        "02": "20df0f3a-165e-4d83-b32a-d4cc3e637b81",
+        "03": "7a7d55ff-12f7-490b-ba86-cb86cedd3712",
+        "04": "13c869ba-8532-40ca-bc55-7b78822ec6f4",
+        "05": "fe6d2c4d-8789-4545-9178-6644048e6f34",
+        "06": "9ad465d7-ab2a-4eb5-a65a-1c6113898c60",
+        "07": "4e03dab8-1b96-4dbe-ac52-b993dbf19733",
+        "08": "f2622590-7510-4bc6-99fa-e12a1bc6a208",
+        "09": "a5e33414-0d19-473e-a412-ea87a888c30e",
+        "10": "a8947419-fffc-43fb-9daa-820b9506577d",
+        "11": "0371c779-c9fc-4163-9d02-ffe2f6785804"
+      }
+    },
+    {
+      "round": 4,
+      "packs": "built from remediation pass 2 (final plans, 65 comparisons)",
+      "verdicts": "4 PASS / 61 CAVEAT / 0 SPLIT / 0 REDESIGN over 65 comparisons; 63 untraceable-or-derived numerals and 17 change_log resolution failures remain (see residual_items_routed_to_phase_7)",
+      "audit_vids": {
+        "02": "0c2653ea-44f0-4057-b771-12a4bf303efc",
+        "03": "265a8248-bd16-4112-930f-8175698a6f79",
+        "04": "732d6e57-bd53-42ec-b9a0-13814b3ec7bf",
+        "05": "be7f53bd-bd8e-4bff-8c2f-9d14efb4959b",
+        "06": "91a2c00d-4804-409b-97b5-ebca1f9b8c43",
+        "07": "dcf57cbe-84f9-4251-acc4-bfb56c86a2b7",
+        "08": "55c2a369-8db8-45ca-90f3-0cdaa337cb2f",
+        "09": "fcccda95-4299-4000-95a3-de198a7d1614",
+        "10": "1fce71f7-d070-480d-b55f-ae4e76a12bbf",
+        "11": "7770b5f6-a868-49a3-b2e8-1b7f6fbb1052"
+      }
+    }
+  ],
+  "final_figure_plans": {
+    "02": "a648c0a1-505f-4df7-a369-22128bfa500f",
+    "03": "4dab22e6-7982-429c-93fd-6d24dbe1c979",
+    "04": "a1eb5d38-e9a7-46a4-8fbd-f687eb5a2c3b",
+    "05": "679b9873-c389-4511-b5c9-df7aada0d427",
+    "06": "af5377fd-04cb-4145-8b49-52f023b99051",
+    "07": "e84723c9-018b-41bc-aec8-5703120ffc0c",
+    "08": "b29a4ce6-2de6-454f-b9f4-697c2be6e3ba",
+    "09": "1cbd56a7-be70-4f7d-a320-2241cbc23ef2",
+    "10": "ba95c1dd-afd5-4d33-b951-81e7c3c7754a",
+    "11": "7ceb3e03-6fe3-43e7-b3c2-f522dd026143"
+  },
+  "label_provenance": {
+    "vid": "0de07da8-c53b-40fa-bfa9-fa0b598bcc0a",
+    "result": "184/184 figure entries MATCH live CrossRef on first-author surname and year; 0 mismatches, 0 unresolved. The round-2 'Yamada2026' fabrication flag was adjudicated NOT a fabricated label (surname and year confirmed); that entry was later dropped from the plan on fitness grounds."
+  },
+  "residual_items_routed_to_phase_7": {
+    "note": "Round-4 critics report remaining untraceable-or-derived numerals; per their own text the large majority sit in change_log / homogeneity provenance prose, which is an internal audit trail and never reaches the manuscript. The reader-facing remainder is listed here and is a BLOCKING constraint on the Phase 7 writers, who author the actual captions and build the figures.",
+    "section_03": "5 unsourced method attributions, 2 of them in load-bearing caption text",
+    "section_07": "7 numerals in the caption caveats of C03 and C04",
+    "section_10": "1 untraceable plotted value (40 Hz, Lim 2026) and 1 derived numeral ('two orders of magnitude')",
+    "section_11": "1 numeral outside change_log history",
+    "section_06": "3 studies cited in exclusion caveats (Thabault2026, Friedman2020, Matlik2024) have no abstract and no retained entry in the pack, so those caption assertions are unchecked",
+    "per_section_untraceable_or_derived_counts": {
+      "02": 1,
+      "03": 0,
+      "04": 18,
+      "05": 9,
+      "06": 8,
+      "07": 7,
+      "08": 2,
+      "09": 6,
+      "10": 2,
+      "11": 10
+    },
+    "per_section_changelog_failures": {
+      "02": 0,
+      "03": 1,
+      "04": 3,
+      "05": 3,
+      "06": 2,
+      "07": 1,
+      "08": 0,
+      "09": 3,
+      "10": 2,
+      "11": 2
+    },
+    "totals": {
+      "untraceable_or_derived": 63,
+      "changelog_failures": 17
+    }
+  },
+  "declared_critic_limits": [
+    "Round-4 critics for sections 02 and 06 could not run the skill's live-metadata study-label check because blinding forbids network use; that check was instead run non-blinded over all 184 entries (see label_provenance) and passed.",
+    "Several change_log claims reference entry-level fields that pack construction strips, so those claims are 'unverifiable_from_pack' rather than verified.",
+    "All verdicts rest on abstracts plus cited source sentences, not full texts."
+  ],
+  "child_frames": {
+    "round1": [
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11"
+    ],
+    "remediation_pass1": "10 LITREVIEW children",
+    "remediation_pass2": "10 LITREVIEW children"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "phase": "3V",
+  "review": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "validator": "DATAML (independent; did not build inputs)",
+  "validated_at_utc": "2026-10-16T22:58:39Z",
+  "citation_key_map_version_id": "942bb88d-e805-46d4-8c01-d39745b46525",
+  "citation_key_map_artifact_id": "8bdc946e-eff8-47a4-b2e5-528ef8669d56",
+  "author_name_table_version_id": "f930c8a4-fda9-440a-8044-1e2cbff19043",
+  "total_entries": 726,
+  "doi_count": 726,
+  "evidence_ground_truth": {
+    "findings": 844,
+    "unique_primary_dois": 726,
+    "dois_in_key_map": 726,
+    "orphan_dois_no_key": 0,
+    "orphan_keys_unused": 0
+  },
+  "method": "All 726 DOIs re-queried live against api.crossref.org/works/{doi} (stdlib urllib, unverified SSL ctx); 4 entries cross-checked against Europe PMC. No sampling.",
+  "per_check": {
+    "CROSSREF_RESOLVES": {
+      "result": "pass",
+      "pass": 726,
+      "fail": 0,
+      "note": "All 726 returned HTTP 200. Two DOIs (10.1038/nn.3446, 10.1038/s41467-025-64859-0) returned HTTP 429 on first pass and resolved on retry \u2014 rate limiting, not absence."
+    },
+    "KEY_FORMAT": {
+      "result": "pass",
+      "pass": 726,
+      "fail": 0,
+      "note": "All keys match ^[A-Za-z]+[0-9]{4}[a-z]?$ (Author+Year, optional single-letter disambiguator). No key uses a trailing title word; convention applied uniformly."
+    },
+    "KEY_UNIQUE": {
+      "result": "pass",
+      "pass": 726,
+      "fail": 0,
+      "duplicates": []
+    },
+    "KEY_ASCII": {
+      "result": "pass",
+      "pass": 726,
+      "fail": 0,
+      "note": "Also checked author_name_table first_author and display fields: 0 non-ASCII."
+    },
+    "AUTHOR_MATCH": {
+      "result": "pass",
+      "pass": 725,
+      "fail": 0,
+      "exception": 1,
+      "note": "725/726 cite-key surnames equal CrossRef author[0].family (NFKD-stripped, ASCII, case-insensitive; multi-token surnames matched on full concatenation or a token). 10.1176/ajp.144.10.1313 (Sunderland1987) has an EMPTY CrossRef author array; Europe PMC gives first author lastName='Sunderland' (pubYear 1987) \u2014 surname corroborated by an independent source, counted as exception not failure."
+    },
+    "YEAR_MATCH": {
+      "result": "pass",
+      "pass": 726,
+      "fail": 0,
+      "note": "All key years within +/-1 of CrossRef issued year; 726/726 are exact matches. author_name_table.year also equals CrossRef year for all 726."
+    },
+    "DISAMBIGUATION_SUFFIXES": {
+      "result": "pass",
+      "collision_groups": 22,
+      "suffixed_keys": 48,
+      "note": "Suffix letters contiguous a..n in every group, and in every group the a..n order follows ascending DOI sort \u2014 deterministic. No unsuffixed key shares a base with a suffixed group."
+    },
+    "AUTHOR_TABLE_ROW_FOR_ROW": {
+      "result": "pass",
+      "note": "author_name_table has exactly the 726 cite keys of the key map (0 table-only, 0 map-only); every row's doi equals the key map's DOI for that key; cite_key field self-consistent; len(all_authors)==n_authors for all rows; et_al flag == (n_authors>2) for all rows; display prefixed by first_author for all rows."
+    },
+    "CONTAMINATION": {
+      "result": "pass",
+      "suspects": 0,
+      "note": "For every entry the cite-key surname occurs in the CrossRef author list of that DOI. No surname traceable to prompt text rather than resolved metadata. Actor's crossref_metadata.json checkpoint also compared field-by-field against the independent live fetch: 0 discrepancies in author[0].family or year across the 722 crossref-sourced entries."
+    }
+  },
+  "per_entry_failures": [],
+  "cross_check_failures": [],
+  "actor_claims_verified": [
+    {
+      "claim": "722 DOIs via CrossRef, 4 via Europe PMC",
+      "status": "confirmed_as_sourcing",
+      "detail": "author_name_table/crossref_metadata label exactly 722 crossref + 4 europepmc (Loreth2012, Savanthrapadian2014, Sunderland1987, Wunderlin2026)."
+    },
+    {
+      "claim": "3 DOIs absent from CrossRef",
+      "status": "not_reproduced",
+      "detail": "10.1016/j.nbd.2012.03.011, 10.1038/s41598-026-47886-9 and 10.1523/jneurosci.5433-13.2014 all return HTTP 200 from CrossRef now, with author[0].family = Loreth / Wunderlin / Savanthrapadian and years 2012/2026/2014 \u2014 identical to the Europe PMC values the actor stored. Likely transient fetch failure at build time; no effect on correctness."
+    },
+    {
+      "claim": "10.1176/ajp.144.10.1313 had an empty CrossRef author list",
+      "status": "confirmed",
+      "detail": "CrossRef record resolves with author array length 0; Europe PMC supplies Sunderland (1987)."
+    },
+    {
+      "claim": "22 collision groups -> 48 suffixed keys",
+      "status": "confirmed",
+      "detail": "22 groups, 48 suffixed keys; group sizes 2 (x19), 3 (Wang2025), 5 (Beal1986)."
+    }
+  ],
+  "warnings": [
+    {
+      "type": "REPLICATION_DOIS_WITHOUT_KEYS",
+      "count": 19,
+      "note": "19 DOIs appear only in findings' replication_evidence_dois (never as a finding source DOI) and have no cite key. Outside the Phase-2V-certified 726 primary-DOI scope; non-blocking, but any section text that cites a replication DOI inline would lack a key.",
+      "dois": [
+        "10.1007/s40520-026-03408-1",
+        "10.1016/j.celrep.2018.06.049",
+        "10.1016/j.crmeth.2026.101531",
+        "10.1016/j.expneurol.2025.115",
+        "10.1038/s41467-018-04529-6",
+        "10.1038/s41598-026-42112-y",
+        "10.1073/pnas.2400298121",
+        "10.1073/pnas.2522515122",
+        "10.1093/braincomms/fcag292",
+        "10.1093/cercor/bhag152",
+        "10.1126/scitranslmed.adz2557",
+        "10.1136/jnnp.2004.051334",
+        "10.12786/bn.2026.19.e2",
+        "10.1523/jneurosci.0005-14.2014",
+        "10.3389/fncel.2026.1785079",
+        "10.3389/fneur.2026.1798525",
+        "10.3390/brainsci16080808",
+        "10.64898/2026.07.12.737793",
+        "10.7554/elife.97673"
+      ]
+    }
+  ],
+  "aggregate": {
+    "entries_checked": 726,
+    "entries_fully_passing": 726,
+    "pass_rate": 1.0,
+    "threshold": "\u226595% pass, zero collisions",
+    "collisions": 0
+  },
+  "gate": "pass",
+  "verdict": "CERTIFIED \u2014 citation_key_map.json version_id 942bb88d-e805-46d4-8c01-d39745b46525 is certified for downstream phases (4-9). All 726 entries pass CROSSREF_RESOLVES, KEY_FORMAT, KEY_UNIQUE, KEY_ASCII, YEAR_MATCH and the author-table row-for-row check; AUTHOR_MATCH passes for 725 directly from CrossRef author[0].family and for 1 (Sunderland1987) from Europe PMC where CrossRef's author array is empty. Zero contamination suspects, zero collisions, zero orphan DOIs or orphan keys against the 844-finding / 726-DOI Phase-2V ground truth."
+}

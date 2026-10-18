@@ -1,0 +1,183 @@
+{
+  "phase_1": {
+    "status": "complete",
+    "gate_artifact_id": "1bdb5ea4-2a6a-4450-a394-fdb7833aa940",
+    "child_ids": [
+      "55ad8a78-35b4-4d77-a638-508aca8df920",
+      "d00f8fc9-acca-4bf8-91be-3937606af53e",
+      "001b98a3-a9ad-45a6-b788-1ae55a3adad9",
+      "7e340531-e6f0-4945-847d-561ac00f5e5a"
+    ]
+  },
+  "phase_2": {
+    "status": "complete",
+    "gate_artifact_id": "592feb23-84a9-40ab-aa08-0935e1bd8923",
+    "child_ids": []
+  },
+  "phase_3": {
+    "status": "complete",
+    "gate_artifact_id": "533f15a7-7371-40d1-8069-8157ca666602",
+    "child_ids": [
+      "34d6198a-ef0b-4af3-9602-9c34cd685c9d",
+      "b85aa1c3-c0ed-4fdb-87a4-c1a97b05454d"
+    ]
+  },
+  "phase_4": {
+    "status": "complete",
+    "gate_artifact_id": "eb21423b-4611-487d-ab7c-7c28c6b1f202",
+    "child_ids": [
+      "0efec469-21d2-4019-a28b-5715fc83aedf"
+    ]
+  },
+  "phase_5": {
+    "status": "complete",
+    "gate_artifact_id": "1873aeda-41c7-4b8c-a645-3d9afc18ec7b",
+    "child_ids": [
+      "9a8ad36f-603d-4b5d-9703-6a085d118687",
+      "07ffe324-0bf3-4b9b-8706-046f8652b029"
+    ]
+  },
+  "phase_6": {
+    "status": "complete",
+    "gate_artifact_id": "d63bb9b5-0147-400c-9bf6-cd1d884cca7d",
+    "child_ids": []
+  },
+  "phase_7": {
+    "status": "complete",
+    "gate_artifact_id": "4c86b60d-9956-43f4-8d06-2f1e0d249edb",
+    "child_ids": [
+      "f39354ec-58ec-4fa7-9e67-b0d5574b4085",
+      "803331f2-0185-42d1-abc1-434eee11fd79",
+      "876cbd1e-b46c-4564-92c0-34a4c08c8f33",
+      "d28adbba-dfa5-44e8-8a82-2146dfcfa6df",
+      "7504412b-5802-40ce-afc7-c7f2e315c651",
+      "33401c5f-ad05-4333-8e7a-0e9a0dc394c3",
+      "23c0bf94-d8ef-4ee0-a4e4-ac3dad4bf281",
+      "d6b46e32-bfe3-48d7-8e55-675e8917a0f7",
+      "f8a37b8e-341d-4175-bda0-5cf9e5de2ce2",
+      "ba9626b0-8935-4dfe-9403-edfd4045f259"
+    ]
+  },
+  "phase_8": {
+    "status": "complete",
+    "gate_artifact_id": "6d2bd56d-8457-4529-bae7-f70bc4c7051b",
+    "child_ids": []
+  },
+  "phase_9": {
+    "status": "complete",
+    "gate_artifact_id": "57bb9858-a02c-4aae-abde-16d2c05d3875",
+    "child_ids": [
+      "40218956-178c-469c-a536-7731f7f89fe5",
+      "3cb9bcb0-7b44-4de8-a824-857f985e270f"
+    ]
+  },
+  "phase_10": {
+    "status": "complete",
+    "gate_artifact_id": "pending",
+    "child_ids": [
+      "dc626719-ed27-4a57-b636-abad86ed46af"
+    ]
+  },
+  "phase_11": {
+    "status": "complete",
+    "child_ids": [
+      "084a5550-fe53-4adf-8a0d-a1698059d0f2"
+    ],
+    "gate": "pass"
+  },
+  "phase_12": {
+    "status": "complete",
+    "gate": "pass",
+    "must_fix": 0,
+    "child_ids": [
+      "a885714b-911a-4dee-82e7-eaa03b216706",
+      "419b48c5-9399-4999-b7d1-f3e5f990b0d8",
+      "d767761a-7a50-4d1d-a197-e457b00f6656",
+      "dc062659-2bb0-4ed5-a757-069ddc1bc7a6",
+      "0df861f2-710a-471e-a74a-c40234554888",
+      "52f4e3f8-6f88-4be0-870e-d37514cee22f"
+    ]
+  },
+  "phase_13": {
+    "status": "complete",
+    "gate": "pass",
+    "methods": "24b1b975-b454-4cdb-a773-0c568ec0a382",
+    "child_ids": [
+      "12fd90a3-adfa-47e6-99c9-df9fc51f0a13"
+    ]
+  },
+  "phase_14": {
+    "status": "complete",
+    "gate": "pass",
+    "child_ids": [
+      "9d4360a4-b0c6-4fc8-a18b-14c8fc71e460",
+      "91bcff44-6996-4ee5-a784-1af3cd30aef4"
+    ]
+  },
+  "phase_15": {
+    "status": "complete",
+    "gate": "fail_then_addressed",
+    "triples": 1534,
+    "child_ids": [
+      "19da96e6-d6c4-4a35-a0b0-e0da45732032",
+      "5d78bf8e-1a50-4d47-8319-242b18b34f42"
+    ]
+  },
+  "phase_16": {
+    "status": "complete",
+    "verdicts": {
+      "VERIFIED": 1351,
+      "MINOR": 122,
+      "MISATTRIBUTED": 25,
+      "CHIMERIC": 0,
+      "HALLUCINATED": 0,
+      "unverifiable_text_not_retrieved": 36
+    },
+    "child_ids": [
+      "788a1c12-edbd-4596-8a89-2ec14ac94388",
+      "48d86de7-9110-46af-9ed0-ce34ab5b1dfc",
+      "2fa74b13-930b-4395-8bd5-e57b8d32369d",
+      "922c177a-f992-4158-8ca2-9b5259f8eb5b"
+    ]
+  },
+  "phase_17": {
+    "status": "complete",
+    "gate": "pass",
+    "requests": 118,
+    "child_ids": [
+      "16e0e4df-36ad-4557-99aa-193f1c2fe485",
+      "e9c65357-bc7b-4abe-a442-a8dda311b97c"
+    ]
+  },
+  "phase_18": {
+    "status": "complete",
+    "applied": 113,
+    "skipped": 5,
+    "failed": 0,
+    "child_ids": [
+      "55e05d26-58c4-43a2-9c8c-b34d6359f292"
+    ]
+  },
+  "phase_19": {
+    "status": "complete",
+    "gate": "pass",
+    "build": "myst build ran: 16/16 pages, 0 citation-link errors, 0 missing images, 0 unknown directives",
+    "child_ids": [
+      "394bbdfa-3ea0-405e-b3cd-74d5ccd4a52c"
+    ]
+  },
+  "phase_20": {
+    "status": "complete",
+    "gate_artifact": "provenance/gate_repository_push.json",
+    "note": "this commit"
+  },
+  "phase_21": {
+    "status": "post_deployment",
+    "gate_artifact": null,
+    "note": "deploy-polish gate; runs against the served site after this commit is deployed"
+  },
+  "phase_20a": {
+    "status": "complete",
+    "gate_artifact": "provenance/gate_phase_20a_methods_refresh.json"
+  }
+}

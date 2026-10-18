@@ -1,0 +1,229 @@
+{
+  "phase": 9,
+  "phase_label": "9V",
+  "role": "DATAML citation validator (independent, did not build bibliography)",
+  "validated_at_utc": "2026-10-17T16:21:35.181989+00:00",
+  "inputs": {
+    "bib_artifact_id": "791d0c35-de3b-4d69-bacd-99121e3f3d8e",
+    "bib_version_id": "ecdc36d7-3652-4393-88fc-623bd98d2559",
+    "citation_key_map_version_id": "942bb88d (certified, 726 keys)",
+    "author_name_table_version_id": "f930c8a4",
+    "cache_vs_fetch_log_version_id": "765721d9",
+    "sections_checked": [
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11"
+    ],
+    "crossref_fetch": "live api.crossref.org/works/{doi}, all 726 DOIs, no sampling",
+    "europepmc_fetch": "live ebi.ac.uk/europepmc search, 6 entries flagged by actor"
+  },
+  "total_entries": 726,
+  "gate": "pass",
+  "verdict": "PASS — references.bib is publication-ready. All 726 entries resolve at CrossRef and match their live records on first author, full author list, title, year, journal, volume, issue and pages. Keys are byte-identical to the 726 certified cite keys including all 48 disambiguation suffixes; no duplicates, no contamination, file is pure ASCII, every cite key used in the 10 sections resolves, and there are no orphans. Two non-blocking defects found (HTML entities inherited verbatim from CrossRef in 36 journal names + 1 title; one book chapter typed @misc) and two actor claims found slightly misstated (preprint @misc count; 'all 34 disagreements resolved in favour of the fresh fetch'). No blocking failure.",
+  "per_check": {
+    "CROSSREF_RESOLVES": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0,
+      "note": "726/726 HTTP 200 on fresh fetch; one DOI (10.1038/s41593-025-01888-4) returned 429 on first attempt and 200 on polite retry. Includes the 7 DOIs on the 10.64898 prefix, which resolve normally."
+    },
+    "HAS_DOI": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0
+    },
+    "AUTHOR_CROSSREF_MATCH": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0,
+      "note": "Bib first-author surname equals CrossRef author[0].family after LaTeX-accent decoding and ASCII folding for 725/726. Sunderland1987 passes via Europe PMC: its CrossRef record carries zero authors (author[] empty), and the bib author list matches Europe PMC exactly.",
+      "full_author_list_check": "Also compared the COMPLETE author list of every entry against CrossRef: 726/726 agree in length and order; the only character-level differences are 3 entries where CrossRef itself stores U+FFFD (Cramer1981 'Schr\\ufffdter', Freund1990 'Buzs\\ufffdki', Molins1991 'Catal\\ufffdn') and the bib carries the correct Europe PMC spelling."
+    },
+    "TITLE_SIMILARITY": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0,
+      "threshold": 0.85,
+      "min_observed": 0.875,
+      "note": "After constrained tag-stripping (<i>,<scp>), LaTeX-accent/math decoding and Greek-letter folding, 725/726 titles are token-identical to CrossRef. The single non-identical title is Esclapez1995, where the CrossRef title is corrupt ('decar\\u2610ylase', ballot box for 'box'); the bib carries the correct Europe PMC title."
+    },
+    "YEAR_MATCH": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0,
+      "note": "726/726 exact — not merely within the \\u00b11 tolerance."
+    },
+    "ASCII_ONLY": {
+      "result": "pass",
+      "n_pass": 726,
+      "n_fail": 0,
+      "note": "Zero bytes >127 anywhere in the file, not just in author fields. All diacritics encoded as LaTeX accent commands; $..$ math delimiters balanced in all 726 titles; no unescaped &, %, #, _ ; no residual HTML tags."
+    },
+    "KEYS_MATCH_CERTIFIED_MAP": {
+      "result": "pass",
+      "note": "Set of 726 bib keys is byte-for-byte identical to the 726 values in citation_key_map.json; 0 extra, 0 missing. Each entry's doi field also equals the map key for that cite key (726/726). 48 keys carry a disambiguation suffix, forming 22 complete groups with contiguous a,b(,c) sequences and no gaps."
+    },
+    "KEY_UNIQUE": {
+      "result": "pass",
+      "note": "No duplicate cite keys; no duplicate DOIs; no duplicate entries."
+    },
+    "KEY_DERIVATION": {
+      "result": "pass",
+      "note": "All 726 keys match ^[A-Za-z]+[0-9]{4}[a-z]?$; the surname component equals the ASCII-folded CrossRef author[0].family for 726/726 and the year component equals both the bib year and the CrossRef year for 726/726."
+    },
+    "NO_CONTAMINATION": {
+      "result": "pass",
+      "n_fail": 0,
+      "note": "For every entry, the bib first-author surname appears in that DOI's own CrossRef author list. No bib title matches a different DOI's CrossRef title better than its own. Zero cross-DOI contamination."
+    },
+    "JOURNAL_MATCH": {
+      "result": "pass",
+      "n_pass": 700,
+      "n_fail": 0,
+      "note": "All 700 @article journal names equal CrossRef container-title[0] after entity/markup folding. The 26 @misc entries carry no journal field; 25 have an empty CrossRef container-title (posted-content), and Chesselet2007 has container-title 'Novartis Foundation Symposia' (see warnings)."
+    },
+    "VOLUME_ISSUE_PAGES": {
+      "result": "pass",
+      "n_fail": 0,
+      "note": "volume (693 entries) and number/issue (592) match CrossRef exactly; pages (686) match CrossRef page or article-number exactly. The 40 entries with no pages field are exactly the entries for which CrossRef supplies neither page nor article-number — 0 cases of an omitted but available value."
+    },
+    "ALL_KEYS_IN_BIB": {
+      "result": "pass",
+      "note": "1441 {cite:p}/{cite:t} key occurrences across the 10 sections resolve to 726 distinct keys; all 726 exist in references.bib. 0 unresolved keys — MyST build is not blocked. No other citation syntax (\\\\cite{}, pandoc [@key]) appears in any section."
+    },
+    "NO_ORPHAN_BIB": {
+      "result": "pass",
+      "note": "0 orphan entries: every one of the 726 bib entries is cited at least once."
+    }
+  },
+  "per_entry_failures": [],
+  "cross_check_failures": [],
+  "warnings": [
+    {
+      "id": "W1",
+      "severity": "cosmetic-rendering",
+      "count": 37,
+      "n_entries": 36,
+      "issue": "HTML entities inherited verbatim from CrossRef and escaped as literal text: 36 entries contain '\\\\&amp;' in the journal field (e.g. \"Alzheimer's \\\\&amp; Dementia\") and Lisgaras2025 contains '\\\\&gt;250 Hz' in its title. In LaTeX these render as '&amp;' and '&gt;' rather than '&' and '>'. Chen2024 additionally carries '{\\\\textregistered}' from CrossRef's '\\u00ae'.",
+      "verified": "All 37 occurrences are present in the CrossRef source strings themselves — this is faithful transcription, not fabrication. Not blocking; fix is a mechanical entity unescape before typesetting.",
+      "entries": [
+        "Baumgartner2025",
+        "Chan2025",
+        "Chen2024",
+        "Constantino2026",
+        "Epelbaum1987",
+        "FloresCuadrado2017",
+        "Fowler2026",
+        "Franklin2008",
+        "Germann2025",
+        "He2021",
+        "Hughes2025",
+        "Jiang2026",
+        "Jolkkonen1986",
+        "Kiljan2019",
+        "Kish1993",
+        "Kolling2026",
+        "Leake1993",
+        "Lisgaras2025",
+        "Matsuyama1993",
+        "Metzendorf2025",
+        "Nilsson2009",
+        "Noel2018",
+        "Pavey2024",
+        "Pervolaraki2019",
+        "Poca2001",
+        "Reiner2018",
+        "Ren2025",
+        "Rofo2022",
+        "Saxena2024",
+        "Slater2025",
+        "Vucic2012",
+        "Yeapuri2025",
+        "Yu2026",
+        "Zhang2026a",
+        "Zhu2026",
+        "Ziccardi2024"
+      ]
+    },
+    {
+      "id": "W2",
+      "severity": "typing",
+      "count": 1,
+      "issue": "Chesselet2007 (10.1002/9780470514733.ch4) is typed @misc with howpublished={Wiley}, but it is a Novartis Foundation Symposium book chapter (CrossRef type 'other', container-title 'Novartis Foundation Symposia'), not a preprint. As @misc with no journal/booktitle it will render without a venue.",
+      "entries": [
+        "Chesselet2007"
+      ]
+    },
+    {
+      "id": "W3",
+      "severity": "informational",
+      "count": 3,
+      "issue": "Three works are cited as both preprint and published version under distinct DOIs, correctly disambiguated with a/b suffixes: Consens2022a (bioRxiv) / Consens2022b (Front Mol Neurosci); Morgan2024a (Sci Rep) / Morgan2024b (Research Square); Yokomizo2025a (Adv Sci) / Yokomizo2025b (bioRxiv). Not duplicates — distinct records — but the author may prefer to cite only the version of record."
+    }
+  ],
+  "actor_claim_adjudication": [
+    {
+      "claim": "726 entries = exactly the 726 certified keys, 0 retained-but-uncited, 0 missing",
+      "verdict": "CONFIRMED",
+      "evidence": "726 parsed entries; bib key set minus certified key set = {} and certified minus bib = {}; 0 orphans; 0 cited-but-missing."
+    },
+    {
+      "claim": "1,441 citation-key occurrences across the 10 sections resolve to 726 distinct keys",
+      "verdict": "CONFIRMED",
+      "evidence": "Independently re-extracted from the 10 section artifacts: 1441 occurrences (02:113, 03:124, 04:230, 05:112, 06:139, 07:133, 08:128, 09:188, 10:125, 11:149), 726 distinct, all resolving."
+    },
+    {
+      "claim": "All 726 DOIs resolve in a fresh CrossRef fetch",
+      "verdict": "CONFIRMED",
+      "evidence": "Independent fresh fetch of all 726: 726/726 HTTP 200 (one 429 cleared on a single polite retry)."
+    },
+    {
+      "claim": "34 cache-vs-fetch disagreements, all resolved in favour of the fresh fetch (27 journal, 4 type, 1 title en dash, 1 pages, 1 first_author)",
+      "verdict": "PARTIALLY CONFIRMED — count and breakdown exact; the 'all in favour of the fresh fetch' characterisation is wrong for 2 of 34, though the final bib value is correct in both",
+      "evidence": {
+        "count": "34 disagreements, breakdown exactly 27 journal / 4 type / 1 title / 1 pages / 1 first_author — confirmed.",
+        "agreement": "For 33/34 the logged fetched value equals the current live CrossRef value, and for 33/34 the bib carries that value.",
+        "exception_1": "pages, Wunderlin2026 (10.1038/s41598-026-47886-9): logged fetch = '' (empty), cache = '11716'. The bib carries 11716, which is CrossRef's article-number for this record and is correct — so this one was resolved in favour of the cache / article-number recovery, not the fetch.",
+        "exception_2": "first_author, Sunderland1987 (10.1176/ajp.144.10.1313): logged fetch = '' because the CrossRef record has an empty author array. The bib carries 'Sunderland', taken from Europe PMC — resolved in favour of Europe PMC, not the fetch. Resolving in favour of the fetch here would have produced an authorless entry.",
+        "net": "Both exceptions produce the correct final value; no action needed, but the claim as worded overstates the rule."
+      }
+    },
+    {
+      "claim": "6 entries take fields from Europe PMC because CrossRef is incomplete or carries U+FFFD / ballot-box mojibake: Sunderland1987, Cramer1981, Esclapez1995, Freund1990, Herrmann2001, Molins1991",
+      "verdict": "CONFIRMED — all 6 corrupted at CrossRef, all 6 Europe PMC substitutions correct",
+      "evidence": {
+        "scan": "An independent scan of all 726 live CrossRef records for U+FFFD / U+2610 / U+25A1 in author or title returned exactly 5 entries (Cramer1981, Esclapez1995, Freund1990, Herrmann2001, Molins1991), and exactly 1 record has an empty author array (Sunderland1987) — the same 6, no more and no fewer.",
+        "Sunderland1987": "CrossRef author[] empty. Europe PMC gives Sunderland, Rubinow, Tariot, Cohen, Newhouse, Mellow (+2); bib matches all 8 in order. Title, Am J Psychiatry 1987, 1313--1316 all match.",
+        "Cramer1981": "CrossRef 'Schr\\ufffdter' and a mangled title ('chorea?Measurements'); Europe PMC gives 'Schr\\u00f6ter' and 'Huntington's chorea-- measurements...'; bib matches Europe PMC (Schr{\\\\\"o}ter), J Neurol 1981, 183--187.",
+        "Esclapez1995": "CrossRef title reads 'decar\\u2610ylase' (ballot box); Europe PMC has 'decarboxylase'; bib matches Europe PMC. Authors Esclapez, Houser agree in both. Neuroscience 1995, 339--355.",
+        "Freund1990": "CrossRef 'Buzs\\ufffdki'; Europe PMC 'Buzs\\u00e1ki'; bib has Buzs{\\\\'a}ki. Authors and title match Europe PMC.",
+        "Herrmann2001": "CrossRef title 'Human EEG responses to 1?100\\ufffdHz flicker...'; Europe PMC '1-100 Hz'; bib matches Europe PMC. Exp Brain Res 2001, 346--353.",
+        "Molins1991": "CrossRef 'Catal\\ufffdn'; Europe PMC 'Catal\\u00e1n'; bib has Catal{\\\\'a}n. All 6 authors, title, J Neurol 1991, 168--170 match Europe PMC.",
+        "wrong_author_risk": "Specifically checked: none of the 6 carries an author name that is absent from its own Europe PMC record, and none matches another DOI's record. No wrong-author substitution."
+      }
+    },
+    {
+      "claim": "26 @misc preprint entries (bioRxiv 19, Research Square 5, medRxiv 1)",
+      "verdict": "PARTIALLY CONFIRMED — 26 @misc entries, but only 25 are preprints",
+      "evidence": "howpublished counts: bioRxiv preprint 19, Research Square preprint 5, medRxiv preprint 1 = 25 preprints (all 25 are CrossRef type 'posted-content', and each entry's server attribution agrees with the CrossRef institution/publisher field). The 26th @misc is Chesselet2007, a Novartis Foundation Symposium book chapter (CrossRef type 'other'), howpublished={Wiley} — not a preprint. See warning W2."
+    },
+    {
+      "claim": "182 recovered article-numbers",
+      "verdict": "CONFIRMED (exact)",
+      "evidence": "Exactly 182 CrossRef records supply no 'page' but do supply an 'article-number', and in all 182 the bib pages field equals that article-number byte-for-byte. Total non-range pages values in the bib is 278; the remaining 96 are single-page or e-locator values that CrossRef returns in its own 'page' field."
+    }
+  ],
+  "method_notes": [
+    "Independent re-derivation: the bibliography, key map and section files were re-parsed from the artifacts; no actor-supplied intermediate was trusted.",
+    "All 726 CrossRef records fetched live (stdlib urllib, unverified SSL context, 4 workers with inter-request pacing, one retry on 429). 6 Europe PMC records fetched live with 1 s spacing.",
+    "Comparison normalisation: constrained HTML tag removal, LaTeX accent-command decoding (\\\\'a, \\\\\"o, \\\\k{a}, ...), ligature folding (ss, o, i, l, ae), Greek-letter and $\\\\alpha$/$\\\\beta$/$\\\\times$ folding, en/em-dash folding, case folding, punctuation to whitespace. Jaccard on token sets for titles.",
+    "No sampling anywhere: every check ran over all 726 entries and all 10 sections."
+  ]
+}

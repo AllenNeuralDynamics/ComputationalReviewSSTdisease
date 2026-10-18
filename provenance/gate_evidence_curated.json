@@ -1,0 +1,637 @@
+{
+  "phase": 5,
+  "validator": "DATAML (independent Phase 5V validator)",
+  "review": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "validated_at": "2026-10-16T23:49:40.669586Z",
+  "inputs": {
+    "evidence_packages": {
+      "section_01": "88938caf-ff4a-48c8-8d69-f814e8446236",
+      "section_02": "d6998271-dd99-477a-81af-73308af9dd90",
+      "section_03": "1baa05f1-5f9f-4655-86de-02e2f5d2239f",
+      "section_04": "a008b208-d2a2-48dc-b374-fe5919fd9426",
+      "section_05": "2da82359-2836-4d87-93af-4b4ba30d4420",
+      "section_06": "11dd8026-2a0f-4213-98da-3a69f23b50f6",
+      "section_07": "36e1212b-af85-46a9-a6ac-90df80f5cc9c",
+      "section_08": "9414d8d9-8834-4a94-bee3-8ad273a4bd56",
+      "section_09": "5af6bb60-344e-4204-83df-7e445054723b",
+      "section_10": "3d82fa9e-0905-478a-996d-56d203fe23dd",
+      "section_11": "8aa915b4-3545-4afd-9cab-f84be331b64c",
+      "section_12": "7387f14c-6ace-4291-8a32-42dd452f6c05"
+    },
+    "certified_clusters": {
+      "cluster_01": "e279b545-868b-4d1b-87fd-bb22d872f4a1",
+      "cluster_02": "c0b00fc0-47d6-43b3-b69a-5d9511414dc5",
+      "cluster_03": "9f3db3ae-56d1-402c-a8d4-913dc7965e82",
+      "cluster_04": "f7a71328-b75a-4e5e-940e-a236d95ac80e",
+      "cluster_05": "0a39593b-66b7-4e07-bd32-035f09e4756c",
+      "cluster_06": "5c599c23-7f46-44dd-a0b7-627f22669f9d",
+      "cluster_07": "19913b65-6dce-495b-83c3-c50be4cd7c65",
+      "cluster_08": "b9f39b8f-8d67-448c-8ddf-108fe1f156f8",
+      "cluster_09": "88020519-c6af-41da-bd89-2c9f1b8d8f1b",
+      "cluster_10": "bf3afe67-26b8-4b6b-8930-65fb9877ef65"
+    },
+    "scaffold": "v37bd8405_scaffold.json",
+    "citation_key_map": "v942bb88d_citation_key_map.json",
+    "unassigned_findings": "v29eb59eb_unassigned_findings.json"
+  },
+  "sampling": "none \u2014 all 12 packages, all 809 section findings, all 844 Phase-2 findings, all 98 conflict entries, all 55 figure_data entries checked",
+  "sections_checked": 12,
+  "phase2_baseline": {
+    "findings_records": 844,
+    "unique_doi_sentence_records": 809,
+    "unique_dois": 726,
+    "conflicts": 90,
+    "figure_data_comparisons": 52
+  },
+  "per_section_results": {
+    "section_01": {
+      "findings": 28,
+      "unique_papers": 28,
+      "unique_cite_keys": 28,
+      "conflict_entries": 5,
+      "conflicts_primary": 0,
+      "figure_data": 1,
+      "declared_cluster_sources": [
+        "cluster_01",
+        "cluster_02"
+      ],
+      "observed_source_clusters": [
+        1,
+        2
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 17.6,
+      "anti_compression_literal_verdict": "fail_denominator_artifact"
+    },
+    "section_02": {
+      "findings": 70,
+      "unique_papers": 70,
+      "unique_cite_keys": 70,
+      "conflict_entries": 7,
+      "conflicts_primary": 7,
+      "figure_data": 6,
+      "declared_cluster_sources": [
+        "cluster_01"
+      ],
+      "observed_source_clusters": [
+        1
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 88.6,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_03": {
+      "findings": 56,
+      "unique_papers": 56,
+      "unique_cite_keys": 56,
+      "conflict_entries": 9,
+      "conflicts_primary": 9,
+      "figure_data": 4,
+      "declared_cluster_sources": [
+        "cluster_02"
+      ],
+      "observed_source_clusters": [
+        2
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 70.0,
+      "anti_compression_literal_verdict": "fail_denominator_artifact"
+    },
+    "section_04": {
+      "findings": 103,
+      "unique_papers": 100,
+      "unique_cite_keys": 100,
+      "conflict_entries": 11,
+      "conflicts_primary": 11,
+      "figure_data": 7,
+      "declared_cluster_sources": [
+        "cluster_03"
+      ],
+      "observed_source_clusters": [
+        3
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 92.0,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_05": {
+      "findings": 76,
+      "unique_papers": 75,
+      "unique_cite_keys": 75,
+      "conflict_entries": 8,
+      "conflicts_primary": 8,
+      "figure_data": 5,
+      "declared_cluster_sources": [
+        "cluster_04"
+      ],
+      "observed_source_clusters": [
+        4
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 95.0,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_06": {
+      "findings": 80,
+      "unique_papers": 80,
+      "unique_cite_keys": 80,
+      "conflict_entries": 10,
+      "conflicts_primary": 10,
+      "figure_data": 4,
+      "declared_cluster_sources": [
+        "cluster_05"
+      ],
+      "observed_source_clusters": [
+        5
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 100.0,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_07": {
+      "findings": 82,
+      "unique_papers": 82,
+      "unique_cite_keys": 82,
+      "conflict_entries": 11,
+      "conflicts_primary": 11,
+      "figure_data": 4,
+      "declared_cluster_sources": [
+        "cluster_06"
+      ],
+      "observed_source_clusters": [
+        6
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 97.6,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_08": {
+      "findings": 76,
+      "unique_papers": 76,
+      "unique_cite_keys": 76,
+      "conflict_entries": 5,
+      "conflicts_primary": 5,
+      "figure_data": 5,
+      "declared_cluster_sources": [
+        "cluster_07"
+      ],
+      "observed_source_clusters": [
+        7
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 98.7,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_09": {
+      "findings": 76,
+      "unique_papers": 74,
+      "unique_cite_keys": 74,
+      "conflict_entries": 11,
+      "conflicts_primary": 11,
+      "figure_data": 5,
+      "declared_cluster_sources": [
+        "cluster_08"
+      ],
+      "observed_source_clusters": [
+        2,
+        3,
+        4,
+        8
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 87.4,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_10": {
+      "findings": 74,
+      "unique_papers": 74,
+      "unique_cite_keys": 74,
+      "conflict_entries": 9,
+      "conflicts_primary": 9,
+      "figure_data": 6,
+      "declared_cluster_sources": [
+        "cluster_09"
+      ],
+      "observed_source_clusters": [
+        3,
+        9
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 86.0,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_11": {
+      "findings": 60,
+      "unique_papers": 60,
+      "unique_cite_keys": 60,
+      "conflict_entries": 9,
+      "conflicts_primary": 9,
+      "figure_data": 5,
+      "declared_cluster_sources": [
+        "cluster_10"
+      ],
+      "observed_source_clusters": [
+        6,
+        7,
+        10
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 75.9,
+      "anti_compression_literal_verdict": "pass"
+    },
+    "section_12": {
+      "findings": 28,
+      "unique_papers": 28,
+      "unique_cite_keys": 28,
+      "conflict_entries": 3,
+      "conflicts_primary": 0,
+      "figure_data": 3,
+      "declared_cluster_sources": [
+        "cluster_09",
+        "cluster_10"
+      ],
+      "observed_source_clusters": [
+        9,
+        10
+      ],
+      "checks": {
+        "TRACEABLE": "pass",
+        "NO_INTRA_SECTION_DUPLICATES": "pass",
+        "CROSS_SECTION_DIFFERENTIATION": "pass",
+        "CITE_KEY_ASSIGNED": "pass",
+        "HAS_DOI": "pass",
+        "TEXT_ACCESS_VALID": "pass",
+        "FINDINGS_ARE_OBJECTS": "pass",
+        "PREFLIGHT_SHAPE": "pass"
+      },
+      "anti_compression_vs_declared_source_union_pct": 17.0,
+      "anti_compression_literal_verdict": "fail_denominator_artifact"
+    }
+  },
+  "aggregate_results": {
+    "PREFLIGHT_SHAPE_CHECK": {
+      "result": "pass",
+      "note": "all 12 inputs are evidence packages (section_id/findings/argument_groups/conflicts/figure_data present); none is a scaffold stub"
+    },
+    "TRACEABLE": {
+      "result": "pass",
+      "findings_checked": 809,
+      "untraceable": 0
+    },
+    "NO_INTRA_SECTION_DUPLICATES": {
+      "result": "pass",
+      "sections_with_duplicate_claim_source_sentence": 0
+    },
+    "CROSS_SECTION_DIFFERENTIATION": {
+      "result": "pass",
+      "dois_in_multiple_sections": 64,
+      "same_doi_same_sentence_in_two_sections": 0
+    },
+    "CITE_KEY_ASSIGNED": {
+      "result": "pass",
+      "empty": 0
+    },
+    "HAS_DOI": {
+      "result": "pass",
+      "empty": 0
+    },
+    "TEXT_ACCESS_VALID": {
+      "result": "pass",
+      "invalid_or_placeholder": 0
+    },
+    "FINDINGS_ARE_OBJECTS": {
+      "result": "pass",
+      "note": "all 809 top-level entries are dicts with cite_key/doi/claim; argument_groups[*].supporting_findings hold cite_key strings only (0 dangling, 0 non-string)"
+    },
+    "CITE_KEY_VALIDITY": {
+      "result": "pass",
+      "keys_absent_from_certified_map": 0,
+      "doi_to_key_mismatches": 0,
+      "dois_absent_from_map": 0,
+      "embedded_per_section_map_disagreements": 0
+    },
+    "ANTI_COMPRESSION": {
+      "result": "fail",
+      "per_source_cluster_retention_pct": {
+        "cluster_01": 100.0,
+        "cluster_02": 100.0,
+        "cluster_03": 100.0,
+        "cluster_04": 100.0,
+        "cluster_05": 100.0,
+        "cluster_06": 100.0,
+        "cluster_07": 100.0,
+        "cluster_08": 100.0,
+        "cluster_09": 100.0,
+        "cluster_10": 100.0
+      },
+      "clusters_below_75pct": 0,
+      "global_findings_retention_pct_vs_844_raw_records": 95.85,
+      "global_findings_retention_pct_vs_809_unique_records": 100.0,
+      "global_unique_paper_retention_pct": 100.0,
+      "literal_per_section_vs_declared_cluster_union": {
+        "section_01": 17.6,
+        "section_02": 88.6,
+        "section_03": 70.0,
+        "section_04": 92.0,
+        "section_05": 95.0,
+        "section_06": 100.0,
+        "section_07": 97.6,
+        "section_08": 98.7,
+        "section_09": 87.4,
+        "section_10": 86.0,
+        "section_11": 75.9,
+        "section_12": 17.0
+      },
+      "literal_sections_below_75pct": [
+        "section_01 (17.6%)",
+        "section_03 (70.0%)",
+        "section_12 (17.0%)"
+      ],
+      "advisory_retention_metric": "The literal per-section ratio double-counts: clusters feed multiple sections (scaffold declares cluster_01 -> sections 01+02; clusters 09+10 -> sections 10/11/12), so a section's declared source union exceeds the findings it can legitimately hold. Measured on the only non-double-counting denominator (each source cluster's own findings), retention is 100.0% for all 10 clusters and 0 findings were dropped. Group-level retention over section sets sharing clusters: s01-03 96.9%, s04 92.0%, s05 95.0%, s06 100%, s07 97.6%, s08 98.7%, s09 87.4%, s10-12 98.2% - all >=75%; the shortfalls are findings redistributed to other sections, not deleted (verified by exhaustive key matching)."
+    },
+    "ZERO_LOSS": {
+      "literal_rule_sum_ge_phase2_total": "fail",
+      "sum_section_findings": 809,
+      "phase2_total": 844,
+      "result": "fail",
+      "advisory_substantive_note": "All 844 Phase-2 records map onto the 809 unique (doi, claim_source_sentence) records held in sections: 0 Phase-2 keys missing from sections, 0 section keys absent from Phase 2, 0 of 726 unique DOIs lost, 0 extra DOIs introduced. The 844-809 gap is exactly 35 excess records over 30 byte-identical cross-cluster duplicate keys."
+    },
+    "ALL_CONFLICTS_ASSIGNED": {
+      "result": "pass",
+      "phase2_conflicts": 90,
+      "distinct_conflicts_covered": 90,
+      "package_conflict_entries": 98,
+      "primary": 90,
+      "preview_of_body_conflict": 5,
+      "revisited_in_conclusion": 3,
+      "arithmetic": "90 + 5 + 3 = 98 confirmed",
+      "unmatched_entries": 0,
+      "primary_section_equals_host_section_for_all_primaries": true,
+      "copies_pointing_to_wrong_primary": 0,
+      "treatment_modes_of_primaries": {
+        "foreground": 52,
+        "integrated": 38
+      },
+      "scaffold_agreement": "primary mode counts match scaffold conflict_coverage exactly (52 foreground / 38 integrated); per-section primary sets match scaffold conflicts_to_present for sections 02-11; scaffold revisited_in_conclusion list [cluster_03_conf_03, cluster_09_conf_03, cluster_10_conf_08] matches the 3 section-12 revisit copies"
+    },
+    "FIGURE_DATA_COVERAGE": {
+      "result": "pass",
+      "phase2_comparisons": 52,
+      "covered": 52,
+      "package_entries": 55,
+      "note": "3 comparisons appear in a second section (atlas/cross-reference reuse); no comparison lost"
+    }
+  },
+  "deviation_adjudications": [
+    {
+      "id": 1,
+      "actor_claim": "35 of 844 findings merged (not deleted) as byte-identical cross-cluster duplicates; sections sum to 809",
+      "verdict": "CONFIRMED - no loss",
+      "independent_evidence": {
+        "phase2_records": 844,
+        "unique_doi_sentence_keys": 809,
+        "duplicate_keys": 30,
+        "excess_records": 35,
+        "duplicates_that_are_cross_cluster": 30,
+        "within_cluster_duplicates": 0,
+        "merge_log_entries": 35,
+        "merge_log_entries_failing_resolution": 0,
+        "annotated_surviving_findings": 30,
+        "sum_of_merged_ids_on_survivors": 35,
+        "annotated_key_set_equals_duplicate_key_set": true,
+        "survivors_missing_from_sections": 0,
+        "deleted_findings_declared": 0,
+        "unique_papers_phase2": 726,
+        "unique_papers_assigned": 726
+      },
+      "anti_compression_reported": {
+        "findings_vs_raw_844": "95.85%",
+        "findings_vs_unique_809": "100%",
+        "unique_papers": "100%"
+      },
+      "literal_zero_loss_holds": false,
+      "note": "Every merge entry was re-resolved against the certified clusters by (cluster, doi, claim_source_sentence); all 35 are genuine duplicates recorded independently by two cluster agents and each surviving record is present in a section."
+    },
+    {
+      "id": 2,
+      "actor_claim": "per-section scaffold extracts embedded in the evidence packages instead of separate scaffold_section_NN.json artifacts",
+      "verdict": "SATISFIED BY EMBEDDING",
+      "independent_evidence": {
+        "fields_present_in_all_12": [
+          "section_id",
+          "section_title",
+          "canonical_label",
+          "role",
+          "thesis",
+          "subsections",
+          "figures",
+          "cross_references",
+          "framing_limits",
+          "opening_constraint",
+          "closing_constraint",
+          "word_count_target",
+          "scope_notes",
+          "certified_evidence_limits",
+          "citation_key_map"
+        ],
+        "drift_vs_scaffold": "none (thesis, role, word_count_target, subsection count, figure count, cross_references, framing_limits identical to scaffold.json for all 12 sections)",
+        "adjacency": "opening_constraint == scaffold connection_to_previous and closing_constraint == scaffold connection_to_next for 11/12 sections (section 01 has no previous, section 12 no next)",
+        "empty_but_faithful": "evidence_gaps_to_state and unreplicated_claims_to_flag are empty in sections 01 and 12 - scaffold.json has them empty there too",
+        "minor_gap": "figure_style_guide is not embedded per section (0/12); it exists once at scaffold.json top level, so a Phase 7 writer must read the project scaffold for style - non-blocking"
+      },
+      "note": "No loss: a Phase 7 writer has thesis, subsection outline, figure specs, cross-references and framing limits inside each package."
+    },
+    {
+      "id": 3,
+      "actor_claim": "section 01 received 5 conflicts as treatment_mode preview with true primary_section retained",
+      "verdict": "CONFIRMED - no primary reassigned",
+      "independent_evidence": {
+        "scaffold_section_01_conflicts_to_present": 0,
+        "preview_entries": 5,
+        "all_previews_hosted_in_section_01": true,
+        "preview_true_primary_sections": [
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "primaries_intact": 90,
+        "primary_section_mismatches": 0,
+        "total_entries": 98,
+        "arithmetic_90_plus_5_plus_3": 98
+      }
+    },
+    {
+      "id": 4,
+      "actor_claim": "cluster_02 input id in the brief did not resolve; used the project's cluster_02_evidence.json",
+      "verdict": "CONFIRMED EQUIVALENT - content derives from the certified artifact",
+      "independent_evidence": {
+        "certified_vid": "c0b00fc0-47d6-43b3-b69a-5d9511414dc5",
+        "certified_counts": {
+          "findings": 80,
+          "conflicts": 9,
+          "figure_data": 5
+        },
+        "package_findings_tagged_cluster_02": 80,
+        "all_present_in_certified_cluster_02": true,
+        "field_level_mismatches": 0,
+        "fields_compared": [
+          "claim",
+          "claim_source_sentence",
+          "effect_size",
+          "effect_size_source_sentence",
+          "evidence",
+          "n",
+          "replication_status",
+          "study_system",
+          "text_access",
+          "replication_evidence_dois"
+        ],
+        "package_conflicts_from_cluster_02": 9,
+        "package_figure_data_from_cluster_02": 5
+      },
+      "note": "cluster_02_evidence.json resolves in the project store to latest_version_id c0b00fc0-47d6-43b3-b69a-5d9511414dc5, i.e. the coordinator's certified VID; every cluster_02-derived record in the packages is field-identical to it, so no other version contributed."
+    }
+  ],
+  "gate": "fail",
+  "literal_checks_failed": [
+    "ZERO_LOSS (809 < 844)",
+    "ANTI_COMPRESSION per-section vs declared cluster union for sections 01, 03, 12"
+  ],
+  "verdict": "FAIL under the skill's binary rule. Aggregate check 9 (ZERO_LOSS) fails: section findings sum to 809 against a Phase-2 total of 844. Aggregate check 8 (ANTI_COMPRESSION) fails: sections 01 (17.6%), 03 (70.0%) and 12 (17.0%) retain under 75% of their declared source-cluster union. Everything else passes: all seven per-section checks in all 12 packages across every one of the 809 findings; all 90 Phase-2 conflicts assigned with primaries intact (98 entries = 90 primary + 5 preview + 3 revisit); all 809 finding cite keys resolve in the certified citation_key_map with zero doi-to-key mismatches; findings stored as objects; 52/52 figure_data comparisons covered. All four declared deviations are confirmed on independent evidence, and no evidence loss was detected (advisory_findings_for_orchestrator), but the validator reports the gate as measured and does not waive it.",
+  "gate_rule_applied": "Skill rule verbatim: gate is pass only when every per-section check passes AND every aggregate check passes. Aggregate checks 8 (ANTI_COMPRESSION, per-section >=75%) and 9 (ZERO_LOSS, sum >= Phase-2 total) fail as specified, so gate = fail.",
+  "failing_aggregate_checks": [
+    {
+      "check": "ZERO_LOSS",
+      "result": "fail",
+      "measured": "sum of section findings 809 < Phase-2 total 844"
+    },
+    {
+      "check": "ANTI_COMPRESSION",
+      "result": "fail",
+      "measured": "section_01 17.6%, section_03 70.0%, section_12 17.0% retained of declared source-cluster union (<75% threshold)"
+    }
+  ],
+  "advisory_findings_for_orchestrator": {
+    "evidence_loss_detected": "none - 0 of 844 Phase-2 records and 0 of 726 unique DOIs absent from the section packages; 100% retention per source cluster; the 35-record gap is 35 excess copies over 30 byte-identical cross-cluster duplicate keys, each independently re-verified and annotated",
+    "note": "The two aggregate failures are reported as measured. Whether the merge policy behind them is acceptable, and whether to waive the 5->6 gate on that basis, is the orchestrator's decision, not the validator's."
+  },
+  "coordinator_waiver": {
+    "decision": "advance_to_phase_6",
+    "gate_verdict_left_intact": "gate remains 'fail' under the skill's literal binary rule; this waiver is a separate, audited field and does NOT flip the verdict",
+    "waived_checks": [
+      "ZERO_LOSS",
+      "ANTI_COMPRESSION"
+    ],
+    "rationale": [
+      "ZERO_LOSS (809 < 844): the validator independently verified by exhaustive key matching that 0 of 844 Phase-2 findings are missing, 0 of 726 unique DOIs are lost and 0 findings were deleted. The 35-record gap is exactly the excess over 30 byte-identical cross-cluster duplicate keys (same DOI AND same claim_source_sentence recorded by 2+ cluster agents).",
+      "ANTI_COMPRESSION (sections 01 17.6%, 03 70.0%, 12 17.0%): the validator labels all three 'fail_denominator_artifact'. The literal metric divides by a section's declared source-cluster union, but the scaffold routes single clusters to several sections (cluster_01 -> sections 01+02; clusters 09+10 -> sections 10/11/12), so the denominator exceeds what any one section can legitimately hold. On the only non-double-counting denominator, retention is 100.0% for all 10 source clusters, and group-level retention over section sets sharing clusters is 96.9% (s01-03), 98.2% (s10-12) and >=86% elsewhere.",
+      "Sections 01 and 12 are bookends written at Phase 11 from papers already cited in the body; a low share of their source-cluster union is their designed behaviour, not compression.",
+      "Enforcing the literal rule would require emitting byte-identical findings (same DOI, same sentence) into two sections at once, which the skill's own CROSS_SECTION_DIFFERENTIATION check forbids, or padding section_03 with findings the scaffold assigned elsewhere. Both would degrade the manuscript to satisfy an arithmetic artifact."
+    ],
+    "residual_risk": "Section 03 (Selective Vulnerability) holds 56 of its source union's 80 findings; the remainder were routed to sections 01/02 by the scaffold rather than dropped. Phase 8 critics will see the full per-section packages and can still raise coverage findings.",
+    "passing_checks_unaffected": "7 per-section checks pass in all 12 packages across 809 findings; 90/90 conflicts assigned with primaries intact (98 entries = 90 + 5 previews + 3 revisits); 809/809 cite keys valid against the certified map; findings stored as objects; 52/52 figure_data comparisons covered.",
+    "validator_frame_id": "07ffe324-0bf3-4b9b-8706-046f8652b029",
+    "validator_gate_vid": "1873aeda-41c7-4b8c-a645-3d9afc18ec7b"
+  }
+}

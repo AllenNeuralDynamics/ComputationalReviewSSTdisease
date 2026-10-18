@@ -1,0 +1,55 @@
+{
+  "passes_completed": [
+    "6a_transition",
+    "6b_crossref",
+    "6c_terminology",
+    "6d_continuity",
+    "6e_figures",
+    "6f_hygiene"
+  ],
+  "filename_mismatches": [],
+  "structural_issues": [],
+  "sections_revised": {
+    "02": "d7555d06-df94-4bb9-8719-7bb56c28bc10",
+    "03": "1fa4ff54-2e5c-4623-ab3c-eadafa4c1071",
+    "04": "67382a6c-ad8f-4e4b-8eda-226d6de99710",
+    "05": "40f6ea03-dd5e-438e-a811-482609910dd7",
+    "06": "e7cae53f-b755-4010-b3c4-87aec9ad66b5",
+    "07": "4c535ebc-09d4-4d19-937f-ada2d3358787",
+    "08": "ef1aecec-c334-42bf-b941-f10eb8a3ecad",
+    "09": "f8bbe452-19c7-48c7-a058-e1ce962c1a73",
+    "10": "722169a5-e4fd-47df-9928-a2d602cc7214",
+    "11": "1d0528f6-fb8c-4da7-85db-9310be86f73f"
+  },
+  "dangling_cross_references_fixed": 1,
+  "uncited_figures_fixed": 3,
+  "figure_blocks_unchanged": true,
+  "citation_subset_violations": 0,
+  "integration_report": "integration_report.json",
+  "gate": "pass",
+  "verdict": "PASS \u2014 six integration passes documented and evidenced; 1 dangling cross-reference found and fixed; figures, captions, caption caveats, notebooks and plotted values verified unchanged; 0 numerals added or reinstated; citations stay inside permitted subsets.",
+  "coordinator_inspection": {
+    "canonical_resolution": "Two save sets appeared under the same ten artifacts. The canonical integrated versions were identified BY CONTENT, not by recency: only the set listed here carries the Phase-10 cross-reference fix ({ref}`sec-04-vulnerable-or-resilient` in section 09), and integration_report.per_section names the same version_ids. The other set is byte-length-identical to the pre-integration input.",
+    "section_md_vids_final": {
+      "02": "d7555d06-df94-4bb9-8719-7bb56c28bc10",
+      "03": "1fa4ff54-2e5c-4623-ab3c-eadafa4c1071",
+      "04": "67382a6c-ad8f-4e4b-8eda-226d6de99710",
+      "05": "40f6ea03-dd5e-438e-a811-482609910dd7",
+      "06": "e7cae53f-b755-4010-b3c4-87aec9ad66b5",
+      "07": "4c535ebc-09d4-4d19-937f-ada2d3358787",
+      "08": "ef1aecec-c334-42bf-b941-f10eb8a3ecad",
+      "09": "f8bbe452-19c7-48c7-a058-e1ce962c1a73",
+      "10": "722169a5-e4fd-47df-9928-a2d602cc7214",
+      "11": "1d0528f6-fb8c-4da7-85db-9310be86f73f"
+    },
+    "length_outcome": {
+      "prose_words_before": 34429,
+      "prose_words_after": 34221,
+      "prose_target": 26100,
+      "accepted": "Targets are not met. ~470 words of genuine restatement were removed and ~270 added back by required first-use abbreviation expansions, the new cross-reference and three figure citations. The actor correctly declined to hit the number by dropping cited papers, conflicts, evidence gaps, unreplicated-claim flags or caveat substance; the overrun is recorded rather than forced away."
+    },
+    "pending_by_design": "References to sec-conclusion from sections 10 and 11 cannot resolve until section 12 exists; Phase 11 writes it and Phase 14V re-checks link health.",
+    "actor_frame_id": "dc626719-ed27-4a57-b636-abad86ed46af",
+    "integration_report_vid": "1b2020fa-2e2f-429c-a39c-9759bc3fb16f"
+  }
+}

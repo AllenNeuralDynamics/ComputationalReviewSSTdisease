@@ -1,0 +1,128 @@
+{
+  "gate": "pass",
+  "phase": 12,
+  "name": "gate_bookend_critic",
+  "verdict": "PASS \u2014 MUST_FIX = 0 on both bookends after three blinded critique rounds and a targeted confirmation pass.",
+  "must_fix_remaining": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "critics": [
+        "a885714b-911a-4dee-82e7-eaa03b216706",
+        "419b48c5-9399-4999-b7d1-f3e5f990b0d8"
+      ],
+      "verdicts": [
+        "major_revision",
+        "major_revision"
+      ],
+      "must_fix": {
+        "01": 5,
+        "12": 7
+      },
+      "should_fix": {
+        "01": 7,
+        "12": 12
+      },
+      "headline_defects": [
+        "Introduction asserted a universal 'nothing disputes that the somatostatin signal falls' that the body contradicts in HD striatum and one PD CSF series; scoped to Alzheimer cortex",
+        "a 2.7-fold calcium-event value attached to Algamal2022b when the body assigns it to Algamal2022a, which the Introduction may not cite; deleted rather than re-sourced",
+        "Conclusion attributed the Sst-knockout x App knock-in refutation to the receptor arm when it is negative on the enzyme",
+        "three caption/image disagreements including four tiers captioned against five rendered, and two named rows that do not exist"
+      ]
+    },
+    {
+      "round": 2,
+      "critics": [
+        "d767761a-7a50-4d1d-a197-e457b00f6656",
+        "dc062659-2bb0-4ed5-a757-069ddc1bc7a6"
+      ],
+      "prior_resolved": {
+        "01": "5 of 5",
+        "12": "7 of 7"
+      },
+      "new_must_fix": {
+        "01": 0,
+        "12": 4
+      },
+      "new_defects_12": [
+        "Gabriel1993 made to carry both sides of a two-paper dispute",
+        "independent cross-laboratory replication asserted for Iaccarino2016+Martorell2019, one programme",
+        "figure legend describing open squares as a second status when four rows carry open squares only",
+        "the replicated marker attributed to a single mega-analysis"
+      ]
+    },
+    {
+      "round": 3,
+      "critic": "0df861f2-710a-471e-a74a-c40234554888",
+      "prior_resolved": "4 of 4",
+      "new_must_fix": 2,
+      "new_defects": [
+        "panel A rigor ordering became non-monotone as a second-order consequence of the authorised re-order",
+        "'the same drug' attributed levetiracetam to Verret2012, a genetic Nav1.1-restoration experiment"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "targeted confirmation",
+      "critic": "52f4e3f8-6f88-4be0-870e-d37514cee22f",
+      "open_items": 0,
+      "scope": "the three changed loci plus a full caption/code/notebook/image check of the regenerated figure; the full-section sweep was round 3 on the immediately preceding version, and the coordinator independently verified the final text in code"
+    }
+  ],
+  "coordinator_adjudications": [
+    {
+      "item": "Ouellet2014 species/region",
+      "ruling": "The two evidence packages disagreed (mouse cerebral cortex vs rat primary auditory cortex). Resolved against the paper's CrossRef title, 'Trajectory of the main GABAergic interneuron populations from early development to old age in the rat primary auditory cortex'. Section 01's package was wrong and was corrected (version 0bb03d8a); the attribution was restored in the prose rather than left deleted."
+    },
+    {
+      "item": "Frankowski2022 numerals (~65%, 48.0 +/- 3.7, 9.4 +/- 0.9)",
+      "ruling": "Not unsourceable. Traced verbatim to the section 07 package for the same DOI and written into the section 01 package. Values kept, the missing unit (cells) added, and the two distinct P values kept apart."
+    },
+    {
+      "item": "Hofling2019 '30 to 76%'",
+      "ruling": "Reviewer OVERRULED. The range is verbatim in the paper's own figure legend, recorded as the source sentence for the same key in the section 04 package; the paper's running text gives a 25% floor, so the discrepancy is internal to the paper. No manuscript change."
+    },
+    {
+      "item": "'complete for the circuit literature'",
+      "ruling": "The 77/77 full-text share is certified in the review's own evidence base, verified by the round-1 critic against all ten per-cluster pairs. The writer was told to frame it as the review's coverage metadata rather than delete a true value."
+    }
+  ],
+  "disposition_record": "26b6fab0-019a-4369-9528-ee11eb52d444 (covers rounds 1-2; rounds 3-4 dispositions are in the actor responses and this gate)",
+  "section_md_vids_final": {
+    "01": "441d2629-7a47-4495-9461-d9cd348808f7",
+    "12": "31be5d3d-9cd2-4ea8-8b7f-0c197ad259bc"
+  },
+  "figures_final": {
+    "fig_sec1_sst_loss_landscape": {
+      "png": "56aba681-bacb-4b5e-a699-82c33a87abb5",
+      "py": "950e2cd6-ff2e-4f00-9aa1-c2968df3fba7",
+      "ipynb": "2bec1b2f-2095-4fff-8591-0d4ef8a3b42a"
+    },
+    "fig_sec1_evidence_base_and_argument_arc": {
+      "png": "9467cc4d-f690-4897-ac52-1f4c7a2cba7d",
+      "py": "da8b47bf-f4b9-4bb6-b37f-cb300f9e83e5",
+      "ipynb": "8f3bd38b-dd69-4cda-bff6-18dc6b25ad56"
+    },
+    "fig_sec12_evidence_confidence_by_claim": {
+      "png": "eee32d06-ea34-40c2-8b51-56313e66bfb1",
+      "py": "b4308527-c780-4d85-914f-f00a7eb65140",
+      "ipynb": "eb76bd21-4312-4ce2-b4ae-ccecf60d38fc"
+    },
+    "fig_sec12_intervention_effect_versus_design_rigor": {
+      "png": "ea6338ea-d338-4fc6-8622-3caba7851920",
+      "py": "9293421d-650d-4bab-b70c-f600cbaa6455",
+      "ipynb": "2428163c-e0f2-4258-a00e-bd250be10f75"
+    }
+  },
+  "coordinator_verification": {
+    "citation_keys": {
+      "01": 33,
+      "12": 29
+    },
+    "novel_vs_body": 0,
+    "outside_permitted_subset": 0,
+    "panel_order_monotone": "verified in code against the figure script and the caption clause order",
+    "no_numeral_added": "the only numeral change across all rounds was the unit 'cells' added to an existing pair; two unsourceable values were deleted"
+  },
+  "actor_frame_id": "084a5550-fe53-4adf-8a0d-a1698059d0f2"
+}

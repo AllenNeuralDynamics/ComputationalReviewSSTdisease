@@ -1,0 +1,1553 @@
+{
+ "phase": 18,
+ "role": "DATAML",
+ "review": "Somatostatin Interneurons in Neurodegenerative Disease",
+ "input_fix_requests": "fix_requests.json (118 requests)",
+ "repository": "ComputationalReviewSSTdisease (assembled_repo.tar.gz)",
+ "validator_amendments": {
+  "FR-BIB-04": "Option B taken: the Castanho2025a entry is NOT deleted. See the skipped record for the reasoning and the parity result.",
+  "FR-PROSE-070": "Applied to caption, figure script, notebook and dropdown; figure regenerated and checked against its caption."
+ },
+ "summary_by_class": {
+  "AUTHOR_ENCODING_DOUBLE_ENCODED | applied": 2,
+  "CLAIM_SCOPE_IMPRECISION | applied": 64,
+  "CLAIM_SCOPE_IMPRECISION | skipped": 4,
+  "DUPLICATE_ENTRY_PREPRINT_AND_JOURNAL | skipped": 1,
+  "METADATA_ERROR | applied": 21,
+  "MISATTRIBUTED | applied": 25,
+  "PREPRINT_SUPERSEDED | applied": 1
+ },
+ "totals": {
+  "requests": 118,
+  "applied": 113,
+  "skipped": 5,
+  "failed": 0
+ },
+ "verification": {
+  "bibliography_parity": {
+   "bib_entries": 726,
+   "distinct_cite_keys_in_content": 726,
+   "unresolved_keys": 0,
+   "orphan_entries": 0,
+   "duplicate_keys_within_one_directive": 0,
+   "duplicate_bib_keys": 0,
+   "bib_is_pure_ascii": true
+  },
+  "myst_structure": {
+   "figures": 43,
+   "figures_with_width": 43,
+   "dropdown_count_equals_figure_count_per_file": true,
+   "unresolved_ref_or_numref_targets": 0
+  },
+  "figures": {
+   "regenerated": 43,
+   "byte_identical_to_pre_fix": 39,
+   "changed": [
+    "fig_sec4_sst_cell_change_regions.png",
+    "fig_sec3_marker_level_readouts_transcript_peptide_csf.png",
+    "fig_sec4_sst_activity_direction.png",
+    "fig_sec6_inhibition_onto_projection_neurons_hd.png"
+   ]
+  },
+  "latex": {
+   "regeneration_method": "validated span converter: every pre-fix MyST span reproduced its committed LaTeX byte-exactly before substitution",
+   "spans_regenerated": 80,
+   "cite_keys_in_tex": 726,
+   "unresolved_cite_keys": 0,
+   "unresolved_ref": 0,
+   "includegraphics": 43,
+   "non_ascii_lines": 5,
+   "non_ascii_lines_before": 5
+  },
+  "evidence_packages": {
+   "files_touched": [
+    "evidence_section_01.json",
+    "evidence_section_04.json",
+    "evidence_section_05.json",
+    "evidence_section_08.json",
+    "evidence_section_09.json",
+    "evidence_section_10.json",
+    "evidence_section_11.json",
+    "evidence_section_12.json"
+   ],
+   "files_untouched": [
+    "evidence_section_02.json",
+    "evidence_section_03.json",
+    "evidence_section_06.json",
+    "evidence_section_07.json"
+   ],
+   "author_name_table_year_rows_synced": 22,
+   "distinct_cite_keys_year_synced": 19,
+   "author_strings_repaired": {
+    "Nassar2015": "Nassar, MArie -> Nassar, Mérie",
+    "Albuquerque2015": "Quirion, RAmi -> Quirion, Rémi"
+   },
+   "protected_field_values_compared": 5314,
+   "protected_field_values_changed": 0,
+   "protected_fields": [
+    "claim",
+    "claim_source_sentence",
+    "effect_size",
+    "effect_size_source_sentence",
+    "n",
+    "study_system"
+   ],
+   "pre_existing_corrections_entries_preserved": {
+    "evidence_section_01.json": 2,
+    "evidence_section_09.json": 1,
+    "evidence_section_12.json": 1
+   },
+   "byte_level_scope_proof": "reverting only the 24 synced fields and removing the appended Phase-18 notes reproduces all 12 packages byte-for-byte",
+   "residual_year_mismatches": 0,
+   "residual_double_encoded_author_strings": 0
+  },
+  "myst_build": {
+   "command": "myst build --html (content stage) / myst build --site",
+   "pages_built": 16,
+   "could_not_link_citation": 0,
+   "missing_images": 0,
+   "unknown_directives": 0,
+   "authorship_plugin_errors": 0,
+   "widget_model_authors": 2,
+   "note": "myst build --html completes the 16-page content build, then exits 1 at the static-render step with 'listen EPERM 0.0.0.0:3100' because the sandbox forbids binding a port; myst build --site runs the identical content stage and exits 0. Build run in a scratch copy whose myst.yml site.template points at the absolute path of the extracted book-theme, a local workaround for template-path resolution; the shipped myst.yml is unchanged."
+  },
+  "forbidden_lexicon": {
+   "content/00_frontmatter.md": 0,
+   "content/01_section.md": 0,
+   "content/02_section.md": 0,
+   "content/03_section.md": 0,
+   "content/04_section.md": 0,
+   "content/05_section.md": 0,
+   "content/06_section.md": 0,
+   "content/07_section.md": 0,
+   "content/08_section.md": 0,
+   "content/09_section.md": 0,
+   "content/10_section.md": 0,
+   "content/11_section.md": 0,
+   "content/12_section.md": 0,
+   "content/Methods.md": 17,
+   "content/evidence_database.md": 1,
+   "content/provenance.md": 3,
+   "content/authors.yml": 4,
+   "latex/manuscript.tex": 17
+  }
+ },
+ "downstream_notes": [
+  "Closed in this phase: the 19 cite keys whose bib year was corrected, and the double-encoded author strings, are now synced in evidence/evidence_section_*.json (see verification.evidence_packages)."
+ ],
+ "edits": [
+  {
+   "request_id": "FR-PROSE-046/047",
+   "target_file": "content/02_section.md",
+   "line": 5,
+   "before": "Receptor names are standardised to SSTR1–SSTR5, although the primary sources use sst1–5, SST1–5 and SSTR1–5 interchangeably {cite:p}`Gunther2018, Lin2013`.",
+   "after": "Receptor names are standardised to SSTR1–SSTR5, although the primary sources do not share one convention: IUPHAR guidance reserves sst1–5 for recombinant receptors without defined functional characteristics and SST1–5 for fully characterised ones, and explicitly discourages the SSTR form adopted here {cite:p}`Gunther2018`, while other primary sources write Sst1–5 {cite:p}`Lin2013`.",
+   "status": "applied",
+   "reason": "merged request pair FR-PROSE-046 and FR-PROSE-047 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-087",
+   "target_file": "content/02_section.md",
+   "line": 17,
+   "before": "Patch-seq mapping of layer 4 interneurons onto transcriptomic SST types supports the view that layer-4-targeting SOM-positive cells form a single morphological population, the non-Martinotti cells, whose axons remain in layer 4 rather than ascending to layer 1 {cite:p}`Scala2019`. Paired recordings across two sensory areas instead found strong morphological differences among layer 4 SST cells, which fell into the non-Martinotti subclass in somatosensory cortex but showed Martinotti-like features in visual cortex {cite:p}`Rachel2025`. The disagreement is about whether non-Martinotti identity belongs to the layer or to the area; it is open,",
+   "after": "Patch-seq mapping of layer 4 interneurons onto transcriptomic SST types sets the earlier view — that layer-4-targeting SOM-positive cells form a single morphological population, the non-Martinotti cells, whose axons remain in layer 4 rather than ascending to layer 1 — against its own result: non-fast-spiking SOM-positive neurons in visual cortex layer 4 are predominantly Martinotti cells, in contrast to somatosensory cortex layer 4 where almost all SOM-positive neurons are non-Martinotti, and the two correspond to different transcriptomic types {cite:p}`Scala2019`. Paired recordings across two sensory areas report the same areal split, finding strong morphological differences among layer 4 SST cells, which fell into the non-Martinotti subclass in somatosensory cortex but showed Martinotti-like features in visual cortex {cite:p}`Rachel2025`. The disagreement is between the earlier single-population view, in which non-Martinotti identity belongs to layer 4, and these two studies, in which it belongs to the area; it is open,",
+   "status": "applied",
+   "reason": "MISATTRIBUTED: attribution reversed to the paper's own result; neighbouring clauses adjusted for coherence"
+  },
+  {
+   "request_id": "FR-PROSE-049",
+   "target_file": "content/02_section.md",
+   "line": 220,
+   "before": "Dense electron-microscopic reconstruction of mouse visual cortex reaches a compatible conclusion for cells identified as putative SST interneurons by arbour morphology rather than marker expression: inhibitory connectivity there is organised by fine morphological type rather than by cardinal marker class {cite:p}`SchneiderMizell2025`.",
+   "after": "Dense electron-microscopic reconstruction of mouse visual cortex reaches a compatible conclusion without molecular labels: inhibitory neurons show widespread target specificity, and groups with similar subclass-level targeting differ in which postsynaptic compartment they target, an organising principle for inhibitory connectivity that the authors describe as complementary to, but distinct from, cell types {cite:p}`SchneiderMizell2025`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-051",
+   "target_file": "content/02_section.md",
+   "line": 232,
+   "before": "(A) SST output onto local excitatory targets, reported separately for two presynaptic populations {cite:p}`Pfeffer2013, Xu2013`.",
+   "after": "(A) SST output onto local excitatory targets, reported separately for two presynaptic populations {cite:p}`Pfeffer2013, Xu2013`. In the layer 4 source the excitatory target is the minority pathway: layer 4 SOM interneurons there target mainly fast-spiking interneurons, and it is layer 2/3 SOM interneurons in that study that target mainly pyramidal cells.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-052",
+   "target_file": "content/02_section.md",
+   "line": 386,
+   "before": "Receptor subtypes are also described as heteromerising in ways that modulate SSTR2 internalisation,",
+   "after": "Receptor subtypes are also described as influencing one another when co-expressed in the same cell, with SSTR5 affecting SSTR2 internalisation and trafficking,",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-053",
+   "target_file": "content/02_section.md",
+   "line": 386,
+   "before": "while exerting distinct postsynaptic effects on pyramidal cells, SST interneurons and layer 1 interneurons {cite:p}`Riedemann2024`.",
+   "after": "while its postsynaptic effects are pronounced in pyramidal cells and little to absent in SST interneurons and layer 1 interneurons {cite:p}`Riedemann2024`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-054",
+   "target_file": "content/02_section.md",
+   "line": 525,
+   "before": "Whole-brain three-dimensional mapping of genetically identified interneurons found no significant anteroposterior density gradient",
+   "after": "Three-dimensional mapping of genetically identified interneurons through the caudoputamen found no significant anteroposterior density gradient",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-048",
+   "target_file": "content/02_section.md",
+   "line": 23,
+   "before": "(D) SST-expressing fractions reported for rodent neocortex and for human dorsal striatum, on separate axes {cite:p}`Lin2013, Garma2024`.",
+   "after": null,
+   "status": "skipped",
+   "reason": "deletion_if_unsourceable: condition not met. The striatal value is sourced in evidence/evidence_section_02.json (findings[61] and figure_data[3].papers[2]), claim_source_sentence: 'Nitrergic interneurons, represented by SST/NPY and SST/NPY/DACH1 subclasses, showed an intermediate proportion between the aforementioned extremes, accounting for 7.5% and 7.6%, respectively.' The plotted value and caption reference are therefore retained unchanged; no numeral added or removed."
+  },
+  {
+   "request_id": "FR-PROSE-050",
+   "target_file": "content/02_section.md",
+   "line": 222,
+   "before": "Paired recordings in V1 layer 2/3 found VIP cells inhibiting Sst cells with a connection probability of 62.5%, against only about 12.5% onto pyramids {cite:p}`Pfeffer2013`;",
+   "after": null,
+   "status": "skipped",
+   "reason": "deletion_if_unsourceable: condition not met. The 12.5% VIP->pyramid value is sourced in evidence/evidence_section_02.json (conflicts[4].paper_a_claim and figure_data[4].papers[0].value_source_sentence), quoting Pfeffer 2013: 'VIP cells contacted pyramids with only ~12.5% probability (Fig. 3c).' Numeral retained; sentence unchanged."
+  },
+  {
+   "request_id": "FR-PROSE-010",
+   "target_file": "content/03_section.md",
+   "line": 11,
+   "before": "{cite:p}`Florio1991` - a different species, an analyte that study does not state, and a different comparator.",
+   "after": "{cite:p}`Florio1991` - a different species, somatostatin peptide measured by radioimmunoassay against a transcript measure, and a different comparator.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-073",
+   "target_file": "content/03_section.md",
+   "line": 23,
+   "before": "The analyte of the 42.4% value is not stated by that study and is not assigned to transcript or protein, and that contrast is CDR 5",
+   "after": "The 42.4% value is somatostatin peptide measured by radioimmunoassay in that study, and that contrast is CDR 5",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-011",
+   "target_file": "content/03_section.md",
+   "line": 219,
+   "before": "{cite:p}`Huusko2013` - that study counted somatostatin neurons as well, but no somatostatin value from it was retrieved here, and neuropeptide Y",
+   "after": "{cite:p}`Huusko2013` - both values are from the post-status-epilepticus arm of that study, which counted somatostatin neurons as well, and neuropeptide Y",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-012",
+   "target_file": "content/03_section.md",
+   "line": 221,
+   "before": "GABA after neonatal hypoxia-ischaemia {cite:p}`Uemura1990`",
+   "after": "GABA after transient forebrain ischaemia in gerbil striatum {cite:p}`Uemura1990`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-013",
+   "target_file": "content/03_section.md",
+   "line": 225,
+   "before": "A parallel disagreement runs between hilus and striatum under ischaemic insult {cite:p}`Freund1992, Uemura1990`.",
+   "after": "A parallel disagreement runs between hilus and striatum under acute insult: hilar somatostatin cells are the most vulnerable type after status epilepticus, a death pattern its authors describe as resembling ischaemic damage {cite:p}`Freund1992`, while striatal somatostatin content is unchanged after transient forebrain ischaemia {cite:p}`Uemura1990`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-074",
+   "target_file": "content/03_section.md",
+   "line": 401,
+   "before": "{cite:t}`Freund1990` link the absence of parvalbumin and calbindin in hilar somatostatin cells to their vulnerability;",
+   "after": "{cite:t}`Freund1990` report that hilar somatostatin cells contain neither parvalbumin nor calbindin and degenerate earliest, but conclude against any consistent relationship between calcium-binding-protein content and ischaemic vulnerability, since CA3 pyramidal cells are equally buffer-free and resistant;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-001",
+   "target_file": "content/04_section.md",
+   "line": 11,
+   "before": "and morphological degeneration of somatostatin-immunoreactive perikarya with tangles located inside them {cite:p}`Roberts1985, ChanPalay1987`.",
+   "after": "morphological degeneration of somatostatin-immunoreactive perikarya, surviving neurons being distorted with short dendrites and truncated axons {cite:p}`ChanPalay1987`, and tangles located inside somatostatin-immunoreactive neurons {cite:p}`Roberts1985`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-002",
+   "target_file": "content/04_section.md",
+   "line": 32,
+   "before": "{cite:t}`Consens2022b` sampled six neocortical regions; the individual regions are not specified in the source used here.",
+   "after": "{cite:t}`Consens2022b` sampled six neocortical regions, named in that study as dorsolateral prefrontal cortex, temporal cortex and Brodmann areas 10, 44, 36 and 22.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-003/005",
+   "target_file": "content/04_section.md",
+   "line": 371,
+   "before": "The populations counted are not the same quantity: immunoreactivity can be lost through peptide downregulation in a surviving neuron while a Cre-driven reporter persists, so a reporter-labelled null does not refute an immunoreactivity loss {cite:p}`GonzalezRodriguez2021, Ren2025`.",
+   "after": "The populations counted are not the same quantity: immunoreactivity can be lost through peptide downregulation in a surviving neuron while a Cre-driven reporter persists, so a reporter-labelled null does not refute an immunoreactivity loss. That caveat is this review's own methodological argument; the two studies supply only the measurements being compared, an immunoreactivity-based human count {cite:p}`GonzalezRodriguez2021` and a Cre-reporter-based mouse count {cite:p}`Ren2025`.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-003 and FR-PROSE-005 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-004",
+   "target_file": "content/04_section.md",
+   "line": 371,
+   "before": "in hAPP transgenic hippocampus, 30 to 76% of somatostatin-expressing neurons across layers themselves express the hAPP transgene",
+   "after": "in hAPP transgenic hippocampus, at least 25% and up to 76% of somatostatin-expressing neurons across layers themselves express the hAPP transgene",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-006",
+   "target_file": "content/04_section.md",
+   "line": 693,
+   "before": "Cross-dataset modelling of regional tau burden recovers excitatory CA1-prosubiculum neuron density as the dominant correlate, with positive associations for *Pvalb*- and *Sst*-positive interneurons appearing only in a combined amyloid/tau model {cite:p}`Torok2025`.",
+   "after": "Cross-dataset modelling of regional tau burden recovers excitatory CA1-prosubiculum neuron density as the dominant correlate; *Sst*-positive interneurons correlate positively with tau across datasets while *Pvalb*-positive interneurons show the opposite, and a positive association for both together appears only in the unseeded combined amyloid/tau model {cite:p}`Torok2025`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-069",
+   "target_file": "content/04_section.md",
+   "line": 383,
+   "before": "{cite:t}`Albuquerque2015` reports a significant overall decrease in SOM-immunoreactive cells (p = 0.049) and in CA1/2 (p = 0.040); the source gives no effect magnitude and reports no result for the dentate gyrus, which is therefore not shown as a null.",
+   "after": "{cite:t}`Albuquerque2015` reports a significant overall decrease in SOM-immunoreactive cells (p = 0.049) and in CA1/2 (p = 0.040); the source gives no effect magnitude, and it does report a dentate gyrus result — no significant decrease of SOM neurons there — which carries no magnitude and so is not plotted.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "content/04_section.md",
+   "line": 383,
+   "before": "{cite:t}`GonzalezRodriguez2021` reports no cohort size and the bar prints \"n not reported\".",
+   "after": "{cite:t}`GonzalezRodriguez2021` quantified cells in 5 AD and 5 non-AD formalin-fixed cases, four sections per case, and the bar prints that cohort.",
+   "status": "applied",
+   "reason": "caption half of FR-PROSE-070; figure script, notebook and PNG corrected separately"
+  },
+  {
+   "request_id": "FR-PROSE-071",
+   "target_file": "content/04_section.md",
+   "line": 553,
+   "before": "improved learning while lowering soluble Aβ42 oligomers through a phosphoramidon-sensitive metalloproteinase mechanism {cite:p}`Sandoval2013`, and counteracted Aβ1–42 cytotoxicity with a concentration-dependent increase in CRMP2 phosphorylation {cite:p}`Paik2021`.",
+   "after": "and improved learning while lowering soluble Aβ42 oligomers through a phosphoramidon-sensitive metalloproteinase mechanism {cite:p}`Sandoval2013`. A different SSTR4 agonist, L-803087, applied to differentiated SH-SY5Y cells raised Ser522-CRMP2 phosphorylation in a concentration-dependent manner, alone and in combination with Aβ1–42; in that study the protective arm is somatostatin-mediated inhibition of Ser522-CRMP2 phosphorylation, and the agonist-driven increase is read as a consequence of receptor internalisation rather than as the means by which Aβ cytotoxicity is counteracted {cite:p}`Paik2021`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-007",
+   "target_file": "content/04_section.md",
+   "line": 965,
+   "before": "{cite:t}`Algamal2022b` is a bioRxiv preprint and has not been peer reviewed; neither entry reports a sample size, and the units of analysis differ (interneurons imaged versus neurons imaged).",
+   "after": "{cite:t}`Algamal2022b` is a bioRxiv preprint and has not been peer reviewed, and the units of analysis of the two entries differ (interneurons imaged versus neurons imaged).",
+   "status": "applied",
+   "reason": "deletion remedy: the unsupportable \"neither entry reports a sample size\" assertion removed; no value substituted"
+  },
+  {
+   "request_id": "FR-PROSE-072",
+   "target_file": "content/04_section.md",
+   "line": 965,
+   "before": "The dispersion values reported by {cite:t}`Lee2026` (± 0.391 and ± 0.237) are not identified as standard deviation or standard error in the source used here, and the error bars are labelled accordingly.",
+   "after": "The dispersion values reported by {cite:t}`Lee2026` (± 0.391 and ± 0.237) are standard deviations, which that study's methods state, and the error bars are labelled accordingly.",
+   "status": "applied",
+   "reason": "caption half; the panel annotation in the figure script is corrected to match"
+  },
+  {
+   "request_id": "FR-PROSE-008/009",
+   "target_file": "content/04_section.md",
+   "line": 1086,
+   "before": "and whether the cells themselves are depleted or selectively preserved is drawn in opposite directions from similar human data by {cite:t}`Consens2022b` and {cite:t}`Castanho2025b`.",
+   "after": "and the two single-nucleus and deconvolution cohorts frame the cells differently rather than oppositely: {cite:t}`Consens2022b` reports the SST-annotated inhibitory population proportionally depleted in AD, while {cite:t}`Castanho2025b` describes SST interneurons as a vulnerable population that is maintained in cognitively resilient individuals — a difference of cohort framing, not of direction.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-008 and FR-PROSE-009 (same clause)"
+  },
+  {
+   "request_id": "FR-PROSE-092",
+   "target_file": "content/05_section.md",
+   "line": 11,
+   "before": "because the two that report reductions selected cases carrying that pathology and the Lewy-body-type dementia series do not report co-pathology status {cite:p}`Beal1986d, FlintBeal1988, Whitford1988, Leake1991, Khundakar2016`.",
+   "after": "because the two that report reductions selected cases carrying that pathology {cite:p}`Beal1986d, FlintBeal1988` and the Lewy-body-type dementia series do not report co-pathology status {cite:p}`Whitford1988, Leake1991`; the occipital series is the exception, staining for α-synuclein, Aβ and hyperphosphorylated tau and excluding cases with high coexisting Alzheimer pathology {cite:p}`Khundakar2016`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-068",
+   "target_file": "content/05_section.md",
+   "line": 193,
+   "before": "No study linking baseline CSF somatostatin to incident PDD was retrieved, and {cite:t}`Thakur2025` identify somatostatin as among the least investigated neuropeptide biomarker candidates in this disease.",
+   "after": "No study linking baseline CSF somatostatin to incident PDD was retrieved, and {cite:t}`Thakur2025` identify somatostatin as among the least investigated neuropeptide biomarker candidates for the diagnosis of Parkinson's disease generally, without addressing Parkinson's disease dementia.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-093",
+   "target_file": "content/05_section.md",
+   "line": 696,
+   "before": "{cite:t}`Radovanovic2021` found an *increased* number of dentate parvalbumin interneurons in rats with cholinergic pedunculopontine lesions, opposite to the human DLB finding, with the change coupled to sleep-wake architecture; the same study reports a reduced dentate parvalbumin number when the nigral and pedunculopontine lesions are combined, so the direction turns on which systems are lesioned.",
+   "after": "{cite:t}`Radovanovic2021` found an *increased* number of dentate parvalbumin interneurons in rats with cholinergic pedunculopontine lesions, opposite to the human DLB finding, and a reduced dentate parvalbumin number when the nigral and pedunculopontine lesions are combined, so the direction turns on which systems are lesioned; the coupling to sleep-wake architecture belongs to the combined-lesion condition alone, where the reduction in parvalbumin number tracked shorter hippocampal wake episodes (r = 0.52, p = 0.01) and no such relation held in the other groups.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-079",
+   "target_file": "content/06_section.md",
+   "line": 26,
+   "before": "Striatal injection of N-methyl-D-aspartate (NMDA)-type agonists reduces glutamate and GABA markers while somatostatin, NPY, substance P, cholecystokinin and VIP are unchanged or increased {cite:p}`Beal1991a`",
+   "after": "Injection of N-methyl-D-aspartate (NMDA)-type agonists into rat dorsolateral frontoparietal cortex reduces glutamate and GABA markers while somatostatin, NPY, substance P, cholecystokinin and VIP are unchanged or increased {cite:p}`Beal1991a`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-025",
+   "target_file": "content/06_section.md",
+   "line": 26,
+   "before": "In culture the same population is more resistant to NMDA and quinolinate than the general striatal population, but the resistance is not absolute and is overcome by intense exposure, and the same cells are more vulnerable to kainate {cite:p}`Koh1988`.",
+   "after": "In culture, striatal neurons containing either NADPH-diaphorase or acetylcholinesterase are more resistant to NMDA and quinolinate than the general striatal population, though the resistance is not absolute and is overcome by intense exposure; heightened vulnerability to kainate is confined to the NADPH-diaphorase-containing neurons and is not shown by the acetylcholinesterase-containing ones {cite:p}`Koh1988`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-080",
+   "target_file": "content/06_section.md",
+   "line": 39,
+   "before": "The cortical somatostatin-immunoreactive counts (203.4 control versus 167.6 BACHD) are reported without a stated denominator, so that axis is a count on the study's own scale and not a density; the unit label on the BACHD striatal row is taken from the companion parvalbumin sentence of the same paper, whose own SOM sentence states values without a unit {cite:p}`Rallapalle2021`.",
+   "after": "The cortical somatostatin-immunoreactive counts (203.4 control versus 167.6 BACHD) come from the developmental cortical study and are reported without a stated denominator, so that axis is a count on that study's own scale and not a density {cite:p}`Molero2026`; the BACHD striatal row carries the unit under which its source reports striatal interneuron counts, SOM-immunoreactive cells per 1 × 10⁶ µm² of striatal area, the label being taken from the companion parvalbumin sentence of that paper {cite:p}`Rallapalle2021`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-026",
+   "target_file": "content/06_section.md",
+   "line": 193,
+   "before": "The BACHD mean sIPSC value in (B) is a striatal medium spiny neuron measurement taken from a table in a paper whose reported recordings are cortical, its recording age is not stated in the available source, and the genotype difference is not significant {cite:p}`Spampanato2008`.",
+   "after": "The BACHD mean sIPSC value in (B) is a striatal medium spiny neuron measurement taken from a table in a paper whose reported recordings are cortical, made at 3 and 6 months of age, and the genotype difference is not significant {cite:p}`Spampanato2008`.",
+   "status": "applied",
+   "reason": "caption half; the panel annotation in the figure script is corrected to match"
+  },
+  {
+   "request_id": "FR-PROSE-027",
+   "target_file": "content/06_section.md",
+   "line": 276,
+   "before": "low-threshold-spiking interneuron membrane and synaptic properties are reported unchanged in Q175 at every disease stage {cite:p}`Holley2018`",
+   "after": "low-threshold-spiking interneuron membrane and synaptic properties are reported unchanged in Q175 at every disease stage, with increased burst firing in a subpopulation of those interneurons in symptomatic mice {cite:p}`Holley2018`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-028",
+   "target_file": "content/06_section.md",
+   "line": 279,
+   "before": "and presymptomatic chemogenetic manipulation of parvalbumin interneurons reduces behavioural deficits in R6/2 mice {cite:p}`Ikefuama2025`.",
+   "after": "and presymptomatic bioluminescent-optogenetic manipulation of parvalbumin interneurons, luciferin-driven activation of tethered light-sensing channels, improves motor coordination in R6/2 mice {cite:p}`Ikefuama2025`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-029/030",
+   "target_file": "content/06_section.md",
+   "line": 281,
+   "before": "Cholinergic cells in Q140 and Q175 knock-in mice have simplified dendritic arbors, with significantly fewer and shorter dendrites {cite:p}`Deng2016`, enlarged persistent sodium currents {cite:p}`Tanimura2016`, and larger evoked inhibitory currents from indirect-pathway collaterals {cite:p}`Lim2021`;",
+   "after": "Cholinergic cells in Q140 knock-in mice have simplified dendritic arbors, with significantly fewer and shorter dendrites {cite:p}`Deng2016`; the same class shows enlarged persistent sodium currents {cite:p}`Tanimura2016`, and in zQ175 mice larger evoked inhibitory currents from indirect-pathway collaterals {cite:p}`Lim2021`;",
+   "status": "applied",
+   "reason": "merged FR-PROSE-029 and FR-PROSE-030 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-031",
+   "target_file": "content/06_section.md",
+   "line": 287,
+   "before": "cortical GABAergic interneurons accumulate aggregates when mutant huntingtin is expressed under an interneuron-directed promoter {cite:p}`Gu2007`.",
+   "after": "a subset of cortical GABAergic interneurons accumulates aggregates in a striatal-targeted model whose Cre driver is also active in cortical interneuron precursors, an incidental observation rather than a dedicated interneuron-targeted experiment {cite:p}`Gu2007`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-081",
+   "target_file": "content/06_section.md",
+   "line": 390,
+   "before": "calcium-signalling deficits downstream of reduced BCL11B appear in human stem-cell-derived medium spiny neurons but not in cortical or dopaminergic neurons {cite:p}`Fjodorova2023`;",
+   "after": "reduced BCL11B disturbs calcium homeostasis in human stem-cell-derived medium spiny neurons and cortical neurons alike, with the mitochondrial and PKA-dependent calcium-transient deficits confined to the medium spiny neurons {cite:p}`Fjodorova2023`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-032",
+   "target_file": "content/06_section.md",
+   "line": 392,
+   "before": "and astrocyte-to-neuron conversion produces mostly projection-neuron-like cells, with 8.4% parvalbumin-positive and under 5% somatostatin-, NPY- or calretinin-positive {cite:p}`Wu2020`.",
+   "after": "and in vivo astrocyte-to-neuron conversion in mouse, a different route to the same cells, produces mostly projection-neuron-like cells, with 8.4% parvalbumin-positive and under 5% somatostatin-, NPY- or calretinin-positive {cite:p}`Wu2020`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-033",
+   "target_file": "content/06_section.md",
+   "line": 398,
+   "before": "and in BACHD cortex, where somatostatin-positive interneuron counts are reduced while parvalbumin counts are not, traced to aberrant medial ganglionic eminence neurogenesis rather than to degeneration {cite:p}`Molero2026`",
+   "after": "and in BACHD cortex, where somatostatin-positive and parvalbumin-positive interneuron counts are both reduced at postnatal day 13 but only the somatostatin deficit is still present at postnatal day 30, traced to aberrant medial ganglionic eminence neurogenesis rather than to degeneration {cite:p}`Molero2026`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-035/036/082",
+   "target_file": "content/07_section.md",
+   "line": 11,
+   "before": "is reduced in ALS with a consistency unusual for a human neurophysiological measure {cite:p}`Higashihara2024, Geevasinga2015, VanDenBos2024, Tankisi2025, Pavey2024`.",
+   "after": "is reduced in ALS across cohorts and techniques {cite:p}`Higashihara2024, Geevasinga2015`, including a TMS–electroencephalography paired-pulse analogue rather than the conventional motor-evoked-potential measure {cite:p}`VanDenBos2024`, but the reduction is phenotype-dependent: it is absent in a pyramidal phenotype group {cite:p}`Tankisi2025`, and cohorts that stratify patients separate them into hyperexcitable, normally excitable and cortically inexcitable groups {cite:p}`Pavey2024`.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-035, FR-PROSE-036 and FR-PROSE-082 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-034",
+   "target_file": "content/07_section.md",
+   "line": 11,
+   "before": "— an effect pooled across 25 separate threshold-tracking studies and recorded as independently replicated.",
+   "after": "— a pooled meta-analytic estimate over 25 separate threshold-tracking studies.",
+   "status": "applied",
+   "reason": "deletion of \"recorded as independently replicated\", a framing the meta-analysis does not use"
+  },
+  {
+   "request_id": "FR-PROSE-037",
+   "target_file": "content/07_section.md",
+   "line": 15,
+   "before": "{cite:t}`Higashihara2024` present reduced intracortical inhibition as a near-universal ALS signature on the strength of a pooled estimate,",
+   "after": "{cite:t}`Higashihara2024` present reduced intracortical inhibition as the most sensitive group-level TMS signature of ALS on the strength of a pooled estimate, an aggregate sensitivity rather than a claim about every individual patient,",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-038",
+   "target_file": "content/07_section.md",
+   "line": 18,
+   "before": "and generative modelling of magnetoencephalography under the same challenge infers increased tonic inhibition of deep inhibitory populations {cite:p}`Adams2021`.",
+   "after": "and generative modelling of magnetoencephalography, recorded under an auditory oddball paradigm rather than the response-inhibition task, infers increased tonic inhibition of deep inhibitory populations {cite:p}`Adams2021`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-083",
+   "target_file": "content/07_section.md",
+   "line": 20,
+   "before": "and TrkB.T1 deletion only partially rescues PV interneuron numbers in mutant SOD1 mice, with the counts reported for hippocampal CA3 (344.79 ± 27.13 against 433.86 ± 118.50 in wild type) {cite:p}`Quarta2018`.",
+   "after": "and TrkB.T1 deletion restores PV interneuron numbers to physiological level in the mutant SOD1 hippocampus, the result that study reports for CA1, while in CA3 the compensation is incomplete (344.79 ± 27.13 against 433.86 ± 118.50 in wild type, p < 0.001) {cite:p}`Quarta2018`.",
+   "status": "applied",
+   "reason": "rescue description corrected to the paper's own wording; CA3 values retained because the section-07 evidence package carries their source sentence (findings[6], \"Fig. 3 CA3\"), so the conditional deletion does not trigger"
+  },
+  {
+   "request_id": "FR-PROSE-084",
+   "target_file": "content/07_section.md",
+   "line": 38,
+   "before": "Transcript-level work extends SST involvement into human ALS tissue without counting cells: somatostatin, NPY and cholecystokinin transcripts are downregulated in ALS brainstem {cite:p}`Krull2025`,",
+   "after": "Transcript-level work reaches the population without counting cells, though mostly outside human ALS tissue: somatostatin, NPY and cholecystokinin transcripts are downregulated in the brainstem of cattle with bovine spastic paresis {cite:p}`Krull2025`,",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-085",
+   "target_file": "content/07_section.md",
+   "line": 496,
+   "before": "with parallel alteration of the PV-positive population and its extracellular matrix across human prion disease and rodent scrapie {cite:p}`Vidal2006`,",
+   "after": "with alteration of the PV-positive population reported in sheep scrapie, in which the extracellular matrix was examined and found unchanged {cite:p}`Vidal2006`,",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-041",
+   "target_file": "content/07_section.md",
+   "line": 498,
+   "before": "even though PV cell numbers are unchanged, and the deficit is reversed by blocking GABA-A receptors",
+   "after": "even though the total dentate PV cell count is not significantly changed (p = 0.067) — a significant loss in that study being confined to the hilus (p = 0.028) — and the deficit is reversed by blocking GABA-A receptors",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-042",
+   "target_file": "content/07_section.md",
+   "line": 506,
+   "before": "(5.72 ± 0.91 against 4.79 ± 0.41, p = 0.002)",
+   "after": "(5.72 ± 0.91 against 4.70 ± 0.41, p = 0.002)",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-043/044/045/086",
+   "target_file": "content/07_section.md",
+   "line": 626,
+   "before": "trisomic Martinotti physiology {cite:p}`ZorrillaDeSanMartin2020, Gutmann2026` and prion translatome profiling {cite:p}`Bauer2022a`, with SST+ interneuron production counted in human iPSC-derived cortical organoids {cite:p}`Zhu2026` — plus human transcript and surgical-tissue work that identifies the population without counting it in degenerating cortex {cite:p}`Krull2025, Scheper2024, Trujillo2026`.",
+   "after": "trisomic Martinotti physiology {cite:p}`ZorrillaDeSanMartin2020`, trisomic dentate SOM interneuron physiology {cite:p}`Gutmann2026` and prion translatome profiling {cite:p}`Bauer2022a`, with SST+ interneuron production counted in human iPSC-derived cortical organoids {cite:p}`Zhu2026` — plus transcript and tissue work that measures the population outside degenerating human cortex: downregulated somatostatin transcripts in bovine brainstem {cite:p}`Krull2025`, SST+ cell counts in human tuberous sclerosis surgical cortex {cite:p}`Scheper2024`, and a post-mortem human thalamic single-nucleus atlas quantifying the depletion of two inhibitory populations {cite:p}`Trujillo2026`.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-043, 044, 045 and 086 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-039",
+   "target_file": "content/07_section.md",
+   "line": 18,
+   "before": "(F(1) = 8.67, P = 0.005; occipital P = 0.81) {cite:p}`Murley2020`",
+   "after": null,
+   "status": "skipped",
+   "reason": "deletion_if_unsourceable: condition not met. F(1) = 8.67, P = 0.005 and the occipital P = 0.81 appear verbatim in evidence/evidence_section_07.json findings[39] claim_source_sentence ('GABA was reduced in bvFTD/PSP ... right inferior frontal gyrus [F(1) = 8.67, P = 0.005] but not occipital lobe [F(1) = 0.06, P = 0.81]'). Statistics retained; sentence unchanged."
+  },
+  {
+   "request_id": "FR-PROSE-040",
+   "target_file": "content/07_section.md",
+   "line": 496,
+   "before": "prion aggregates are under-represented in GABA-positive neurons and concentrated in excitatory ones (p < 0.01) {cite:p}`Erdenebat2024`",
+   "after": null,
+   "status": "skipped",
+   "reason": "deletion_if_unsourceable: condition not met. The p < 0.01 appears verbatim in evidence/evidence_section_07.json findings[20] claim_source_sentence ('The frequencies of PrP Sc ++ neurons were significantly higher than the expected count in GABA-negative neurons and lower than the expected count in GABA-positive neurons (p < 0.01).'). Significance level retained; sentence unchanged."
+  },
+  {
+   "request_id": "FR-PROSE-063",
+   "target_file": "content/08_section.md",
+   "line": 118,
+   "before": "a parkinsonian motor-cortex microcircuit reproduces beta-band burst structure from altered inhibitory-excitatory interaction alone {cite:p}`Doherty2025`",
+   "after": "a parkinsonian motor-cortex microcircuit reproduces beta-band burst structure from an isolated reduction of layer 5 pyramidal-tract neuron excitability in an otherwise unmodified network {cite:p}`Doherty2025`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-064",
+   "target_file": "content/08_section.md",
+   "line": 124,
+   "before": "An optogenetic manipulation of lateral-septum SST neurons changed dorsal hippocampal theta power by 14.8% (p = 8 x 10-7) along with ripple density {cite:p}`Espinosa2022`, though the paper attributes the 14.8% theta increase to optogenetic stimulation of these cells and the accompanying fall in ripple density to silencing them, so the sign of the manipulation behind the theta value cannot be fixed from its own sentences.",
+   "after": "Optogenetic suppression of lateral-septum SST neurons, the manipulation named in that study's title and abstract, changed dorsal hippocampal theta power by 14.8% (p = 8 x 10-7) along with ripple density {cite:p}`Espinosa2022`, although its individual results sentences attribute the theta increase to stimulation of these cells and the fall in ripple density to silencing them.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-089",
+   "target_file": "content/08_section.md",
+   "line": 129,
+   "before": "Recording-site grain is unresolved on both sides — {cite:t}`Xiao2017`'s hippocampal site is unspecified and the subfield and layer of {cite:t}`Etter2019`'s hippocampal recording are likewise not stated in the source sentence or abstract supporting this value; gamma power is layer-dependent, so neither site may be read as equivalent to the other.",
+   "after": "Recording-site grain is unresolved on one side only: {cite:t}`Xiao2017` recorded extracellular field potentials from stratum pyramidale of CA3, whereas the subfield and layer of {cite:t}`Etter2019`'s hippocampal recording are not stated in the source sentence or abstract supporting this value; gamma power is layer-dependent, so the two sites may not be read as equivalent.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-065",
+   "target_file": "content/08_section.md",
+   "line": 129,
+   "before": "{cite:t}`Xiao2017` state no n in the source sentence or abstract and their preparation (ex vivo versus in vivo) is unresolved, while {cite:t}`Etter2019` state n = 6",
+   "after": "{cite:t}`Xiao2017` state no n in the source sentence or abstract, and their preparation is ex vivo, acute hippocampal slices from 3–4-month-old mice, while {cite:t}`Etter2019` state n = 6",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-065b",
+   "target_file": "content/08_section.md",
+   "line": 129,
+   "before": "{cite:t}`Xiao2017`'s model is described only as hAPP crossed to Nptx2-/-, the specific APP transgenic line is not named in the source sentence or abstract supporting this value, and the two amyloid models are therefore not established to be the same line.",
+   "after": "{cite:t}`Xiao2017`'s model is hAPP crossed to Nptx2-/-, with the APP line named in that study's Methods as APPswe/PS1dE9; the line behind the other amyloid entry is not named in the source sentence or abstract supporting its value, so the two amyloid models are not established to be the same line.",
+   "status": "applied",
+   "reason": "second half of FR-PROSE-065 (same caption, APP-line caveat)"
+  },
+  {
+   "request_id": "FR-PROSE-066",
+   "target_file": "content/08_section.md",
+   "line": 407,
+   "before": "activity-tagged prefrontal Sst neurons were sufficient to initiate nesting and subsequent NREM sleep when reactivated (P = 0.0297 at 10 Hz; P = 0.0043 at 20 Hz), a single study awaiting replication {cite:p}`Tossell2023`",
+   "after": "activity-tagged prefrontal Sst neurons were sufficient to initiate nesting and subsequent NREM sleep when reactivated (light against no light, P = 0.0046 at 5 Hz, P = 0.0498 at 10 Hz and P = 0.0202 at 20 Hz; the P = 0.0297 and P = 0.0043 values that study reports belong to light-evoked action-potential probability in slice recordings), a single study awaiting replication {cite:p}`Tossell2023`",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-067",
+   "target_file": "content/08_section.md",
+   "line": 413,
+   "before": "Behaviourally, SST activation during the early delay of a working-memory task impaired performance more than PV activation while VIP activation improved it {cite:p}`Kamigaki2017`",
+   "after": "Behaviourally, SST activation during the early delay of a working-memory task impaired performance strongly, as did PV activation, while VIP activation improved it {cite:p}`Kamigaki2017`",
+   "status": "applied",
+   "reason": "deletion of the unsupported \"more than PV\" comparison"
+  },
+  {
+   "request_id": "FR-PROSE-090",
+   "target_file": "content/08_section.md",
+   "line": 413,
+   "before": "and driving O-LM alpha2 cells modulated fear recall in the same unreplicated study {cite:p}`Mikulovic2018`.",
+   "after": "and driving O-LM alpha2 cells generated type 2 theta, which that same unreplicated study associates with increased risk-taking in response to predator odour {cite:p}`Mikulovic2018`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-090b",
+   "target_file": "content/08_section.md",
+   "line": 124,
+   "before": "that result and the fear-recall effect built on it being unreplicated in the retrieved record eight years on",
+   "after": "that result and the risk-taking association built on it being unreplicated in the retrieved record eight years on",
+   "status": "applied",
+   "reason": "consequential cleanup of the same misattribution at 08_section.md:124"
+  },
+  {
+   "request_id": "FR-PROSE-091",
+   "target_file": "content/08_section.md",
+   "line": 421,
+   "before": "O-LM cells split into molecularly distinct populations by Cre-line origin {cite:p}`Winterer2019`, their overlap with the somatostatin population differs",
+   "after": "O-LM cells are a highly homogeneous transcriptomic population across Sst-Cre and Htr3a-Cre lines, the one Cre-line-dependent expression difference being attributed by that study to the BAC copy of Htr3b in the Htr3a-Cre line rather than to a molecular split {cite:p}`Winterer2019`, their overlap with the somatostatin population differs",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-014/015",
+   "target_file": "content/09_section.md",
+   "line": 5,
+   "before": "is reduced in Parkinson's disease, frontotemporal dementia, Binswanger's disease and late-life depression alike, is raised by medication and by shunting, and has never been reported with a sensitivity, specificity, area under the curve or cut-off in any study retrieved here {cite:p}`Dupont1982, Minthon1997, Sunderland1987, Strittmatter1996b, Strittmatter1997, Masson1990, Poca2001, Beal1986e`.",
+   "after": "is reduced in Parkinson's disease, Binswanger's disease and late-life depression alike {cite:p}`Dupont1982, Sunderland1987, Strittmatter1996b, Masson1990`, is measured across diagnoses and correlated with dementia severity rather than against controls in frontotemporal dementia and Alzheimer's disease {cite:p}`Minthon1997`, is raised by medication and by shunting {cite:p}`Strittmatter1997, Poca2001`, and has never been reported with a sensitivity, specificity, area under the curve or cut-off in any study retrieved here; the series that tested discrimination directly found no diagnostic specificity, and reported no reduction in Parkinson's or Huntington's disease {cite:p}`Beal1986e`.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-014 and FR-PROSE-015 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-016",
+   "target_file": "content/09_section.md",
+   "line": 53,
+   "before": "in frontotemporal dementia as well as Alzheimer's disease {cite:p}`Minthon1997`;",
+   "after": "with concentrations correlating negatively with dementia severity in Alzheimer's disease in a series of 34 Alzheimer and 22 frontotemporal dementia patients that included no control group and so reports no reduction against controls {cite:p}`Minthon1997`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-017",
+   "target_file": "content/10_section.md",
+   "line": 186,
+   "before": "On translation, a synthesis of clinical gamma stimulation reports no significant improvement in global cognition under protocols of up to four weeks {cite:p}`DePaolis2024`,",
+   "after": "On translation, the individual trials tabulated in a synthesis of clinical gamma stimulation report no significant change in overall cognition tests under protocols of up to four weeks, although that synthesis also tabulates longer protocols with reported cognitive improvement and its authors' own conclusion is favourable to the technique {cite:p}`DePaolis2024`,",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-075",
+   "target_file": "content/10_section.md",
+   "line": 165,
+   "before": "and ultrasound-assisted lipid nanoparticle delivery raised the edited-cell fraction above the same group's previously reported figure for ultrasound-delivered viral vectors, in a comparison against that published number rather than a controlled head-to-head, and in astrocytes rather than any interneuron population {cite:p}`Zheng2026`.",
+   "after": "and ultrasound-assisted lipid nanoparticle delivery achieved gene editing comparable to the same group's earlier ultrasound-delivered viral system while raising the astrocyte-targeted expression fraction above that group's previously reported 12.9%, in a comparison against a published number rather than a controlled head-to-head, and in astrocytes rather than any interneuron population {cite:p}`Zheng2026`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-076",
+   "target_file": "content/10_section.md",
+   "line": 354,
+   "before": "clozapine-N-oxide (CNO) itself impaired hippocampal O-LM interneuron encoding whereas Compound 21 did not, a result reported in a preprint {cite:p}`Bunce2026`.",
+   "after": "clozapine-N-oxide (CNO) itself impaired object-location memory encoding whereas Compound 21 did not, with neither ligand altering overall neuronal or parvalbumin interneuron activity across dorsal hippocampal subregions, a result reported in a preprint {cite:p}`Bunce2026`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-018/077",
+   "target_file": "content/10_section.md",
+   "line": 632,
+   "before": "and the structural determinants of subtype selectivity are known well enough to design against {cite:p}`Zhao2022` — what is missing is an exposure measurement, and no in vivo efficacy study of a brain-penetrant SSTR4-selective agonist in an amyloid or tau model was retrieved.",
+   "after": "and the structural determinants of subtype selectivity are known well enough to design against {cite:p}`Zhao2022`. Brain entry of that compound has been measured directly (entry rate K(i) = 0.25 µl/g min, with about 93% associated with the parenchymal component) {cite:p}`Sandoval2011`, and an amyloid-model efficacy study exists within the same programme, with learning improved and soluble Aβ oligomers reduced in APPswe Tg2576 mice {cite:p}`Sandoval2013`; what is missing is a concentration-at-target measurement tied to efficacy, an independent programme, and any tau-model study.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-018 and FR-PROSE-077 (same clause)"
+  },
+  {
+   "request_id": "FR-PROSE-055",
+   "target_file": "content/11_section.md",
+   "line": 5,
+   "before": "within design-based stereology the reported values run from no change {cite:p}`Futacsi2025` to frank degeneration {cite:p}`Loreth2012`, and within immunoreactive readouts from no change {cite:p}`Sos2020` to those perirhinal decreases {cite:p}`SanchezMejias2019`.",
+   "after": "within design-based stereology the reported values run from no change {cite:p}`Futacsi2025, Sos2020` to frank degeneration {cite:p}`Loreth2012`, and the immunoreactive readouts extend to those perirhinal decreases {cite:p}`SanchezMejias2019`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-056",
+   "target_file": "content/11_section.md",
+   "line": 17,
+   "before": "whereas counts in APP/PS1 mouse olfactory bulb reported decreased somatostatin-positive and calretinin-positive cells with parvalbumin cells increased {cite:p}`DeLaRosaPrieto2016`;",
+   "after": "whereas counts in APP/PS1 mouse olfactory bulb reported decreased somatostatin-positive cells and increased parvalbumin cells, with the calretinin result stated inconsistently inside that paper, whose summary reports an increase in transgenic animals while its co-localisation section reports a decrease {cite:p}`DeLaRosaPrieto2016`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-088",
+   "target_file": "content/11_section.md",
+   "line": 237,
+   "before": "Cx3cr1-Cre microglial drivers label scattered non-target neurons brain-wide, and the degree of leakage differs between nominally equivalent lines and between studies {cite:p}`Zhao2019`;",
+   "after": "reports that Cx3cr1-Cre microglial drivers label scattered non-target neurons brain-wide differ between nominally equivalent lines and between studies, and the study that tested two such lines directly found reporter expression largely restricted to microglia, attributing the neuronal labelling other groups reported to Cre-independent reporter leakiness {cite:p}`Zhao2019`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-057",
+   "target_file": "content/11_section.md",
+   "line": 339,
+   "before": "strain background sets the baseline against which all of this is measured {cite:p}`Bhaduri2018`;",
+   "after": "and strain background sets the baseline against which all of this is measured, documented not as a behavioural baseline but as strain-dependent striatal and nigral interneuron protein levels in relation to MPTP susceptibility {cite:p}`Bhaduri2018`;",
+   "status": "applied",
+   "reason": "key kept in place; behavioural-phenotype framing removed"
+  },
+  {
+   "request_id": "FR-PROSE-058",
+   "target_file": "content/11_section.md",
+   "line": 433,
+   "before": "and in a 13-brain schizophrenia postmortem series pH and RNA integrity each exerted gene-set-specific effects, so unadjusted comparisons confound disease signal with tissue state {cite:p}`Hatano2025`.",
+   "after": "and pH and RNA integrity each exerted gene-set-specific effects in a 13-brain schizophrenia microarray series that the cited study summarises from its authors' own earlier work, the cited study itself covering 25 schizophrenia, 10 bipolar and 21 control brains, so unadjusted comparisons confound disease signal with tissue state {cite:p}`Hatano2025`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-059",
+   "target_file": "content/11_section.md",
+   "line": 437,
+   "before": "Transcriptomic matching across mouse, marmoset, macaque and human motor cortex placed closely related somatostatin subtypes at chance-level correspondence (mean AUROC 0.50 across species against 0.84 within), while distinct types such as chandelier and Sst Chodl matched well {cite:p}`Bakken2021`;",
+   "after": "Transcriptomic matching across mouse, marmoset and human motor cortex placed closely related types, among them Sncg and somatostatin subtypes, at chance-level correspondence (mean AUROC 0.50 across species against 0.84 within), while distinct types such as chandelier and Sst Chodl matched well {cite:p}`Bakken2021`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-060",
+   "target_file": "content/11_section.md",
+   "line": 437,
+   "before": "and marker-defined interneuron categories differ in relative abundance across rodents, monkeys and humans, with calretinin rather than parvalbumin cells predominating in human and chimpanzee {cite:p}`Pirone2014`.",
+   "after": "and marker-defined interneuron categories differ in relative abundance between species, with calretinin rather than parvalbumin cells predominating in the claustrum of human and chimpanzee while parvalbumin density slightly exceeded calretinin in the one monkey examined {cite:p}`Pirone2014`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-061",
+   "target_file": "content/11_section.md",
+   "line": 443,
+   "before": "automated implementations of the physical disector change count quality and throughput relative to manual ones {cite:p}`Fabricius2017`;",
+   "after": "automatic image alignment in a physical-disector implementation gives a considerable economy of effort over manual alignment of tissue sections {cite:p}`Fabricius2017`;",
+   "status": "applied",
+   "reason": "implied count-quality comparison deleted; throughput claim retained"
+  },
+  {
+   "request_id": "FR-PROSE-062",
+   "target_file": "content/11_section.md",
+   "line": 564,
+   "before": "the report that transgene insertion disrupts a specific endogenous locus in a widely used tauopathy line {cite:p}`Sahara2023`;",
+   "after": "the review that names the endogenous locus, Fgf14, disrupted by transgene insertion in a widely used tauopathy line, the primary observation being attributed there to an earlier study {cite:p}`Sahara2023`;",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-019",
+   "target_file": "content/12_section.md",
+   "line": 13,
+   "before": "at log2FC = −0.52 against resilient donors and −0.41 against controls {cite:p}`Castanho2025a, Castanho2025b`.",
+   "after": "at log2FC = −0.52 against resilient donors and −0.41 against controls {cite:p}`Castanho2025b`.",
+   "status": "applied",
+   "reason": "cite-key substitution Castanho2025a -> Castanho2025b (preprint and journal version of one study)"
+  },
+  {
+   "request_id": "FR-PROSE-022",
+   "target_file": "content/12_section.md",
+   "line": 40,
+   "before": "because a resilience cohort reads comparable data the other way {cite:p}`Castanho2025a, Castanho2025b`,",
+   "after": "because a resilience cohort reads comparable data the other way {cite:p}`Castanho2025b`,",
+   "status": "applied",
+   "reason": "cite-key substitution Castanho2025a -> Castanho2025b"
+  },
+  {
+   "request_id": "FR-PROSE-078",
+   "target_file": "content/12_section.md",
+   "line": 25,
+   "before": "improving learning while lowering soluble Aβ42 oligomers through a phosphoramidon-sensitive mechanism {cite:p}`Sandoval2013` — from one closely related research programme, with no brain-penetrant SSTR4-selective efficacy study in an amyloid or tau model retrieved.",
+   "after": "improving learning while lowering soluble Aβ42 oligomers through a phosphoramidon-sensitive mechanism in APPswe Tg2576 amyloid-model mice {cite:p}`Sandoval2013` — all from one closely related research programme, with no independent replication outside it and no tau-model study retrieved.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-020",
+   "target_file": "content/12_section.md",
+   "line": 25,
+   "before": "and in patients a synthesis of clinical gamma stimulation reports no significant improvement in global cognition under protocols of up to four weeks {cite:p}`DePaolis2024`.",
+   "after": "and in patients the trials tabulated in a synthesis of clinical gamma stimulation report no significant change in overall cognition tests under protocols of up to four weeks, though that synthesis also tabulates longer protocols with reported improvement and reaches a conclusion favourable to the technique {cite:p}`DePaolis2024`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-PROSE-021/023",
+   "target_file": "content/12_section.md",
+   "line": 40,
+   "before": "Row 7, therapeutic benefit obtained by acting on SST interneurons, carries within-programme and contested status only {cite:p}`Sandoval2019, DePaolis2024, Bakker2012`.",
+   "after": "Row 7, therapeutic benefit obtained by acting on SST interneurons, carries within-programme and contested status only {cite:p}`Sandoval2019`, with the two human entries behind that row indirect rather than SST-directed: a synthesis of gamma stimulation, which acts on fast-spiking parvalbumin circuitry {cite:p}`DePaolis2024`, and a non-cell-type-specific excitability-lowering trial {cite:p}`Bakker2012`.",
+   "status": "applied",
+   "reason": "merged FR-PROSE-021 and FR-PROSE-023 (same sentence)"
+  },
+  {
+   "request_id": "FR-PROSE-024",
+   "target_file": "content/12_section.md",
+   "line": 123,
+   "before": "and a synthesis of clinical gamma stimulation reporting no significant improvement in global cognition under protocols of up to four weeks {cite:p}`DePaolis2024`.",
+   "after": "and a synthesis whose tabulated clinical gamma-stimulation trials report no significant change in overall cognition tests under protocols of up to four weeks, its authors' own conclusion being favourable to the technique {cite:p}`DePaolis2024`.",
+   "status": "applied",
+   "reason": ""
+  },
+  {
+   "request_id": "FR-BIB-01",
+   "target_file": "content/references.bib",
+   "line": 81,
+   "before": "@article{Albuquerque2015,\n  author       = {Albuquerque, Marilia S. and Mahar, Ian and Davoli, Maria Antonietta and Chabot, Jean-Guy and Mechawar, Naguib and Quirion, R{\\~A}{\\copyright}mi and Krantic, Slavica},\n  title        = {{Regional and sub-regional differences in hippocampal GABAergic neuronal vulnerability in the TgCRND8 mouse model of Alzheimer's disease}},\n  journal      = {Frontiers in Aging Neuroscience},\n  year         = {2015},\n  volume       = {7},\n  doi          = {10.3389/fnagi.2015.00030}\n}\n",
+   "after": "@article{Albuquerque2015,\n  author       = {Albuquerque, Marilia S. and Mahar, Ian and Davoli, Maria Antonietta and Chabot, Jean-Guy and Mechawar, Naguib and Quirion, R{\\'e}mi and Krantic, Slavica},\n  title        = {{Regional and sub-regional differences in hippocampal GABAergic neuronal vulnerability in the TgCRND8 mouse model of Alzheimer's disease}},\n  journal      = {Frontiers in Aging Neuroscience},\n  year         = {2015},\n  volume       = {7},\n  doi          = {10.3389/fnagi.2015.00030}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-02",
+   "target_file": "content/references.bib",
+   "line": 4888,
+   "before": "@article{Nassar2015,\n  author       = {Nassar, M{\\~A}{\\copyright}rie and Simonnet, Jean and Lofredi, Roxanne and Cohen, Ivan and Savary, Etienne and Yanagawa, Yuchio and Miles, Richard and Fricker, Desdemona},\n  title        = {{Diversity and overlap of parvalbumin and somatostatin expressing interneurons in mouse presubiculum}},\n  journal      = {Frontiers in Neural Circuits},\n  year         = {2015},\n  volume       = {9},\n  doi          = {10.3389/fncir.2015.00020}\n}\n",
+   "after": "@article{Nassar2015,\n  author       = {Nassar, M{\\'e}rie and Simonnet, Jean and Lofredi, Roxanne and Cohen, Ivan and Savary, Etienne and Yanagawa, Yuchio and Miles, Richard and Fricker, Desdemona},\n  title        = {{Diversity and overlap of parvalbumin and somatostatin expressing interneurons in mouse presubiculum}},\n  journal      = {Frontiers in Neural Circuits},\n  year         = {2015},\n  volume       = {9},\n  pages        = {20},\n  doi          = {10.3389/fncir.2015.00020}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-03",
+   "target_file": "content/references.bib",
+   "line": 660,
+   "before": "@article{Birdsill2010,\n  author       = {Birdsill, Alex C. and Walker, Douglas G. and Lue, LihFen and Sue, Lucia I. and Beach, Thomas G.},\n  title        = {{Postmortem interval effect on RNA and gene expression in human brain tissue}},\n  journal      = {Cell and Tissue Banking},\n  year         = {2010},\n  volume       = {12},\n  number       = {4},\n  pages        = {311--318},\n  doi          = {10.1007/s10561-010-9210-8}\n}\n",
+   "after": "@article{Birdsill2010,\n  author       = {Birdsill, Alex C. and Walker, Douglas G. and Lue, LihFen and Sue, Lucia I. and Beach, Thomas G.},\n  title        = {{Postmortem interval effect on RNA and gene expression in human brain tissue}},\n  journal      = {Cell and Tissue Banking},\n  year         = {2011},\n  volume       = {12},\n  number       = {4},\n  pages        = {311--318},\n  doi          = {10.1007/s10561-010-9210-8}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-05",
+   "target_file": "content/references.bib",
+   "line": 1421,
+   "before": "@article{Cummings2019,\n  author       = {Cummings, Kirstie A. and Clem, Roger L.},\n  title        = {{Prefrontal somatostatin interneurons encode fear memory}},\n  journal      = {Nature Neuroscience},\n  year         = {2019},\n  volume       = {23},\n  number       = {1},\n  pages        = {61--74},\n  doi          = {10.1038/s41593-019-0552-7}\n}\n",
+   "after": "@article{Cummings2019,\n  author       = {Cummings, Kirstie A. and Clem, Roger L.},\n  title        = {{Prefrontal somatostatin interneurons encode fear memory}},\n  journal      = {Nature Neuroscience},\n  year         = {2020},\n  volume       = {23},\n  number       = {1},\n  pages        = {61--74},\n  doi          = {10.1038/s41593-019-0552-7}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-06",
+   "target_file": "content/references.bib",
+   "line": 1529,
+   "before": "@article{DeLaRosaPrieto2016,\n  author       = {De la Rosa-Prieto, Carlos and Saiz-Sanchez, Daniel and Ubeda-Banon, Isabel and Flores-Cuadrado, Alicia and Martinez-Marcos, Alino},\n  title        = {{Neurogenesis, Neurodegeneration, Interneuron Vulnerability, and Amyloid-$\\beta$ in the Olfactory Bulb of APP/PS1 Mouse Model of Alzheimer's Disease}},\n  journal      = {Frontiers in Neuroscience},\n  year         = {2016},\n  volume       = {10},\n  doi          = {10.3389/fnins.2016.00227}\n}\n",
+   "after": "@article{DeLaRosaPrieto2016,\n  author       = {De la Rosa-Prieto, Carlos and Saiz-Sanchez, Daniel and Ubeda-Banon, Isabel and Flores-Cuadrado, Alicia and Martinez-Marcos, Alino},\n  title        = {{Neurogenesis, Neurodegeneration, Interneuron Vulnerability, and Amyloid-$\\beta$ in the Olfactory Bulb of APP/PS1 Mouse Model of Alzheimer's Disease}},\n  journal      = {Frontiers in Neuroscience},\n  year         = {2016},\n  volume       = {10},\n  pages        = {227},\n  doi          = {10.3389/fnins.2016.00227}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-07",
+   "target_file": "content/references.bib",
+   "line": 1656,
+   "before": "@article{Dick2024,\n  author       = {Dick, Fiona and Johanson, Gard Aasmund Skulstad and Tysnes, Ole-Bj{\\o}rn and Alves, Guido and D{\\\"o}lle, Christian and Tzoulis, Charalampos},\n  title        = {{Brain Proteome Profiling Reveals Common and Divergent Signatures in Parkinson's Disease, Multiple System Atrophy, and Progressive Supranuclear Palsy}},\n  journal      = {Molecular Neurobiology},\n  year         = {2024},\n  volume       = {62},\n  number       = {3},\n  pages        = {2801--2816},\n  doi          = {10.1007/s12035-024-04422-y}\n}\n",
+   "after": "@article{Dick2024,\n  author       = {Dick, Fiona and Johanson, Gard Aasmund Skulstad and Tysnes, Ole-Bj{\\o}rn and Alves, Guido and D{\\\"o}lle, Christian and Tzoulis, Charalampos},\n  title        = {{Brain Proteome Profiling Reveals Common and Divergent Signatures in Parkinson's Disease, Multiple System Atrophy, and Progressive Supranuclear Palsy}},\n  journal      = {Molecular Neurobiology},\n  year         = {2025},\n  volume       = {62},\n  number       = {3},\n  pages        = {2801--2816},\n  doi          = {10.1007/s12035-024-04422-y}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-08",
+   "target_file": "content/references.bib",
+   "line": 1838,
+   "before": "@misc{Elfarrash2019,\n  author       = {Elfarrash, Sara and Jensen, Nanna M{\\o}ller and Ferreira, Nelson and Betzer, Cristine and Thevathasan, Jervis Vermal and Diekmann, Robin and Adel, Mohamed and Omar, Nisreen Mansour and Boraie, Mohamed Z. and Gad, Sabry and Ries, Jonas and Kirik, Deniz and Nabavi, Sadegh and Jensen, Poul Henning},\n  title        = {{Organotypic slice culture model demonstrates interneuronal spreading of alpha-synuclein aggregates}},\n  howpublished = {{bioRxiv preprint}},\n  year         = {2019},\n  doi          = {10.1101/681064}\n}\n",
+   "after": "@article{Elfarrash2019,\n  author       = {Elfarrash, Sara and Jensen, Nanna M{\\o}ller and Ferreira, Nelson and Betzer, Cristine and Thevathasan, Jervis Vermal and Diekmann, Robin and Adel, Mohamed and Omar, Nisreen Mansour and Boraie, Mohamed Z. and Gad, Sabry and Ries, Jonas and Kirik, Deniz and Nabavi, Sadegh and Jensen, Poul Henning},\n  title        = {{Organotypic slice culture model demonstrates inter-neuronal spreading of alpha-synuclein aggregates}},\n  journal      = {Acta Neuropathologica Communications},\n  year         = {2019},\n  volume       = {7},\n  number       = {1},\n  pages        = {213},\n  doi          = {10.1186/s40478-019-0865-5}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-09",
+   "target_file": "content/references.bib",
+   "line": 2246,
+   "before": "@article{Fuchs2016,\n  author       = {Fuchs, T and Jefferson, S J and Hooper, A and Yee, P-HP and Maguire, J and Luscher, B},\n  title        = {{Disinhibition of somatostatin-positive GABAergic interneurons results in an anxiolytic and antidepressant-like brain state}},\n  journal      = {Molecular Psychiatry},\n  year         = {2016},\n  volume       = {22},\n  number       = {6},\n  pages        = {920--930},\n  doi          = {10.1038/mp.2016.188}\n}\n",
+   "after": "@article{Fuchs2016,\n  author       = {Fuchs, T and Jefferson, S J and Hooper, A and Yee, P-HP and Maguire, J and Luscher, B},\n  title        = {{Disinhibition of somatostatin-positive GABAergic interneurons results in an anxiolytic and antidepressant-like brain state}},\n  journal      = {Molecular Psychiatry},\n  year         = {2017},\n  volume       = {22},\n  number       = {6},\n  pages        = {920--930},\n  doi          = {10.1038/mp.2016.188}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-10",
+   "target_file": "content/references.bib",
+   "line": 2744,
+   "before": "@article{Hagihara2017,\n  author       = {Hagihara, Hideo and Catts, Vibeke S and Katayama, Yuta and Shoji, Hirotaka and Takagi, Tsuyoshi and Huang, Freesia L and Nakao, Akito and Mori, Yasuo and Huang, Kuo-Ping and Ishii, Shunsuke and Graef, Isabella A and Nakayama, Keiichi I and Shannon Weickert, Cynthia and Miyakawa, Tsuyoshi},\n  title        = {{Decreased Brain pH as a Shared Endophenotype of Psychiatric Disorders}},\n  journal      = {Neuropsychopharmacology},\n  year         = {2017},\n  volume       = {43},\n  number       = {3},\n  pages        = {459--468},\n  doi          = {10.1038/npp.2017.167}\n}\n",
+   "after": "@article{Hagihara2017,\n  author       = {Hagihara, Hideo and Catts, Vibeke S and Katayama, Yuta and Shoji, Hirotaka and Takagi, Tsuyoshi and Huang, Freesia L and Nakao, Akito and Mori, Yasuo and Huang, Kuo-Ping and Ishii, Shunsuke and Graef, Isabella A and Nakayama, Keiichi I and Shannon Weickert, Cynthia and Miyakawa, Tsuyoshi},\n  title        = {{Decreased Brain pH as a Shared Endophenotype of Psychiatric Disorders}},\n  journal      = {Neuropsychopharmacology},\n  year         = {2018},\n  volume       = {43},\n  number       = {3},\n  pages        = {459--468},\n  doi          = {10.1038/npp.2017.167}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-11",
+   "target_file": "content/references.bib",
+   "line": 2755,
+   "before": "@article{Hainke2024,\n  author       = {Hainke, Laura and Dowsett, James and Spitschan, Manuel and Priller, Josef},\n  title        = {{40 Hz visual stimulation during sleep evokes neuronal gamma activity in NREM and REM stages}},\n  journal      = {SLEEP},\n  year         = {2024},\n  volume       = {48},\n  number       = {3},\n  pages        = {zsae299},\n  doi          = {10.1093/sleep/zsae299}\n}\n",
+   "after": "@article{Hainke2024,\n  author       = {Hainke, Laura and Dowsett, James and Spitschan, Manuel and Priller, Josef},\n  title        = {{40 Hz visual stimulation during sleep evokes neuronal gamma activity in NREM and REM stages}},\n  journal      = {SLEEP},\n  year         = {2025},\n  volume       = {48},\n  number       = {3},\n  pages        = {zsae299},\n  doi          = {10.1093/sleep/zsae299}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-12",
+   "target_file": "content/references.bib",
+   "line": 3157,
+   "before": "@article{Ionov2012,\n  author       = {Ionov, Ilya D. and Pushinskaya, Irina I.},\n  title        = {{Somatostatin antagonist induces catalepsy in the aged rat}},\n  journal      = {Psychopharmacology},\n  year         = {2012},\n  volume       = {227},\n  number       = {2},\n  pages        = {273--276},\n  doi          = {10.1007/s00213-012-2961-0}\n}\n",
+   "after": "@article{Ionov2012,\n  author       = {Ionov, Ilya D. and Pushinskaya, Irina I.},\n  title        = {{Somatostatin antagonist induces catalepsy in the aged rat}},\n  journal      = {Psychopharmacology},\n  year         = {2013},\n  volume       = {227},\n  number       = {2},\n  pages        = {273--276},\n  doi          = {10.1007/s00213-012-2961-0}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-13",
+   "target_file": "content/references.bib",
+   "line": 4048,
+   "before": "@article{Liu2022,\n  author       = {Liu, Xingyan and Shen, Qunlun and Zhang, Shihua},\n  title        = {{Cross-species cell-type assignment from single-cell RNA-seq data by a heterogeneous graph neural network}},\n  journal      = {Genome Research},\n  year         = {2022},\n  volume       = {33},\n  number       = {1},\n  pages        = {96--111},\n  doi          = {10.1101/gr.276868.122}\n}\n",
+   "after": "@article{Liu2022,\n  author       = {Liu, Xingyan and Shen, Qunlun and Zhang, Shihua},\n  title        = {{Cross-species cell-type assignment from single-cell RNA-seq data by a heterogeneous graph neural network}},\n  journal      = {Genome Research},\n  year         = {2023},\n  volume       = {33},\n  number       = {1},\n  pages        = {96--111},\n  doi          = {10.1101/gr.276868.122}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-14",
+   "target_file": "content/references.bib",
+   "line": 5251,
+   "before": "@article{Pang2021,\n  author       = {Pang, Keliang and Jiang, Richeng and Zhang, Wei and Yang, Zhengyi and Li, Lin-Lin and Shimozawa, Makoto and Tambaro, Simone and Mayer, Johanna and Zhang, Baogui and Li, Man and Wang, Jiesi and Liu, Hang and Yang, Ailing and Chen, Xi and Liu, Jiazheng and Winblad, Bengt and Han, Hua and Jiang, Tianzi and Wang, Weiwen and Nilsson, Per and Guo, Wei and Lu, Bai},\n  title        = {{An App knock-in rat model for Alzheimer's disease exhibiting A$\\beta$ and tau pathologies, neuronal death and cognitive impairments}},\n  journal      = {Cell Research},\n  year         = {2021},\n  volume       = {32},\n  number       = {2},\n  pages        = {157--175},\n  doi          = {10.1038/s41422-021-00582-x}\n}\n",
+   "after": "@article{Pang2021,\n  author       = {Pang, Keliang and Jiang, Richeng and Zhang, Wei and Yang, Zhengyi and Li, Lin-Lin and Shimozawa, Makoto and Tambaro, Simone and Mayer, Johanna and Zhang, Baogui and Li, Man and Wang, Jiesi and Liu, Hang and Yang, Ailing and Chen, Xi and Liu, Jiazheng and Winblad, Bengt and Han, Hua and Jiang, Tianzi and Wang, Weiwen and Nilsson, Per and Guo, Wei and Lu, Bai},\n  title        = {{An App knock-in rat model for Alzheimer's disease exhibiting A$\\beta$ and tau pathologies, neuronal death and cognitive impairments}},\n  journal      = {Cell Research},\n  year         = {2022},\n  volume       = {32},\n  number       = {2},\n  pages        = {157--175},\n  doi          = {10.1038/s41422-021-00582-x}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-15",
+   "target_file": "content/references.bib",
+   "line": 5394,
+   "before": "@article{Pirone2014,\n  author       = {Pirone, Andrea and Castagna, Maura and Granato, Alberto and Peruffo, Antonella and Quilici, Francesca and Cavicchioli, Laura and Piano, Ilaria and Lenzi, Carla and Cozzi, Bruno},\n  title        = {{Expression of calcium-binding proteins and selected neuropeptides in the human, chimpanzee, and crab-eating macaque claustrum}},\n  journal      = {Frontiers in Systems Neuroscience},\n  year         = {2014},\n  volume       = {8},\n  doi          = {10.3389/fnsys.2014.00099}\n}\n",
+   "after": "@article{Pirone2014,\n  author       = {Pirone, Andrea and Castagna, Maura and Granato, Alberto and Peruffo, Antonella and Quilici, Francesca and Cavicchioli, Laura and Piano, Ilaria and Lenzi, Carla and Cozzi, Bruno},\n  title        = {{Expression of calcium-binding proteins and selected neuropeptides in the human, chimpanzee, and crab-eating macaque claustrum}},\n  journal      = {Frontiers in Systems Neuroscience},\n  year         = {2014},\n  volume       = {8},\n  pages        = {99},\n  doi          = {10.3389/fnsys.2014.00099}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-16",
+   "target_file": "content/references.bib",
+   "line": 5895,
+   "before": "@article{SaizSanchez2014,\n  author       = {Saiz-Sanchez, Daniel and De la Rosa-Prieto, Carlos and Ubeda-Banon, Isabel and Martinez-Marcos, Alino},\n  title        = {{Interneurons, tau and amyloid-$\\beta$ in the piriform cortex in Alzheimer's disease}},\n  journal      = {Brain Structure and Function},\n  year         = {2014},\n  volume       = {220},\n  number       = {4},\n  pages        = {2011--2025},\n  doi          = {10.1007/s00429-014-0771-3}\n}\n",
+   "after": "@article{SaizSanchez2014,\n  author       = {Saiz-Sanchez, Daniel and De la Rosa-Prieto, Carlos and Ubeda-Banon, Isabel and Martinez-Marcos, Alino},\n  title        = {{Interneurons, tau and amyloid-$\\beta$ in the piriform cortex in Alzheimer's disease}},\n  journal      = {Brain Structure and Function},\n  year         = {2015},\n  volume       = {220},\n  number       = {4},\n  pages        = {2011--2025},\n  doi          = {10.1007/s00429-014-0771-3}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-17",
+   "target_file": "content/references.bib",
+   "line": 6013,
+   "before": "@article{SanchezMejias2019,\n  author       = {Sanchez-Mejias, Elisabeth and Nu{\\~n}ez-Diaz, Cristina and Sanchez-Varo, Raquel and Gomez-Arboledas, Angela and Garcia-Leon, Juan Antonio and Fernandez-Valenzuela, Juan Jose and Mejias-Ortega, Marina and Trujillo-Estrada, Laura and Baglietto-Vargas, David and Moreno-Gonzalez, Ines and Davila, Jose Carlos and Vitorica, Javier and Gutierrez, Antonia},\n  title        = {{Distinct disease-sensitive GABAergic neurons in the perirhinal cortex of Alzheimer's mice and patients}},\n  journal      = {Brain Pathology},\n  year         = {2019},\n  volume       = {30},\n  number       = {2},\n  pages        = {345--363},\n  doi          = {10.1111/bpa.12785}\n}\n",
+   "after": "@article{SanchezMejias2019,\n  author       = {Sanchez-Mejias, Elisabeth and Nu{\\~n}ez-Diaz, Cristina and Sanchez-Varo, Raquel and Gomez-Arboledas, Angela and Garcia-Leon, Juan Antonio and Fernandez-Valenzuela, Juan Jose and Mejias-Ortega, Marina and Trujillo-Estrada, Laura and Baglietto-Vargas, David and Moreno-Gonzalez, Ines and Davila, Jose Carlos and Vitorica, Javier and Gutierrez, Antonia},\n  title        = {{Distinct disease-sensitive GABAergic neurons in the perirhinal cortex of Alzheimer's mice and patients}},\n  journal      = {Brain Pathology},\n  year         = {2020},\n  volume       = {30},\n  number       = {2},\n  pages        = {345--363},\n  doi          = {10.1111/bpa.12785}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-18",
+   "target_file": "content/references.bib",
+   "line": 6126,
+   "before": "@article{Sathe2020,\n  author       = {Sathe, Gajanan and Albert, Marilyn and Darrow, Jacqueline and Saito, Atsushi and Troncoso, Juan and Pandey, Akhilesh and Moghekar, Abhay},\n  title        = {{Quantitative proteomic analysis of the frontal cortex in Alzheimer's disease}},\n  journal      = {Journal of Neurochemistry},\n  year         = {2020},\n  volume       = {156},\n  number       = {6},\n  pages        = {988--1002},\n  doi          = {10.1111/jnc.15116}\n}\n",
+   "after": "@article{Sathe2020,\n  author       = {Sathe, Gajanan and Albert, Marilyn and Darrow, Jacqueline and Saito, Atsushi and Troncoso, Juan and Pandey, Akhilesh and Moghekar, Abhay},\n  title        = {{Quantitative proteomic analysis of the frontal cortex in Alzheimer's disease}},\n  journal      = {Journal of Neurochemistry},\n  year         = {2021},\n  volume       = {156},\n  number       = {6},\n  pages        = {988--1002},\n  doi          = {10.1111/jnc.15116}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-19",
+   "target_file": "content/references.bib",
+   "line": 6537,
+   "before": "@article{Subramanian2024,\n  author       = {Subramanian, Deepak and Eisenberg, Carol and Huang, Andrew and Baek, Jiyeon and Naveed, Haniya and Komatireddy, Samiksha and Shiflett, Michael W. and Tran, Tracy S. and Santhakumar, Vijayalakshmi},\n  title        = {{Dysregulation of neuropilin-2 expression in inhibitory neurons impairs hippocampal circuit development and enhances risk for autism-related behaviors and seizures}},\n  journal      = {Molecular Psychiatry},\n  year         = {2024},\n  volume       = {30},\n  number       = {7},\n  pages        = {2799--2809},\n  doi          = {10.1038/s41380-024-02839-4}\n}\n",
+   "after": "@article{Subramanian2024,\n  author       = {Subramanian, Deepak and Eisenberg, Carol and Huang, Andrew and Baek, Jiyeon and Naveed, Haniya and Komatireddy, Samiksha and Shiflett, Michael W. and Tran, Tracy S. and Santhakumar, Vijayalakshmi},\n  title        = {{Dysregulation of neuropilin-2 expression in inhibitory neurons impairs hippocampal circuit development and enhances risk for autism-related behaviors and seizures}},\n  journal      = {Molecular Psychiatry},\n  year         = {2025},\n  volume       = {30},\n  number       = {7},\n  pages        = {2799--2809},\n  doi          = {10.1038/s41380-024-02839-4}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-20",
+   "target_file": "content/references.bib",
+   "line": 6844,
+   "before": "@article{Unal2013,\n  author       = {{\\\"U}nal, Bengi and Shah, Fulva and Kothari, Janish and Tepper, James M.},\n  title        = {{Anatomical and electrophysiological changes in striatal TH interneurons after loss of the nigrostriatal dopaminergic pathway}},\n  journal      = {Brain Structure and Function},\n  year         = {2013},\n  volume       = {220},\n  number       = {1},\n  pages        = {331--349},\n  doi          = {10.1007/s00429-013-0658-8}\n}\n",
+   "after": "@article{Unal2013,\n  author       = {{\\\"U}nal, Bengi and Shah, Fulva and Kothari, Janish and Tepper, James M.},\n  title        = {{Anatomical and electrophysiological changes in striatal TH interneurons after loss of the nigrostriatal dopaminergic pathway}},\n  journal      = {Brain Structure and Function},\n  year         = {2015},\n  volume       = {220},\n  number       = {1},\n  pages        = {331--349},\n  doi          = {10.1007/s00429-013-0658-8}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-21",
+   "target_file": "content/references.bib",
+   "line": 7070,
+   "before": "@article{Vucic2012,\n  author       = {Vucic, Steve and Ziemann, Ulf and Eisen, Andrew and Hallett, Mark and Kiernan, Matthew C},\n  title        = {{Transcranial magnetic stimulation and amyotrophic lateral sclerosis: pathophysiological insights}},\n  journal      = {Journal of Neurology, Neurosurgery \\&amp; Psychiatry},\n  year         = {2012},\n  volume       = {84},\n  number       = {10},\n  pages        = {1161--1170},\n  doi          = {10.1136/jnnp-2012-304019}\n}\n",
+   "after": "@article{Vucic2012,\n  author       = {Vucic, Steve and Ziemann, Ulf and Eisen, Andrew and Hallett, Mark and Kiernan, Matthew C},\n  title        = {{Transcranial magnetic stimulation and amyotrophic lateral sclerosis: pathophysiological insights}},\n  journal      = {Journal of Neurology, Neurosurgery \\&amp; Psychiatry},\n  year         = {2013},\n  volume       = {84},\n  number       = {10},\n  pages        = {1161--1170},\n  doi          = {10.1136/jnnp-2012-304019}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-22",
+   "target_file": "content/references.bib",
+   "line": 7135,
+   "before": "@article{Wang2024,\n  author       = {Wang, Meiling and He, Aojie and Kang, Yubing and Wang, Zhaojun and He, Yahui and Lim, Kahleong and Zhang, Chengwu and Lu, Li},\n  title        = {{Novel genes involved in vascular dysfunction of the middle temporal gyrus in Alzheimer's disease: transcriptomics combined with machine learning analysis}},\n  journal      = {Neural Regeneration Research},\n  year         = {2024},\n  volume       = {20},\n  number       = {12},\n  pages        = {3620--3634},\n  doi          = {10.4103/nrr.nrr-d-23-02004}\n}\n",
+   "after": "@article{Wang2024,\n  author       = {Wang, Meiling and He, Aojie and Kang, Yubing and Wang, Zhaojun and He, Yahui and Lim, Kahleong and Zhang, Chengwu and Lu, Li},\n  title        = {{Novel genes involved in vascular dysfunction of the middle temporal gyrus in Alzheimer's disease: transcriptomics combined with machine learning analysis}},\n  journal      = {Neural Regeneration Research},\n  year         = {2025},\n  volume       = {20},\n  number       = {12},\n  pages        = {3620--3634},\n  doi          = {10.4103/nrr.nrr-d-23-02004}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-23",
+   "target_file": "content/references.bib",
+   "line": 7529,
+   "before": "@article{Yokomizo2025a,\n  author       = {Yokomizo, Shinya and Maci, Megi and Stafford, April M. and Miller, Morgan R. and Perle, Stephen J. and Inagaki, Shuzo and Takahashi, Shusaku and Brown-Harding, Heather and Liang, Linda and Lovely, Alex and Algamal, Moustafa and Gillani, Rebecca L. and Zwang, Theodore J. and Richardson, Douglas and Naegele, Janice R. and Vogt, Daniel and Kastanenka, Ksenia V.},\n  title        = {{Transplantation of GABAergic Interneuron Progenitors Restores Cortical Circuit Function in an Alzheimer's Disease Mouse Model}},\n  journal      = {Advanced Science},\n  year         = {2025},\n  volume       = {13},\n  number       = {9},\n  pages        = {e11472},\n  doi          = {10.1002/advs.202511472}\n}\n",
+   "after": "@article{Yokomizo2025a,\n  author       = {Yokomizo, Shinya and Maci, Megi and Stafford, April M. and Miller, Morgan R. and Perle, Stephen J. and Inagaki, Shuzo and Takahashi, Shusaku and Brown-Harding, Heather and Liang, Linda and Lovely, Alex and Algamal, Moustafa and Gillani, Rebecca L. and Zwang, Theodore J. and Richardson, Douglas and Naegele, Janice R. and Vogt, Daniel and Kastanenka, Ksenia V.},\n  title        = {{Transplantation of GABAergic Interneuron Progenitors Restores Cortical Circuit Function in an Alzheimer's Disease Mouse Model}},\n  journal      = {Advanced Science},\n  year         = {2026},\n  volume       = {13},\n  number       = {9},\n  pages        = {e11472},\n  doi          = {10.1002/advs.202511472}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-24",
+   "target_file": "content/references.bib",
+   "line": 7711,
+   "before": "@article{Zhou2019,\n  author       = {Zhou, Xiaojuan and Mansori, Ima and Fischer, Tatjana and Witte, Mirko and Staiger, Jochen F.},\n  title        = {{Characterizing the morphology of somatostatin-expressing interneurons and their synaptic innervation pattern in the barrel cortex of the GFP-expressing inhibitory neurons mouse}},\n  journal      = {Journal of Comparative Neurology},\n  year         = {2019},\n  volume       = {528},\n  number       = {2},\n  pages        = {244--260},\n  doi          = {10.1002/cne.24756}\n}\n",
+   "after": "@article{Zhou2019,\n  author       = {Zhou, Xiaojuan and Mansori, Ima and Fischer, Tatjana and Witte, Mirko and Staiger, Jochen F.},\n  title        = {{Characterizing the morphology of somatostatin-expressing interneurons and their synaptic innervation pattern in the barrel cortex of the GFP-expressing inhibitory neurons mouse}},\n  journal      = {Journal of Comparative Neurology},\n  year         = {2020},\n  volume       = {528},\n  number       = {2},\n  pages        = {244--260},\n  doi          = {10.1002/cne.24756}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-25",
+   "target_file": "content/references.bib",
+   "line": 7722,
+   "before": "@article{Zhou2021,\n  author       = {Zhou, Jiafeng and Liu, Gaoao and Zhang, Xiaoling and Wu, Chao and Ma, Mengjie and Wu, Jiarui and Hou, Lin and Yin, Bin and Qiang, Boqin and Shu, Pengcheng and Peng, Xiaozhong},\n  title        = {{Comparison of the Spatiotemporal Expression Patterns of Three Cre Lines, Emx1IRES-Cre, D6-Cre and hGFAP-Cre, Commonly Used in Neocortical Development Research}},\n  journal      = {Cerebral Cortex},\n  year         = {2021},\n  volume       = {32},\n  number       = {8},\n  pages        = {1668--1681},\n  doi          = {10.1093/cercor/bhab305}\n}\n",
+   "after": "@article{Zhou2021,\n  author       = {Zhou, Jiafeng and Liu, Gaoao and Zhang, Xiaoling and Wu, Chao and Ma, Mengjie and Wu, Jiarui and Hou, Lin and Yin, Bin and Qiang, Boqin and Shu, Pengcheng and Peng, Xiaozhong},\n  title        = {{Comparison of the Spatiotemporal Expression Patterns of Three Cre Lines, Emx1IRES-Cre, D6-Cre and hGFAP-Cre, Commonly Used in Neocortical Development Research}},\n  journal      = {Cerebral Cortex},\n  year         = {2022},\n  volume       = {32},\n  number       = {8},\n  pages        = {1668--1681},\n  doi          = {10.1093/cercor/bhab305}\n}\n",
+   "status": "applied",
+   "reason": "field update from correct_metadata"
+  },
+  {
+   "request_id": "FR-BIB-04",
+   "target_file": "content/references.bib",
+   "line": null,
+   "before": "@misc{Castanho2025a, ... doi = {10.1101/2025.01.13.632801}}",
+   "after": null,
+   "status": "skipped",
+   "reason": "Deletion not applied (validator amendment option B: 'or do not delete the entry'). Option A was rejected after checking the three co-dependent occurrences in 04_section.md: line 25 attributes the value to 'the preprint and journal reports of one cohort', line 1088 lists the key among 'the preprint halves of the two human transcriptomic cohorts' inside a sentence that states 'eleven of the works cited in this section carry preprint or preprint-server identifiers'. Repointing would require rewriting both provenance claims and changing that count, which no request authorises and which could not be verified from a source sentence. The Castanho2025a entry is therefore retained and remains cited 3x in 04_section.md, so key-to-bib parity holds in both directions and no entry is orphaned. The two authorised cite-key substitutions in 12_section.md (FR-PROSE-019, FR-PROSE-022) were applied and are consistent with retaining the entry."
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "figures/notebooks/fig_sec4_sst_cell_change_regions.py (+ .ipynb)",
+   "line": 22,
+   "before": "\"annotation\": \"human AD vs non-AD, hippocampus, SST immunoreactivity; n not reported; \"",
+   "after": "\"annotation\": \"human AD vs non-AD, hippocampus, SST immunoreactivity; n = 5 AD vs 5 non-AD \"",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "figures/notebooks/fig_sec4_sst_cell_change_regions.py (+ .ipynb)",
+   "line": 23,
+   "before": "              \"the same abstract reports SST cells preserved in the olfactory bulb\",",
+   "after": "              \"(formalin-fixed cases, 4 sections per case); the same abstract reports SST cells \"\n              \"preserved in the olfactory bulb\",",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "figures/notebooks/fig_sec4_sst_cell_change_regions.py (+ .ipynb)",
+   "line": 85,
+   "before": "GONZALEZ[\"value_text\"] + \"\\nn not reported\"",
+   "after": "GONZALEZ[\"value_text\"] + \"\\nn = 5 AD vs 5 non-AD\"",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-073",
+   "target_file": "figures/notebooks/fig_sec3_marker_level_readouts_transcript_peptide_csf.py (+ .ipynb)",
+   "line": 97,
+   "before": "axis_label=\"percent change in somatostatin expression (BA9)\\nanalyte not stated by that study\"",
+   "after": "axis_label=\"percent change in somatostatin expression (BA9)\\npeptide, measured by radioimmunoassay\"",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-072",
+   "target_file": "figures/notebooks/fig_sec4_sst_activity_direction.py (+ .ipynb)",
+   "line": 45,
+   "before": "\"+/- values, dispersion type (standard deviation or standard error) not stated \"\n                  \"in the source; neuron counts not stated in the source sentence\"",
+   "after": "\"+/- values, which that study's methods state are standard deviations; neuron \"\n                  \"counts not stated in the source sentence\"",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-026",
+   "target_file": "figures/notebooks/fig_sec6_inhibition_onto_projection_neurons_hd.py (+ .ipynb)",
+   "line": 55,
+   "before": "\"cortex-focused paper, recording age not stated\"",
+   "after": "\"cortex-focused paper, recordings at 3 and 6 months\"",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption"
+  },
+  {
+   "request_id": "FR-PROSE-073",
+   "target_file": "content/03_section.md",
+   "line": 124,
+   "before": "axis_label=\"percent change in somatostatin expression (BA9)\\nanalyte not stated by that study\"",
+   "after": "axis_label=\"percent change in somatostatin expression (BA9)\\npeptide, measured by radioimmunoassay\"",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-072",
+   "target_file": "content/04_section.md",
+   "line": 1016,
+   "before": "\"+/- values, dispersion type (standard deviation or standard error) not stated \"\n                  \"in the source; neuron counts not stated in the source sentence\"",
+   "after": "\"+/- values, which that study's methods state are standard deviations; neuron \"\n                  \"counts not stated in the source sentence\"",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "content/04_section.md",
+   "line": 411,
+   "before": "\"annotation\": \"human AD vs non-AD, hippocampus, SST immunoreactivity; n not reported; \"",
+   "after": "\"annotation\": \"human AD vs non-AD, hippocampus, SST immunoreactivity; n = 5 AD vs 5 non-AD \"",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "content/04_section.md",
+   "line": 412,
+   "before": "              \"the same abstract reports SST cells preserved in the olfactory bulb\",",
+   "after": "              \"(formalin-fixed cases, 4 sections per case); the same abstract reports SST cells \"\n              \"preserved in the olfactory bulb\",",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-070",
+   "target_file": "content/04_section.md",
+   "line": 476,
+   "before": "GONZALEZ[\"value_text\"] + \"\\nn not reported\"",
+   "after": "GONZALEZ[\"value_text\"] + \"\\nn = 5 AD vs 5 non-AD\"",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-026",
+   "target_file": "content/06_section.md",
+   "line": 254,
+   "before": "\"cortex-focused paper, recording age not stated\"",
+   "after": "\"cortex-focused paper, recordings at 3 and 6 months\"",
+   "status": "applied",
+   "reason": "dropdown figure-code block re-injected to match the corrected figure script"
+  },
+  {
+   "request_id": "FR-PROSE-069",
+   "target_file": "figures/notebooks/fig_sec4_sst_cell_change_regions.py (+ .ipynb, dropdown in content/04_section.md)",
+   "line": 54,
+   "before": "\"radiatum of CA3; stereological counts of SOM-immunoreactive neurons; no \"\n                  \"dentate-gyrus result for SOM cells in the source, so none is drawn\",",
+   "after": "\"radiatum of CA3; stereological counts of SOM-immunoreactive neurons; the \"\n                  \"source reports no significant decrease of SOM neurons in the dentate gyrus, \"\n                  \"a null without a magnitude, so none is drawn\",",
+   "status": "applied",
+   "reason": "figure annotation corrected to match the corrected caption (the source does report a dentate-gyrus null)"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "latex/manuscript.tex",
+   "line": null,
+   "before": "79 spans matching the pre-fix MyST text, plus one follow-up span (10_section.md subscript character replaced with ASCII \"K(i)\")",
+   "after": "80 spans regenerated from the corrected MyST text with the validated converter",
+   "status": "applied",
+   "reason": "mechanical regeneration: each pre-fix span was reproduced byte-exactly by the converter before substitution"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "latex/references.bib",
+   "line": null,
+   "before": "copy of pre-fix content/references.bib",
+   "after": "copy of corrected content/references.bib",
+   "status": "applied",
+   "reason": "the two bib files are maintained identical"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_01.json",
+   "line": null,
+   "before": 2020,
+   "after": 2021,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Sathe2020.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_04.json",
+   "line": null,
+   "before": "Quirion, RAmi",
+   "after": "Quirion, Rémi",
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Albuquerque2015.all_authors[5] with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_04.json",
+   "line": null,
+   "before": 2019,
+   "after": 2020,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.SanchezMejias2019.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_05.json",
+   "line": null,
+   "before": 2012,
+   "after": 2013,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Ionov2012.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_05.json",
+   "line": null,
+   "before": 2013,
+   "after": 2015,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Unal2013.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": 2019,
+   "after": 2020,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Cummings2019.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": 2016,
+   "after": 2017,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Fuchs2016.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": 2024,
+   "after": 2025,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Hainke2024.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": 2024,
+   "after": 2025,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Subramanian2024.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": 2025,
+   "after": 2026,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Yokomizo2025a.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_09.json",
+   "line": null,
+   "before": 2024,
+   "after": 2025,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Dick2024.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_09.json",
+   "line": null,
+   "before": 2020,
+   "after": 2021,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Sathe2020.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_09.json",
+   "line": null,
+   "before": 2024,
+   "after": 2025,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Wang2024.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_10.json",
+   "line": null,
+   "before": 2012,
+   "after": 2013,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Vucic2012.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2010,
+   "after": 2011,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Birdsill2010.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2017,
+   "after": 2018,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Hagihara2017.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2022,
+   "after": 2023,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Liu2022.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": "Nassar, MArie",
+   "after": "Nassar, Mérie",
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Nassar2015.all_authors[0] with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2021,
+   "after": 2022,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Pang2021.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2014,
+   "after": 2015,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.SaizSanchez2014.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2019,
+   "after": 2020,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Zhou2019.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": 2021,
+   "after": 2022,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Zhou2021.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_12.json",
+   "line": null,
+   "before": 2019,
+   "after": 2020,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.SanchezMejias2019.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived: FR-BIB year/author corrections)",
+   "target_file": "evidence/evidence_section_12.json",
+   "line": null,
+   "before": 2025,
+   "after": 2026,
+   "status": "applied",
+   "reason": "metadata sync of author_name_table.Yokomizo2025a.year with the corrected content/references.bib"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_01.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_04.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_05.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_08.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_09.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_10.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_11.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "(derived)",
+   "target_file": "evidence/evidence_section_12.json",
+   "line": null,
+   "before": "corrections array as shipped",
+   "after": "corrections array with one or two appended Phase-18 sync notes",
+   "status": "applied",
+   "reason": "provenance note recording the metadata sync"
+  },
+  {
+   "request_id": "19V-F2",
+   "target_file": "content/00_frontmatter.md",
+   "line": 9,
+   "before": ":authors: ../authors.yml",
+   "after": ":authors: authors.yml",
+   "status": "applied",
+   "reason": "authorship-explorer path resolved to the repository root; authors.yml sits in content/. Build-verified: the authorship-plugin ENOENT disappears and the widget model binds 2 primary authors."
+  },
+  {
+   "request_id": "19V-lexicon",
+   "target_file": "content/00_frontmatter.md",
+   "line": null,
+   "before": "AI-disclosure paragraphs using \"orchestrator\", \"evidence package\" and \"sub-agent\"",
+   "after": "supervisor-supplied revision (disclosure_blocks_v2.md), neutral vocabulary plus one sentence on the citation check; kept inside the AI-Generated Content Disclosure admonition",
+   "status": "applied",
+   "reason": "FORBIDDEN_LEXICON applies to the frontmatter disclosure block; 00_frontmatter.md now scans at zero"
+  }
+ ]
+}

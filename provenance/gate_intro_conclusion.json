@@ -1,0 +1,58 @@
+{
+  "gate": "pass",
+  "phase": 11,
+  "name": "gate_intro_conclusion",
+  "verdict": "PASS \u2014 both bookends written last from the integrated body; NO_NEW_CITATIONS satisfied exactly; MyST and hygiene clean.",
+  "actor_frame_id": "084a5550-fe53-4adf-8a0d-a1698059d0f2",
+  "section_md_vids_final": {
+    "01": "1260e86b-1bd1-448c-9c5b-6a5318b59e16",
+    "12": "fab3f3b2-04c9-4b53-bf8a-35be56c84851"
+  },
+  "superseded_first_saves": {
+    "01": "c202c1bf-808c-4475-9dc6-349ec91bc3d7",
+    "12": "886d359a-c6af-444c-afae-212efad6424a"
+  },
+  "canonical_resolution": "Two saves exist per bookend. Canonical versions were chosen BY CONTENT: the later saves carry three source-fidelity corrections in section 01 (Tamminga1987 narrowed to the CSF-PET hypometabolism link the body assigns it; Sathe2020 marked a discovery-stage estimate not carried to validation; Dournaud1994 restated as the single significant regional value of -59% parahippocampal with the authors' 'partially preserved' conclusion) and, in section 12, a caption reorder that brings the clinical entry list into agreement with the rendered panel order (Bakker2012 -> Sen2024 -> gamma synthesis). The earlier section-12 caption listed Sen2024 first and did not match its own figure.",
+  "checks": {
+    "NO_NEW_CITATIONS": {
+      "status": "pass",
+      "detail": "33 distinct keys in section 01 and 29 in section 12; 0 absent from the body's cited set, 0 outside the permitted subset, 0 absent from references.bib. Coordinator-verified independently of the actor by parsing {cite:p}/{cite:t} roles (splitting on both ';' and ',') across the ten integrated body files; the body cites all 726 bibliography entries, so every bookend key is a re-citation."
+    },
+    "WORD_TARGETS": {
+      "status": "over",
+      "detail": "Section 01 1593 prose words against a 1500 target (106%); section 12 1518 against 1400 (108%). Consistent with every body section being over target; recorded, not forced down."
+    },
+    "MYST_DISCIPLINE": {
+      "status": "pass",
+      "detail": "3 H2 headings per bookend, each immediately preceded by an anchor; 4 anchors each including sec-conclusion in section 12; 2 figures each carrying :name: and :width:; 0 :label:, 0 forbidden directives, 0 backtick-fence directives, 0 authorship-explorer."
+    },
+    "PROCESS_LANGUAGE": {
+      "status": "pass",
+      "detail": "0 matches for scratchpad, placeholder, TODO, phase or cluster vocabulary."
+    },
+    "FIGURES": {
+      "status": "pass",
+      "detail": "4 new figures (2 per bookend), each with a .py and a runnable .ipynb under figures/notebooks/ importing only shared_style; panel contents built from body-section material with endpoints quoted as reported and nothing pooled, converted or averaged."
+    },
+    "DANGLING_SEC_CONCLUSION": {
+      "status": "resolved",
+      "detail": "Sections 10 and 11 reference sec-conclusion; section 12 now defines that anchor, closing the only cross-reference Phase 10 left pending by design."
+    }
+  },
+  "figures": {
+    "01": [
+      "fig_sec1_sst_loss_landscape",
+      "fig_sec1_evidence_base_and_argument_arc"
+    ],
+    "12": [
+      "fig_sec12_evidence_confidence_by_claim",
+      "fig_sec12_intervention_effect_versus_design_rigor"
+    ]
+  },
+  "carried_limits_stated_in_bookends": [
+    "Europe PMC-dominant search with snowball_rounds=0",
+    "full-text share varies from complete (circuits) to ~a quarter (human evidence), shortfall concentrated in pre-2000 closed-access postmortem and CSF literature",
+    "disconfirming sweeps capped per query",
+    "conflicts reported as open are not claimed resolved"
+  ]
+}

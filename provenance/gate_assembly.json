@@ -1,0 +1,1844 @@
+{
+  "phase": 14,
+  "phase_name": "Document Assembly",
+  "actor": "DATAML",
+  "review": "Somatostatin Interneurons in Neurodegenerative Disease",
+  "repository": "AllenNeuralDynamics/ComputationalReviewSSTdisease",
+  "assembled_at_utc": "2026-10-17T21:03:00.322914+00:00",
+  "commits_made": 0,
+  "pushed": false,
+  "push_owner": "Phase 20",
+  "build_mode": "deferred_equivalents (no node/npm on this machine; no myst build was executed)",
+  "gate_passed": true,
+  "hard_failures": [],
+  "soft_failures": [
+    "LATEX_ASCII_ONLY_TEX"
+  ],
+  "deferred_checks": [
+    "MYST_BUILD_HTML",
+    "MYST_BUILD_SMOKE_TEST_WIDGET_MARKER"
+  ],
+  "blocking_summary": [],
+  "counts": {
+    "sections": 12,
+    "content_md_files": 16,
+    "figures": 43,
+    "notebooks": 43,
+    "figure_scripts": 42,
+    "dropdowns_injected": 43,
+    "code_cells_embedded": 158,
+    "bibliography_entries": 726,
+    "cite_keys_resolved": 726,
+    "cite_key_occurrences": 1534,
+    "evidence_packages": 12,
+    "findings_in_packages": 809,
+    "upstream_gate_artifacts": 12,
+    "cross_reference_targets": 55,
+    "anchors_defined": 132
+  },
+  "notebook_execution_evidence": {
+    "scripts_executed_here": [
+      "fig_methods_pipeline",
+      "fig_sec11_conflict_atlas",
+      "fig_sec1_sst_loss_landscape",
+      "fig_sec3_sst_depletion_across_insults",
+      "fig_sec4_classic_postmortem_csf",
+      "fig_sec4_deficit_magnitude_scales",
+      "fig_sec4_epileptiform_rates",
+      "fig_sec4_human_hyperexcitability_markers",
+      "fig_sec4_neprilysin_axis",
+      "fig_sec4_sst_activity_direction",
+      "fig_sec4_sst_cell_change_regions",
+      "fig_sec6_aggregate_burden_versus_cell_death"
+    ],
+    "executed_count": 12,
+    "all_exited_zero": true,
+    "byte_identical_to_supplied": 5,
+    "not_byte_identical": [
+      "fig_sec4_classic_postmortem_csf",
+      "fig_sec4_deficit_magnitude_scales",
+      "fig_sec4_epileptiform_rates",
+      "fig_sec4_human_hyperexcitability_markers",
+      "fig_sec4_neprilysin_axis",
+      "fig_sec4_sst_activity_direction",
+      "fig_sec4_sst_cell_change_regions"
+    ]
+  },
+  "repository_tree": {
+    "<root>": {
+      "files": 6,
+      "bytes": 23047
+    },
+    ".github/ISSUE_TEMPLATE": {
+      "files": 4,
+      "bytes": 4811
+    },
+    ".github/workflows": {
+      "files": 1,
+      "bytes": 1576
+    },
+    "content": {
+      "files": 20,
+      "bytes": 1224207
+    },
+    "evidence": {
+      "files": 14,
+      "bytes": 2890247
+    },
+    "figures": {
+      "files": 45,
+      "bytes": 18557269
+    },
+    "figures/notebooks": {
+      "files": 87,
+      "bytes": 3497764
+    },
+    "latex": {
+      "files": 2,
+      "bytes": 893955
+    },
+    "latex/template": {
+      "files": 2,
+      "bytes": 1786
+    },
+    "plugins": {
+      "files": 2,
+      "bytes": 9983
+    },
+    "provenance": {
+      "files": 17,
+      "bytes": 293645
+    },
+    "scripts": {
+      "files": 1,
+      "bytes": 2369
+    },
+    "skills": {
+      "files": 20,
+      "bytes": 349569
+    }
+  },
+  "defects_found_not_fixed": [
+    {
+      "id": "D4",
+      "severity": "non-blocking",
+      "where": "gate_evidence_curated.json (upstream)",
+      "defect": "Phase 5 curation gate recorded FAIL and unwaived on ZERO_LOSS (809 section findings against a Phase 2 total of 844) and ANTI_COMPRESSION (sections 01, 03 and 12 below 75% of their declared source-cluster union).",
+      "why_not_fixed": "Left untouched on the coordinator's instruction; carrying it forward unwaived is the correct assembly behaviour. Summarised in content/provenance.md.",
+      "route_to": "none — carried forward by design"
+    },
+    {
+      "id": "D7",
+      "severity": "non-blocking (open)",
+      "where": "latex/manuscript.tex",
+      "defect": "5 non-ASCII characters (4 em-dashes, 1 beta) inside the Verbatim block that reproduces the captured prompt. fvextra is loaded and the block uses Verbatim[breaklines,breakanywhere], the documented UTF-8 route for fancyvrb under pdfLaTeX, but this is UNTESTED: no TeX toolchain on this machine, so neither the package's availability nor the block's compilation has been demonstrated.",
+      "why_not_fixed": "Remedy applied but unverifiable here; substituting the characters would break the byte-verbatim guarantee.",
+      "route_to": "first PDF build"
+    }
+  ],
+  "declared_deviations": [
+    "Build verification ran in deferred-equivalent mode: no node/npm on this machine and installs are blocked, so myst build --html was never executed and no build result is claimed.",
+    "The canonical FORBIDDEN_LEXICON list lives in comprev-myst-validator check #9, which this actor was instructed not to read; this actor's scan is a broader substitute list, and the validator's own per-file figures sum to 36 against a stated total of 32 — a discrepancy this actor could not reconcile without that list.",
+    "LATEX_ASCII_ONLY_TEX is classified soft (not in the Phase 14/14V assertion list) and still fails; the failure is reported, not waived.",
+    "The fvextra remedy for D7 is untested: no TeX toolchain is present, so no PDF compilation was attempted or claimed.",
+    "Three hard checks pass by coordinator waiver or overrule rather than on their literal criteria; each records its authority and the evidence relied on.",
+    "assembled_repo.tar.gz (artifact version 1195ee0a-4d8e-4bb0-86c5-4ef8b17605e2) predates this revision and no longer matches the tree: seven notebooks, provenance/review_request.md and provenance/gate_assembly.json have changed since it was packaged."
+  ],
+  "checks": {
+    "PREREQUISITE_GATES_PRESENT": {
+      "result": "pass",
+      "hard": true,
+      "detail": "all 12 upstream gate artifacts present in provenance/ (spec requires 9)",
+      "artifacts": [
+        "gate_bibliography.json",
+        "gate_bookend_critic.json",
+        "gate_citation_infrastructure.json",
+        "gate_critic_complete.json",
+        "gate_evidence_compliance.json",
+        "gate_evidence_curated.json",
+        "gate_figure_audit.json",
+        "gate_integration.json",
+        "gate_intro_conclusion.json",
+        "gate_scaffold_approved.json",
+        "gate_scope.json",
+        "gate_sections_drafted.json"
+      ]
+    },
+    "UPSTREAM_GATE_VERDICTS_READ": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every upstream gate artifact parsed; gate_evidence_curated.json is recorded FAIL upstream and is carried forward, not waived",
+      "upstream_fail": [
+        "gate_evidence_curated.json"
+      ]
+    },
+    "REVIEW_REQUEST_CAPTURED": {
+      "result": "pass_with_waived_subcheck",
+      "hard": true,
+      "detail": "Substantively satisfied and now carrying the required H1. provenance/review_request.md's top-level heading was renamed '# Review Request' -> '# Original Review Request' (2464 -> 2473 bytes, a single-line diff; the rest of the file is byte-identical and the verbatim prompt is untouched). provenance/review_request.txt was not touched at all (1755 bytes, sha256 3bf90056d1521298f01529391c468e9113baa7b2f49e04149d8bbdafd6b6c738). content/Methods.md still embeds the 1755-byte prompt byte-for-byte inside a text fence with its SHA256. WAIVED SUB-CHECK: the skill requires content/Methods.md to contain '{include} ../provenance/review_request.md', but the same skill's directive whitelist forbids {include} in body files — a contradiction inside one specification that cannot be satisfied both ways. The fenced verbatim block meets the substantive requirement and the validator confirmed the prompt is present and verbatim; the literal {include} sub-check is therefore unmet by design.",
+      "h1_rename": {
+        "heading_before": "# Review Request",
+        "heading_after": "# Original Review Request",
+        "md_bytes_before": 2464,
+        "md_bytes_after": 2473,
+        "diff_hunks": 1,
+        "lines_changed": 2,
+        "remainder_identical": true,
+        "headings_after": [
+          "# Original Review Request",
+          "## Verbatim user prompt",
+          "## Editorial note"
+        ],
+        "txt_untouched": true,
+        "txt_bytes": 1755,
+        "txt_sha256": "3bf90056d1521298f01529391c468e9113baa7b2f49e04149d8bbdafd6b6c738",
+        "verbatim_prompt_still_in_md": true,
+        "prompt_block_in_methods_unchanged": true
+      },
+      "waived_subcheck": "literal {include} directive in Methods",
+      "waiver_authority": "coordinator adjudication of Phase 14V",
+      "contradiction": "skill requires {include}; same skill's directive whitelist forbids it"
+    },
+    "NO_UNRESOLVABLE_CITATION_KEYS": {
+      "result": "pass",
+      "hard": true,
+      "detail": "726 unique cite keys over 1352 cite directives (1534 key occurrences); all resolve in content/references.bib; zero orphaned bib entries.",
+      "keys_cited": 726,
+      "occurrences": 1352,
+      "orphans": [],
+      "uncited_bib_entries": 0
+    },
+    "BIBLIOGRAPHY_AT_EVERY_DECLARED_PATH": {
+      "result": "pass",
+      "hard": true,
+      "detail": "myst.yml project.bibliography parsed; the 726-entry file written to every declared path; the skill's assertion loop (exists / >=1024 B / >=100 @-entries) passed for each",
+      "declared_paths": [
+        "content/references.bib"
+      ],
+      "per_path": {
+        "content/references.bib": {
+          "exists": true,
+          "size_bytes": 393018,
+          "at_entries": 726
+        }
+      }
+    },
+    "BIBLIOGRAPHY_STUBS_OVERWRITTEN": {
+      "result": "pass",
+      "hard": true,
+      "detail": "content/references.bib was a 60-byte '% populated by the pipeline during Phase 9' stub in the template and is now 393018 B / 726 entries",
+      "stub_bytes_before": 60,
+      "bytes_after": 393018
+    },
+    "BIB_ASCII_CLEAN": {
+      "result": "pass",
+      "hard": false,
+      "detail": "zero non-ASCII bytes in references.bib (0 found); this is the ASCII rule the specification states, and it holds.",
+      "non_ascii_chars": 0
+    },
+    "BIB_NO_CONTAMINATION": {
+      "result": "pass",
+      "hard": false,
+      "detail": "3 'bhatt' substring matches, all legitimate non-first authors in real CrossRef author lists (Bhattacharyya/Huo2018, Bhatt/Ruan2020, Bhattarai/Yeapuri2025); no cite key is a fabricated Bhatt",
+      "matches": 3,
+      "fabricated": 0
+    },
+    "FIGURE_ARTIFACTS_COLLECTED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "43 figure PNGs in figures/, every one byte-identical to its supplied artifact and every one reproducible from the repository's own code.",
+      "pngs": 43,
+      "byte_identical_to_supplied": 43,
+      "reproducible_from_repo": 43
+    },
+    "FIGURE_REFERENCES_RESOLVE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "43 :::{figure} directives reference 43 distinct image paths; all resolve on disk; zero PNGs in figures/ are unreferenced",
+      "references": 43,
+      "missing": [],
+      "unreferenced_pngs": []
+    },
+    "FIGURE_PATH_FORMAT_CONSISTENT": {
+      "result": "pass",
+      "hard": true,
+      "detail": "all 43 references use the same '../figures/<name>.png' form from content/",
+      "distinct_forms": 1
+    },
+    "FIGURE_WIDTH_DECLARED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every :::{figure} carries :width: 100%; none required injection",
+      "figures": 43,
+      "missing_width": 0,
+      "injected_defaults": 0
+    },
+    "FIGURE_REGISTRY_BUILT": {
+      "result": "pass",
+      "hard": false,
+      "detail": "figures/_figure_registry.json written with per-figure png sha256, notebook, script, code-cell count, label, width and content file",
+      "entries": 43
+    },
+    "EVERY_SECTION_HAS_TWO_FIGURES": {
+      "result": "pass",
+      "hard": false,
+      "detail": "minimum 2, maximum 7 figures per section across the 12 sections",
+      "per_section": {
+        "01_section.md": 2,
+        "02_section.md": 3,
+        "03_section.md": 3,
+        "04_section.md": 7,
+        "05_section.md": 5,
+        "06_section.md": 3,
+        "07_section.md": 3,
+        "08_section.md": 3,
+        "09_section.md": 3,
+        "10_section.md": 4,
+        "11_section.md": 4,
+        "12_section.md": 2
+      }
+    },
+    "PERMITTED_CODE_EDIT_IMPORT_PATH_ONLY": {
+      "result": "pass",
+      "hard": true,
+      "detail": "Four authorised mechanical edit classes, all value-neutral and all re-verified: (1) the 9-line BASE/FIGDIR preamble plus FIGDIR save-path rewrite on the seven sec4 scripts and notebooks; (2) implicit-concatenation wraps of two over-length string literals, AST-identical before and after; (3) the directed 10 pt plt.rcParams.update line after apply_style() in two scripts and notebooks; (4) the same BASE/FIGDIR preamble replacing the 6-line os.getcwd() path block in the five sec5 scripts and notebooks, with the CWD-relative save path rewritten to FIGDIR. After all four, every figure regenerates byte-identically.",
+      "edit_classes": 4,
+      "figures_touched": 16,
+      "all_regenerate_byte_identical": true,
+      "sec5": {
+        "fig_sec5_alpha_synuclein_interneuron_denominators": {
+          "py_lines_replaced": 6,
+          "preamble_lines": 9,
+          "save_path_rewritten": true,
+          "notebook_block_replaced": true,
+          "notebook_save_path_rewritten": true,
+          "png_byte_identical": true,
+          "runs_from_root_and_notebooks": true
+        },
+        "fig_sec5_cortical_somatostatin_conditional_on_copathology": {
+          "py_lines_replaced": 6,
+          "preamble_lines": 9,
+          "save_path_rewritten": true,
+          "notebook_block_replaced": true,
+          "notebook_save_path_rewritten": true,
+          "png_byte_identical": true,
+          "runs_from_root_and_notebooks": true
+        },
+        "fig_sec5_csf_somatostatin_parkinson_cohorts": {
+          "py_lines_replaced": 6,
+          "preamble_lines": 9,
+          "save_path_rewritten": true,
+          "notebook_block_replaced": true,
+          "notebook_save_path_rewritten": true,
+          "png_byte_identical": true,
+          "runs_from_root_and_notebooks": true
+        },
+        "fig_sec5_striatal_somatostatin_by_manipulation_class": {
+          "py_lines_replaced": 6,
+          "preamble_lines": 9,
+          "save_path_rewritten": true,
+          "notebook_block_replaced": true,
+          "notebook_save_path_rewritten": true,
+          "png_byte_identical": true,
+          "runs_from_root_and_notebooks": true
+        },
+        "fig_sec5_striatal_sst_system_under_dopamine_loss": {
+          "py_lines_replaced": 6,
+          "preamble_lines": 9,
+          "save_path_rewritten": true,
+          "notebook_block_replaced": true,
+          "notebook_save_path_rewritten": true,
+          "png_byte_identical": true,
+          "runs_from_root_and_notebooks": true
+        }
+      }
+    },
+    "REGENERATED_PNG_BYTE_IDENTICAL_TO_SUPPLIED": {
+      "result": "pass",
+      "hard": false,
+      "detail": "All 43 figures re-run from code assembled with the nbformat canonical join after the notebook rewrite: 43 of 43 regenerate byte-identically and pixel-identically to the published PNGs, maximum channel difference 0 across 1,003,041,200 channel values (250,760,300 RGBA pixels), matching the pixel count the independent validator reported. 33 notebooks ran from the repository root, 10 from figures/notebooks.",
+      "notebooks_run": 43,
+      "byte_identical": 43,
+      "pixel_identical": 43,
+      "max_channel_difference": 0.0,
+      "channel_values_compared": 1003041200,
+      "join_used": "nbformat canonical ''.join(cell['source'])",
+      "cwd_distribution": {
+        "repository root": 33,
+        "figures/notebooks": 10
+      }
+    },
+    "MISSING_NOTEBOOK_POLICY": {
+      "result": "pass",
+      "hard": true,
+      "detail": "No notebook missing and none a stub. All 43 now reconstruct and parse under nbformat's canonical ''.join(source) as well as under the skill's line-join, and all 43 execute to completion.",
+      "missing_notebooks": [],
+      "stub_notebooks": [],
+      "parse_failures_canonical": [],
+      "parse_failures_line_join": []
+    },
+    "FIGURE_DROPDOWN_MATCH": {
+      "result": "pass",
+      "hard": true,
+      "detail": "Dropdowns stripped and re-injected from the corrected notebooks; every content file is byte-identical to before the re-injection, confirming the notebook rewrite changed no embedded code. 43 figures = 43 dropdowns = 43 distinct notebooks, 158 code cells, longest line 184, every body parses.",
+      "per_file": {
+        "01_section.md": {
+          "figures": 2,
+          "dropdowns": 2,
+          "notebooks": 2,
+          "code_cells": 2
+        },
+        "02_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 12
+        },
+        "03_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 3
+        },
+        "04_section.md": {
+          "figures": 7,
+          "dropdowns": 7,
+          "notebooks": 7,
+          "code_cells": 28
+        },
+        "05_section.md": {
+          "figures": 5,
+          "dropdowns": 5,
+          "notebooks": 5,
+          "code_cells": 25
+        },
+        "06_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 9
+        },
+        "07_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 12
+        },
+        "08_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 12
+        },
+        "09_section.md": {
+          "figures": 3,
+          "dropdowns": 3,
+          "notebooks": 3,
+          "code_cells": 12
+        },
+        "10_section.md": {
+          "figures": 4,
+          "dropdowns": 4,
+          "notebooks": 4,
+          "code_cells": 16
+        },
+        "11_section.md": {
+          "figures": 4,
+          "dropdowns": 4,
+          "notebooks": 4,
+          "code_cells": 16
+        },
+        "12_section.md": {
+          "figures": 2,
+          "dropdowns": 2,
+          "notebooks": 2,
+          "code_cells": 2
+        },
+        "Methods.md": {
+          "figures": 1,
+          "dropdowns": 1,
+          "notebooks": 1,
+          "code_cells": 9
+        }
+      },
+      "content_files_changed_by_reinjection": [],
+      "totals": {
+        "figures": 43,
+        "dropdowns": 43,
+        "notebooks": 43,
+        "code_cells_embedded": 158
+      }
+    },
+    "DROPDOWN_ALL_CODE_CELLS_EMBEDDED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "All 158 code cells of the 43 matching notebooks embedded, joined with the '\\n\\n# ---\\n\\n' separator; every injected body parses as Python.",
+      "code_cells": 158,
+      "notebooks": 43,
+      "bodies_parsing": 43
+    },
+    "NO_ICON_COLOR": {
+      "result": "pass",
+      "hard": true,
+      "detail": "zero :icon: or :color: properties on any injected dropdown",
+      "hits": 0
+    },
+    "DROPDOWN_NO_LINE_OVER_200_CHARS": {
+      "result": "pass",
+      "hard": true,
+      "detail": "Longest line across all 43 injected dropdowns is 184 characters; every body parses as Python.",
+      "dropdowns": 43,
+      "max_line_len": 184
+    },
+    "MYST_YML_PRESERVED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "myst.yml edited textually in place: only the 'toc:' block was replaced. site:, extends:, plugins: (incl. the AuthorshipExtractor release URL), bibliography:, exports:, numbering:, github:, license:, keywords: all byte-preserved",
+      "rewritten_from_scratch": false,
+      "blocks_preserved": [
+        "site",
+        "extends",
+        "plugins",
+        "bibliography",
+        "exports",
+        "numbering",
+        "github"
+      ]
+    },
+    "TOC_LISTS_EVERY_CONTENT_MD": {
+      "result": "pass",
+      "hard": true,
+      "detail": "myst.yml project.toc lists 16 files; content/ holds exactly those 16 .md files.",
+      "toc_entries": 16,
+      "content_md_files": 16,
+      "sets_equal": true
+    },
+    "EVIDENCE_PACKAGES_POPULATED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "12 of 12 packages present, each >1024 B with all six required keys and findings as objects; 809 findings.",
+      "per_file": {
+        "evidence_section_01.json": {
+          "size": 117321,
+          "findings": 28,
+          "has_corrections": true,
+          "missing_required_keys": []
+        },
+        "evidence_section_02.json": {
+          "size": 207881,
+          "findings": 70,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_03.json": {
+          "size": 186242,
+          "findings": 56,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_04.json": {
+          "size": 323923,
+          "findings": 103,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_05.json": {
+          "size": 240776,
+          "findings": 76,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_06.json": {
+          "size": 241406,
+          "findings": 80,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_07.json": {
+          "size": 271359,
+          "findings": 82,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_08.json": {
+          "size": 240910,
+          "findings": 76,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_09.json": {
+          "size": 298487,
+          "findings": 76,
+          "has_corrections": true,
+          "missing_required_keys": []
+        },
+        "evidence_section_10.json": {
+          "size": 270129,
+          "findings": 74,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_11.json": {
+          "size": 359155,
+          "findings": 60,
+          "has_corrections": false,
+          "missing_required_keys": []
+        },
+        "evidence_section_12.json": {
+          "size": 130460,
+          "findings": 28,
+          "has_corrections": true,
+          "missing_required_keys": []
+        }
+      },
+      "total_findings": 809
+    },
+    "EVIDENCE_CORRECTIONS_PRESERVED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "the three packages carrying coordinator corrections (01, 09, 12) are the versions deployed; no older copy substituted. evidence_section_09.json's corrections array records the Davies1990 claim-field fix and the claim now matches its source sentence",
+      "packages_with_corrections": [
+        "evidence_section_01.json",
+        "evidence_section_09.json",
+        "evidence_section_12.json"
+      ],
+      "corrections": {
+        "evidence_section_01.json": [
+          {
+            "finding_id": "cluster_02_f066",
+            "cite_key": "Ouellet2014",
+            "fields": [
+              "study_system",
+              "claim"
+            ],
+            "resolved_against": "CrossRef title for 10.3389/fnana.2014.00040",
+            "agreed_with": "evidence_section_08.json"
+          },
+          {
+            "finding_id": "cluster_02_f073",
+            "cite_key": "Frankowski2022",
+            "field": "supplementary_source_sentences",
+            "reason": "verification request from bookend re-check; values traced to the section 07 package for the same DOI"
+          }
+        ],
+        "evidence_section_09.json": [
+          {
+            "finding_id": "cluster_08_f062",
+            "cite_key": "Davies1990",
+            "field": "claim",
+            "phase": "pre-assembly (logged at Phase 6 round 3, applied before Phase 14)",
+            "origin": "cluster_08 (certified cluster file left unmodified; the defect is downstream in this package's claim field only)"
+          }
+        ],
+        "evidence_section_12.json": [
+          {
+            "cite_key": "Hofling2019",
+            "field": "supplementary_source_sentences",
+            "reason": "re-check provenance query; range traced to the section 04 package's source sentence for the same DOI"
+          }
+        ]
+      }
+    },
+    "EVIDENCE_DATABASE_PAGE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "content/evidence_database.md present with one :::{evidence-explorer} invocation (:evidence-dir: ../evidence)"
+    },
+    "PROVENANCE_PAGE_POPULATED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "content/provenance.md rewritten from the gate artifacts: a 20-row pipeline-summary table, a 14-row phase-execution table and a carried-limitations section; the template's '*Summary will be populated by the pipeline during Phase 14 assembly.*' placeholder is gone"
+    },
+    "AUTHORSHIP_EXPLORER_AUTHORS_PATH": {
+      "result": "pass",
+      "hard": true,
+      "detail": ":::{authorship-explorer} appears in content/00_frontmatter.md only and carries ':authors: ../authors.yml' (template shipped './authors.yml')",
+      "invocations": 1,
+      "path": "../authors.yml"
+    },
+    "PLUGIN_FILES_DEPLOYED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "plugins/evidence-explorer-plugin.mjs, plugins/figure-lightbox-plugin.mjs and the anywidget modules content/evidence-explorer-widget.mjs, content/figure-lightbox-widget.mjs all present and referenced",
+      "files": [
+        "plugins/evidence-explorer-plugin.mjs",
+        "plugins/figure-lightbox-plugin.mjs",
+        "content/evidence-explorer-widget.mjs",
+        "content/figure-lightbox-widget.mjs"
+      ]
+    },
+    "PLUGIN_DIRECTIVES_INVOKED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "Both plugin-registered directives invoked in block form, never bare.",
+      "per_directive": {
+        "authorship-explorer": {
+          "bare_role_form_lines": 0,
+          "block_invocations": 1,
+          "ok": true
+        },
+        "evidence-explorer": {
+          "bare_role_form_lines": 0,
+          "block_invocations": 1,
+          "ok": true
+        }
+      }
+    },
+    "ABSTRACT_INSERTED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "the Phase 11 abstract (393 words, 4 paragraphs) replaces the template warning block, and the keyword warning block is replaced by the 8-keyword line",
+      "abstract_words": 393,
+      "keywords": 8
+    },
+    "TITLE_SET": {
+      "result": "pass",
+      "hard": true,
+      "detail": "YAML title and H1 both set to \"Somatostatin Interneurons in Neurodegenerative Disease\""
+    },
+    "AI_HUMAN_DISCLOSURE_VERBATIM": {
+      "result": "pass",
+      "hard": true,
+      "detail": "both mandated paragraphs present byte-for-byte inside the AI-Generated Content Disclosure admonition; both template warning blocks removed",
+      "warning_blocks_remaining": 0
+    },
+    "AUTHOR_IDENTITY_NOT_PLACEHOLDER": {
+      "result": "pass",
+      "hard": true,
+      "detail": "content/authors.yml AI contributor is name 'Claude Opus 5' / first_name 'Claude' / last_name 'Opus 5' (was 'Opus 4.6'); human contributor unchanged; no 'Human Supervisor', 'Anonymous', 'TBD', '[NAME]', '<placeholder>' or 'Author N' anywhere in content/*.md, authors.yml or myst.yml",
+      "placeholder_hits": {}
+    },
+    "DIRECTIVE_WHITELIST_VIOLATION": {
+      "result": "pass",
+      "hard": true,
+      "detail": "zero {contents}, {toctree} or {include} directives in any body file; the global TOC lives only in myst.yml",
+      "hits": {}
+    },
+    "FORBIDDEN_LEXICON": {
+      "result": "waived",
+      "hard": true,
+      "detail": "WAIVED as an overbroad scan scope. The validation brief directed the scan at Methods.md, the frontmatter and the LaTeX file; the rule protects scientific prose. The by-file breakdown is decisive: ZERO hits in all twelve body sections. The validator reported 32 remaining hits located in content/00_frontmatter.md (4), content/Methods.md (12), content/provenance.md (3), provenance/review_request.md (3) and latex/manuscript.tex (14) — a mandated AI-disclosure block, a transparency document whose subject is the pipeline, a provenance page, the captured prompt which must stay verbatim, and the .tex that concatenates them. In those files terms such as 'orchestrator' and 'evidence package' are the content, not process leakage. No wording was changed in Methods, the disclosure block or the captured prompt. Note: the validator's per-file figures sum to 36, not the 32 stated in its summary; this actor could not reconcile the arithmetic because the canonical term list lives in comprev-myst-validator check #9, which this actor was instructed not to read.",
+      "waiver_authority": "coordinator adjudication of Phase 14V",
+      "validator_reported_by_file": {
+        "content/00_frontmatter.md": 4,
+        "content/Methods.md": 12,
+        "content/provenance.md": 3,
+        "provenance/review_request.md": 3,
+        "latex/manuscript.tex": 14
+      },
+      "validator_summary_total_stated": 32,
+      "validator_per_file_sum": 36,
+      "independent_substitute_scan_by_file": {
+        "content/01_section.md": 0,
+        "content/02_section.md": 0,
+        "content/03_section.md": 0,
+        "content/04_section.md": 0,
+        "content/05_section.md": 0,
+        "content/06_section.md": 0,
+        "content/07_section.md": 0,
+        "content/08_section.md": 0,
+        "content/09_section.md": 0,
+        "content/10_section.md": 0,
+        "content/11_section.md": 0,
+        "content/12_section.md": 0,
+        "content/00_frontmatter.md": 7,
+        "content/Methods.md": 37,
+        "content/provenance.md": 10,
+        "provenance/review_request.md": 10,
+        "latex/manuscript.tex": 43
+      },
+      "independent_scan_body_sections_total": 0,
+      "independent_scan_note": "18-term substitute list, whole-token, code fences and directive option lines excluded; broader than the canonical list, hence higher counts, but agreeing on the decisive fact that every body section is clean"
+    },
+    "MYST_BUILD_HTML": {
+      "result": "deferred",
+      "hard": true,
+      "detail": "npm install -g mystmd could not be attempted: there is no node or npm on this machine ('node: command not found', 'npm: command not found') and package installs are blocked in this sandbox. No myst build was run and none is claimed. The four build assertions were executed as the deferred equivalents named in the task.",
+      "mode": "deferred_equivalents",
+      "npm_available": false,
+      "node_available": false,
+      "build_executed": false
+    },
+    "BUILD_COULD_NOT_LINK_CITATION": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every cite key in content/*.md and latex/manuscript.tex resolves against the declared bibliography",
+      "keys": 726,
+      "unresolved": []
+    },
+    "BUILD_CROSS_REFERENCE_TARGET_NOT_FOUND": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every {ref}/{numref} target resolves against an anchor defined in content/*.md",
+      "targets": 55,
+      "anchors": 132,
+      "unresolved": []
+    },
+    "BUILD_CANNOT_FIND_IMAGE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every image path referenced from content/*.md exists on disk",
+      "paths": 43,
+      "missing": []
+    },
+    "BUILD_UNKNOWN_DIRECTIVE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every directive and role used is MyST core or registered by a declared plugin",
+      "unknown_directives": [],
+      "unknown_roles": []
+    },
+    "BUILD_FENCE_BALANCE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "every ::: directive fence opens and closes",
+      "unbalanced": {}
+    },
+    "MYST_BUILD_SMOKE_TEST_WIDGET_MARKER": {
+      "result": "deferred",
+      "hard": true,
+      "detail": "cannot be run without mystmd; the markdown-layer precondition it exists to catch (directive registered but never invoked) is covered by PLUGIN_DIRECTIVES_INVOKED, which passes"
+    },
+    "LATEX_MANUSCRIPT_ASSEMBLED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "latex/manuscript.tex rebuilt after the Methods table replacement (502731 B): 13 \\section, 43 figure environments, 1 fvextra Verbatim block, 1121 \\citep and 231 \\citet.",
+      "sections": 13,
+      "figures": 43,
+      "verbatim_blocks": 1
+    },
+    "LATEX_THEBIBLIOGRAPHY_ABSENT": {
+      "result": "pass",
+      "hard": true,
+      "detail": "count=0"
+    },
+    "LATEX_SINGLE_DOCUMENTCLASS": {
+      "result": "pass",
+      "hard": true,
+      "detail": "count=1"
+    },
+    "LATEX_SINGLE_BIBLIOGRAPHY_CMD": {
+      "result": "pass",
+      "hard": true,
+      "detail": "\\bibliography{ count=1; \\bibliographystyle{ count=1"
+    },
+    "LATEX_MICROTYPE_EXPANSION_FALSE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "microtype_expansion_false"
+    },
+    "LATEX_NATBIB_AUTHORYEAR": {
+      "result": "pass",
+      "hard": true,
+      "detail": "natbib_authoryear"
+    },
+    "LATEX_BIBLIOGRAPHYSTYLE_ABBRVNAT": {
+      "result": "pass",
+      "hard": true,
+      "detail": "bibliographystyle_abbrvnat"
+    },
+    "LATEX_ZERO_ORPHANED_TEX_CITATIONS": {
+      "result": "pass",
+      "hard": true,
+      "detail": "726 unique keys cited; orphans=[]"
+    },
+    "LATEX_ALL_INCLUDEGRAPHICS_RESOLVE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "43 paths, 43 unique; missing=[]"
+    },
+    "LATEX_NO_BARE_BEGIN_FIGURE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "bare=0; with [H]=43"
+    },
+    "LATEX_FLOAT_PACKAGE_FOR_H": {
+      "result": "pass",
+      "hard": true,
+      "detail": "float_package_for_H"
+    },
+    "LATEX_PLACEINS_SECTION": {
+      "result": "pass",
+      "hard": true,
+      "detail": "placeins_section"
+    },
+    "LATEX_BIB_FILE_BESIDE_TEX": {
+      "result": "pass",
+      "hard": true,
+      "detail": "entries=726"
+    },
+    "LATEX_ASCII_ONLY_TEX": {
+      "result": "FAIL",
+      "hard": false,
+      "detail": "5 non-ASCII characters (4 em-dashes, 1 beta), all inside the single Verbatim block that reproduces the captured user prompt byte-for-byte. The bytes are deliberately preserved. fvextra is now loaded and the block uses fancyvrb's Verbatim with breaklines, which is fvextra's documented UTF-8 route under pdfLaTeX; UNTESTED here because this machine has no TeX toolchain.",
+      "class_note": "Reclassified from hard to soft. This check is not part of the Phase 14 or 14V assertion list — the specification's ASCII requirement applies to the .bib file (BIB_ASCII_CLEAN, which passes). It was an extra check introduced by this actor and marked hard in error. The 5 non-ASCII characters are required by REVIEW_REQUEST_CAPTURED, which demands the captured prompt byte-for-byte; they are not downgraded to make the gate pass, and the FAIL result stands."
+    },
+    "LATEX_ONE_BEGIN_END_DOCUMENT": {
+      "result": "pass",
+      "hard": true,
+      "detail": "one_begin_end_document"
+    },
+    "LATEX_ALL_TEX_REFS_RESOLVE": {
+      "result": "pass",
+      "hard": true,
+      "detail": "55 targets, 130 labels; unresolved=[]"
+    },
+    "LATEX_SCOPE_NOTE": {
+      "result": "pass",
+      "hard": false,
+      "detail": "content/00_frontmatter.md contributes title/authors/abstract/keywords only; content/evidence_database.md and content/provenance.md are site-only pages and are not concatenated into the PDF; the injected figure-code dropdowns are web affordances and are not carried into the LaTeX body"
+    },
+    "LATEX_REVIEW_REQUEST_VERBATIM_IN_TEX": {
+      "result": "pass",
+      "hard": false,
+      "detail": "captured prompt byte-for-byte inside \\begin{Verbatim}"
+    },
+    "LATEX_FVEXTRA_LOADED": {
+      "result": "pass",
+      "hard": false,
+      "detail": "fvextra in preamble; the single fenced block emits \\begin{Verbatim}[breaklines,breakanywhere]; no plain \\begin{verbatim} remains"
+    },
+    "METHODS_SKILLS_TABLE_WELL_FORMED": {
+      "result": "pass",
+      "hard": false,
+      "detail": "D5 required three generations. Generation 1 appended a body sentence to the frontmatter description and caught a blockquote, garbling the comprev-section-writing row. Generation 2 fixed the pipe/angle-bracket/length symptoms but left four rows broken in ways a visual check could not see: comprev-deploy-polish ended mid-sentence on a dangling '...the push to `main` is.', and comprev-figure-construction, comprev-orchestrator-v29 and comprev-reviewer-agent each repeated their description sentence verbatim back to back. Generation 3 drops the body-sentence augmentation entirely and builds each Role from the frontmatter `description` alone. This actor verified the installed table independently rather than accepting the generator's claim: all 20 rows pass all five stated conditions (no pipe or angle bracket, no doubled period, no dangling article or preposition, no sentence contained within another in the same cell, no cell opening on a subordinating conjunction), and every Role equals its skill's frontmatter description with the shared 'Expert Review Pipeline v29 (ComputationalReviewTemplate): ' prefix stripped, checked against the 20 files in skills/ on disk. The four previously broken rows are clean.",
+      "generations_required": 3,
+      "old_rows": 22,
+      "new_rows": 22,
+      "old_defective_rows": [
+        "comprev-deploy-polish (dangling '...the push to `main` is.')",
+        "comprev-figure-construction (doubled sentence)",
+        "comprev-orchestrator-v29 (doubled sentence)",
+        "comprev-reviewer-agent (doubled sentence)"
+      ],
+      "counts_before": {
+        "figures": 1,
+        "dropdowns": 1,
+        "cite_directives": 0,
+        "headings": 26,
+        "bytes": 36608
+      },
+      "counts_after": {
+        "figures": 1,
+        "dropdowns": 1,
+        "cite_directives": 0,
+        "headings": 26,
+        "bytes": 34816
+      },
+      "counts_unchanged": {
+        "figures": true,
+        "dropdowns": true,
+        "cite_directives": true,
+        "headings": true
+      },
+      "only_table_region_changed": true,
+      "prompt_block_byte_verbatim": true,
+      "independent_audit": {
+        "rows": 20,
+        "columns": 2,
+        "conditions": {
+          "pipe_or_angle_bracket": 0,
+          "doubled_period": 0,
+          "dangling_article_or_preposition": 0,
+          "sentence_contained_in_another": 0,
+          "starts_with_subordinating_conjunction": 0,
+          "no_terminal_punctuation": 0
+        },
+        "all_pass": true,
+        "derivation_verified": "each Role equals that skill's frontmatter `description` with the shared 'Expert Review Pipeline v29 (ComputationalReviewTemplate): ' prefix stripped",
+        "rows_abbreviating_longer_description": [
+          "comprev-deploy-polish.md",
+          "comprev-reviewer-agent.md",
+          "comprev-scoping.md"
+        ],
+        "abbreviation_note": "all three truncate at a sentence boundary, so no fragment is carried",
+        "source_side_observation": "comprev-scoping.md's own frontmatter description is itself truncated mid-sentence ('... reads the'); the table correctly stops at the preceding sentence and does not carry the fragment",
+        "previously_broken_rows_now_clean": [
+          "comprev-deploy-polish.md",
+          "comprev-figure-construction.md",
+          "comprev-orchestrator-v29.md",
+          "comprev-reviewer-agent.md"
+        ]
+      },
+      "observations": [
+        "Three rows (comprev-deploy-polish, comprev-reviewer-agent, comprev-scoping) abbreviate a longer frontmatter description; all three truncate at a sentence boundary, so no fragment is carried.",
+        "comprev-scoping.md's own frontmatter description is itself truncated mid-sentence ('... reads the') in the source file; the table stops at the preceding sentence and does not carry that fragment. This is a source-side defect in skills/, not a table defect, and was not fixed because assembly does not edit skills/."
+      ]
+    },
+    "SCRIPTS_SHARED_STYLE_UNIFIED": {
+      "result": "pass",
+      "hard": false,
+      "detail": "scripts/shared_style.py made byte-identical to figures/notebooks/shared_style.py rather than deleted, because README.md documents that path as the figure-style module in two places and the skill's Repository Structure lists it; deleting it would leave dangling references in a pre-existing file. No notebook or script resolves its shared_style import to that copy: every sys.path insertion across all 42 scripts and 43 notebooks points at figures/notebooks, and a repository-wide search finds zero importers of scripts/shared_style.py.",
+      "detail_data": {
+        "action": "made identical (not deleted)",
+        "before": {
+          "sha": "261d9a1e643259bc",
+          "bytes": 7567
+        },
+        "after": {
+          "sha": "b0213310ad9f2441",
+          "bytes": 2369
+        },
+        "identical_now": true,
+        "importers_found": 0,
+        "readme_references": [
+          "README.md:122",
+          "README.md:167"
+        ],
+        "reason": "README.md documents scripts/shared_style.py as the figure-style module in two places and the skill's Repository Structure lists it as the canonical palette path; deleting it would leave dangling references in a pre-existing repo file that assembly must preserve. Copying removes the divergence with no risk.",
+        "no_import_resolves_to_scripts": true
+      }
+    },
+    "FIGURE_NOTEBOOK_SELF_CONTAINED": {
+      "result": "pass",
+      "hard": true,
+      "detail": "Seven notebooks stored code-cell source as arrays of lines with no trailing newline characters, so nbformat's canonical ''.join(cell['source']) collapsed each cell into a single line of up to 9351 characters and raised SyntaxError or IndentationError: they did not open and run in Jupyter. Each was rewritten so every source element but the last is newline-terminated. All 43 notebooks now parse under the canonical join (longest reconstructed line 184 characters), and all 43 execute to completion from code built with that join. The rewrite is content-neutral: for all seven the skill's line-join output is byte-identical before and after, which is why no injected dropdown changed.",
+      "notebooks_fixed": [
+        "fig_sec11_conflict_atlas",
+        "fig_sec11_genetic_label_fidelity",
+        "fig_sec11_measurement_determines_the_answer",
+        "fig_sec11_model_construct_and_transgene_dosage",
+        "fig_sec2_sst_connectivity_motif_disagreements",
+        "fig_sec2_sst_peptide_and_sstr_signalling",
+        "fig_sec2_sst_taxonomy_and_subtype_fractions"
+      ],
+      "parse_under_canonical_join": "43 of 43",
+      "longest_canonical_line": 184,
+      "per_notebook": {
+        "fig_sec11_conflict_atlas": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec11_genetic_label_fidelity": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec11_measurement_determines_the_answer": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec11_model_construct_and_transgene_dosage": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec2_sst_connectivity_motif_disagreements": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec2_sst_peptide_and_sstr_signalling": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        },
+        "fig_sec2_sst_taxonomy_and_subtype_fractions": {
+          "code_cells": 4,
+          "cells_rewritten": 4,
+          "skill_join_unchanged": true,
+          "canonical_equals_skill_join": true,
+          "all_but_last_element_newline_terminated": true
+        }
+      },
+      "skill_join_unchanged_for_all_seven": true,
+      "found_by": "independent Phase 14V validator; this actor's earlier checks used the skill's line-join helper and therefore missed it"
+    },
+    "ALL_PLUGINS_LISTED": {
+      "result": "waived",
+      "hard": false,
+      "detail": "WAIVED literal-count mismatch. The skill's wording counts 4 plugins; myst.yml declares 3. Substantively the check passes: both plugin modules under plugins/ are declared and their paths resolve on disk, the remote AuthorshipExtractor release URL is declared, and nothing is missing. The two content/*-widget.mjs files are anywidget ESM modules loaded by those plugins at runtime, not MyST plugins to be declared in project.plugins.",
+      "waiver_authority": "coordinator adjudication of Phase 14V",
+      "evidence": {
+        "declared_total": 3,
+        "declared_remote": [
+          "https://github.com/AllenNeuralDynamics/AuthorshipExtractor/releases/latest/download/authorship-plugin.mjs"
+        ],
+        "declared_local": [
+          "plugins/evidence-explorer-plugin.mjs",
+          "plugins/figure-lightbox-plugin.mjs"
+        ],
+        "mjs_files_in_repo": [
+          "content/evidence-explorer-widget.mjs",
+          "content/figure-lightbox-widget.mjs",
+          "plugins/evidence-explorer-plugin.mjs",
+          "plugins/figure-lightbox-plugin.mjs"
+        ],
+        "plugin_mjs_all_declared": true,
+        "widget_mjs": [
+          "content/evidence-explorer-widget.mjs",
+          "content/figure-lightbox-widget.mjs"
+        ],
+        "local_paths_resolve": true
+      }
+    },
+    "NO_PROCESS_LANGUAGE": {
+      "result": "waived",
+      "hard": true,
+      "detail": "Waived on the same adjudication and the same evidence as FORBIDDEN_LEXICON: zero hits across the twelve body sections; all hits confined to the disclosure block, the Methods transparency document, the provenance page, the captured prompt and the LaTeX concatenation of those.",
+      "waiver_authority": "coordinator adjudication of Phase 14V",
+      "body_section_hits": 0
+    },
+    "EVIDENCE_PARAMETERS_HONORED": {
+      "result": "overruled",
+      "hard": true,
+      "detail": "OVERRULED as a category error. The validator applied min_papers_per_cluster: 70 to the twelve per-SECTION evidence packages and failed sections 01 (28 unique DOIs), 03 (56), 11 (60) and 12 (28). The parameter governs clusters, not sections. Verified directly from provenance/gate_evidence_compliance.json counts_per_cluster: the ten clusters reviewed 79, 80, 108, 79, 80, 84, 77, 85, 85 and 79 papers — every one above the floor of 70, none below. Sections are not clusters: the two bookends were deliberately restricted to papers already cited in the body, and sections 03 and 11 are curation outcomes, not search shortfalls.",
+      "overrule_authority": "coordinator adjudication of Phase 14V",
+      "cluster_papers_reviewed": {
+        "cluster_01": 79,
+        "cluster_02": 80,
+        "cluster_03": 108,
+        "cluster_04": 79,
+        "cluster_05": 80,
+        "cluster_06": 84,
+        "cluster_07": 77,
+        "cluster_08": 85,
+        "cluster_09": 85,
+        "cluster_10": 79
+      },
+      "floor": 70,
+      "clusters_below_floor": [],
+      "section_unique_dois": {
+        "section_01": 28,
+        "section_02": 70,
+        "section_03": 56,
+        "section_04": 100,
+        "section_05": 75,
+        "section_06": 80,
+        "section_07": 82,
+        "section_08": 76,
+        "section_09": 74,
+        "section_10": 74,
+        "section_11": 60,
+        "section_12": 28
+      },
+      "verified_from": "provenance/gate_evidence_compliance.json"
+    }
+  },
+  "git_state": {
+    "head_before_and_after": "89008df331cc7daff7636efb7a6578b7f3605f26",
+    "commits_made": 0,
+    "pushed": false,
+    "working_tree": {
+      "untracked_new_files": 167,
+      "modified_tracked_files": 9,
+      "deleted_tracked_files": 1
+    },
+    "deleted": [
+      "content/01_introduction.md (template stub: '*This section will be written by the pipeline.*')"
+    ],
+    "modified_tracked": [
+      "content/00_frontmatter.md",
+      "content/Methods.md",
+      "content/authors.yml",
+      "content/provenance.md",
+      "content/references.bib",
+      "figures/fig_methods_pipeline.png",
+      "figures/notebooks/fig_methods_pipeline.ipynb",
+      "myst.yml",
+      "provenance/pipeline_metrics.json"
+    ],
+    "note": "figures/fig_methods_pipeline.png, figures/notebooks/fig_methods_pipeline.ipynb and provenance/pipeline_metrics.json already existed in the repository at older revisions and were overwritten with the artifact versions named in the task."
+  },
+  "phase_ledger_json": {
+    "present_in_repo": false,
+    "note": "provenance/phase_ledger.json does not exist in the repository and Phase 14 does not create it; the orchestrator writes it via advance_phase(). Flagged for Phase 20."
+  },
+  "revision": 6,
+  "revision_note": "Sixth pass: D5 reopened and closed with a third table generation (body-sentence augmentation removed; Role built from the frontmatter description alone), independently audited against all five conditions and against the 20 skills/ files on disk. latex/manuscript.tex rebuilt because content/Methods.md changed. The revision-5 schema reshape (structural_results, per_file_results, build_result) is retained and its projections refreshed. No other check result changed. Revision 5 note: Fifth pass: serialisation only. Added the `structural_results`, `per_file_results` and `build_result` keys that Phase 20V reads, projected from results already recorded in `checks`. No check result changed value, no file was re-measured, and all waiver and overrule reasoning is unchanged. Revision 4 note: Fourth pass, after independent Phase 14V validation returned fail on six checks. FIXED: FIGURE_NOTEBOOK_SELF_CONTAINED (seven notebooks rewritten to newline-terminated source lines) and the review_request.md H1. WAIVED on coordinator adjudication: the literal {include} sub-check of REVIEW_REQUEST_CAPTURED, ALL_PLUGINS_LISTED, FORBIDDEN_LEXICON/NO_PROCESS_LANGUAGE. OVERRULED: EVIDENCE_PARAMETERS_HONORED.",
+  "gate_passed_qualifier": "No hard check fails. Three hard checks pass only by coordinator waiver or overrule (FORBIDDEN_LEXICON, NO_PROCESS_LANGUAGE, EVIDENCE_PARAMETERS_HONORED) and one carries a waived sub-check (REVIEW_REQUEST_CAPTURED); each records its authority and evidence. Two hard checks are DEFERRED, not passed: myst build --html could not run (no node/npm, installs blocked), its four assertions ran as deferred equivalents. One soft check fails by design (LATEX_ASCII_ONLY_TEX). This gate must not be read as evidence that a MyST build succeeded or that the PDF has been compiled.",
+  "figure_reproduction": {
+    "notebooks_run": 43,
+    "byte_identical": 43,
+    "pixel_identical": 43,
+    "max_channel_difference": 0.0,
+    "channel_values_compared": 1003041200,
+    "join_used": "nbformat canonical ''.join(cell['source'])",
+    "pixels_compared": 250760300,
+    "cwd_distribution": {
+      "repository root": 33,
+      "figures/notebooks": 10
+    }
+  },
+  "waived_checks": [
+    "FORBIDDEN_LEXICON",
+    "ALL_PLUGINS_LISTED",
+    "NO_PROCESS_LANGUAGE"
+  ],
+  "overruled_checks": [
+    "EVIDENCE_PARAMETERS_HONORED"
+  ],
+  "validation_adjudication": {
+    "validator": "independent Phase 14V",
+    "validator_verdict": "fail",
+    "failing_checks": 6,
+    "fixed_by_assembly": [
+      "FIGURE_NOTEBOOK_SELF_CONTAINED",
+      "REVIEW_REQUEST_CAPTURED (H1 heading)"
+    ],
+    "waived_by_coordinator": [
+      "REVIEW_REQUEST_CAPTURED {include} sub-check",
+      "ALL_PLUGINS_LISTED",
+      "FORBIDDEN_LEXICON",
+      "NO_PROCESS_LANGUAGE"
+    ],
+    "overruled_by_coordinator": [
+      "EVIDENCE_PARAMETERS_HONORED"
+    ],
+    "note": "FIGURE_NOTEBOOK_SELF_CONTAINED was a real defect this actor's own checks missed: they used the skill's line-join helper rather than nbformat's canonical ''.join(source), and the two joins disagree precisely on notebooks whose source lines lack trailing newlines."
+  },
+  "structural_results": {
+    "note": "Projection of the structural subset of `checks` for Phase 20V. Verdicts are copied verbatim from `checks`; this block adds no measurement and changes no value. `checks` remains the authoritative record and carries the full detail, waiver authority and overrule evidence.",
+    "counts": {
+      "total": 42,
+      "pass": 38,
+      "waived": 3,
+      "overruled": 1,
+      "fail": 0
+    },
+    "checks": {
+      "PREREQUISITE_GATES_PRESENT": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.PREREQUISITE_GATES_PRESENT"
+      },
+      "UPSTREAM_GATE_VERDICTS_READ": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.UPSTREAM_GATE_VERDICTS_READ"
+      },
+      "REVIEW_REQUEST_CAPTURED": {
+        "result": "pass_with_waived_subcheck",
+        "hard": true,
+        "see": "checks.REVIEW_REQUEST_CAPTURED"
+      },
+      "NO_UNRESOLVABLE_CITATION_KEYS": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.NO_UNRESOLVABLE_CITATION_KEYS"
+      },
+      "BIBLIOGRAPHY_AT_EVERY_DECLARED_PATH": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.BIBLIOGRAPHY_AT_EVERY_DECLARED_PATH"
+      },
+      "BIBLIOGRAPHY_STUBS_OVERWRITTEN": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.BIBLIOGRAPHY_STUBS_OVERWRITTEN"
+      },
+      "BIB_ASCII_CLEAN": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.BIB_ASCII_CLEAN"
+      },
+      "BIB_NO_CONTAMINATION": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.BIB_NO_CONTAMINATION"
+      },
+      "FIGURE_ARTIFACTS_COLLECTED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_ARTIFACTS_COLLECTED"
+      },
+      "FIGURE_REFERENCES_RESOLVE": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_REFERENCES_RESOLVE"
+      },
+      "FIGURE_PATH_FORMAT_CONSISTENT": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_PATH_FORMAT_CONSISTENT"
+      },
+      "FIGURE_WIDTH_DECLARED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_WIDTH_DECLARED"
+      },
+      "FIGURE_REGISTRY_BUILT": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.FIGURE_REGISTRY_BUILT"
+      },
+      "EVERY_SECTION_HAS_TWO_FIGURES": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.EVERY_SECTION_HAS_TWO_FIGURES"
+      },
+      "PERMITTED_CODE_EDIT_IMPORT_PATH_ONLY": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.PERMITTED_CODE_EDIT_IMPORT_PATH_ONLY"
+      },
+      "REGENERATED_PNG_BYTE_IDENTICAL_TO_SUPPLIED": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.REGENERATED_PNG_BYTE_IDENTICAL_TO_SUPPLIED"
+      },
+      "MISSING_NOTEBOOK_POLICY": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.MISSING_NOTEBOOK_POLICY"
+      },
+      "FIGURE_DROPDOWN_MATCH": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_DROPDOWN_MATCH"
+      },
+      "DROPDOWN_ALL_CODE_CELLS_EMBEDDED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.DROPDOWN_ALL_CODE_CELLS_EMBEDDED"
+      },
+      "NO_ICON_COLOR": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.NO_ICON_COLOR"
+      },
+      "DROPDOWN_NO_LINE_OVER_200_CHARS": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.DROPDOWN_NO_LINE_OVER_200_CHARS"
+      },
+      "MYST_YML_PRESERVED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.MYST_YML_PRESERVED"
+      },
+      "TOC_LISTS_EVERY_CONTENT_MD": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.TOC_LISTS_EVERY_CONTENT_MD"
+      },
+      "EVIDENCE_PACKAGES_POPULATED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.EVIDENCE_PACKAGES_POPULATED"
+      },
+      "EVIDENCE_CORRECTIONS_PRESERVED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.EVIDENCE_CORRECTIONS_PRESERVED"
+      },
+      "EVIDENCE_DATABASE_PAGE": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.EVIDENCE_DATABASE_PAGE"
+      },
+      "PROVENANCE_PAGE_POPULATED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.PROVENANCE_PAGE_POPULATED"
+      },
+      "AUTHORSHIP_EXPLORER_AUTHORS_PATH": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.AUTHORSHIP_EXPLORER_AUTHORS_PATH"
+      },
+      "PLUGIN_FILES_DEPLOYED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.PLUGIN_FILES_DEPLOYED"
+      },
+      "PLUGIN_DIRECTIVES_INVOKED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.PLUGIN_DIRECTIVES_INVOKED"
+      },
+      "ABSTRACT_INSERTED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.ABSTRACT_INSERTED"
+      },
+      "TITLE_SET": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.TITLE_SET"
+      },
+      "AI_HUMAN_DISCLOSURE_VERBATIM": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.AI_HUMAN_DISCLOSURE_VERBATIM"
+      },
+      "AUTHOR_IDENTITY_NOT_PLACEHOLDER": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.AUTHOR_IDENTITY_NOT_PLACEHOLDER"
+      },
+      "DIRECTIVE_WHITELIST_VIOLATION": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.DIRECTIVE_WHITELIST_VIOLATION"
+      },
+      "FORBIDDEN_LEXICON": {
+        "result": "waived",
+        "hard": true,
+        "see": "checks.FORBIDDEN_LEXICON"
+      },
+      "METHODS_SKILLS_TABLE_WELL_FORMED": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.METHODS_SKILLS_TABLE_WELL_FORMED"
+      },
+      "SCRIPTS_SHARED_STYLE_UNIFIED": {
+        "result": "pass",
+        "hard": false,
+        "see": "checks.SCRIPTS_SHARED_STYLE_UNIFIED"
+      },
+      "FIGURE_NOTEBOOK_SELF_CONTAINED": {
+        "result": "pass",
+        "hard": true,
+        "see": "checks.FIGURE_NOTEBOOK_SELF_CONTAINED"
+      },
+      "ALL_PLUGINS_LISTED": {
+        "result": "waived",
+        "hard": false,
+        "see": "checks.ALL_PLUGINS_LISTED"
+      },
+      "NO_PROCESS_LANGUAGE": {
+        "result": "waived",
+        "hard": true,
+        "see": "checks.NO_PROCESS_LANGUAGE"
+      },
+      "EVIDENCE_PARAMETERS_HONORED": {
+        "result": "overruled",
+        "hard": true,
+        "see": "checks.EVIDENCE_PARAMETERS_HONORED"
+      }
+    }
+  },
+  "build_result": {
+    "mode": "deferred_equivalents",
+    "myst_build_executed": false,
+    "reason": "No node and no npm on this machine ('node: command not found', 'npm: command not found') and package installs are blocked in this sandbox, so `npm install -g mystmd` could not be attempted and `myst build --html` was never run. No build result is claimed.",
+    "result": "deferred",
+    "assertions": {
+      "BUILD_COULD_NOT_LINK_CITATION": {
+        "result": "pass",
+        "hard": true,
+        "assertion": "every cite key in content/*.md and latex/manuscript.tex resolves against the declared bibliography",
+        "see": "checks.BUILD_COULD_NOT_LINK_CITATION"
+      },
+      "BUILD_CROSS_REFERENCE_TARGET_NOT_FOUND": {
+        "result": "pass",
+        "hard": true,
+        "assertion": "every {ref}/{numref} target resolves against an anchor defined in content/*.md",
+        "see": "checks.BUILD_CROSS_REFERENCE_TARGET_NOT_FOUND"
+      },
+      "BUILD_CANNOT_FIND_IMAGE": {
+        "result": "pass",
+        "hard": true,
+        "assertion": "every image path referenced from content/*.md exists on disk",
+        "see": "checks.BUILD_CANNOT_FIND_IMAGE"
+      },
+      "BUILD_UNKNOWN_DIRECTIVE": {
+        "result": "pass",
+        "hard": true,
+        "assertion": "every directive and role used is MyST core or registered by a declared plugin",
+        "see": "checks.BUILD_UNKNOWN_DIRECTIVE"
+      },
+      "BUILD_FENCE_BALANCE": {
+        "result": "pass",
+        "hard": true,
+        "assertion": "every ::: directive fence opens and closes",
+        "see": "checks.BUILD_FENCE_BALANCE"
+      },
+      "MYST_BUILD_HTML": {
+        "result": "deferred",
+        "hard": true,
+        "assertion": "npm install -g mystmd could not be attempted: there is no node or npm on this machine ('node: command not found', 'npm: command not found') and package installs are blocked in this sandbox. No myst build was run and none is claimed. The four build assertions were executed as the deferred equivalents named in the task.",
+        "see": "checks.MYST_BUILD_HTML"
+      },
+      "MYST_BUILD_SMOKE_TEST_WIDGET_MARKER": {
+        "result": "deferred",
+        "hard": true,
+        "assertion": "cannot be run without mystmd; the markdown-layer precondition it exists to catch (directive registered but never invoked) is covered by PLUGIN_DIRECTIVES_INVOKED, which passes",
+        "see": "checks.MYST_BUILD_SMOKE_TEST_WIDGET_MARKER"
+      }
+    },
+    "latex_assertions": {
+      "note": "the skill's LaTeX assertion list, run as a script in place of a PDF compilation; no TeX toolchain is present on this machine either, so no PDF was compiled",
+      "checks": {
+        "LATEX_MANUSCRIPT_ASSEMBLED": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_MANUSCRIPT_ASSEMBLED"
+        },
+        "LATEX_THEBIBLIOGRAPHY_ABSENT": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_THEBIBLIOGRAPHY_ABSENT"
+        },
+        "LATEX_SINGLE_DOCUMENTCLASS": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_SINGLE_DOCUMENTCLASS"
+        },
+        "LATEX_SINGLE_BIBLIOGRAPHY_CMD": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_SINGLE_BIBLIOGRAPHY_CMD"
+        },
+        "LATEX_MICROTYPE_EXPANSION_FALSE": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_MICROTYPE_EXPANSION_FALSE"
+        },
+        "LATEX_NATBIB_AUTHORYEAR": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_NATBIB_AUTHORYEAR"
+        },
+        "LATEX_BIBLIOGRAPHYSTYLE_ABBRVNAT": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_BIBLIOGRAPHYSTYLE_ABBRVNAT"
+        },
+        "LATEX_ZERO_ORPHANED_TEX_CITATIONS": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_ZERO_ORPHANED_TEX_CITATIONS"
+        },
+        "LATEX_ALL_INCLUDEGRAPHICS_RESOLVE": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_ALL_INCLUDEGRAPHICS_RESOLVE"
+        },
+        "LATEX_NO_BARE_BEGIN_FIGURE": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_NO_BARE_BEGIN_FIGURE"
+        },
+        "LATEX_FLOAT_PACKAGE_FOR_H": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_FLOAT_PACKAGE_FOR_H"
+        },
+        "LATEX_PLACEINS_SECTION": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_PLACEINS_SECTION"
+        },
+        "LATEX_BIB_FILE_BESIDE_TEX": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_BIB_FILE_BESIDE_TEX"
+        },
+        "LATEX_ASCII_ONLY_TEX": {
+          "result": "FAIL",
+          "hard": false,
+          "see": "checks.LATEX_ASCII_ONLY_TEX"
+        },
+        "LATEX_ONE_BEGIN_END_DOCUMENT": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_ONE_BEGIN_END_DOCUMENT"
+        },
+        "LATEX_ALL_TEX_REFS_RESOLVE": {
+          "result": "pass",
+          "hard": true,
+          "see": "checks.LATEX_ALL_TEX_REFS_RESOLVE"
+        },
+        "LATEX_SCOPE_NOTE": {
+          "result": "pass",
+          "hard": false,
+          "see": "checks.LATEX_SCOPE_NOTE"
+        },
+        "LATEX_REVIEW_REQUEST_VERBATIM_IN_TEX": {
+          "result": "pass",
+          "hard": false,
+          "see": "checks.LATEX_REVIEW_REQUEST_VERBATIM_IN_TEX"
+        },
+        "LATEX_FVEXTRA_LOADED": {
+          "result": "pass",
+          "hard": false,
+          "see": "checks.LATEX_FVEXTRA_LOADED"
+        }
+      },
+      "pass": 18,
+      "fail": [
+        "LATEX_ASCII_ONLY_TEX"
+      ]
+    },
+    "zero_could_not_link_citation": true,
+    "zero_cross_reference_target_not_found": true,
+    "zero_cannot_find_image": true,
+    "zero_unknown_directive": true
+  },
+  "per_file_results": {
+    "note": "Per-file projection assembled from values already recorded in `checks` (FIGURE_DROPDOWN_MATCH.per_file, EVIDENCE_PACKAGES_POPULATED.per_file, BIBLIOGRAPHY_AT_EVERY_DECLARED_PATH.per_path). No file was re-measured for this block.",
+    "counts": {
+      "content_md": 16,
+      "evidence_packages": 12,
+      "bibliography": 1,
+      "total": 29,
+      "fail": 0
+    },
+    "files": {
+      "content/00_frontmatter.md": {
+        "kind": "content",
+        "figures": 0,
+        "dropdowns": 0,
+        "notebooks": 0,
+        "code_cells_embedded": 0,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/01_section.md": {
+        "kind": "content",
+        "figures": 2,
+        "dropdowns": 2,
+        "notebooks": 2,
+        "code_cells_embedded": 2,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/02_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 12,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/03_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 3,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/04_section.md": {
+        "kind": "content",
+        "figures": 7,
+        "dropdowns": 7,
+        "notebooks": 7,
+        "code_cells_embedded": 28,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/05_section.md": {
+        "kind": "content",
+        "figures": 5,
+        "dropdowns": 5,
+        "notebooks": 5,
+        "code_cells_embedded": 25,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/06_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 9,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/07_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 12,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/08_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 12,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/09_section.md": {
+        "kind": "content",
+        "figures": 3,
+        "dropdowns": 3,
+        "notebooks": 3,
+        "code_cells_embedded": 12,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/10_section.md": {
+        "kind": "content",
+        "figures": 4,
+        "dropdowns": 4,
+        "notebooks": 4,
+        "code_cells_embedded": 16,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/11_section.md": {
+        "kind": "content",
+        "figures": 4,
+        "dropdowns": 4,
+        "notebooks": 4,
+        "code_cells_embedded": 16,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/12_section.md": {
+        "kind": "content",
+        "figures": 2,
+        "dropdowns": 2,
+        "notebooks": 2,
+        "code_cells_embedded": 2,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/Methods.md": {
+        "kind": "content",
+        "figures": 1,
+        "dropdowns": 1,
+        "notebooks": 1,
+        "code_cells_embedded": 9,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/evidence_database.md": {
+        "kind": "content",
+        "figures": 0,
+        "dropdowns": 0,
+        "notebooks": 0,
+        "code_cells_embedded": 0,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/provenance.md": {
+        "kind": "content",
+        "figures": 0,
+        "dropdowns": 0,
+        "notebooks": 0,
+        "code_cells_embedded": 0,
+        "figure_dropdown_notebook_match": true,
+        "result": "pass"
+      },
+      "content/references.bib": {
+        "kind": "bibliography",
+        "size_bytes": 393018,
+        "at_entries": 726,
+        "result": "pass"
+      },
+      "evidence/evidence_section_01.json": {
+        "kind": "evidence_package",
+        "size_bytes": 117321,
+        "findings": 28,
+        "has_corrections": true,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_02.json": {
+        "kind": "evidence_package",
+        "size_bytes": 207881,
+        "findings": 70,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_03.json": {
+        "kind": "evidence_package",
+        "size_bytes": 186242,
+        "findings": 56,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_04.json": {
+        "kind": "evidence_package",
+        "size_bytes": 323923,
+        "findings": 103,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_05.json": {
+        "kind": "evidence_package",
+        "size_bytes": 240776,
+        "findings": 76,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_06.json": {
+        "kind": "evidence_package",
+        "size_bytes": 241406,
+        "findings": 80,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_07.json": {
+        "kind": "evidence_package",
+        "size_bytes": 271359,
+        "findings": 82,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_08.json": {
+        "kind": "evidence_package",
+        "size_bytes": 240910,
+        "findings": 76,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_09.json": {
+        "kind": "evidence_package",
+        "size_bytes": 298487,
+        "findings": 76,
+        "has_corrections": true,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_10.json": {
+        "kind": "evidence_package",
+        "size_bytes": 270129,
+        "findings": 74,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_11.json": {
+        "kind": "evidence_package",
+        "size_bytes": 359155,
+        "findings": 60,
+        "has_corrections": false,
+        "missing_required_keys": [],
+        "result": "pass"
+      },
+      "evidence/evidence_section_12.json": {
+        "kind": "evidence_package",
+        "size_bytes": 130460,
+        "findings": 28,
+        "has_corrections": true,
+        "missing_required_keys": [],
+        "result": "pass"
+      }
+    }
+  },
+  "key_shape_note": "`checks` is the authoritative per-check record. `structural_results`, `build_result` and `per_file_results` are projections of it, present because the skill names those keys and a missing key is itself a gate failure. Where a projection and `checks` ever disagree, `checks` governs.",
+  "serialisation_reshaped_at_utc": "2026-10-17T21:26:50.881254+00:00"
+}
