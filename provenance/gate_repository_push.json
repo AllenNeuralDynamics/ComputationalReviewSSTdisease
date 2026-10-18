@@ -114,7 +114,45 @@
     ]
    }
   ],
-  "files_at_zero": "all twelve body sections, content/00_frontmatter.md, content/provenance.md, content/evidence_database.md, content/authors.yml, content/references.md and content/supplementary.md",
-  "verified_at": "2026-10-18T01:26:22Z"
+  "files_at_zero": [
+   "content/00_frontmatter.md",
+   "content/01_section.md",
+   "content/02_section.md",
+   "content/03_section.md",
+   "content/04_section.md",
+   "content/05_section.md",
+   "content/06_section.md",
+   "content/07_section.md",
+   "content/08_section.md",
+   "content/09_section.md",
+   "content/10_section.md",
+   "content/11_section.md",
+   "content/12_section.md",
+   "content/evidence_database.md",
+   "content/provenance.md",
+   "content/authors.yml"
+  ],
+  "verified_at": "2026-10-18T01:26:22Z",
+  "files_scanned": [
+   "content/00_frontmatter.md",
+   "content/01_section.md",
+   "content/02_section.md",
+   "content/03_section.md",
+   "content/04_section.md",
+   "content/05_section.md",
+   "content/06_section.md",
+   "content/07_section.md",
+   "content/08_section.md",
+   "content/09_section.md",
+   "content/10_section.md",
+   "content/11_section.md",
+   "content/12_section.md",
+   "content/Methods.md",
+   "content/authors.yml",
+   "content/evidence_database.md",
+   "content/provenance.md",
+   "latex/manuscript.tex",
+   "provenance/review_request.md"
+  ]
  }
 }
