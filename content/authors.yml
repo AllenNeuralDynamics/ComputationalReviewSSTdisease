@@ -38,7 +38,7 @@ project:
           description: "Built structured evidence JSONs, citation_key_map, author_name_table from database APIs"
         - role: "Writing – Original Draft"
           level: lead
-          description: "Drafted all sections following scaffold, evidence packages, and style guide"
+          description: "Drafted all sections following the section plans, evidence files, and style guide"
         - role: Visualization
           level: equal
           description: "Generated publication-quality figures from evidence data"
@@ -47,7 +47,7 @@ project:
           description: "Ran blinded figure audits, blinded text criticism, and citation verification"
       section_contributions:
         - section: all-sections
-          description: Drafted all sections from evidence packages under orchestrator constraints
+          description: Drafted all sections from the evidence files under the coordinator protocol
           effort: lead
 
     - id: jerome-lecoq

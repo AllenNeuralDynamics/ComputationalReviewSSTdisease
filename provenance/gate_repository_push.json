@@ -1,31 +1,120 @@
 {
-  "repo": "AllenNeuralDynamics/ComputationalReviewSSTdisease",
-  "branch": "main",
-  "files_pushed": 214,
-  "sections_pushed": 12,
-  "content_md_files": 16,
-  "figures_pushed": 43,
-  "notebooks_pushed": 43,
-  "evidence_packages": 12,
-  "signature_checks": {
-    "png_magic": "pass",
-    "tex_first_line": "pass",
-    "bib_has_entries": "pass",
-    "md_first_line": "15 files begin with a MyST anchor line '(sec-...)=' immediately followed by the H1/H2 heading, which is this pipeline's section-anchor convention and the target of every {ref}; recorded as a documented exception rather than a failure"
-  },
-  "site_build": {
-    "tool": "mystmd 1.11.0",
-    "pages": 16,
-    "could_not_link_citation": 0,
-    "missing_images": 0,
-    "unknown_directives": 0,
-    "cross_reference_not_found": 0
-  },
-  "bibliography": {
-    "entries": 726,
-    "distinct_cite_keys": 726,
-    "unresolved": 0,
-    "orphans": 0,
-    "ascii_clean": true
-  }
+ "repo": "AllenNeuralDynamics/ComputationalReviewSSTdisease",
+ "branch": "main",
+ "files_pushed": 214,
+ "sections_pushed": 12,
+ "content_md_files": 16,
+ "figures_pushed": 43,
+ "notebooks_pushed": 43,
+ "evidence_packages": 12,
+ "signature_checks": {
+  "png_magic": "pass",
+  "tex_first_line": "pass",
+  "bib_has_entries": "pass",
+  "md_first_line": "15 files begin with a MyST anchor line '(sec-...)=' immediately followed by the H1/H2 heading, which is this pipeline's section-anchor convention and the target of every {ref}; recorded as a documented exception rather than a failure"
+ },
+ "site_build": {
+  "tool": "mystmd 1.11.0",
+  "command": "myst build --site",
+  "pages": 16,
+  "could_not_link_citation": 0,
+  "missing_images": 0,
+  "unknown_directives": 0,
+  "cross_reference_not_found": 0,
+  "authorship_widget": "1 anywidget node on the frontmatter page, binding both authors"
+ },
+ "bibliography": {
+  "entries": 726,
+  "distinct_cite_keys": 726,
+  "unresolved": 0,
+  "orphans": 0,
+  "ascii_clean": true
+ },
+ "forbidden_lexicon": {
+  "scan_rule": "case-insensitive whole-word match (optional plural) over content/*.md, content/*.yml and latex/manuscript.tex; fenced code blocks, directive option lines and inline code are excluded in the prose scan, raw counts are reported alongside so nothing is hidden by the exclusion rule",
+  "remediation_applied": [
+   {
+    "file": "content/provenance.md",
+    "before": 3,
+    "after": 0,
+    "edits": [
+     "'produced using the Expert Review Orchestrator v29 pipeline' -> 'produced under the coordinator protocol of the Expert Review Pipeline'",
+     "table header 'Verdict as recorded' -> 'Outcome as recorded'",
+     "phase row label '4 Scaffold' -> '4 Section planning'"
+    ]
+   },
+   {
+    "file": "content/authors.yml",
+    "before": 4,
+    "after": 0,
+    "edits": [
+     "credit description 'Drafted all sections following scaffold, evidence packages, and style guide' -> '... following the section plans, evidence files, and style guide'",
+     "contribution description 'Drafted all sections from evidence packages under orchestrator constraints' -> '... from the evidence files under the coordinator protocol'"
+    ]
+   },
+   {
+    "file": "content/evidence_database.md",
+    "before": 1,
+    "after": 0,
+    "edits": [
+     "'explorer for the evidence packages underlying each section' -> 'explorer for the evidence files underlying each section'"
+    ]
+   }
+  ],
+  "remaining_hits": [
+   {
+    "file": "content/Methods.md",
+    "prose_scan": 2,
+    "raw": 7,
+    "classes": [
+     {
+      "count": 2,
+      "kind": "skill titles of record",
+      "detail": "'Expert Review Orchestrator v29' and 'Scaffold Construction Protocol' are the literal titles of two shipped coordinator skills; renaming them in the auto-generated Pipeline Skills table would misreport the software actually used.",
+      "legitimate": true
+     },
+     {
+      "count": 2,
+      "kind": "filenames of record",
+      "detail": "'comprev-orchestrator-v29.md' and 'comprev-scaffold.md' are the filenames in skills/ from which that table is generated; the table is a directory listing, so the tokens cannot be reworded without the row ceasing to name a real file.",
+      "legitimate": true
+     },
+     {
+      "count": 3,
+      "kind": "verbatim prompt reproduction",
+      "detail": "inside the fenced block that reproduces the user's review request byte-for-byte (SHA256 published in provenance/review_request.md); editing it would break the hash and the provenance claim.",
+      "legitimate": true
+     }
+    ]
+   },
+   {
+    "file": "latex/manuscript.tex",
+    "prose_scan": 2,
+    "raw": 7,
+    "classes": [
+     {
+      "count": 7,
+      "kind": "mirror of content/Methods.md",
+      "detail": "each occurrence corresponds 1:1 to a surviving Methods.md occurrence (4 in the auto-generated skills table, 3 in the verbatim prompt block); the three corrected files (provenance.md, authors.yml, evidence_database.md) are not assembled into the LaTeX manuscript, so regeneration from corrected content is byte-identical and the tex was left unmodified.",
+      "legitimate": true
+     }
+    ]
+   },
+   {
+    "file": "provenance/review_request.md",
+    "prose_scan": 4,
+    "raw": 4,
+    "classes": [
+     {
+      "count": 4,
+      "kind": "byte-verbatim user prompt with published SHA256",
+      "detail": "explicitly out of scope for rewriting; the file's value is that it is unaltered.",
+      "legitimate": true
+     }
+    ]
+   }
+  ],
+  "files_at_zero": "all twelve body sections, content/00_frontmatter.md, content/provenance.md, content/evidence_database.md, content/authors.yml, content/references.md and content/supplementary.md",
+  "verified_at": "2026-10-18T01:26:22Z"
+ }
 }

@@ -1,7 +1,7 @@
 (sec-provenance)=
 # Pipeline Provenance
 
-This review was produced using the Expert Review Orchestrator v29 pipeline
+This review was produced under the coordinator protocol of the Expert Review Pipeline
 (`Expert Review Pipeline v29`, model `claude-opus-5`).
 Every number on this page is read from a gate artifact in `provenance/`; none is restated from memory.
 
@@ -35,12 +35,12 @@ Every number on this page is read from a gate artifact in `provenance/`; none is
 The pipeline executes 21 phases. Each phase closes with a gate artifact that a separate
 validator actor writes or countersigns; the artifacts are kept verbatim in `provenance/`.
 
-| Phase | Gate artifact | Verdict as recorded |
+| Phase | Gate artifact | Outcome as recorded |
 |---|---|---|
 | 1 Scope | `gate_scope.json` | scope materialised; review request preserved at `provenance/review_request.md` |
 | 2 Evidence gathering | `gate_evidence_compliance.json` | 844 findings over 726 unique DOIs across 10 clusters |
 | 3 Citation infrastructure | `gate_citation_infrastructure.json` | 726 DOIs mapped to certified citation keys |
-| 4 Scaffold | `gate_scaffold_approved.json` | approved; every section planned with at least two figures |
+| 4 Section planning | `gate_scaffold_approved.json` | approved; every section planned with at least two figures |
 | 5 Evidence curation | `gate_evidence_curated.json` | measured as FAIL on two aggregate checks (see Known limitations) |
 | 6 Figure construction and audit | `gate_figure_audit.json` | 65 comparisons audited; 0 redesigns, 0 splits, 61 caveats required |
 | 7 Section drafting | `gate_sections_drafted.json` | PASS |
