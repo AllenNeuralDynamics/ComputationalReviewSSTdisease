@@ -18,6 +18,11 @@ const evidenceDirective = {
   },
 };
 
+// Raised when no evidence file can be read; deliberately not caught, so a
+// regression in the filenames or the directory fails the build instead of
+// publishing an empty explorer.
+class EvidenceLoadError extends Error {}
+
 // Universal conflict normalizer — handles all 15+ schema variants
 function normalizeConflict(c, sec) {
   const norm = { section: sec };
@@ -136,42 +141,61 @@ const evidenceTransform = {
       if (node.type === 'evidence-explorer') {
         const docDir = vfile?.path ? dirname(vfile.path) : process.cwd();
         const evidenceDir = resolve(docDir, node.evidenceDir || '../evidence');
+        const FIRST_SECTION = 1;
+        const LAST_SECTION = 12;
+        // Current layout first, then the two legacy names kept for older trees.
+        const NAME_PATTERNS = [
+          (p) => 'evidence_section_' + p + '.json',
+          (p) => 'section_' + p + '_evidence_package.json',
+          (p) => 'section_' + p + '_evidence.json',
+        ];
+        const missingSections = [];
         try {
           const sections = [];
           const allFindings = [];
           const allConflicts = [];
           const allFigureData = [];
 
-          for (let sec = 2; sec <= 13; sec++) {
+          for (let sec = FIRST_SECTION; sec <= LAST_SECTION; sec++) {
             const padded = String(sec).padStart(2, '0');
-            let filePath = resolve(evidenceDir, 'section_' + padded + '_evidence_package.json');
             let raw;
-            try {
-              raw = readFileSync(filePath, 'utf-8');
-            } catch (e) {
+            const tried = [];
+            for (const pattern of NAME_PATTERNS) {
+              const candidate = resolve(evidenceDir, pattern(padded));
+              tried.push(candidate);
               try {
-                filePath = resolve(evidenceDir, 'section_' + padded + '_evidence.json');
-                raw = readFileSync(filePath, 'utf-8');
-              } catch (e2) { continue; }
+                raw = readFileSync(candidate, 'utf-8');
+                break;
+              } catch (e) { /* try the next naming convention */ }
             }
-            
+            if (raw === undefined) {
+              missingSections.push({ section: sec, tried });
+              continue;
+            }
+
             const ev = JSON.parse(raw);
 
-            // Extract findings
-            let findings = [];
-            const ag = ev.argument_groups;
-            if (ag && typeof ag === 'object') {
-              for (const [topicKey, topicVal] of Object.entries(ag)) {
-                if (topicVal && typeof topicVal === 'object') {
-                  const supporting = topicVal.supporting_findings || topicVal.supporting_evidence || [];
-                  const counter = topicVal.counter_findings || topicVal.counter_evidence || [];
-                  if (Array.isArray(supporting)) findings.push(...supporting);
-                  if (Array.isArray(counter)) findings.push(...counter);
+            // Extract findings. The current package shape stores finding records in
+            // ev.findings and uses argument_groups only to reference them by cite key,
+            // so object-shaped argument-group entries are accepted but bare strings
+            // (cite keys) are not treated as findings.
+            let findings = Array.isArray(ev.findings) ? ev.findings.filter(f => f && typeof f === 'object') : [];
+            if (findings.length === 0) {
+              const ag = ev.argument_groups;
+              if (ag && typeof ag === 'object') {
+                for (const topicVal of Object.values(ag)) {
+                  if (topicVal && typeof topicVal === 'object') {
+                    const supporting = topicVal.supporting_findings || topicVal.supporting_evidence || [];
+                    const counter = topicVal.counter_findings || topicVal.counter_evidence || [];
+                    if (Array.isArray(supporting)) findings.push(...supporting.filter(f => f && typeof f === 'object'));
+                    if (Array.isArray(counter)) findings.push(...counter.filter(f => f && typeof f === 'object'));
+                  }
                 }
               }
+              if (Array.isArray(ev.unmatched_findings)) {
+                findings.push(...ev.unmatched_findings.filter(f => f && typeof f === 'object'));
+              }
             }
-            if (Array.isArray(ev.unmatched_findings)) findings.push(...ev.unmatched_findings);
-            if (findings.length === 0 && Array.isArray(ev.findings)) findings = ev.findings;
 
             // Normalize conflicts using the universal normalizer
             const conflicts = (ev.conflicts || []).map(c => normalizeConflict(c, sec));
@@ -198,6 +222,32 @@ const evidenceTransform = {
             allFigureData.push(...figData);
           }
 
+          // Fail loudly. A silent `continue` on every read is what previously let an
+          // empty explorer ship with a green build.
+          const expected = LAST_SECTION - FIRST_SECTION + 1;
+          if (sections.length === 0) {
+            throw new EvidenceLoadError(
+              'evidence-explorer: no evidence files could be read from ' + evidenceDir +
+              ' (expected ' + expected + ' files named ' + NAME_PATTERNS[0]('NN') +
+              ' for NN = ' + String(FIRST_SECTION).padStart(2, '0') + '..' +
+              String(LAST_SECTION).padStart(2, '0') + '). The explorer would publish empty.'
+            );
+          }
+          if (missingSections.length > 0) {
+            const msg = 'evidence-explorer: ' + missingSections.length + ' of ' + expected +
+              ' evidence files were not found in ' + evidenceDir + ' (sections ' +
+              missingSections.map(m => m.section).join(', ') + '); the explorer is incomplete.';
+            if (utils && typeof utils.fileWarn === 'function') utils.fileWarn(vfile, msg, { node });
+            else console.warn(msg);
+          }
+          if (allFindings.length === 0 || allConflicts.length === 0) {
+            const msg = 'evidence-explorer: evidence files loaded (' + sections.length +
+              ') but the bound payload has ' + allFindings.length + ' findings and ' +
+              allConflicts.length + ' conflicts; the explorer would render empty panels.';
+            if (utils && typeof utils.fileWarn === 'function') utils.fileWarn(vfile, msg, { node });
+            else console.warn(msg);
+          }
+
           node.type = 'anywidget';
           node.id = 'evidence-explorer-' + Date.now() + '-' + Math.random().toString(36).slice(2,9);
           node.esm = './evidence-explorer-widget.mjs';
@@ -211,6 +261,7 @@ const evidenceTransform = {
             height: node.height || '700px',
           };
         } catch (err) {
+          if (err instanceof EvidenceLoadError) throw err;
           node.type = 'paragraph';
           node.children = [{ type: 'text', value: '[Evidence Explorer error: ' + err.message + ']' }];
         }
