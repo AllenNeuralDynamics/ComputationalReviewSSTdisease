@@ -557,6 +557,64 @@ closed-access literature that this review reads at abstract level — and they r
 rather than checked and passed. The verified share above is a share of the 1,498 triples that
 could be checked, and the honest reading of the remainder is that nobody looked.
 
+(sec-methods-prose-standardisation)=
+
+## Prose Standardisation
+
+The twelve body sections were drafted in parallel by independent agents, which left them
+differing in sentence construction. A single post-processing pass, run after the review was
+first published, restyled the prose of all twelve against one written standard
+(`comprev-writing-style`, pipeline generation 30). **Nothing about the evidence, the claims, the
+citations or the numbers was revisited. Only the wording changed.**
+
+**Method.** Each section file was split mechanically into prose segments and protected segments.
+Protected segments are headings, anchors, figure directives, dropdowns, admonitions and embedded
+figure code. Only prose was sent to a restyling agent, one agent per section. Each file was then
+reassembled from the returned prose and its untouched protected segments. The splitter was
+verified to reproduce every file byte-for-byte before use, so each embedded figure-generating
+code block in the published document is identical to the one that produced the figure.
+
+**What the standard requires:**
+
+- one finding per sentence
+- enumerations of three or more parallel items set as lists, not as a comma series inside a sentence
+- a sentence ending on its finding rather than on its citation
+- paragraphs opening on a claim rather than on a study
+- a claim stated before the doubt about it
+- subjects that name agents, and verbs that carry the action
+- one typographic convention for dispersion, minus signs, ranges and parenthetical dashes
+
+**Measured effect**, counting each list item as a sentence. Mean sentence length fell from 44.6
+words to roughly 20 across the twelve sections. The longest sentence in the review fell from 188
+words to under 60. Comma-series enumerations were converted to lists throughout. Word count was
+unchanged, because the material moved into lists rather than being cut.
+
+**Fidelity.** Every citation role, numeric value and cross-reference was compared between the
+pre-restyle and post-restyle text of each section, mechanically and in full. Citation roles were
+compared as ordered key tuples, so a multi-key role could not be split or merged. Numeric
+comparison normalised hyphen, en dash and minus sign, because the typographic rule converts
+hyphens to true minus signs in negative numbers and to en dashes in ranges. **Across all twelve
+sections the three sets are identical: no citation key, numeric value or cross-reference was
+added, dropped or altered.** Anchors, headings, directive counts and figure paths were confirmed
+identical at whole-file level.
+
+**Two limits of this pass, stated plainly.**
+
+First, **claim-level citation verification was performed on the pre-restyle text.** The 1,534
+triples adjudicated in Phase 16 pair each citation with the sentence that carried it *before*
+this pass. The restyle preserved every key and every number mechanically, and no claim was
+knowingly altered. But the sentences those verdicts were issued against are not in every case the
+sentences now published, and the verification was not re-run afterwards.
+
+Second, the standard forbids body prose from describing how this review retrieved its material,
+on the grounds that such a statement describes the review rather than the published record.
+Twelve such passages were rewritten to hedge the claim instead of narrating the search. Two
+specifics those passages carried are recorded here instead. Retrieval was dominated by one
+full-text index with no citation chasing, and no claim of complete coverage is made. Of the
+abstract-only records behind the open-questions section, ten were published from 2018 onward, so
+the full-text shortfall is not confined to older closed-access work. Per-cluster full-text
+coverage is reported above in {ref}`sec-methods-retrieval`.
+
 (sec-methods-pipeline)=
 ## Pipeline Execution
 
